@@ -1,0 +1,16 @@
+{
+  "source_row": 1758,
+  "customer_id": "C01805",
+  "matched_master_id": "C01805",
+  "name": "Waida Batra",
+  "available_information": {
+    "name": "Waida Batra",
+    "email": "waida.batra1805@yahoo.com",
+    "phone": "9615131477",
+    "address": "73/35 Mody Ganj"
+  },
+  "missing_information": [
+    "city"
+  ],
+  "match_status": "partial_match"
+}

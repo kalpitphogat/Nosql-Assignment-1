@@ -1,0 +1,16 @@
+{
+  "source_row": 1310,
+  "customer_id": "C00811",
+  "matched_master_id": "C00811",
+  "name": "Yatan Saha",
+  "available_information": {
+    "name": "Yatan Saha",
+    "phone": "9561008043",
+    "address": "91, Narayan Zila",
+    "city": "Gaya"
+  },
+  "missing_information": [
+    "email"
+  ],
+  "match_status": "partial_match"
+}

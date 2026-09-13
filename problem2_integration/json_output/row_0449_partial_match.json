@@ -1,0 +1,16 @@
+{
+  "source_row": 449,
+  "customer_id": "C01830",
+  "matched_master_id": "C01830",
+  "name": "Nathan Prabhakar",
+  "available_information": {
+    "name": "Nathan Prabhakar",
+    "city": "Ghaziabad"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

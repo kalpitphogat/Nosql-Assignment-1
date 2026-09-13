@@ -1,0 +1,16 @@
+{
+  "source_row": 486,
+  "customer_id": "C00521",
+  "matched_master_id": "C00521",
+  "name": "Ansh Prabhakar",
+  "available_information": {
+    "name": "Ansh Prabhakar",
+    "email": "ansh.prabhakar521@yahoo.com",
+    "phone": "6259193163",
+    "address": "92, Kumer Chowk"
+  },
+  "missing_information": [
+    "city"
+  ],
+  "match_status": "partial_match"
+}

@@ -1,0 +1,16 @@
+{
+  "source_row": 285,
+  "customer_id": null,
+  "matched_master_id": null,
+  "name": "Laban Sem",
+  "available_information": {
+    "name": "Laban Sem"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address",
+    "city"
+  ],
+  "match_status": "incomplete_match"
+}

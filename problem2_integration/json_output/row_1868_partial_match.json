@@ -1,0 +1,16 @@
+{
+  "source_row": 1868,
+  "customer_id": "C02077",
+  "matched_master_id": "C02077",
+  "name": "Sneha Rai",
+  "available_information": {
+    "name": "Sneha Rai",
+    "email": "sneha.rai2077@gmail.com",
+    "address": "69/208 Bhatnagar Street"
+  },
+  "missing_information": [
+    "phone",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

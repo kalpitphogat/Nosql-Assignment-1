@@ -1,0 +1,16 @@
+{
+  "source_row": 219,
+  "customer_id": "C00517",
+  "matched_master_id": "C00517",
+  "name": "Jack Dyal",
+  "available_information": {
+    "name": "Jack Dyal",
+    "email": "jack.dyal517@gmail.com"
+  },
+  "missing_information": [
+    "phone",
+    "address",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

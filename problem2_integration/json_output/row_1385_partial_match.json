@@ -1,0 +1,16 @@
+{
+  "source_row": 1385,
+  "customer_id": "C01734",
+  "matched_master_id": "C01734",
+  "name": "Neha Roy",
+  "available_information": {
+    "name": "Neha Roy",
+    "address": "75, Pingle Ganj",
+    "city": "Kozhikode"
+  },
+  "missing_information": [
+    "email",
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

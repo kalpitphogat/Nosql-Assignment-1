@@ -1,0 +1,20 @@
+{
+  "source_row": 537,
+  "customer_id": "C01937",
+  "matched_master_id": "C01937",
+  "name": "Tanmayi Gokhale",
+  "available_information": {
+    "name": "Tanmayi Gokhale",
+    "phone": "9322860189",
+    "address": "058 Vyas Ganj",
+    "city": "Kishanganj"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "email": {
+      "incoming": "adweta.sharma45819@example.in",
+      "master": "tanmayi.gokhale1937@gmail.com"
+    }
+  }
+}

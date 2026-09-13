@@ -1,0 +1,23 @@
+{
+  "source_row": 764,
+  "customer_id": "C01038",
+  "matched_master_id": "C01038",
+  "name": "Daniel Hegde",
+  "available_information": {
+    "name": "Daniel Hegde",
+    "email": "daniel.hegde1038@example.in",
+    "address": "564, Thaman Path"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "phone": {
+      "incoming": "9437124267",
+      "master": "9600719127"
+    },
+    "city": {
+      "incoming": "Nanded",
+      "master": "Junagadh"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "source_row": 1603,
+  "customer_id": "C02127",
+  "matched_master_id": "C02127",
+  "name": "Ladli Johal",
+  "available_information": {
+    "name": "Ladli Johal",
+    "phone": "6239027773",
+    "city": "Medininagar"
+  },
+  "missing_information": [
+    "email",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

@@ -1,0 +1,16 @@
+{
+  "source_row": 54,
+  "customer_id": null,
+  "matched_master_id": "C02229",
+  "name": "Isaiah Saini",
+  "available_information": {
+    "name": "Isaiah Saini",
+    "city": "Siwan"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

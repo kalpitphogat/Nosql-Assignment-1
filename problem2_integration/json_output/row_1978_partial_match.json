@@ -1,0 +1,16 @@
+{
+  "source_row": 1978,
+  "customer_id": null,
+  "matched_master_id": "C01548",
+  "name": "Samesh Sundaram",
+  "available_information": {
+    "name": "Samesh Sundaram",
+    "address": "H.No. 462, Biswas Path",
+    "city": "Darbhanga"
+  },
+  "missing_information": [
+    "email",
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

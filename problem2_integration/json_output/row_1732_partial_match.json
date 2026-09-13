@@ -1,0 +1,16 @@
+{
+  "source_row": 1732,
+  "customer_id": "C02684",
+  "matched_master_id": "C02684",
+  "name": "Vihaan Ravi",
+  "available_information": {
+    "name": "Vihaan Ravi",
+    "address": "H.No. 424, Ratti Zila"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

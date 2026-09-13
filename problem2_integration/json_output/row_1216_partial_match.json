@@ -1,0 +1,16 @@
+{
+  "source_row": 1216,
+  "customer_id": "C00505",
+  "matched_master_id": "C00505",
+  "name": "Naksh Gara",
+  "available_information": {
+    "name": "Naksh Gara",
+    "email": "naksh.gara505@yahoo.com",
+    "phone": "8235827813",
+    "city": "Bokaro"
+  },
+  "missing_information": [
+    "address"
+  ],
+  "match_status": "partial_match"
+}

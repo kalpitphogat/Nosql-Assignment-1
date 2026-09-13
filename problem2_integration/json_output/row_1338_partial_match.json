@@ -1,0 +1,16 @@
+{
+  "source_row": 1338,
+  "customer_id": null,
+  "matched_master_id": "C00053",
+  "name": "ishanvi shah",
+  "available_information": {
+    "name": "ishanvi shah",
+    "email": "ishanvi.shah53@outlook.com",
+    "address": "987 Tiwari Road",
+    "city": "Machilipatnam"
+  },
+  "missing_information": [
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

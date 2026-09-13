@@ -1,0 +1,16 @@
+{
+  "source_row": 1217,
+  "customer_id": "C02412",
+  "matched_master_id": "C02412",
+  "name": "Lekha Saraf",
+  "available_information": {
+    "name": "Lekha Saraf",
+    "email": "lekha.saraf2412@gmail.com",
+    "city": "Nanded"
+  },
+  "missing_information": [
+    "phone",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

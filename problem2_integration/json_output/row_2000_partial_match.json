@@ -1,0 +1,16 @@
+{
+  "source_row": 2000,
+  "customer_id": null,
+  "matched_master_id": "C02921",
+  "name": "Aarnav Amble",
+  "available_information": {
+    "name": "Aarnav Amble",
+    "city": "Sambalpur"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

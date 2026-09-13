@@ -1,0 +1,16 @@
+{
+  "source_row": 1423,
+  "customer_id": null,
+  "matched_master_id": "C00533",
+  "name": null,
+  "available_information": {
+    "email": "nihal.subramaniam533@outlook.com",
+    "phone": "7492512349",
+    "city": "Tinsukia"
+  },
+  "missing_information": [
+    "name",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

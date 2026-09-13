@@ -1,0 +1,16 @@
+{
+  "source_row": 511,
+  "customer_id": null,
+  "matched_master_id": "C02332",
+  "name": "Ganga Bhatti",
+  "available_information": {
+    "name": "Ganga Bhatti",
+    "city": "Mira-Bhayandar"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

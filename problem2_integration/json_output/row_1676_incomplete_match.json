@@ -1,0 +1,16 @@
+{
+  "source_row": 1676,
+  "customer_id": null,
+  "matched_master_id": null,
+  "name": "Brinda Ghosh",
+  "available_information": {
+    "name": "Brinda Ghosh"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address",
+    "city"
+  ],
+  "match_status": "incomplete_match"
+}

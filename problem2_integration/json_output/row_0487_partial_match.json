@@ -1,0 +1,16 @@
+{
+  "source_row": 487,
+  "customer_id": "C02994",
+  "matched_master_id": "C02994",
+  "name": "Arya Pandya",
+  "available_information": {
+    "name": "Arya Pandya",
+    "phone": "8402766032"
+  },
+  "missing_information": [
+    "email",
+    "address",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

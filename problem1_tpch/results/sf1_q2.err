@@ -1,0 +1,3 @@
+psql:queries_final/2.sql:47: ERROR:  syntax error at or near "limit"
+LINE 1: limit 100;
+        ^

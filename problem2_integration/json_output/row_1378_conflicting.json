@@ -1,0 +1,23 @@
+{
+  "source_row": 1378,
+  "customer_id": "C01292",
+  "matched_master_id": "C01292",
+  "name": "Tejas Ahuja",
+  "available_information": {
+    "email": "aarav.das1292@outlook.com",
+    "address": "H.No. 17, Dara Path",
+    "city": "Rajahmundry"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "name": {
+      "incoming": "Tejas Ahuja",
+      "master": "Aarav Das"
+    },
+    "phone": {
+      "incoming": "8249516572",
+      "master": "6930066599"
+    }
+  }
+}

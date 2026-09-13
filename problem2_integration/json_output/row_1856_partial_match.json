@@ -1,0 +1,16 @@
+{
+  "source_row": 1856,
+  "customer_id": null,
+  "matched_master_id": "C02731",
+  "name": "Theodore Bhatnagar",
+  "available_information": {
+    "name": "Theodore Bhatnagar",
+    "city": "Meerut"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

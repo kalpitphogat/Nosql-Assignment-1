@@ -1,0 +1,16 @@
+{
+  "source_row": 1018,
+  "customer_id": "C00309",
+  "matched_master_id": "C00309",
+  "name": "Inaya Mohan",
+  "available_information": {
+    "name": "Inaya Mohan",
+    "email": "inaya.mohan309@outlook.com",
+    "phone": "9728654525"
+  },
+  "missing_information": [
+    "address",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

@@ -1,0 +1,16 @@
+{
+  "source_row": 217,
+  "customer_id": null,
+  "matched_master_id": null,
+  "name": "Hemal Boase",
+  "available_information": {
+    "name": "Hemal Boase"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address",
+    "city"
+  ],
+  "match_status": "incomplete_match"
+}

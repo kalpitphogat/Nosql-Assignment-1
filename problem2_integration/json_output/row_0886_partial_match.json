@@ -1,0 +1,16 @@
+{
+  "source_row": 886,
+  "customer_id": null,
+  "matched_master_id": "C02473",
+  "name": "ISHITA CHAHAL",
+  "available_information": {
+    "name": "ISHITA CHAHAL",
+    "phone": "6539494372",
+    "address": "272 Barad Street",
+    "city": "Mumbai"
+  },
+  "missing_information": [
+    "email"
+  ],
+  "match_status": "partial_match"
+}

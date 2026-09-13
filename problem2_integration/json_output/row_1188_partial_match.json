@@ -1,0 +1,16 @@
+{
+  "source_row": 1188,
+  "customer_id": "C02300",
+  "matched_master_id": "C02300",
+  "name": "Priya Das",
+  "available_information": {
+    "name": "Priya Das",
+    "email": "priya.das2300@example.in",
+    "phone": "9373485973",
+    "address": "30/153, Wali Zila"
+  },
+  "missing_information": [
+    "city"
+  ],
+  "match_status": "partial_match"
+}

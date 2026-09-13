@@ -1,0 +1,16 @@
+{
+  "source_row": 447,
+  "customer_id": "C00773",
+  "matched_master_id": "C00773",
+  "name": "Bina Raval",
+  "available_information": {
+    "name": "Bina Raval",
+    "email": "bina.raval773@gmail.com",
+    "phone": "9703190453",
+    "city": "Bhatpara"
+  },
+  "missing_information": [
+    "address"
+  ],
+  "match_status": "partial_match"
+}

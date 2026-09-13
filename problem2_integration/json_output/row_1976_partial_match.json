@@ -1,0 +1,16 @@
+{
+  "source_row": 1976,
+  "customer_id": "C00648",
+  "matched_master_id": "C00648",
+  "name": "Ojasvi Kota",
+  "available_information": {
+    "name": "Ojasvi Kota",
+    "phone": "7076356878",
+    "address": "H.No. 542 Hans Street"
+  },
+  "missing_information": [
+    "email",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

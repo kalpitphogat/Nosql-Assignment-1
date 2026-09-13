@@ -1,0 +1,16 @@
+{
+  "source_row": 19,
+  "customer_id": null,
+  "matched_master_id": null,
+  "name": "Madhavi Agate",
+  "available_information": {
+    "name": "Madhavi Agate"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address",
+    "city"
+  ],
+  "match_status": "incomplete_match"
+}

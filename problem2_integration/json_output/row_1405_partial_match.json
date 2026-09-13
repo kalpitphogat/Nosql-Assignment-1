@@ -1,0 +1,16 @@
+{
+  "source_row": 1405,
+  "customer_id": "C01657",
+  "matched_master_id": "C01657",
+  "name": "Utkarsh Bal",
+  "available_information": {
+    "name": "Utkarsh Bal",
+    "email": "utkarsh.bal1657@gmail.com",
+    "address": "857, Sami Road",
+    "city": "Nadiad"
+  },
+  "missing_information": [
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

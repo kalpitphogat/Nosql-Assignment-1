@@ -1,0 +1,23 @@
+{
+  "source_row": 1024,
+  "customer_id": "C02275",
+  "matched_master_id": "C02275",
+  "name": "Peter Vohra",
+  "available_information": {
+    "email": "matthew.sodhi2275@gmail.com",
+    "address": "27, Bakshi Street",
+    "city": "Bokaro"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "name": {
+      "incoming": "Peter Vohra",
+      "master": "Matthew Sodhi"
+    },
+    "phone": {
+      "incoming": "6695313896",
+      "master": "9876677551"
+    }
+  }
+}

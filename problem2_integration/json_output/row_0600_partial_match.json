@@ -1,0 +1,16 @@
+{
+  "source_row": 600,
+  "customer_id": "C02925",
+  "matched_master_id": "C02925",
+  "name": "Robert Soni",
+  "available_information": {
+    "name": "Robert Soni",
+    "email": "robert.soni2925@outlook.com",
+    "address": "006, Narula"
+  },
+  "missing_information": [
+    "phone",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

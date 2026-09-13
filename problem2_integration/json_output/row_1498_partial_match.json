@@ -1,0 +1,16 @@
+{
+  "source_row": 1498,
+  "customer_id": "C01539",
+  "matched_master_id": "C01539",
+  "name": "Wakeeta Keer",
+  "available_information": {
+    "name": "Wakeeta Keer",
+    "email": "wakeeta.keer1539@yahoo.com",
+    "phone": "6490516080"
+  },
+  "missing_information": [
+    "address",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

@@ -1,0 +1,16 @@
+{
+  "source_row": 324,
+  "customer_id": "C00658",
+  "matched_master_id": "C00658",
+  "name": "Harinakshi Dhar",
+  "available_information": {
+    "name": "Harinakshi Dhar",
+    "phone": "7145221639",
+    "address": "82, Parmar Chowk"
+  },
+  "missing_information": [
+    "email",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

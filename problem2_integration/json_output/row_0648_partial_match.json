@@ -1,0 +1,16 @@
+{
+  "source_row": 648,
+  "customer_id": null,
+  "matched_master_id": "C02519",
+  "name": "yashawini shere",
+  "available_information": {
+    "name": "yashawini shere",
+    "email": "yashawini.shere2519@outlook.com",
+    "address": "H.No. 17 Lad Ganj",
+    "city": "Latur"
+  },
+  "missing_information": [
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

@@ -1,0 +1,16 @@
+{
+  "source_row": 173,
+  "customer_id": "C02682",
+  "matched_master_id": "C02682",
+  "name": "David Bhakta",
+  "available_information": {
+    "name": "David Bhakta",
+    "phone": "9935832125",
+    "address": "98, Randhawa Zila",
+    "city": "Korba"
+  },
+  "missing_information": [
+    "email"
+  ],
+  "match_status": "partial_match"
+}

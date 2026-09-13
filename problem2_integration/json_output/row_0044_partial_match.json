@@ -1,0 +1,16 @@
+{
+  "source_row": 44,
+  "customer_id": null,
+  "matched_master_id": "C00823",
+  "name": "SAMAR NARANG",
+  "available_information": {
+    "name": "SAMAR NARANG",
+    "phone": "8234277686",
+    "address": "H.No. 452 Bumb Street",
+    "city": "Hosur"
+  },
+  "missing_information": [
+    "email"
+  ],
+  "match_status": "partial_match"
+}

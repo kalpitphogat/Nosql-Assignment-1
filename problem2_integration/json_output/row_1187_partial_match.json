@@ -1,0 +1,16 @@
+{
+  "source_row": 1187,
+  "customer_id": "C00439",
+  "matched_master_id": "C00439",
+  "name": "Nathaniel Bhatia",
+  "available_information": {
+    "name": "Nathaniel Bhatia",
+    "phone": "6679648540",
+    "address": "H.No. 66 Bhardwaj Circle",
+    "city": "Indore"
+  },
+  "missing_information": [
+    "email"
+  ],
+  "match_status": "partial_match"
+}

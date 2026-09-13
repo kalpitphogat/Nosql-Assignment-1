@@ -1,0 +1,16 @@
+{
+  "source_row": 405,
+  "customer_id": "C00610",
+  "matched_master_id": "C00610",
+  "name": "Rohan Bala",
+  "available_information": {
+    "name": "Rohan Bala",
+    "address": "H.No. 371 Rau Street"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

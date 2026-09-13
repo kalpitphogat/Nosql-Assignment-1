@@ -1,0 +1,16 @@
+{
+  "source_row": 1545,
+  "customer_id": "C01426",
+  "matched_master_id": "C01426",
+  "name": "Faraj Kashyap",
+  "available_information": {
+    "name": "Faraj Kashyap",
+    "phone": "7483936607",
+    "address": "974 Kakar Nagar"
+  },
+  "missing_information": [
+    "email",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

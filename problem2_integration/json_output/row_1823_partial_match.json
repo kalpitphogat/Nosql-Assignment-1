@@ -1,0 +1,16 @@
+{
+  "source_row": 1823,
+  "customer_id": null,
+  "matched_master_id": "C00652",
+  "name": "Anika Handa",
+  "available_information": {
+    "name": "Anika Handa",
+    "address": "31/954, Bhavsar Chowk",
+    "city": "Ludhiana"
+  },
+  "missing_information": [
+    "email",
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

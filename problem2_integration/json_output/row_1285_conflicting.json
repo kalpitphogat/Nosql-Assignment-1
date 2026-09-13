@@ -1,0 +1,23 @@
+{
+  "source_row": 1285,
+  "customer_id": "C02776",
+  "matched_master_id": "C02776",
+  "name": "Vasatika Krishnan",
+  "available_information": {
+    "email": "prisha.sangha2776@hotmail.com",
+    "phone": "8086150706",
+    "address": "H.No. 33, Gola"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "name": {
+      "incoming": "Vasatika Krishnan",
+      "master": "Prisha Sangha"
+    },
+    "city": {
+      "incoming": "Muzaffarpur",
+      "master": "Hajipur"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "source_row": 982,
+  "customer_id": "C02527",
+  "matched_master_id": "C02527",
+  "name": "Ekaraj Sami",
+  "available_information": {
+    "name": "Ekaraj Sami",
+    "city": "Vijayawada"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

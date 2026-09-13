@@ -1,0 +1,16 @@
+{
+  "source_row": 112,
+  "customer_id": null,
+  "matched_master_id": null,
+  "name": "Leela Mangal",
+  "available_information": {
+    "name": "Leela Mangal"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address",
+    "city"
+  ],
+  "match_status": "incomplete_match"
+}

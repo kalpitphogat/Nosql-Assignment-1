@@ -1,0 +1,16 @@
+{
+  "source_row": 1846,
+  "customer_id": "C00496",
+  "matched_master_id": "C00496",
+  "name": "Ladli Bhalla",
+  "available_information": {
+    "name": "Ladli Bhalla",
+    "email": "ladli.bhalla496@example.in",
+    "phone": "8596772803",
+    "address": "75 Sahota Nagar"
+  },
+  "missing_information": [
+    "city"
+  ],
+  "match_status": "partial_match"
+}

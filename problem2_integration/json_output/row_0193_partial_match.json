@@ -1,0 +1,16 @@
+{
+  "source_row": 193,
+  "customer_id": "C00614",
+  "matched_master_id": "C00614",
+  "name": "Yatin Bala",
+  "available_information": {
+    "name": "Yatin Bala",
+    "email": "yatin.bala614@yahoo.com",
+    "city": "Srinagar"
+  },
+  "missing_information": [
+    "phone",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

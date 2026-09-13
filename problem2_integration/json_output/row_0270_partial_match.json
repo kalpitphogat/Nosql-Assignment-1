@@ -1,0 +1,16 @@
+{
+  "source_row": 270,
+  "customer_id": "C02004",
+  "matched_master_id": "C02004",
+  "name": "Radhika Ghosh",
+  "available_information": {
+    "name": "Radhika Ghosh",
+    "email": "radhika.ghosh2004@hotmail.com",
+    "phone": "6333607157",
+    "address": "747 Dhillon Zila"
+  },
+  "missing_information": [
+    "city"
+  ],
+  "match_status": "partial_match"
+}

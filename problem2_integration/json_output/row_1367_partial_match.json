@@ -1,0 +1,16 @@
+{
+  "source_row": 1367,
+  "customer_id": null,
+  "matched_master_id": "C02093",
+  "name": "Faras Ravi",
+  "available_information": {
+    "name": "Faras Ravi",
+    "city": "Muzaffarnagar"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

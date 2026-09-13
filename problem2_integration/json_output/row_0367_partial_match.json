@@ -1,0 +1,16 @@
+{
+  "source_row": 367,
+  "customer_id": "C01886",
+  "matched_master_id": "C01886",
+  "name": "Oeshi Thakur",
+  "available_information": {
+    "name": "Oeshi Thakur",
+    "city": "Arrah"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

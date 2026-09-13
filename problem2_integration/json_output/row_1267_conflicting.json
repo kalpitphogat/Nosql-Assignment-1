@@ -1,0 +1,23 @@
+{
+  "source_row": 1267,
+  "customer_id": "C00400",
+  "matched_master_id": "C00400",
+  "name": "Zilmil Jain",
+  "available_information": {
+    "email": "madhavi.agate400@hotmail.com",
+    "address": "42 Shere Chowk",
+    "city": "Nangloi Jat"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "name": {
+      "incoming": "Zilmil Jain",
+      "master": "Madhavi Agate"
+    },
+    "phone": {
+      "incoming": "7758208488",
+      "master": "6425436259"
+    }
+  }
+}

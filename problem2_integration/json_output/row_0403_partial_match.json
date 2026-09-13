@@ -1,0 +1,16 @@
+{
+  "source_row": 403,
+  "customer_id": "C01807",
+  "matched_master_id": "C01807",
+  "name": "Ishwar Vig",
+  "available_information": {
+    "name": "Ishwar Vig",
+    "email": "ishwar.vig1807@hotmail.com",
+    "phone": "7708254516",
+    "address": "H.No. 18, Nagy Road"
+  },
+  "missing_information": [
+    "city"
+  ],
+  "match_status": "partial_match"
+}

@@ -1,0 +1,16 @@
+{
+  "source_row": 516,
+  "customer_id": "C01157",
+  "matched_master_id": "C01157",
+  "name": "Noah Andra",
+  "available_information": {
+    "name": "Noah Andra",
+    "address": "288 Chaudhuri Street"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

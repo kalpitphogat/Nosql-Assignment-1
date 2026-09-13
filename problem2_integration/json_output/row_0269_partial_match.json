@@ -1,0 +1,16 @@
+{
+  "source_row": 269,
+  "customer_id": null,
+  "matched_master_id": "C02823",
+  "name": "ojasvi doctor",
+  "available_information": {
+    "name": "ojasvi doctor",
+    "email": "ojasvi.doctor2823@example.in",
+    "address": "91 Narasimhan Zila",
+    "city": "Muzaffarpur"
+  },
+  "missing_information": [
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

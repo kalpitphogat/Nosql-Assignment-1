@@ -1,0 +1,16 @@
+{
+  "source_row": 1653,
+  "customer_id": "C00034",
+  "matched_master_id": "C00034",
+  "name": "Mugdha Om",
+  "available_information": {
+    "name": "Mugdha Om",
+    "email": "mugdha.om34@hotmail.com",
+    "phone": "8396489361",
+    "city": "Jorhat"
+  },
+  "missing_information": [
+    "address"
+  ],
+  "match_status": "partial_match"
+}

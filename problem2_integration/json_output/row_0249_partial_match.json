@@ -1,0 +1,16 @@
+{
+  "source_row": 249,
+  "customer_id": "C00363",
+  "matched_master_id": "C00363",
+  "name": "Noah Char",
+  "available_information": {
+    "name": "Noah Char",
+    "email": "noah.char363@yahoo.com"
+  },
+  "missing_information": [
+    "phone",
+    "address",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

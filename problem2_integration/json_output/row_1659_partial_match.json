@@ -1,0 +1,16 @@
+{
+  "source_row": 1659,
+  "customer_id": "C00405",
+  "matched_master_id": "C00405",
+  "name": "Luke Dyal",
+  "available_information": {
+    "name": "Luke Dyal",
+    "address": "27/523, Mukherjee Nagar"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

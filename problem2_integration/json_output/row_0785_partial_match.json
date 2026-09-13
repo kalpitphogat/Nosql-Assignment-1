@@ -1,0 +1,16 @@
+{
+  "source_row": 785,
+  "customer_id": "C00095",
+  "matched_master_id": "C00095",
+  "name": "Banjeet Mannan",
+  "available_information": {
+    "name": "Banjeet Mannan",
+    "address": "48/58 Datta Nagar"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

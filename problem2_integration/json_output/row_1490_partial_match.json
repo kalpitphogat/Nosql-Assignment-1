@@ -1,0 +1,16 @@
+{
+  "source_row": 1490,
+  "customer_id": "C00080",
+  "matched_master_id": "C00080",
+  "name": "Theodore Borra",
+  "available_information": {
+    "name": "Theodore Borra",
+    "email": "theodore.borra80@outlook.com",
+    "phone": "7494944762"
+  },
+  "missing_information": [
+    "address",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

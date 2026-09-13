@@ -1,0 +1,16 @@
+{
+  "source_row": 1838,
+  "customer_id": null,
+  "matched_master_id": "C01145",
+  "name": "Chakradev Bhandari",
+  "available_information": {
+    "name": "Chakradev Bhandari",
+    "address": "74 Dora Nagar",
+    "city": "Sirsa"
+  },
+  "missing_information": [
+    "email",
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

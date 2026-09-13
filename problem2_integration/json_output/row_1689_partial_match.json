@@ -1,0 +1,16 @@
+{
+  "source_row": 1689,
+  "customer_id": "C00411",
+  "matched_master_id": "C00411",
+  "name": "Isaac Gokhale",
+  "available_information": {
+    "name": "Isaac Gokhale",
+    "email": "isaac.gokhale411@hotmail.com",
+    "city": "Ballia"
+  },
+  "missing_information": [
+    "phone",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

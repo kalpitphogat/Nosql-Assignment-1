@@ -1,0 +1,16 @@
+{
+  "source_row": 1373,
+  "customer_id": "C00839",
+  "matched_master_id": "C00839",
+  "name": "Aarna Palla",
+  "available_information": {
+    "name": "Aarna Palla",
+    "phone": "9147796103",
+    "address": "315 Lal Road",
+    "city": "Amravati"
+  },
+  "missing_information": [
+    "email"
+  ],
+  "match_status": "partial_match"
+}

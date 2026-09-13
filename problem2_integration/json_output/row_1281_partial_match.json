@@ -1,0 +1,16 @@
+{
+  "source_row": 1281,
+  "customer_id": "C01895",
+  "matched_master_id": "C01895",
+  "name": "Falak Brar",
+  "available_information": {
+    "name": "Falak Brar",
+    "email": "falak.brar1895@example.in",
+    "city": "Mira-Bhayandar"
+  },
+  "missing_information": [
+    "phone",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

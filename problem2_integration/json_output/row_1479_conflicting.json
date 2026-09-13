@@ -1,0 +1,20 @@
+{
+  "source_row": 1479,
+  "customer_id": "C00121",
+  "matched_master_id": "C00121",
+  "name": "Ekantika Chowdhury",
+  "available_information": {
+    "name": "Ekantika Chowdhury",
+    "email": "ekantika.chowdhury121@gmail.com",
+    "address": "96/816, Mall Street",
+    "city": "Akola"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "phone": {
+      "incoming": "8387346696",
+      "master": "6811354220"
+    }
+  }
+}

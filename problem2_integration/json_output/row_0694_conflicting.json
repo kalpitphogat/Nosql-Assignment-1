@@ -1,0 +1,23 @@
+{
+  "source_row": 694,
+  "customer_id": "C02114",
+  "matched_master_id": "C02114",
+  "name": "Arya Borde",
+  "available_information": {
+    "name": "Arya Borde",
+    "email": "arya.borde2114@example.in",
+    "city": "Naihati"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "phone": {
+      "incoming": "6083401819",
+      "master": "6355934820"
+    },
+    "address": {
+      "incoming": "88/026 Halder Road",
+      "master": "H.No. 94 Johal Street"
+    }
+  }
+}

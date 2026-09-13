@@ -1,0 +1,16 @@
+{
+  "source_row": 1722,
+  "customer_id": null,
+  "matched_master_id": "C02605",
+  "name": "Ikbal Wali",
+  "available_information": {
+    "name": "Ikbal Wali",
+    "city": "Visakhapatnam"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

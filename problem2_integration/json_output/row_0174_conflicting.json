@@ -1,0 +1,20 @@
+{
+  "source_row": 174,
+  "customer_id": "C01050",
+  "matched_master_id": "C01050",
+  "name": "Aradhana Hari",
+  "available_information": {
+    "email": "megha.char1050@gmail.com",
+    "phone": "6959826954",
+    "address": "85/435 Lanka Marg",
+    "city": "Bulandshahr"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "name": {
+      "incoming": "Aradhana Hari",
+      "master": "Megha Char"
+    }
+  }
+}

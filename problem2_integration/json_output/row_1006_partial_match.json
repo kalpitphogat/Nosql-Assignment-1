@@ -1,0 +1,16 @@
+{
+  "source_row": 1006,
+  "customer_id": "C02145",
+  "matched_master_id": "C02145",
+  "name": "Oscar Wali",
+  "available_information": {
+    "name": "Oscar Wali",
+    "phone": "8701812311",
+    "city": "Kanpur"
+  },
+  "missing_information": [
+    "email",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

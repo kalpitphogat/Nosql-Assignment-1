@@ -1,0 +1,23 @@
+{
+  "source_row": 1473,
+  "customer_id": "C02419",
+  "matched_master_id": "C02419",
+  "name": "Harita Ganguly",
+  "available_information": {
+    "name": "Harita Ganguly",
+    "email": "harita.ganguly2419@yahoo.com",
+    "city": "Berhampore"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "phone": {
+      "incoming": "8572919873",
+      "master": "9045889601"
+    },
+    "address": {
+      "incoming": "031, Rastogi Path",
+      "master": "480 Palan Street"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "source_row": 945,
+  "customer_id": null,
+  "matched_master_id": "C00224",
+  "name": "Zansi Ganesan",
+  "available_information": {
+    "name": "Zansi Ganesan",
+    "city": "Bhavnagar"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

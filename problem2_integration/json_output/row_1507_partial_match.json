@@ -1,0 +1,16 @@
+{
+  "source_row": 1507,
+  "customer_id": null,
+  "matched_master_id": "C02955",
+  "name": "VEDHIKA NAIR",
+  "available_information": {
+    "name": "VEDHIKA NAIR",
+    "phone": "7592616774",
+    "address": "037 Rastogi Road",
+    "city": "Sangli-Miraj & Kupwad"
+  },
+  "missing_information": [
+    "email"
+  ],
+  "match_status": "partial_match"
+}

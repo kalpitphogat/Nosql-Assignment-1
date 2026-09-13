@@ -1,0 +1,20 @@
+{
+  "source_row": 102,
+  "customer_id": "C00203",
+  "matched_master_id": "C00203",
+  "name": "Mohini Garde",
+  "available_information": {
+    "name": "Mohini Garde",
+    "email": "mohini.garde203@example.in",
+    "phone": "9701537076",
+    "city": "Serampore"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "address": {
+      "incoming": "37, Sangha Nagar",
+      "master": "H.No. 38 Brar Zila"
+    }
+  }
+}

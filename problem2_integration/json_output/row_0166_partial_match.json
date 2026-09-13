@@ -1,0 +1,16 @@
+{
+  "source_row": 166,
+  "customer_id": null,
+  "matched_master_id": "C01446",
+  "name": "DIPTA DATTA",
+  "available_information": {
+    "name": "DIPTA DATTA",
+    "phone": "8230705219",
+    "address": "90 Banik Chowk",
+    "city": "Phagwara"
+  },
+  "missing_information": [
+    "email"
+  ],
+  "match_status": "partial_match"
+}

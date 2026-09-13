@@ -1,0 +1,16 @@
+{
+  "source_row": 1084,
+  "customer_id": "C02297",
+  "matched_master_id": "C02297",
+  "name": "Triya Badal",
+  "available_information": {
+    "name": "Triya Badal",
+    "phone": "9785610346",
+    "address": "H.No. 28 Wali Ganj",
+    "city": "Bhusawal"
+  },
+  "missing_information": [
+    "email"
+  ],
+  "match_status": "partial_match"
+}

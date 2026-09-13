@@ -1,0 +1,16 @@
+{
+  "source_row": 1501,
+  "customer_id": "C01645",
+  "matched_master_id": "C01645",
+  "name": "Tanveer Lala",
+  "available_information": {
+    "name": "Tanveer Lala",
+    "phone": "6062284274",
+    "address": "H.No. 70 Wali Zila",
+    "city": "Giridih"
+  },
+  "missing_information": [
+    "email"
+  ],
+  "match_status": "partial_match"
+}

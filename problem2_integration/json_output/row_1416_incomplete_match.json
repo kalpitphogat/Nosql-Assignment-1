@@ -1,0 +1,16 @@
+{
+  "source_row": 1416,
+  "customer_id": null,
+  "matched_master_id": null,
+  "name": "Gagan Cheema",
+  "available_information": {
+    "name": "Gagan Cheema"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address",
+    "city"
+  ],
+  "match_status": "incomplete_match"
+}

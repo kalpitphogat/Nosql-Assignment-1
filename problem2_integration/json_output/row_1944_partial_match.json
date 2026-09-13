@@ -1,0 +1,16 @@
+{
+  "source_row": 1944,
+  "customer_id": "C02844",
+  "matched_master_id": "C02844",
+  "name": "Tanmayi Chhabra",
+  "available_information": {
+    "name": "Tanmayi Chhabra",
+    "email": "tanmayi.chhabra2844@hotmail.com",
+    "address": "85 Nigam Street",
+    "city": "Gopalpur"
+  },
+  "missing_information": [
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

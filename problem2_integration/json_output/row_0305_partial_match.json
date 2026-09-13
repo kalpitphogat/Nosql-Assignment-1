@@ -1,0 +1,16 @@
+{
+  "source_row": 305,
+  "customer_id": "C02748",
+  "matched_master_id": "C02748",
+  "name": "Madhav Vora",
+  "available_information": {
+    "name": "Madhav Vora",
+    "email": "madhav.vora2748@hotmail.com",
+    "phone": "8690312600",
+    "address": "H.No. 055, Warrior"
+  },
+  "missing_information": [
+    "city"
+  ],
+  "match_status": "partial_match"
+}

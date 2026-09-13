@@ -1,0 +1,16 @@
+{
+  "source_row": 612,
+  "customer_id": null,
+  "matched_master_id": null,
+  "name": null,
+  "available_information": {
+    "city": "Kirari Suleman Nagar"
+  },
+  "missing_information": [
+    "name",
+    "email",
+    "phone",
+    "address"
+  ],
+  "match_status": "incomplete_match"
+}

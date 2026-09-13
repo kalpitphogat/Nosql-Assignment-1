@@ -1,0 +1,16 @@
+{
+  "source_row": 34,
+  "customer_id": "C01675",
+  "matched_master_id": "C01675",
+  "name": "Raagini Keer",
+  "available_information": {
+    "name": "Raagini Keer",
+    "email": "raagini.keer1675@example.in",
+    "city": "Ambattur"
+  },
+  "missing_information": [
+    "phone",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

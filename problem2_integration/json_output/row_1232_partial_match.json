@@ -1,0 +1,16 @@
+{
+  "source_row": 1232,
+  "customer_id": null,
+  "matched_master_id": "C02543",
+  "name": "Jagvi Tak",
+  "available_information": {
+    "name": "Jagvi Tak",
+    "city": "Chittoor"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

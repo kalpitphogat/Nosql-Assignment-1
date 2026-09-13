@@ -1,0 +1,23 @@
+{
+  "source_row": 1253,
+  "customer_id": "C01416",
+  "matched_master_id": "C01416",
+  "name": "Benjamin Dalal",
+  "available_information": {
+    "name": "Benjamin Dalal",
+    "address": "03/343, Dhar Marg",
+    "city": "Thrissur"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "email": {
+      "incoming": "bhavya.bhattacharyya85457@example.in",
+      "master": "benjamin.dalal1416@example.in"
+    },
+    "phone": {
+      "incoming": "8724695677",
+      "master": "7746006160"
+    }
+  }
+}

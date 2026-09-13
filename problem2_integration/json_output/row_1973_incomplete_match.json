@@ -1,0 +1,16 @@
+{
+  "source_row": 1973,
+  "customer_id": null,
+  "matched_master_id": null,
+  "name": "Chakradhar Badal",
+  "available_information": {
+    "name": "Chakradhar Badal"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address",
+    "city"
+  ],
+  "match_status": "incomplete_match"
+}

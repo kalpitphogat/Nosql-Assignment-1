@@ -1,0 +1,16 @@
+{
+  "source_row": 1031,
+  "customer_id": null,
+  "matched_master_id": "C00018",
+  "name": null,
+  "available_information": {
+    "email": "gayathri.nayak18@hotmail.com",
+    "phone": "7326555199",
+    "city": "Gudivada"
+  },
+  "missing_information": [
+    "name",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

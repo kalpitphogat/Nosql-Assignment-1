@@ -1,0 +1,16 @@
+{
+  "source_row": 1945,
+  "customer_id": "C01604",
+  "matched_master_id": "C01604",
+  "name": "Ojasvi Tripathi",
+  "available_information": {
+    "name": "Ojasvi Tripathi",
+    "email": "ojasvi.tripathi1604@outlook.com",
+    "phone": "9607609078",
+    "address": "H.No. 37, Suresh Zila"
+  },
+  "missing_information": [
+    "city"
+  ],
+  "match_status": "partial_match"
+}

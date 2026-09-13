@@ -1,0 +1,23 @@
+{
+  "source_row": 373,
+  "customer_id": "C02053",
+  "matched_master_id": "C02053",
+  "name": "Tanvi Edwin",
+  "available_information": {
+    "name": "Tanvi Edwin",
+    "email": "tanvi.edwin2053@example.in",
+    "city": "Junagadh"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "phone": {
+      "incoming": "9210063438",
+      "master": "7594423728"
+    },
+    "address": {
+      "incoming": "543 Tripathi Circle",
+      "master": "96/232, Jani Zila"
+    }
+  }
+}

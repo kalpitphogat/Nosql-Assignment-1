@@ -1,0 +1,16 @@
+{
+  "source_row": 366,
+  "customer_id": null,
+  "matched_master_id": "C00958",
+  "name": "Siya Kaur",
+  "available_information": {
+    "name": "Siya Kaur",
+    "city": "Vijayanagaram"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

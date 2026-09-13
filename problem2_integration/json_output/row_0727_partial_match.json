@@ -1,0 +1,16 @@
+{
+  "source_row": 727,
+  "customer_id": "C00592",
+  "matched_master_id": "C00592",
+  "name": "Chaaya Verma",
+  "available_information": {
+    "name": "Chaaya Verma",
+    "phone": "8703046836",
+    "city": "Kanpur"
+  },
+  "missing_information": [
+    "email",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

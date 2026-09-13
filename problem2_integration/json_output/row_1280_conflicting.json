@@ -1,0 +1,20 @@
+{
+  "source_row": 1280,
+  "customer_id": "C00454",
+  "matched_master_id": "C00454",
+  "name": "Falguni Krish",
+  "available_information": {
+    "name": "Falguni Krish",
+    "email": "falguni.krish454@hotmail.com",
+    "phone": "7633884534",
+    "address": "H.No. 98 Datta Street"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "city": {
+      "incoming": "Panchkula",
+      "master": "Bellary"
+    }
+  }
+}

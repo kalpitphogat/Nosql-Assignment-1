@@ -1,0 +1,16 @@
+{
+  "source_row": 266,
+  "customer_id": null,
+  "matched_master_id": "C00232",
+  "name": "maanav ray",
+  "available_information": {
+    "name": "maanav ray",
+    "email": "maanav.ray232@hotmail.com",
+    "address": "H.No. 19, Mohan Zila",
+    "city": "Amaravati"
+  },
+  "missing_information": [
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

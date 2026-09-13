@@ -1,0 +1,16 @@
+{
+  "source_row": 1380,
+  "customer_id": "C02797",
+  "matched_master_id": "C02797",
+  "name": "Hema Gola",
+  "available_information": {
+    "name": "Hema Gola",
+    "city": "Ambala"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

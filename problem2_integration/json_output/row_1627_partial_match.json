@@ -1,0 +1,16 @@
+{
+  "source_row": 1627,
+  "customer_id": "C00698",
+  "matched_master_id": "C00698",
+  "name": "Nihal Suresh",
+  "available_information": {
+    "name": "Nihal Suresh",
+    "email": "nihal.suresh698@example.in",
+    "phone": "7892640496",
+    "address": "431 Tak Nagar"
+  },
+  "missing_information": [
+    "city"
+  ],
+  "match_status": "partial_match"
+}

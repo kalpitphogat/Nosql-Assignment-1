@@ -1,0 +1,16 @@
+{
+  "source_row": 740,
+  "customer_id": "C02759",
+  "matched_master_id": "C02759",
+  "name": "Zinal Narayanan",
+  "available_information": {
+    "name": "Zinal Narayanan",
+    "address": "H.No. 94, Pai Zila"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

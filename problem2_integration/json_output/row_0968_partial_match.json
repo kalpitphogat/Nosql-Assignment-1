@@ -1,0 +1,16 @@
+{
+  "source_row": 968,
+  "customer_id": "C01542",
+  "matched_master_id": "C01542",
+  "name": "Harshil Dass",
+  "available_information": {
+    "name": "Harshil Dass",
+    "phone": "6367578051",
+    "city": "Dhanbad"
+  },
+  "missing_information": [
+    "email",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

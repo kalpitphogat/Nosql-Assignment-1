@@ -1,0 +1,16 @@
+{
+  "source_row": 1617,
+  "customer_id": "C02753",
+  "matched_master_id": "C02753",
+  "name": "Chandresh Bora",
+  "available_information": {
+    "name": "Chandresh Bora",
+    "city": "Mangalore"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

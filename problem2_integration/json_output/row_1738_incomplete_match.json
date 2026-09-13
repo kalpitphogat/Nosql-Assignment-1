@@ -1,0 +1,16 @@
+{
+  "source_row": 1738,
+  "customer_id": null,
+  "matched_master_id": null,
+  "name": "Oviya Thakkar",
+  "available_information": {
+    "name": "Oviya Thakkar"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address",
+    "city"
+  ],
+  "match_status": "incomplete_match"
+}

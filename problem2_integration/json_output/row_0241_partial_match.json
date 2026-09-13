@@ -1,0 +1,16 @@
+{
+  "source_row": 241,
+  "customer_id": null,
+  "matched_master_id": "C02589",
+  "name": "Yoshita Narula",
+  "available_information": {
+    "name": "Yoshita Narula",
+    "city": "Shahjahanpur"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

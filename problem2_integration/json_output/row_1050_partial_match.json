@@ -1,0 +1,16 @@
+{
+  "source_row": 1050,
+  "customer_id": "C00243",
+  "matched_master_id": "C00243",
+  "name": "Adya Varma",
+  "available_information": {
+    "name": "Adya Varma",
+    "address": "61/597, D\u2019Alia Circle"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

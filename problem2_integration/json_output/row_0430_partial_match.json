@@ -1,0 +1,16 @@
+{
+  "source_row": 430,
+  "customer_id": "C02775",
+  "matched_master_id": "C02775",
+  "name": "Vanya Menon",
+  "available_information": {
+    "name": "Vanya Menon",
+    "email": "vanya.menon2775@example.in",
+    "city": "Dindigul"
+  },
+  "missing_information": [
+    "phone",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

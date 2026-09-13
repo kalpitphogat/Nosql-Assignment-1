@@ -1,0 +1,20 @@
+{
+  "source_row": 857,
+  "customer_id": "C01525",
+  "matched_master_id": "C01525",
+  "name": "Nirja Sanghvi",
+  "available_information": {
+    "email": "chandran.pradhan1525@yahoo.com",
+    "phone": "7797527488",
+    "address": "773, Sinha Path",
+    "city": "Panihati"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "name": {
+      "incoming": "Nirja Sanghvi",
+      "master": "Chandran Pradhan"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "source_row": 533,
+  "customer_id": "C02487",
+  "matched_master_id": "C02487",
+  "name": "Balveer Sharma",
+  "available_information": {
+    "email": "bakhshi.hegde2487@outlook.com",
+    "phone": "8202217260",
+    "city": "Shivpuri"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "name": {
+      "incoming": "Balveer Sharma",
+      "master": "Bakhshi Hegde"
+    },
+    "address": {
+      "incoming": "346 Dyal",
+      "master": "69 Dalal Ganj"
+    }
+  }
+}

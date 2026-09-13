@@ -1,0 +1,16 @@
+{
+  "source_row": 491,
+  "customer_id": "C01800",
+  "matched_master_id": "C01800",
+  "name": "Eta Kaul",
+  "available_information": {
+    "name": "Eta Kaul",
+    "email": "eta.kaul1800@hotmail.com"
+  },
+  "missing_information": [
+    "phone",
+    "address",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

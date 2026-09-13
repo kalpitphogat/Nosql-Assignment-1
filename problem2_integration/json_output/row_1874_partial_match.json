@@ -1,0 +1,16 @@
+{
+  "source_row": 1874,
+  "customer_id": "C02458",
+  "matched_master_id": "C02458",
+  "name": "Vrinda Venkatesh",
+  "available_information": {
+    "name": "Vrinda Venkatesh",
+    "phone": "9281672947"
+  },
+  "missing_information": [
+    "email",
+    "address",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

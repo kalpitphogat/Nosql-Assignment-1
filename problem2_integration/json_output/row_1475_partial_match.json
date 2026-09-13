@@ -1,0 +1,16 @@
+{
+  "source_row": 1475,
+  "customer_id": "C00643",
+  "matched_master_id": "C00643",
+  "name": "Arjun Deep",
+  "available_information": {
+    "name": "Arjun Deep",
+    "email": "arjun.deep643@gmail.com",
+    "phone": "8086984018"
+  },
+  "missing_information": [
+    "address",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

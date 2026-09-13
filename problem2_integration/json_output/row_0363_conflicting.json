@@ -1,0 +1,23 @@
+{
+  "source_row": 363,
+  "customer_id": "C01018",
+  "matched_master_id": "C01018",
+  "name": "Benjamin Gera",
+  "available_information": {
+    "email": "manya.ray1018@hotmail.com",
+    "phone": "9291806530",
+    "city": "Vijayanagaram"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "name": {
+      "incoming": "Benjamin Gera",
+      "master": "Manya Ray"
+    },
+    "address": {
+      "incoming": "32/243 Chad Ganj",
+      "master": "34/98 Mody Chowk"
+    }
+  }
+}

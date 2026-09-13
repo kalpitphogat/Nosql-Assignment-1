@@ -1,0 +1,20 @@
+{
+  "source_row": 1443,
+  "customer_id": "C00829",
+  "matched_master_id": "C00829",
+  "name": "Kamala Agate",
+  "available_information": {
+    "email": "luke.yadav829@example.in",
+    "phone": "6096296944",
+    "address": "49/74, Parmar Road",
+    "city": "Vadodara"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "name": {
+      "incoming": "Kamala Agate",
+      "master": "Luke Yadav"
+    }
+  }
+}

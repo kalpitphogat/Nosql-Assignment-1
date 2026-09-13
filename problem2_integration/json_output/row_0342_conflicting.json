@@ -1,0 +1,23 @@
+{
+  "source_row": 342,
+  "customer_id": "C00686",
+  "matched_master_id": "C00686",
+  "name": "Urmi Borde",
+  "available_information": {
+    "name": "Urmi Borde",
+    "email": "urmi.borde686@hotmail.com",
+    "city": "Akola"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "phone": {
+      "incoming": "7527780261",
+      "master": "8189120662"
+    },
+    "address": {
+      "incoming": "486 Singhal Circle",
+      "master": "98 Setty Path"
+    }
+  }
+}

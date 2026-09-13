@@ -1,0 +1,16 @@
+{
+  "source_row": 1997,
+  "customer_id": null,
+  "matched_master_id": "C02891",
+  "name": "Amaira Behl",
+  "available_information": {
+    "name": "Amaira Behl",
+    "address": "H.No. 70 Dar Path",
+    "city": "Bhilwara"
+  },
+  "missing_information": [
+    "email",
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

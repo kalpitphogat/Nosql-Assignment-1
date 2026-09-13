@@ -1,0 +1,16 @@
+{
+  "source_row": 703,
+  "customer_id": "C01692",
+  "matched_master_id": "C01692",
+  "name": "Ladli Mangal",
+  "available_information": {
+    "name": "Ladli Mangal",
+    "email": "ladli.mangal1692@hotmail.com",
+    "address": "473, Comar Road",
+    "city": "Naihati"
+  },
+  "missing_information": [
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

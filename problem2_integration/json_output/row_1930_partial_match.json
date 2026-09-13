@@ -1,0 +1,16 @@
+{
+  "source_row": 1930,
+  "customer_id": "C01171",
+  "matched_master_id": "C01171",
+  "name": "Rayaan Cheema",
+  "available_information": {
+    "name": "Rayaan Cheema",
+    "phone": "8041194247"
+  },
+  "missing_information": [
+    "email",
+    "address",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

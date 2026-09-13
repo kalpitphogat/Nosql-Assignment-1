@@ -1,0 +1,16 @@
+{
+  "source_row": 1417,
+  "customer_id": "C02978",
+  "matched_master_id": "C02978",
+  "name": "Upasna Bhatt",
+  "available_information": {
+    "name": "Upasna Bhatt",
+    "email": "upasna.bhatt2978@hotmail.com",
+    "address": "85/748, Majumdar Road"
+  },
+  "missing_information": [
+    "phone",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

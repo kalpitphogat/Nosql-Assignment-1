@@ -1,0 +1,23 @@
+{
+  "source_row": 1672,
+  "customer_id": "C00253",
+  "matched_master_id": "C00253",
+  "name": "Lajita Gupta",
+  "available_information": {
+    "name": "Lajita Gupta",
+    "phone": "9768626082",
+    "city": "Kadapa"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "email": {
+      "incoming": "edhitha.sani90921@outlook.com",
+      "master": "lajita.gupta253@yahoo.com"
+    },
+    "address": {
+      "incoming": "H.No. 396, Mahal Marg",
+      "master": "H.No. 880, Raval Zila"
+    }
+  }
+}

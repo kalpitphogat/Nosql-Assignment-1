@@ -1,0 +1,16 @@
+{
+  "source_row": 1104,
+  "customer_id": "C01260",
+  "matched_master_id": "C01260",
+  "name": "Vedant Nath",
+  "available_information": {
+    "name": "Vedant Nath",
+    "email": "vedant.nath1260@yahoo.com"
+  },
+  "missing_information": [
+    "phone",
+    "address",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

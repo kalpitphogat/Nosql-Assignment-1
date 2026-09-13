@@ -1,0 +1,16 @@
+{
+  "source_row": 418,
+  "customer_id": "C01735",
+  "matched_master_id": "C01735",
+  "name": "Charles Butala",
+  "available_information": {
+    "name": "Charles Butala",
+    "phone": "7360464910"
+  },
+  "missing_information": [
+    "email",
+    "address",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

@@ -1,0 +1,16 @@
+{
+  "source_row": 1810,
+  "customer_id": "C00446",
+  "matched_master_id": "C00446",
+  "name": "Dipta Bobal",
+  "available_information": {
+    "name": "Dipta Bobal",
+    "address": "H.No. 588 Chad",
+    "city": "Danapur"
+  },
+  "missing_information": [
+    "email",
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

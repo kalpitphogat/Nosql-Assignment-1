@@ -1,0 +1,23 @@
+{
+  "source_row": 1289,
+  "customer_id": "C02915",
+  "matched_master_id": "C02915",
+  "name": "Imaran Jani",
+  "available_information": {
+    "email": "yuvraj.hayer2915@gmail.com",
+    "address": "440, Kashyap Road",
+    "city": "Bangalore"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "name": {
+      "incoming": "Imaran Jani",
+      "master": "Yuvraj Hayer"
+    },
+    "phone": {
+      "incoming": "9256645632",
+      "master": "8405453679"
+    }
+  }
+}

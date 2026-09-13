@@ -1,0 +1,20 @@
+{
+  "source_row": 933,
+  "customer_id": "C01105",
+  "matched_master_id": "C01105",
+  "name": "Siya Chacko",
+  "available_information": {
+    "name": "Siya Chacko",
+    "email": "siya.chacko1105@gmail.com",
+    "address": "95/516, Bhandari Nagar",
+    "city": "Nandyal"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "phone": {
+      "incoming": "8438113915",
+      "master": "7033884542"
+    }
+  }
+}

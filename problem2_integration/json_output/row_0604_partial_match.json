@@ -1,0 +1,16 @@
+{
+  "source_row": 604,
+  "customer_id": "C02866",
+  "matched_master_id": "C02866",
+  "name": "Eshana Parsa",
+  "available_information": {
+    "name": "Eshana Parsa",
+    "email": "eshana.parsa2866@yahoo.com",
+    "address": "93/11 Krishnan Ganj",
+    "city": "Loni"
+  },
+  "missing_information": [
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

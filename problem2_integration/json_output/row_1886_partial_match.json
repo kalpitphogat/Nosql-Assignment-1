@@ -1,0 +1,16 @@
+{
+  "source_row": 1886,
+  "customer_id": null,
+  "matched_master_id": "C01123",
+  "name": "charles chaudhari",
+  "available_information": {
+    "name": "charles chaudhari",
+    "email": "charles.chaudhari1123@yahoo.com",
+    "address": "73/512 Gade Path",
+    "city": "Hyderabad"
+  },
+  "missing_information": [
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

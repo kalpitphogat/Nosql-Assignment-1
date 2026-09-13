@@ -1,0 +1,16 @@
+{
+  "source_row": 309,
+  "customer_id": null,
+  "matched_master_id": "C01532",
+  "name": "Xalak Sani",
+  "available_information": {
+    "name": "Xalak Sani",
+    "address": "H.No. 15, Bhatnagar Street",
+    "city": "Katni"
+  },
+  "missing_information": [
+    "email",
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

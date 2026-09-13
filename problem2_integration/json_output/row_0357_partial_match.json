@@ -1,0 +1,16 @@
+{
+  "source_row": 357,
+  "customer_id": "C00491",
+  "matched_master_id": "C00491",
+  "name": "Om Mahal",
+  "available_information": {
+    "name": "Om Mahal",
+    "email": "om.mahal491@yahoo.com"
+  },
+  "missing_information": [
+    "phone",
+    "address",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

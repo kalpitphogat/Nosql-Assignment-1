@@ -1,0 +1,16 @@
+{
+  "source_row": 1833,
+  "customer_id": "C01615",
+  "matched_master_id": "C01615",
+  "name": "Neelima Barad",
+  "available_information": {
+    "name": "Neelima Barad",
+    "phone": "9431180137",
+    "city": "Loni"
+  },
+  "missing_information": [
+    "email",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

@@ -1,0 +1,23 @@
+{
+  "source_row": 610,
+  "customer_id": "C00564",
+  "matched_master_id": "C00564",
+  "name": "Chatura Kade",
+  "available_information": {
+    "name": "Chatura Kade",
+    "email": "chatura.kade564@yahoo.com",
+    "address": "84/50 Chakrabarti Nagar"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "phone": {
+      "incoming": "8084787465",
+      "master": "8133037550"
+    },
+    "city": {
+      "incoming": "Kulti",
+      "master": "Hajipur"
+    }
+  }
+}

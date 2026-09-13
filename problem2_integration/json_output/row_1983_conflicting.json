@@ -1,0 +1,23 @@
+{
+  "source_row": 1983,
+  "customer_id": "C00891",
+  "matched_master_id": "C00891",
+  "name": "Dayamai Khatri",
+  "available_information": {
+    "email": "hritik.banik891@gmail.com",
+    "phone": "8075284563",
+    "city": "Udaipur"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "name": {
+      "incoming": "Dayamai Khatri",
+      "master": "Hritik Banik"
+    },
+    "address": {
+      "incoming": "49/001, Kumer Street",
+      "master": "160 Sawhney Road"
+    }
+  }
+}

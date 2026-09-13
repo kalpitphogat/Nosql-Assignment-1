@@ -1,0 +1,16 @@
+{
+  "source_row": 1418,
+  "customer_id": null,
+  "matched_master_id": "C01695",
+  "name": "Kala Chakrabarti",
+  "available_information": {
+    "name": "Kala Chakrabarti",
+    "city": "Bareilly"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

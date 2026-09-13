@@ -1,0 +1,16 @@
+{
+  "source_row": 959,
+  "customer_id": "C02291",
+  "matched_master_id": "C02291",
+  "name": "Azad Aurora",
+  "available_information": {
+    "name": "Azad Aurora",
+    "email": "azad.aurora2291@gmail.com",
+    "phone": "7350574647"
+  },
+  "missing_information": [
+    "address",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

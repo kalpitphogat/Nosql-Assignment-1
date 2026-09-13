@@ -1,0 +1,16 @@
+{
+  "source_row": 1170,
+  "customer_id": "C02648",
+  "matched_master_id": "C02648",
+  "name": "Aishani Agarwal",
+  "available_information": {
+    "name": "Aishani Agarwal",
+    "email": "aishani.agarwal2648@hotmail.com",
+    "address": "H.No. 239 Goel Chowk"
+  },
+  "missing_information": [
+    "phone",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

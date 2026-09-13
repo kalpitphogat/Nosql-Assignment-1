@@ -1,0 +1,23 @@
+{
+  "source_row": 1029,
+  "customer_id": "C00673",
+  "matched_master_id": "C00673",
+  "name": "Brijesh Misra",
+  "available_information": {
+    "email": "idika.naidu673@outlook.com",
+    "address": "H.No. 502 Mammen Nagar",
+    "city": "Srikakulam"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "name": {
+      "incoming": "Brijesh Misra",
+      "master": "Idika Naidu"
+    },
+    "phone": {
+      "incoming": "6858514092",
+      "master": "7082734045"
+    }
+  }
+}

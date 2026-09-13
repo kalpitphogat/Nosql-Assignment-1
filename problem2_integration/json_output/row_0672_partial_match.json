@@ -1,0 +1,16 @@
+{
+  "source_row": 672,
+  "customer_id": null,
+  "matched_master_id": "C00770",
+  "name": "MAX SANE",
+  "available_information": {
+    "name": "MAX SANE",
+    "phone": "8534319874",
+    "address": "030, Misra Zila",
+    "city": "Gangtok"
+  },
+  "missing_information": [
+    "email"
+  ],
+  "match_status": "partial_match"
+}

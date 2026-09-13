@@ -1,0 +1,23 @@
+{
+  "source_row": 1209,
+  "customer_id": "C02221",
+  "matched_master_id": "C02221",
+  "name": "Kai Rajagopalan",
+  "available_information": {
+    "phone": "6334667644",
+    "address": "79 Kapur Street",
+    "city": "Vasai-Virar"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "name": {
+      "incoming": "Kai Rajagopalan",
+      "master": "Jagvi Bhandari"
+    },
+    "email": {
+      "incoming": "tamanna.sundaram71791@gmail.com",
+      "master": "jagvi.bhandari2221@hotmail.com"
+    }
+  }
+}

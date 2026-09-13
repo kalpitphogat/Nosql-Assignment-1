@@ -1,0 +1,16 @@
+{
+  "source_row": 680,
+  "customer_id": null,
+  "matched_master_id": "C02683",
+  "name": null,
+  "available_information": {
+    "email": "tripti.sridhar2683@yahoo.com",
+    "phone": "8515357106",
+    "city": "Adoni"
+  },
+  "missing_information": [
+    "name",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

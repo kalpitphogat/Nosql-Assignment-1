@@ -1,0 +1,20 @@
+{
+  "source_row": 1004,
+  "customer_id": "C02180",
+  "matched_master_id": "C02180",
+  "name": "Aryan Trivedi",
+  "available_information": {
+    "name": "Aryan Trivedi",
+    "phone": "9627612326",
+    "address": "H.No. 11 Narayan Marg",
+    "city": "Hindupur"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "email": {
+      "incoming": "abhiram.vasa62416@hotmail.com",
+      "master": "aryan.trivedi2180@hotmail.com"
+    }
+  }
+}

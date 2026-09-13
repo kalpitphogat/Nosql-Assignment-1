@@ -1,0 +1,20 @@
+{
+  "source_row": 1510,
+  "customer_id": "C00734",
+  "matched_master_id": "C00734",
+  "name": "Pranav Bobal",
+  "available_information": {
+    "name": "Pranav Bobal",
+    "email": "pranav.bobal734@hotmail.com",
+    "phone": "6080325792",
+    "city": "Mirzapur"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "address": {
+      "incoming": "H.No. 129 Mohanty Zila",
+      "master": "93/374, Toor Zila"
+    }
+  }
+}

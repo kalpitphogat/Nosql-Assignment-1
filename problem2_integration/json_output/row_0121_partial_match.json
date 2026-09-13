@@ -1,0 +1,16 @@
+{
+  "source_row": 121,
+  "customer_id": "C02697",
+  "matched_master_id": "C02697",
+  "name": "Xalak Devi",
+  "available_information": {
+    "name": "Xalak Devi",
+    "email": "xalak.devi2697@gmail.com"
+  },
+  "missing_information": [
+    "phone",
+    "address",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

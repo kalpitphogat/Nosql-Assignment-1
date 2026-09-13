@@ -1,0 +1,23 @@
+{
+  "source_row": 909,
+  "customer_id": "C01070",
+  "matched_master_id": "C01070",
+  "name": "Rachana Batra",
+  "available_information": {
+    "email": "abeer.sachdeva1070@example.in",
+    "phone": "8640840463",
+    "address": "50/65 Viswanathan Zila"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "name": {
+      "incoming": "Rachana Batra",
+      "master": "Abeer Sachdeva"
+    },
+    "city": {
+      "incoming": "Hosur",
+      "master": "Dindigul"
+    }
+  }
+}

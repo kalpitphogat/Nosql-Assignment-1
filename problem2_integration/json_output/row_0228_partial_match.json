@@ -1,0 +1,16 @@
+{
+  "source_row": 228,
+  "customer_id": "C01443",
+  "matched_master_id": "C01443",
+  "name": "Neha Nagar",
+  "available_information": {
+    "name": "Neha Nagar",
+    "email": "neha.nagar1443@yahoo.com",
+    "phone": "9769121808"
+  },
+  "missing_information": [
+    "address",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

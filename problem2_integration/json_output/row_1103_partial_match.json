@@ -1,0 +1,16 @@
+{
+  "source_row": 1103,
+  "customer_id": null,
+  "matched_master_id": "C00886",
+  "name": null,
+  "available_information": {
+    "email": "harish.virk886@hotmail.com",
+    "phone": "8058804837",
+    "city": "Raebareli"
+  },
+  "missing_information": [
+    "name",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

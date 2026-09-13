@@ -1,0 +1,16 @@
+{
+  "source_row": 1304,
+  "customer_id": "C01999",
+  "matched_master_id": "C01999",
+  "name": "Max Mitter",
+  "available_information": {
+    "name": "Max Mitter",
+    "email": "max.mitter1999@example.in",
+    "address": "479 Barman",
+    "city": "Korba"
+  },
+  "missing_information": [
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

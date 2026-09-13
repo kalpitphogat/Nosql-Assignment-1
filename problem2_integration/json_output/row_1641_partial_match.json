@@ -1,0 +1,16 @@
+{
+  "source_row": 1641,
+  "customer_id": "C02453",
+  "matched_master_id": "C02453",
+  "name": "Kavya Cheema",
+  "available_information": {
+    "name": "Kavya Cheema",
+    "email": "kavya.cheema2453@hotmail.com",
+    "phone": "6127206944",
+    "address": "03, Apte Road"
+  },
+  "missing_information": [
+    "city"
+  ],
+  "match_status": "partial_match"
+}

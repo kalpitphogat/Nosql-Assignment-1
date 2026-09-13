@@ -1,0 +1,16 @@
+{
+  "source_row": 498,
+  "customer_id": null,
+  "matched_master_id": "C02039",
+  "name": "Tanmayi Nadkarni",
+  "available_information": {
+    "name": "Tanmayi Nadkarni",
+    "city": "Saharanpur"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

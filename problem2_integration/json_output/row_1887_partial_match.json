@@ -1,0 +1,16 @@
+{
+  "source_row": 1887,
+  "customer_id": null,
+  "matched_master_id": "C02413",
+  "name": "sai shukla",
+  "available_information": {
+    "name": "sai shukla",
+    "email": "sai.shukla2413@yahoo.com",
+    "address": "958, Subramanian Ganj",
+    "city": "Tadipatri"
+  },
+  "missing_information": [
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

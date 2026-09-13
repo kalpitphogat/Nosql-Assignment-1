@@ -1,0 +1,16 @@
+{
+  "source_row": 1709,
+  "customer_id": "C02476",
+  "matched_master_id": "C02476",
+  "name": "Ekiya Nagarajan",
+  "available_information": {
+    "name": "Ekiya Nagarajan",
+    "email": "ekiya.nagarajan2476@gmail.com",
+    "address": "H.No. 360 More Chowk"
+  },
+  "missing_information": [
+    "phone",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

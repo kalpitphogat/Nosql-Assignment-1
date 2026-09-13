@@ -1,0 +1,16 @@
+{
+  "source_row": 1648,
+  "customer_id": null,
+  "matched_master_id": null,
+  "name": "Nikita Oommen",
+  "available_information": {
+    "name": "Nikita Oommen"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address",
+    "city"
+  ],
+  "match_status": "incomplete_match"
+}

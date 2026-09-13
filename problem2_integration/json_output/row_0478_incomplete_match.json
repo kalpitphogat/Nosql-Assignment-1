@@ -1,0 +1,16 @@
+{
+  "source_row": 478,
+  "customer_id": null,
+  "matched_master_id": null,
+  "name": null,
+  "available_information": {
+    "city": "Kottayam"
+  },
+  "missing_information": [
+    "name",
+    "email",
+    "phone",
+    "address"
+  ],
+  "match_status": "incomplete_match"
+}

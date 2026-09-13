@@ -1,0 +1,16 @@
+{
+  "source_row": 1965,
+  "customer_id": "C01867",
+  "matched_master_id": "C01867",
+  "name": "Aditya Dixit",
+  "available_information": {
+    "name": "Aditya Dixit",
+    "address": "72 Rastogi Circle",
+    "city": "Yamunanagar"
+  },
+  "missing_information": [
+    "email",
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

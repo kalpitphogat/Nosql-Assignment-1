@@ -1,0 +1,16 @@
+{
+  "source_row": 796,
+  "customer_id": "C01237",
+  "matched_master_id": "C01237",
+  "name": "Gautam Chauhan",
+  "available_information": {
+    "name": "Gautam Chauhan",
+    "phone": "7652965818"
+  },
+  "missing_information": [
+    "email",
+    "address",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

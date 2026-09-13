@@ -1,0 +1,16 @@
+{
+  "source_row": 177,
+  "customer_id": null,
+  "matched_master_id": "C00592",
+  "name": "chaaya verma",
+  "available_information": {
+    "name": "chaaya verma",
+    "email": "chaaya.verma592@hotmail.com",
+    "address": "H.No. 438, Kapoor Zila",
+    "city": "Kanpur"
+  },
+  "missing_information": [
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

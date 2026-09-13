@@ -1,0 +1,16 @@
+{
+  "source_row": 389,
+  "customer_id": null,
+  "matched_master_id": null,
+  "name": "Sachi Thakkar",
+  "available_information": {
+    "name": "Sachi Thakkar"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address",
+    "city"
+  ],
+  "match_status": "incomplete_match"
+}

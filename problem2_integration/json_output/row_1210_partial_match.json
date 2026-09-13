@@ -1,0 +1,16 @@
+{
+  "source_row": 1210,
+  "customer_id": "C01446",
+  "matched_master_id": "C01446",
+  "name": "Dipta Datta",
+  "available_information": {
+    "name": "Dipta Datta",
+    "email": "dipta.datta1446@example.in",
+    "phone": "8230705219",
+    "city": "Phagwara"
+  },
+  "missing_information": [
+    "address"
+  ],
+  "match_status": "partial_match"
+}

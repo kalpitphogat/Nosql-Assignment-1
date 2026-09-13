@@ -1,0 +1,23 @@
+{
+  "source_row": 1724,
+  "customer_id": "C00491",
+  "matched_master_id": "C00491",
+  "name": "Samarth Nanda",
+  "available_information": {
+    "phone": "6818033867",
+    "address": "33 Wadhwa Street",
+    "city": "Phusro"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "name": {
+      "incoming": "Samarth Nanda",
+      "master": "Om Mahal"
+    },
+    "email": {
+      "incoming": "dalaja.kant83253@outlook.com",
+      "master": "om.mahal491@yahoo.com"
+    }
+  }
+}

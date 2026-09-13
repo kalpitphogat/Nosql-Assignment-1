@@ -1,0 +1,20 @@
+{
+  "source_row": 1010,
+  "customer_id": "C00583",
+  "matched_master_id": "C00583",
+  "name": "Qabil Swaminathan",
+  "available_information": {
+    "name": "Qabil Swaminathan",
+    "email": "qabil.swaminathan583@example.in",
+    "phone": "7750345045",
+    "address": "45/98, Hans Road"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "city": {
+      "incoming": "Barasat",
+      "master": "Satara"
+    }
+  }
+}

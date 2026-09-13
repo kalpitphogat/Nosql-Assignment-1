@@ -1,0 +1,16 @@
+{
+  "source_row": 1891,
+  "customer_id": null,
+  "matched_master_id": "C02931",
+  "name": "Yashodhara Gandhi",
+  "available_information": {
+    "name": "Yashodhara Gandhi",
+    "address": "692, Basak Zila",
+    "city": "Akola"
+  },
+  "missing_information": [
+    "email",
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

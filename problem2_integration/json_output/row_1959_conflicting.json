@@ -1,0 +1,20 @@
+{
+  "source_row": 1959,
+  "customer_id": "C02785",
+  "matched_master_id": "C02785",
+  "name": "Adweta Dugar",
+  "available_information": {
+    "name": "Adweta Dugar",
+    "phone": "8814331947",
+    "address": "43/007, Nazareth Ganj",
+    "city": "Phusro"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "email": {
+      "incoming": "bhavani.manne10811@yahoo.com",
+      "master": "adweta.dugar2785@example.in"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "source_row": 319,
+  "customer_id": "C01726",
+  "matched_master_id": "C01726",
+  "name": "Zilmil Ganguly",
+  "available_information": {
+    "name": "Zilmil Ganguly",
+    "phone": "9918562024",
+    "address": "H.No. 76, Sodhi Chowk"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "email": {
+      "incoming": "maanav.wable30940@outlook.com",
+      "master": "zilmil.ganguly1726@outlook.com"
+    },
+    "city": {
+      "incoming": "Vadodara",
+      "master": "Motihari"
+    }
+  }
+}

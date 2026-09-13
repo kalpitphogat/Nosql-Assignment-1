@@ -1,0 +1,16 @@
+{
+  "source_row": 1350,
+  "customer_id": null,
+  "matched_master_id": "C01461",
+  "name": "Ranbir Char",
+  "available_information": {
+    "name": "Ranbir Char",
+    "city": "Amroha"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

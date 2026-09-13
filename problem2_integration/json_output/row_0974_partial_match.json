@@ -1,0 +1,16 @@
+{
+  "source_row": 974,
+  "customer_id": "C02783",
+  "matched_master_id": "C02783",
+  "name": "Pranit Yogi",
+  "available_information": {
+    "name": "Pranit Yogi",
+    "email": "pranit.yogi2783@gmail.com"
+  },
+  "missing_information": [
+    "phone",
+    "address",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

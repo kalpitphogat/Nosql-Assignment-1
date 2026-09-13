@@ -1,0 +1,20 @@
+{
+  "source_row": 1487,
+  "customer_id": "C02068",
+  "matched_master_id": "C02068",
+  "name": "Yash Rege",
+  "available_information": {
+    "name": "Yash Rege",
+    "phone": "8868799371",
+    "address": "H.No. 31 Palla Road",
+    "city": "Patiala"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "email": {
+      "incoming": "januja.iyer34083@yahoo.com",
+      "master": "yash.rege2068@hotmail.com"
+    }
+  }
+}

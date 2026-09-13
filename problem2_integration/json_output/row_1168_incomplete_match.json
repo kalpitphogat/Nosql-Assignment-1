@@ -1,0 +1,16 @@
+{
+  "source_row": 1168,
+  "customer_id": null,
+  "matched_master_id": null,
+  "name": "Dalaja Misra",
+  "available_information": {
+    "name": "Dalaja Misra"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address",
+    "city"
+  ],
+  "match_status": "incomplete_match"
+}

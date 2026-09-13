@@ -1,0 +1,16 @@
+{
+  "source_row": 22,
+  "customer_id": null,
+  "matched_master_id": "C02535",
+  "name": "Ayushman Sant",
+  "available_information": {
+    "name": "Ayushman Sant",
+    "address": "11/826, Pai Circle",
+    "city": "Raichur"
+  },
+  "missing_information": [
+    "email",
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

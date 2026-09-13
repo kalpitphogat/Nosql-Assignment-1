@@ -1,0 +1,16 @@
+{
+  "source_row": 1288,
+  "customer_id": null,
+  "matched_master_id": "C01741",
+  "name": "indira shah",
+  "available_information": {
+    "name": "indira shah",
+    "email": "indira.shah1741@hotmail.com",
+    "address": "61 Chadha Path",
+    "city": "Anantapur"
+  },
+  "missing_information": [
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

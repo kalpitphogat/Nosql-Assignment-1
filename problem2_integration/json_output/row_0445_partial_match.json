@@ -1,0 +1,16 @@
+{
+  "source_row": 445,
+  "customer_id": "C01957",
+  "matched_master_id": "C01957",
+  "name": "Tristan Mall",
+  "available_information": {
+    "name": "Tristan Mall",
+    "email": "tristan.mall1957@outlook.com",
+    "phone": "6269132568"
+  },
+  "missing_information": [
+    "address",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

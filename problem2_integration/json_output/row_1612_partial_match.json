@@ -1,0 +1,16 @@
+{
+  "source_row": 1612,
+  "customer_id": "C00140",
+  "matched_master_id": "C00140",
+  "name": "Ridhi Sachdev",
+  "available_information": {
+    "name": "Ridhi Sachdev",
+    "address": "45/181 Menon Nagar"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

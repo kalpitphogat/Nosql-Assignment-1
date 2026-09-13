@@ -1,0 +1,16 @@
+{
+  "source_row": 1005,
+  "customer_id": "C00951",
+  "matched_master_id": "C00951",
+  "name": "Tanay Kashyap",
+  "available_information": {
+    "name": "Tanay Kashyap",
+    "email": "tanay.kashyap951@gmail.com",
+    "address": "H.No. 22, Varty Path"
+  },
+  "missing_information": [
+    "phone",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

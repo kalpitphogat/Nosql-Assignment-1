@@ -1,0 +1,16 @@
+{
+  "source_row": 276,
+  "customer_id": "C02777",
+  "matched_master_id": "C02777",
+  "name": "Mohini Mann",
+  "available_information": {
+    "name": "Mohini Mann",
+    "phone": "7018826133",
+    "address": "749 Bhatti Marg",
+    "city": "Silchar"
+  },
+  "missing_information": [
+    "email"
+  ],
+  "match_status": "partial_match"
+}

@@ -1,0 +1,23 @@
+{
+  "source_row": 907,
+  "customer_id": "C01600",
+  "matched_master_id": "C01600",
+  "name": "Liam Panchal",
+  "available_information": {
+    "name": "Liam Panchal",
+    "email": "liam.panchal1600@hotmail.com",
+    "address": "H.No. 46, Borah Ganj"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "phone": {
+      "incoming": "7408856755",
+      "master": "8813224175"
+    },
+    "city": {
+      "incoming": "Bhilai",
+      "master": "Dewas"
+    }
+  }
+}

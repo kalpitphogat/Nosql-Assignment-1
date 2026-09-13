@@ -1,0 +1,23 @@
+{
+  "source_row": 1259,
+  "customer_id": "C00205",
+  "matched_master_id": "C00205",
+  "name": "Naveen Chana",
+  "available_information": {
+    "email": "utkarsh.badal205@yahoo.com",
+    "phone": "6669526896",
+    "address": "25/860, Dixit Zila"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "name": {
+      "incoming": "Naveen Chana",
+      "master": "Utkarsh Badal"
+    },
+    "city": {
+      "incoming": "Navi Mumbai",
+      "master": "Miryalaguda"
+    }
+  }
+}

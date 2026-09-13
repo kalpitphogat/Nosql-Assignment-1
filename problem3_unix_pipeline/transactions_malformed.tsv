@@ -1,0 +1,15 @@
+customer_id	product_id	category	quantity	price	date
+101	P01	Electronics	3	12000	2026-01-05
+102	P02	Grocery	5	800	2026-01-07
+103	P03	Electronics	2	15000	2026-01-10
+104	P04	Furniture	4	30000	2026-01-15
+105	P05	Grocery	8	1200	2026-02-01
+106	P06	Clothing	3	4500	2026-02-03
+107	P07	Electronics	6	9000	2026-02-11
+108	P08	Furniture	2	50000	2026-02-18
+109	P09	Clothing	5	7000	2026-03-02
+110	P10	Electronics	4	22000	2026-03-12
+121	P21	Electronics	bad	10000	2026-06-25
+122	P22	Grocery	4		2026-06-26
+123	P23	Furniture	3	22000	invalid-date
+124	P24	Clothing	2	5000

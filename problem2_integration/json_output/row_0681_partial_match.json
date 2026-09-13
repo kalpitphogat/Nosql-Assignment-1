@@ -1,0 +1,16 @@
+{
+  "source_row": 681,
+  "customer_id": null,
+  "matched_master_id": "C01423",
+  "name": "Nidhi Zachariah",
+  "available_information": {
+    "name": "Nidhi Zachariah",
+    "address": "22, Sem Path",
+    "city": "Rajkot"
+  },
+  "missing_information": [
+    "email",
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

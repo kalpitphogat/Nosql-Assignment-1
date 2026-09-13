@@ -1,0 +1,16 @@
+{
+  "source_row": 1441,
+  "customer_id": "C01511",
+  "matched_master_id": "C01511",
+  "name": "Vasudha Kannan",
+  "available_information": {
+    "name": "Vasudha Kannan",
+    "city": "Hyderabad"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

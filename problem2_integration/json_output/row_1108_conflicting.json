@@ -1,0 +1,23 @@
+{
+  "source_row": 1108,
+  "customer_id": "C02137",
+  "matched_master_id": "C02137",
+  "name": "Atharv Soni",
+  "available_information": {
+    "email": "sarthak.date2137@gmail.com",
+    "address": "401 Ganesan Road",
+    "city": "Bijapur"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "name": {
+      "incoming": "Atharv Soni",
+      "master": "Sarthak Date"
+    },
+    "phone": {
+      "incoming": "8710610746",
+      "master": "7589372048"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "source_row": 467,
+  "customer_id": "C00312",
+  "matched_master_id": "C00312",
+  "name": "Anthony Mahal",
+  "available_information": {
+    "name": "Anthony Mahal",
+    "email": "anthony.mahal312@gmail.com",
+    "address": "52/427, Hayre Street",
+    "city": "Karaikudi"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "phone": {
+      "incoming": "8245825500",
+      "master": "8871885081"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "source_row": 973,
+  "customer_id": "C01293",
+  "matched_master_id": "C01293",
+  "name": "Nimrat Baria",
+  "available_information": {
+    "name": "Nimrat Baria",
+    "phone": "6333115084",
+    "address": "035 Madan Nagar",
+    "city": "Madurai"
+  },
+  "missing_information": [
+    "email"
+  ],
+  "match_status": "partial_match"
+}

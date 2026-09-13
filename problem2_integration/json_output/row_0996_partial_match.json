@@ -1,0 +1,16 @@
+{
+  "source_row": 996,
+  "customer_id": null,
+  "matched_master_id": "C00024",
+  "name": "Hemal Boase",
+  "available_information": {
+    "name": "Hemal Boase",
+    "address": "H.No. 814, Purohit",
+    "city": "Hosur"
+  },
+  "missing_information": [
+    "email",
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

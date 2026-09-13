@@ -1,0 +1,16 @@
+{
+  "source_row": 1414,
+  "customer_id": null,
+  "matched_master_id": "C00224",
+  "name": "zansi ganesan",
+  "available_information": {
+    "name": "zansi ganesan",
+    "email": "zansi.ganesan224@gmail.com",
+    "address": "749 Deep Nagar",
+    "city": "Bhavnagar"
+  },
+  "missing_information": [
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

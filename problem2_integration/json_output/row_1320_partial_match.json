@@ -1,0 +1,16 @@
+{
+  "source_row": 1320,
+  "customer_id": "C02881",
+  "matched_master_id": "C02881",
+  "name": "Yatin Jaggi",
+  "available_information": {
+    "name": "Yatin Jaggi",
+    "phone": "8747314793",
+    "city": "Rajpur Sonarpur"
+  },
+  "missing_information": [
+    "email",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

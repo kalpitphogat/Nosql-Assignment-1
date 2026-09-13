@@ -1,0 +1,16 @@
+{
+  "source_row": 431,
+  "customer_id": null,
+  "matched_master_id": "C00366",
+  "name": null,
+  "available_information": {
+    "email": "advay.iyengar366@hotmail.com",
+    "phone": "9199175060",
+    "city": "Lucknow"
+  },
+  "missing_information": [
+    "name",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

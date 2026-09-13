@@ -1,0 +1,23 @@
+{
+  "source_row": 395,
+  "customer_id": "C00856",
+  "matched_master_id": "C00856",
+  "name": "Vedhika Subramanian",
+  "available_information": {
+    "email": "luke.sane856@gmail.com",
+    "phone": "8440833518",
+    "city": "Karimnagar"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "name": {
+      "incoming": "Vedhika Subramanian",
+      "master": "Luke Sane"
+    },
+    "address": {
+      "incoming": "H.No. 58 Karpe Chowk",
+      "master": "H.No. 919, De Chowk"
+    }
+  }
+}

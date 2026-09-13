@@ -1,0 +1,16 @@
+{
+  "source_row": 201,
+  "customer_id": "C02226",
+  "matched_master_id": "C02226",
+  "name": "Aarav Gopal",
+  "available_information": {
+    "name": "Aarav Gopal",
+    "address": "532, Saxena Nagar"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

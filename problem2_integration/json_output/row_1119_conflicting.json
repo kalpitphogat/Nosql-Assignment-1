@@ -1,0 +1,23 @@
+{
+  "source_row": 1119,
+  "customer_id": "C01484",
+  "matched_master_id": "C01484",
+  "name": "Tanmayi Johal",
+  "available_information": {
+    "email": "omaja.barad1484@hotmail.com",
+    "phone": "8555182033",
+    "city": "Sasaram"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "name": {
+      "incoming": "Tanmayi Johal",
+      "master": "Omaja Barad"
+    },
+    "address": {
+      "incoming": "H.No. 81, Ghose Marg",
+      "master": "249 Rama Road"
+    }
+  }
+}

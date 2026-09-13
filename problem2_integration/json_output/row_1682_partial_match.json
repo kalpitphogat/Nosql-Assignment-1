@@ -1,0 +1,16 @@
+{
+  "source_row": 1682,
+  "customer_id": null,
+  "matched_master_id": "C02495",
+  "name": "JANAKI MASTER",
+  "available_information": {
+    "name": "JANAKI MASTER",
+    "phone": "7804055031",
+    "address": "71/24 Acharya Ganj",
+    "city": "Miryalaguda"
+  },
+  "missing_information": [
+    "email"
+  ],
+  "match_status": "partial_match"
+}

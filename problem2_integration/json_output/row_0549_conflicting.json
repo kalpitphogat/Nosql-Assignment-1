@@ -1,0 +1,23 @@
+{
+  "source_row": 549,
+  "customer_id": "C01901",
+  "matched_master_id": "C01901",
+  "name": "Bina Sagar",
+  "available_information": {
+    "phone": "6356685568",
+    "address": "H.No. 883 Sem Nagar",
+    "city": "Hosur"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "name": {
+      "incoming": "Bina Sagar",
+      "master": "Sanya Warrior"
+    },
+    "email": {
+      "incoming": "chakradev.dubey33353@example.in",
+      "master": "sanya.warrior1901@outlook.com"
+    }
+  }
+}

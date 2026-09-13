@@ -1,0 +1,16 @@
+{
+  "source_row": 728,
+  "customer_id": "C02046",
+  "matched_master_id": "C02046",
+  "name": "Shaurya Shenoy",
+  "available_information": {
+    "name": "Shaurya Shenoy",
+    "email": "shaurya.shenoy2046@yahoo.com"
+  },
+  "missing_information": [
+    "phone",
+    "address",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

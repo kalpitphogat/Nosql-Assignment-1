@@ -1,0 +1,16 @@
+{
+  "source_row": 816,
+  "customer_id": "C02837",
+  "matched_master_id": "C02837",
+  "name": "Saumya Merchant",
+  "available_information": {
+    "name": "Saumya Merchant",
+    "phone": "8809022732",
+    "city": "Udaipur"
+  },
+  "missing_information": [
+    "email",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

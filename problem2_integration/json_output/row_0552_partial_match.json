@@ -1,0 +1,16 @@
+{
+  "source_row": 552,
+  "customer_id": "C01026",
+  "matched_master_id": "C01026",
+  "name": "Maya Grewal",
+  "available_information": {
+    "name": "Maya Grewal",
+    "email": "maya.grewal1026@example.in"
+  },
+  "missing_information": [
+    "phone",
+    "address",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

@@ -1,0 +1,20 @@
+{
+  "source_row": 1684,
+  "customer_id": "C01825",
+  "matched_master_id": "C01825",
+  "name": "Ayushman Mahajan",
+  "available_information": {
+    "email": "simon.verma1825@gmail.com",
+    "phone": "8056412241",
+    "address": "81, Sarma Path",
+    "city": "Guwahati"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "name": {
+      "incoming": "Ayushman Mahajan",
+      "master": "Simon Verma"
+    }
+  }
+}

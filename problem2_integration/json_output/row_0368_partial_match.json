@@ -1,0 +1,16 @@
+{
+  "source_row": 368,
+  "customer_id": "C01478",
+  "matched_master_id": "C01478",
+  "name": "Kala Hans",
+  "available_information": {
+    "name": "Kala Hans",
+    "email": "kala.hans1478@outlook.com",
+    "phone": "6410939484",
+    "city": "Rajahmundry"
+  },
+  "missing_information": [
+    "address"
+  ],
+  "match_status": "partial_match"
+}

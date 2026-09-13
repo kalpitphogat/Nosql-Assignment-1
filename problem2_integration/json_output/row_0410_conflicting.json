@@ -1,0 +1,23 @@
+{
+  "source_row": 410,
+  "customer_id": "C00267",
+  "matched_master_id": "C00267",
+  "name": "Krish Mani",
+  "available_information": {
+    "name": "Krish Mani",
+    "email": "krish.mani267@yahoo.com",
+    "phone": "7920621882"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "address": {
+      "incoming": "35 Gaba Street",
+      "master": "H.No. 56, Sood Circle"
+    },
+    "city": {
+      "incoming": "Dhanbad",
+      "master": "Khammam"
+    }
+  }
+}

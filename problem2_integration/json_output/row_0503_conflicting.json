@@ -1,0 +1,23 @@
+{
+  "source_row": 503,
+  "customer_id": "C02218",
+  "matched_master_id": "C02218",
+  "name": "Faqid Baria",
+  "available_information": {
+    "name": "Faqid Baria",
+    "email": "faqid.baria2218@example.in",
+    "city": "Maheshtala"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "phone": {
+      "incoming": "6472041531",
+      "master": "9081490643"
+    },
+    "address": {
+      "incoming": "82/65, Bhatnagar Path",
+      "master": "10/12, Nigam Ganj"
+    }
+  }
+}

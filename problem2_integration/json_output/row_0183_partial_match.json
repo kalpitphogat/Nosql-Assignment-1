@@ -1,0 +1,16 @@
+{
+  "source_row": 183,
+  "customer_id": "C00982",
+  "matched_master_id": "C00982",
+  "name": "Wishi Upadhyay",
+  "available_information": {
+    "name": "Wishi Upadhyay",
+    "email": "wishi.upadhyay982@example.in"
+  },
+  "missing_information": [
+    "phone",
+    "address",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

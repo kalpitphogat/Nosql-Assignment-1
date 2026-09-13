@@ -1,0 +1,16 @@
+{
+  "source_row": 1436,
+  "customer_id": "C02319",
+  "matched_master_id": "C02319",
+  "name": "Yamini Mutti",
+  "available_information": {
+    "name": "Yamini Mutti",
+    "email": "yamini.mutti2319@hotmail.com",
+    "phone": "7752685971",
+    "address": "H.No. 085, Tara Marg"
+  },
+  "missing_information": [
+    "city"
+  ],
+  "match_status": "partial_match"
+}

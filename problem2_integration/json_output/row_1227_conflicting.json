@@ -1,0 +1,20 @@
+{
+  "source_row": 1227,
+  "customer_id": "C02952",
+  "matched_master_id": "C02952",
+  "name": "Nikita Shere",
+  "available_information": {
+    "email": "kalpit.madan2952@outlook.com",
+    "phone": "7924510829",
+    "address": "66, Kaur Path",
+    "city": "Patiala"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "name": {
+      "incoming": "Nikita Shere",
+      "master": "Kalpit Madan"
+    }
+  }
+}

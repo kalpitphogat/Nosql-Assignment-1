@@ -1,0 +1,16 @@
+{
+  "source_row": 562,
+  "customer_id": null,
+  "matched_master_id": "C00309",
+  "name": null,
+  "available_information": {
+    "email": "inaya.mohan309@outlook.com",
+    "phone": "9728654525",
+    "city": "Vasai-Virar"
+  },
+  "missing_information": [
+    "name",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

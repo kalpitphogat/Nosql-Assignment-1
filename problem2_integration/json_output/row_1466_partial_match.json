@@ -1,0 +1,16 @@
+{
+  "source_row": 1466,
+  "customer_id": "C00657",
+  "matched_master_id": "C00657",
+  "name": "Waida Boase",
+  "available_information": {
+    "name": "Waida Boase",
+    "email": "waida.boase657@hotmail.com",
+    "address": "H.No. 680 Varkey"
+  },
+  "missing_information": [
+    "phone",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

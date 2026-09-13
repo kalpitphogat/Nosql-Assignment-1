@@ -1,0 +1,16 @@
+{
+  "source_row": 1737,
+  "customer_id": "C01772",
+  "matched_master_id": "C01772",
+  "name": "Triveni Jaggi",
+  "available_information": {
+    "name": "Triveni Jaggi",
+    "email": "triveni.jaggi1772@yahoo.com",
+    "address": "H.No. 333 Mani Ganj"
+  },
+  "missing_information": [
+    "phone",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

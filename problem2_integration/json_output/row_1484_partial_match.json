@@ -1,0 +1,16 @@
+{
+  "source_row": 1484,
+  "customer_id": "C00511",
+  "matched_master_id": "C00511",
+  "name": "Amruta Oak",
+  "available_information": {
+    "name": "Amruta Oak",
+    "phone": "9631310238"
+  },
+  "missing_information": [
+    "email",
+    "address",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

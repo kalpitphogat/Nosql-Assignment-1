@@ -1,0 +1,16 @@
+{
+  "source_row": 163,
+  "customer_id": null,
+  "matched_master_id": null,
+  "name": "Chaitaly Dixit",
+  "available_information": {
+    "name": "Chaitaly Dixit"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address",
+    "city"
+  ],
+  "match_status": "incomplete_match"
+}

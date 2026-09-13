@@ -1,0 +1,16 @@
+{
+  "source_row": 1324,
+  "customer_id": "C02548",
+  "matched_master_id": "C02548",
+  "name": "Charan Soni",
+  "available_information": {
+    "name": "Charan Soni",
+    "phone": "8379711298",
+    "address": "05/76 Andra",
+    "city": "Gwalior"
+  },
+  "missing_information": [
+    "email"
+  ],
+  "match_status": "partial_match"
+}

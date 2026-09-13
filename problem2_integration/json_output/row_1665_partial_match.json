@@ -1,0 +1,16 @@
+{
+  "source_row": 1665,
+  "customer_id": null,
+  "matched_master_id": "C01105",
+  "name": "SIYA CHACKO",
+  "available_information": {
+    "name": "SIYA CHACKO",
+    "phone": "7033884542",
+    "address": "95/516, Bhandari Nagar",
+    "city": "Nandyal"
+  },
+  "missing_information": [
+    "email"
+  ],
+  "match_status": "partial_match"
+}

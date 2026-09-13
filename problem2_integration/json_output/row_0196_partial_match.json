@@ -1,0 +1,16 @@
+{
+  "source_row": 196,
+  "customer_id": "C01701",
+  "matched_master_id": "C01701",
+  "name": "Yochana Anand",
+  "available_information": {
+    "name": "Yochana Anand",
+    "email": "yochana.anand1701@gmail.com",
+    "phone": "9890820515",
+    "city": "Noida"
+  },
+  "missing_information": [
+    "address"
+  ],
+  "match_status": "partial_match"
+}

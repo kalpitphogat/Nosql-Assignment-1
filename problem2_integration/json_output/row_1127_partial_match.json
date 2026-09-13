@@ -1,0 +1,16 @@
+{
+  "source_row": 1127,
+  "customer_id": "C00881",
+  "matched_master_id": "C00881",
+  "name": "Sai Date",
+  "available_information": {
+    "name": "Sai Date",
+    "phone": "9797249849"
+  },
+  "missing_information": [
+    "email",
+    "address",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

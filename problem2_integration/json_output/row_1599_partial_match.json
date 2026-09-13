@@ -1,0 +1,16 @@
+{
+  "source_row": 1599,
+  "customer_id": "C01989",
+  "matched_master_id": "C01989",
+  "name": "Vedant Batta",
+  "available_information": {
+    "name": "Vedant Batta",
+    "phone": "6666556082",
+    "address": "H.No. 71 More Circle",
+    "city": "Asansol"
+  },
+  "missing_information": [
+    "email"
+  ],
+  "match_status": "partial_match"
+}

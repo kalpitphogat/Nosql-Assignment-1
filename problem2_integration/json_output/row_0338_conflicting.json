@@ -1,0 +1,23 @@
+{
+  "source_row": 338,
+  "customer_id": "C01647",
+  "matched_master_id": "C01647",
+  "name": "Sai Ranganathan",
+  "available_information": {
+    "email": "avi.dugar1647@gmail.com",
+    "address": "H.No. 094 Khatri Chowk",
+    "city": "Srinagar"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "name": {
+      "incoming": "Sai Ranganathan",
+      "master": "Avi Dugar"
+    },
+    "phone": {
+      "incoming": "9378330807",
+      "master": "8777894562"
+    }
+  }
+}

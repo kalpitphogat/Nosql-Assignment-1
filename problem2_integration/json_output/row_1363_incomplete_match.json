@@ -1,0 +1,16 @@
+{
+  "source_row": 1363,
+  "customer_id": null,
+  "matched_master_id": null,
+  "name": "Yauvani Chhabra",
+  "available_information": {
+    "name": "Yauvani Chhabra"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address",
+    "city"
+  ],
+  "match_status": "incomplete_match"
+}

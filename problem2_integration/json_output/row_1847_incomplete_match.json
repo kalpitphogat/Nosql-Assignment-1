@@ -1,0 +1,16 @@
+{
+  "source_row": 1847,
+  "customer_id": null,
+  "matched_master_id": null,
+  "name": "Abha Tandon",
+  "available_information": {
+    "name": "Abha Tandon"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address",
+    "city"
+  ],
+  "match_status": "incomplete_match"
+}

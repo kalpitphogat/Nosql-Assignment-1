@@ -1,0 +1,23 @@
+{
+  "source_row": 1482,
+  "customer_id": "C00229",
+  "matched_master_id": "C00229",
+  "name": "Teerth Ramachandran",
+  "available_information": {
+    "name": "Teerth Ramachandran",
+    "email": "teerth.ramachandran229@hotmail.com",
+    "address": "70/20, Peri Path"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "phone": {
+      "incoming": "8602599734",
+      "master": "6107911831"
+    },
+    "city": {
+      "incoming": "South Dumdum",
+      "master": "Bhilai"
+    }
+  }
+}

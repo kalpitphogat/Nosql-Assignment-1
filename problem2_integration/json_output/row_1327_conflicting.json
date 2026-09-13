@@ -1,0 +1,20 @@
+{
+  "source_row": 1327,
+  "customer_id": "C01250",
+  "matched_master_id": "C01250",
+  "name": "Upadhriti Cheema",
+  "available_information": {
+    "name": "Upadhriti Cheema",
+    "email": "upadhriti.cheema1250@outlook.com",
+    "address": "H.No. 448, Mammen Path",
+    "city": "Aurangabad"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "phone": {
+      "incoming": "6551251833",
+      "master": "9227053954"
+    }
+  }
+}

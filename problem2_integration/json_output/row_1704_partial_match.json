@@ -1,0 +1,16 @@
+{
+  "source_row": 1704,
+  "customer_id": "C00826",
+  "matched_master_id": "C00826",
+  "name": "Krish Hari",
+  "available_information": {
+    "name": "Krish Hari",
+    "email": "krish.hari826@example.in",
+    "address": "H.No. 008 Iyer Path",
+    "city": "Jalgaon"
+  },
+  "missing_information": [
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

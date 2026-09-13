@@ -1,0 +1,16 @@
+{
+  "source_row": 1826,
+  "customer_id": "C02334",
+  "matched_master_id": "C02334",
+  "name": "Ishwar Butala",
+  "available_information": {
+    "name": "Ishwar Butala",
+    "email": "ishwar.butala2334@gmail.com",
+    "address": "19, Amble Zila",
+    "city": "Bhimavaram"
+  },
+  "missing_information": [
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

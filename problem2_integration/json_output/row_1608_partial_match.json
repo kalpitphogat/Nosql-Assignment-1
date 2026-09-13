@@ -1,0 +1,16 @@
+{
+  "source_row": 1608,
+  "customer_id": "C02498",
+  "matched_master_id": "C02498",
+  "name": "Daksh Sule",
+  "available_information": {
+    "name": "Daksh Sule",
+    "phone": "8942056545"
+  },
+  "missing_information": [
+    "email",
+    "address",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

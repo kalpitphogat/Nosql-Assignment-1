@@ -1,0 +1,16 @@
+{
+  "source_row": 1657,
+  "customer_id": "C00188",
+  "matched_master_id": "C00188",
+  "name": "Aadhya Sheth",
+  "available_information": {
+    "name": "Aadhya Sheth",
+    "email": "aadhya.sheth188@outlook.com",
+    "address": "81/87 Doshi Chowk",
+    "city": "Darbhanga"
+  },
+  "missing_information": [
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

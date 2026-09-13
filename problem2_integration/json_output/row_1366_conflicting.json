@@ -1,0 +1,23 @@
+{
+  "source_row": 1366,
+  "customer_id": "C01491",
+  "matched_master_id": "C01491",
+  "name": "Urmi Pai",
+  "available_information": {
+    "name": "Urmi Pai",
+    "email": "urmi.pai1491@hotmail.com",
+    "city": "Raebareli"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "phone": {
+      "incoming": "9924541904",
+      "master": "8658764760"
+    },
+    "address": {
+      "incoming": "H.No. 55, Murthy Path",
+      "master": "21/04 Char Path"
+    }
+  }
+}

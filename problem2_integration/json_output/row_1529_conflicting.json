@@ -1,0 +1,20 @@
+{
+  "source_row": 1529,
+  "customer_id": "C00869",
+  "matched_master_id": "C00869",
+  "name": "Jason Sha",
+  "available_information": {
+    "name": "Jason Sha",
+    "phone": "9354363099",
+    "address": "978, Subramanian Chowk",
+    "city": "Jalandhar"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "email": {
+      "incoming": "kiaan.khurana14508@hotmail.com",
+      "master": "jason.sha869@yahoo.com"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "source_row": 1250,
+  "customer_id": "C02865",
+  "matched_master_id": "C02865",
+  "name": "Gavin Som",
+  "available_information": {
+    "name": "Gavin Som",
+    "phone": "8735297872"
+  },
+  "missing_information": [
+    "email",
+    "address",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

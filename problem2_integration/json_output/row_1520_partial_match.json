@@ -1,0 +1,16 @@
+{
+  "source_row": 1520,
+  "customer_id": null,
+  "matched_master_id": "C00409",
+  "name": null,
+  "available_information": {
+    "email": "aadi.ratti409@example.in",
+    "phone": "6288352812",
+    "city": "Malegaon"
+  },
+  "missing_information": [
+    "name",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

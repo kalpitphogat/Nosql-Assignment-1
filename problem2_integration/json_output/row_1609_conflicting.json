@@ -1,0 +1,20 @@
+{
+  "source_row": 1609,
+  "customer_id": "C01815",
+  "matched_master_id": "C01815",
+  "name": "Kashvi Randhawa",
+  "available_information": {
+    "name": "Kashvi Randhawa",
+    "email": "kashvi.randhawa1815@gmail.com",
+    "phone": "6459347560",
+    "city": "Bhagalpur"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "address": {
+      "incoming": "40 Bassi Ganj",
+      "master": "85/31 Saraf Zila"
+    }
+  }
+}

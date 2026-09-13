@@ -1,0 +1,16 @@
+{
+  "source_row": 202,
+  "customer_id": "C00526",
+  "matched_master_id": "C00526",
+  "name": "Nirja Manne",
+  "available_information": {
+    "name": "Nirja Manne",
+    "email": "nirja.manne526@yahoo.com",
+    "phone": "7570806138",
+    "city": "Tirupati"
+  },
+  "missing_information": [
+    "address"
+  ],
+  "match_status": "partial_match"
+}

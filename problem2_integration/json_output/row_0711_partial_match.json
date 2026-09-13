@@ -1,0 +1,16 @@
+{
+  "source_row": 711,
+  "customer_id": "C01228",
+  "matched_master_id": "C01228",
+  "name": "Dhriti Dey",
+  "available_information": {
+    "name": "Dhriti Dey",
+    "phone": "6509624125",
+    "address": "53/81, Bhatia Nagar"
+  },
+  "missing_information": [
+    "email",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

@@ -1,0 +1,16 @@
+{
+  "source_row": 1598,
+  "customer_id": "C02557",
+  "matched_master_id": "C02557",
+  "name": "Jairaj Devi",
+  "available_information": {
+    "name": "Jairaj Devi",
+    "email": "jairaj.devi2557@gmail.com",
+    "phone": "7340023291"
+  },
+  "missing_information": [
+    "address",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

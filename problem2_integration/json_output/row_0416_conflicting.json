@@ -1,0 +1,20 @@
+{
+  "source_row": 416,
+  "customer_id": "C01804",
+  "matched_master_id": "C01804",
+  "name": "Anya Agarwal",
+  "available_information": {
+    "name": "Anya Agarwal",
+    "phone": "8690478893",
+    "address": "38/40, Tandon Street",
+    "city": "Tezpur"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "email": {
+      "incoming": "anjali.mitter16289@outlook.com",
+      "master": "anya.agarwal1804@example.in"
+    }
+  }
+}

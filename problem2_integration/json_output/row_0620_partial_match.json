@@ -1,0 +1,16 @@
+{
+  "source_row": 620,
+  "customer_id": null,
+  "matched_master_id": "C00480",
+  "name": "JASMIT WARRIOR",
+  "available_information": {
+    "name": "JASMIT WARRIOR",
+    "phone": "8108590641",
+    "address": "988, Halder Zila",
+    "city": "Kirari Suleman Nagar"
+  },
+  "missing_information": [
+    "email"
+  ],
+  "match_status": "partial_match"
+}

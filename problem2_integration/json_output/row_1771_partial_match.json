@@ -1,0 +1,16 @@
+{
+  "source_row": 1771,
+  "customer_id": "C00204",
+  "matched_master_id": "C00204",
+  "name": "Riya Ramakrishnan",
+  "available_information": {
+    "name": "Riya Ramakrishnan",
+    "phone": "7021976601",
+    "address": "65, Kaur Zila",
+    "city": "Kharagpur"
+  },
+  "missing_information": [
+    "email"
+  ],
+  "match_status": "partial_match"
+}

@@ -1,0 +1,20 @@
+{
+  "source_row": 77,
+  "customer_id": "C01051",
+  "matched_master_id": "C01051",
+  "name": "Laksh Tata",
+  "available_information": {
+    "name": "Laksh Tata",
+    "email": "laksh.tata1051@hotmail.com",
+    "phone": "9988302580",
+    "address": "H.No. 366, Narain Nagar"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "city": {
+      "incoming": "Tumkur",
+      "master": "Dhanbad"
+    }
+  }
+}

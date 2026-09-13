@@ -1,0 +1,16 @@
+{
+  "source_row": 1673,
+  "customer_id": "C02987",
+  "matched_master_id": "C02987",
+  "name": "Ishanvi Venkataraman",
+  "available_information": {
+    "name": "Ishanvi Venkataraman",
+    "phone": "6057381423",
+    "address": "98/95, Kothari Nagar",
+    "city": "Pimpri-Chinchwad"
+  },
+  "missing_information": [
+    "email"
+  ],
+  "match_status": "partial_match"
+}

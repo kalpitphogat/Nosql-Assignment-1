@@ -1,0 +1,23 @@
+{
+  "source_row": 1578,
+  "customer_id": "C01719",
+  "matched_master_id": "C01719",
+  "name": "Anita Nagi",
+  "available_information": {
+    "name": "Anita Nagi",
+    "address": "215 Dugal",
+    "city": "Alappuzha"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "email": {
+      "incoming": "mason.dhar82685@yahoo.com",
+      "master": "anita.nagi1719@example.in"
+    },
+    "phone": {
+      "incoming": "6323226408",
+      "master": "6213518674"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "source_row": 37,
+  "customer_id": "C00856",
+  "matched_master_id": "C00856",
+  "name": "Luke Sane",
+  "available_information": {
+    "name": "Luke Sane",
+    "email": "luke.sane856@gmail.com",
+    "phone": "8440833518",
+    "city": "Karimnagar"
+  },
+  "missing_information": [
+    "address"
+  ],
+  "match_status": "partial_match"
+}

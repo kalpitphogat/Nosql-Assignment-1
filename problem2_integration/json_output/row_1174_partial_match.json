@@ -1,0 +1,16 @@
+{
+  "source_row": 1174,
+  "customer_id": "C00331",
+  "matched_master_id": "C00331",
+  "name": "Yochana Wason",
+  "available_information": {
+    "name": "Yochana Wason",
+    "phone": "9170863771",
+    "city": "Panipat"
+  },
+  "missing_information": [
+    "email",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

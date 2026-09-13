@@ -1,0 +1,16 @@
+{
+  "source_row": 799,
+  "customer_id": "C00866",
+  "matched_master_id": "C00866",
+  "name": "Ojasvi Cherian",
+  "available_information": {
+    "name": "Ojasvi Cherian",
+    "city": "Kishanganj"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

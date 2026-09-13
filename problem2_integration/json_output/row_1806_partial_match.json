@@ -1,0 +1,16 @@
+{
+  "source_row": 1806,
+  "customer_id": "C02443",
+  "matched_master_id": "C02443",
+  "name": "Xalak Mangal",
+  "available_information": {
+    "name": "Xalak Mangal",
+    "email": "xalak.mangal2443@hotmail.com",
+    "city": "Kavali"
+  },
+  "missing_information": [
+    "phone",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

@@ -1,0 +1,20 @@
+{
+  "source_row": 1406,
+  "customer_id": "C00640",
+  "matched_master_id": "C00640",
+  "name": "Jagat Banik",
+  "available_information": {
+    "name": "Jagat Banik",
+    "email": "jagat.banik640@example.in",
+    "address": "93/357 Subramanian Marg",
+    "city": "Panipat"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "phone": {
+      "incoming": "9461429779",
+      "master": "7785812520"
+    }
+  }
+}

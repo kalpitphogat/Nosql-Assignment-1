@@ -1,0 +1,20 @@
+{
+  "source_row": 325,
+  "customer_id": "C02883",
+  "matched_master_id": "C02883",
+  "name": "Nakul Kapur",
+  "available_information": {
+    "name": "Nakul Kapur",
+    "email": "nakul.kapur2883@yahoo.com",
+    "address": "H.No. 99, Chakraborty Marg",
+    "city": "Ongole"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "phone": {
+      "incoming": "9775681206",
+      "master": "7562182622"
+    }
+  }
+}

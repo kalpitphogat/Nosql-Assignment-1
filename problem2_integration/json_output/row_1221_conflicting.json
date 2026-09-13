@@ -1,0 +1,23 @@
+{
+  "source_row": 1221,
+  "customer_id": "C01114",
+  "matched_master_id": "C01114",
+  "name": "Aradhana Tata",
+  "available_information": {
+    "phone": "8694113447",
+    "address": "H.No. 49 Dasgupta Circle",
+    "city": "Pudukkottai"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "name": {
+      "incoming": "Aradhana Tata",
+      "master": "Baljiwan Sule"
+    },
+    "email": {
+      "incoming": "teerth.grover16941@gmail.com",
+      "master": "baljiwan.sule1114@example.in"
+    }
+  }
+}

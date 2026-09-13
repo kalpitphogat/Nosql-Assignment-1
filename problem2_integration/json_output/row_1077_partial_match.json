@@ -1,0 +1,16 @@
+{
+  "source_row": 1077,
+  "customer_id": null,
+  "matched_master_id": "C02179",
+  "name": "vedant shanker",
+  "available_information": {
+    "name": "vedant shanker",
+    "email": "vedant.shanker2179@outlook.com",
+    "address": "48/32, Patil Chowk",
+    "city": "Saharanpur"
+  },
+  "missing_information": [
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

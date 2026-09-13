@@ -1,0 +1,23 @@
+{
+  "source_row": 758,
+  "customer_id": "C00701",
+  "matched_master_id": "C00701",
+  "name": "Amruta Bahri",
+  "available_information": {
+    "name": "Amruta Bahri",
+    "phone": "6874914232",
+    "address": "H.No. 468 D\u2019Alia Road"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "email": {
+      "incoming": "matthew.deshmukh78054@hotmail.com",
+      "master": "amruta.bahri701@gmail.com"
+    },
+    "city": {
+      "incoming": "Ozhukarai",
+      "master": "Avadi"
+    }
+  }
+}

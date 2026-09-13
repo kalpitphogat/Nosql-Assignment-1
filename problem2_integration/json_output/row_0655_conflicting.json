@@ -1,0 +1,23 @@
+{
+  "source_row": 655,
+  "customer_id": "C02444",
+  "matched_master_id": "C02444",
+  "name": "Shaurya Bhatti",
+  "available_information": {
+    "name": "Shaurya Bhatti",
+    "email": "shaurya.bhatti2444@yahoo.com",
+    "address": "H.No. 40, Mody Street"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "phone": {
+      "incoming": "8885768246",
+      "master": "7346006475"
+    },
+    "city": {
+      "incoming": "Serampore",
+      "master": "Deoghar"
+    }
+  }
+}

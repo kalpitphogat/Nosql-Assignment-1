@@ -1,0 +1,23 @@
+{
+  "source_row": 401,
+  "customer_id": "C00561",
+  "matched_master_id": "C00561",
+  "name": "Ekiya Bajwa",
+  "available_information": {
+    "email": "banjeet.ganesh561@outlook.com",
+    "phone": "6636761331",
+    "city": "Jhansi"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "name": {
+      "incoming": "Ekiya Bajwa",
+      "master": "Banjeet Ganesh"
+    },
+    "address": {
+      "incoming": "36/45, Dube Path",
+      "master": "72/41 Grewal"
+    }
+  }
+}

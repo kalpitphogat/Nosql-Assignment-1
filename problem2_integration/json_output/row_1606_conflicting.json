@@ -1,0 +1,23 @@
+{
+  "source_row": 1606,
+  "customer_id": "C00300",
+  "matched_master_id": "C00300",
+  "name": "Harinakshi Yohannan",
+  "available_information": {
+    "name": "Harinakshi Yohannan",
+    "phone": "9878306347",
+    "address": "87/36, Mannan Marg"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "email": {
+      "incoming": "jack.buch46758@yahoo.com",
+      "master": "harinakshi.yohannan300@hotmail.com"
+    },
+    "city": {
+      "incoming": "Phusro",
+      "master": "Pali"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "source_row": 559,
+  "customer_id": "C01776",
+  "matched_master_id": "C01776",
+  "name": "Sanya Krishnan",
+  "available_information": {
+    "name": "Sanya Krishnan",
+    "address": "08/26, Majumdar Path"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

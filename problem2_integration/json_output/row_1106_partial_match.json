@@ -1,0 +1,16 @@
+{
+  "source_row": 1106,
+  "customer_id": "C00407",
+  "matched_master_id": "C00407",
+  "name": "Kabir Dalal",
+  "available_information": {
+    "name": "Kabir Dalal",
+    "phone": "9309885607",
+    "address": "H.No. 676, Sampath Marg",
+    "city": "Gurgaon"
+  },
+  "missing_information": [
+    "email"
+  ],
+  "match_status": "partial_match"
+}

@@ -1,0 +1,16 @@
+{
+  "source_row": 545,
+  "customer_id": "C02224",
+  "matched_master_id": "C02224",
+  "name": "Lohit Mani",
+  "available_information": {
+    "name": "Lohit Mani",
+    "phone": "7573957270",
+    "address": "76/21 Memon Ganj",
+    "city": "Pune"
+  },
+  "missing_information": [
+    "email"
+  ],
+  "match_status": "partial_match"
+}

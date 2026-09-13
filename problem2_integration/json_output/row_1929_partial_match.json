@@ -1,0 +1,16 @@
+{
+  "source_row": 1929,
+  "customer_id": "C02299",
+  "matched_master_id": "C02299",
+  "name": "Yatin Kar",
+  "available_information": {
+    "name": "Yatin Kar",
+    "phone": "7699656714",
+    "city": "Bhind"
+  },
+  "missing_information": [
+    "email",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

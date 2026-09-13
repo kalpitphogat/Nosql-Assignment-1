@@ -1,0 +1,16 @@
+{
+  "source_row": 1935,
+  "customer_id": null,
+  "matched_master_id": "C00893",
+  "name": null,
+  "available_information": {
+    "email": "harinakshi.oommen893@outlook.com",
+    "phone": "7074632857",
+    "city": "Kumbakonam"
+  },
+  "missing_information": [
+    "name",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

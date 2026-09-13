@@ -1,0 +1,23 @@
+{
+  "source_row": 1807,
+  "customer_id": "C01446",
+  "matched_master_id": "C01446",
+  "name": "Dipta Datta",
+  "available_information": {
+    "name": "Dipta Datta",
+    "address": "90 Banik Chowk",
+    "city": "Phagwara"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "email": {
+      "incoming": "vansha.sur47059@example.in",
+      "master": "dipta.datta1446@example.in"
+    },
+    "phone": {
+      "incoming": "9486724031",
+      "master": "8230705219"
+    }
+  }
+}

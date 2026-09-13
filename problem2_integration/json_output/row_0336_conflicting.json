@@ -1,0 +1,20 @@
+{
+  "source_row": 336,
+  "customer_id": "C00194",
+  "matched_master_id": "C00194",
+  "name": "Simon Minhas",
+  "available_information": {
+    "email": "shivansh.sahni194@hotmail.com",
+    "phone": "9093476835",
+    "address": "39/404 Cheema Chowk",
+    "city": "Ozhukarai"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "name": {
+      "incoming": "Simon Minhas",
+      "master": "Shivansh Sahni"
+    }
+  }
+}

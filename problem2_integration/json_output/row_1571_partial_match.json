@@ -1,0 +1,16 @@
+{
+  "source_row": 1571,
+  "customer_id": null,
+  "matched_master_id": "C02248",
+  "name": "HARINI AGRAWAL",
+  "available_information": {
+    "name": "HARINI AGRAWAL",
+    "phone": "6057211839",
+    "address": "22/93 Vig Chowk",
+    "city": "Bidar"
+  },
+  "missing_information": [
+    "email"
+  ],
+  "match_status": "partial_match"
+}

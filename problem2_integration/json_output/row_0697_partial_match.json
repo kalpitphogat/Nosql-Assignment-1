@@ -1,0 +1,16 @@
+{
+  "source_row": 697,
+  "customer_id": "C00983",
+  "matched_master_id": "C00983",
+  "name": "Jasmit Doshi",
+  "available_information": {
+    "name": "Jasmit Doshi",
+    "phone": "8648814740"
+  },
+  "missing_information": [
+    "email",
+    "address",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

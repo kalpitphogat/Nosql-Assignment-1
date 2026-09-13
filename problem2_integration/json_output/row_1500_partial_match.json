@@ -1,0 +1,16 @@
+{
+  "source_row": 1500,
+  "customer_id": null,
+  "matched_master_id": "C02015",
+  "name": "Hardik Saran",
+  "available_information": {
+    "name": "Hardik Saran",
+    "city": "Davanagere"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

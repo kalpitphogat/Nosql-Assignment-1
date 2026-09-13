@@ -1,0 +1,23 @@
+{
+  "source_row": 1222,
+  "customer_id": "C00799",
+  "matched_master_id": "C00799",
+  "name": "Onkar Kota",
+  "available_information": {
+    "name": "Onkar Kota",
+    "email": "onkar.kota799@example.in",
+    "city": "Guwahati"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "phone": {
+      "incoming": "6336498020",
+      "master": "8655646774"
+    },
+    "address": {
+      "incoming": "H.No. 15 Bhatti Ganj",
+      "master": "73/745, Trivedi Marg"
+    }
+  }
+}

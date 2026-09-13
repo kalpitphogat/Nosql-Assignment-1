@@ -1,0 +1,16 @@
+{
+  "source_row": 482,
+  "customer_id": null,
+  "matched_master_id": null,
+  "name": "Warhi Sen",
+  "available_information": {
+    "name": "Warhi Sen"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address",
+    "city"
+  ],
+  "match_status": "incomplete_match"
+}

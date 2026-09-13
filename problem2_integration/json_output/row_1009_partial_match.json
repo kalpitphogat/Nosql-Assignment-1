@@ -1,0 +1,16 @@
+{
+  "source_row": 1009,
+  "customer_id": "C02716",
+  "matched_master_id": "C02716",
+  "name": "Eshana Sandal",
+  "available_information": {
+    "name": "Eshana Sandal",
+    "city": "Tiruppur"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

@@ -1,0 +1,16 @@
+{
+  "source_row": 263,
+  "customer_id": "C01097",
+  "matched_master_id": "C01097",
+  "name": "Champak Palla",
+  "available_information": {
+    "name": "Champak Palla",
+    "address": "86 Anne Chowk"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

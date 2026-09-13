@@ -1,0 +1,16 @@
+{
+  "source_row": 333,
+  "customer_id": "C01084",
+  "matched_master_id": "C01084",
+  "name": "Kashish Radhakrishnan",
+  "available_information": {
+    "name": "Kashish Radhakrishnan",
+    "city": "Jamnagar"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

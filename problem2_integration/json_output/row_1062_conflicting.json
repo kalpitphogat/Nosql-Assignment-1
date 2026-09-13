@@ -1,0 +1,20 @@
+{
+  "source_row": 1062,
+  "customer_id": "C02856",
+  "matched_master_id": "C02856",
+  "name": "Dalbir Hayer",
+  "available_information": {
+    "email": "ira.sura2856@hotmail.com",
+    "phone": "7190586760",
+    "address": "17/74, Dugar Street",
+    "city": "Mumbai"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "name": {
+      "incoming": "Dalbir Hayer",
+      "master": "Ira Sura"
+    }
+  }
+}

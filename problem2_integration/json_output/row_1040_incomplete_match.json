@@ -1,0 +1,16 @@
+{
+  "source_row": 1040,
+  "customer_id": null,
+  "matched_master_id": null,
+  "name": null,
+  "available_information": {
+    "city": "Panvel"
+  },
+  "missing_information": [
+    "name",
+    "email",
+    "phone",
+    "address"
+  ],
+  "match_status": "incomplete_match"
+}

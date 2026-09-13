@@ -1,0 +1,20 @@
+{
+  "source_row": 1101,
+  "customer_id": "C00289",
+  "matched_master_id": "C00289",
+  "name": "Darika Grewal",
+  "available_information": {
+    "name": "Darika Grewal",
+    "email": "darika.grewal289@outlook.com",
+    "phone": "8531967569",
+    "address": "H.No. 713 Oak Circle"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "city": {
+      "incoming": "Udupi",
+      "master": "Pimpri-Chinchwad"
+    }
+  }
+}

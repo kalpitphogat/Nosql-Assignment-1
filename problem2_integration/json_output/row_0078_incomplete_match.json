@@ -1,0 +1,15 @@
+{
+  "source_row": 78,
+  "customer_id": null,
+  "matched_master_id": null,
+  "name": null,
+  "available_information": {},
+  "missing_information": [
+    "name",
+    "email",
+    "phone",
+    "address",
+    "city"
+  ],
+  "match_status": "incomplete_match"
+}

@@ -1,0 +1,16 @@
+{
+  "source_row": 818,
+  "customer_id": "C00241",
+  "matched_master_id": "C00241",
+  "name": "Aashi Ghosh",
+  "available_information": {
+    "name": "Aashi Ghosh",
+    "phone": "7815839769",
+    "address": "H.No. 17, Varghese Ganj",
+    "city": "Kochi"
+  },
+  "missing_information": [
+    "email"
+  ],
+  "match_status": "partial_match"
+}

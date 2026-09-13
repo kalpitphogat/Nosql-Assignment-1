@@ -1,0 +1,16 @@
+{
+  "source_row": 186,
+  "customer_id": "C01193",
+  "matched_master_id": "C01193",
+  "name": "Dakshesh Minhas",
+  "available_information": {
+    "name": "Dakshesh Minhas",
+    "address": "95, Om Nagar",
+    "city": "Morbi"
+  },
+  "missing_information": [
+    "email",
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

@@ -1,0 +1,16 @@
+{
+  "source_row": 1899,
+  "customer_id": null,
+  "matched_master_id": "C00530",
+  "name": "Alexander Bera",
+  "available_information": {
+    "name": "Alexander Bera",
+    "city": "Coimbatore"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

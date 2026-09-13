@@ -1,0 +1,16 @@
+{
+  "source_row": 1272,
+  "customer_id": null,
+  "matched_master_id": "C00439",
+  "name": null,
+  "available_information": {
+    "email": "nathaniel.bhatia439@yahoo.com",
+    "phone": "6679648540",
+    "city": "Indore"
+  },
+  "missing_information": [
+    "name",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

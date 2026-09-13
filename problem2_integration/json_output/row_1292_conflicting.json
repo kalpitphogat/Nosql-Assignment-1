@@ -1,0 +1,23 @@
+{
+  "source_row": 1292,
+  "customer_id": "C00184",
+  "matched_master_id": "C00184",
+  "name": "Vyanjana Sidhu",
+  "available_information": {
+    "email": "nicholas.bakshi184@hotmail.com",
+    "phone": "8490598008",
+    "address": "01 Vig Ganj"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "name": {
+      "incoming": "Vyanjana Sidhu",
+      "master": "Nicholas Bakshi"
+    },
+    "city": {
+      "incoming": "Shimla",
+      "master": "Nagercoil"
+    }
+  }
+}

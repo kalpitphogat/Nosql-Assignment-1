@@ -1,0 +1,20 @@
+{
+  "source_row": 1774,
+  "customer_id": "C02874",
+  "matched_master_id": "C02874",
+  "name": "Unni Mand",
+  "available_information": {
+    "name": "Unni Mand",
+    "email": "unni.mand2874@gmail.com",
+    "phone": "7841845508",
+    "city": "Korba"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "address": {
+      "incoming": "12/459, Menon Road",
+      "master": "12, Dewan Path"
+    }
+  }
+}

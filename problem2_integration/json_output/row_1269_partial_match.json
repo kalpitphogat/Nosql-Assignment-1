@@ -1,0 +1,16 @@
+{
+  "source_row": 1269,
+  "customer_id": null,
+  "matched_master_id": "C00537",
+  "name": "Gavin Purohit",
+  "available_information": {
+    "name": "Gavin Purohit",
+    "city": "Bidar"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

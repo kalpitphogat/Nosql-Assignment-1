@@ -1,0 +1,16 @@
+{
+  "source_row": 1794,
+  "customer_id": null,
+  "matched_master_id": "C02817",
+  "name": "vritti purohit",
+  "available_information": {
+    "name": "vritti purohit",
+    "email": "vritti.purohit2817@hotmail.com",
+    "address": "H.No. 71, Uppal Path",
+    "city": "Morena"
+  },
+  "missing_information": [
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

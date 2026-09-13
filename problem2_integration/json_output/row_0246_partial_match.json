@@ -1,0 +1,16 @@
+{
+  "source_row": 246,
+  "customer_id": "C02833",
+  "matched_master_id": "C02833",
+  "name": "Jai Mall",
+  "available_information": {
+    "name": "Jai Mall",
+    "email": "jai.mall2833@yahoo.com",
+    "address": "H.No. 755, Varty Path"
+  },
+  "missing_information": [
+    "phone",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

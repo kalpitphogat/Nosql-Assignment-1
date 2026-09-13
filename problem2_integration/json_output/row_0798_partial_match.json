@@ -1,0 +1,16 @@
+{
+  "source_row": 798,
+  "customer_id": "C00372",
+  "matched_master_id": "C00372",
+  "name": "Anya Dave",
+  "available_information": {
+    "name": "Anya Dave",
+    "city": "Erode"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

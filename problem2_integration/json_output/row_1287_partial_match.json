@@ -1,0 +1,16 @@
+{
+  "source_row": 1287,
+  "customer_id": "C00659",
+  "matched_master_id": "C00659",
+  "name": "Wahab Bawa",
+  "available_information": {
+    "name": "Wahab Bawa",
+    "email": "wahab.bawa659@gmail.com",
+    "phone": "8050231919",
+    "address": "52 Deshpande Zila"
+  },
+  "missing_information": [
+    "city"
+  ],
+  "match_status": "partial_match"
+}

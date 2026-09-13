@@ -1,0 +1,23 @@
+{
+  "source_row": 425,
+  "customer_id": "C02299",
+  "matched_master_id": "C02299",
+  "name": "Yatin Kar",
+  "available_information": {
+    "name": "Yatin Kar",
+    "email": "yatin.kar2299@outlook.com",
+    "address": "H.No. 561 Vyas Ganj"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "phone": {
+      "incoming": "8443368063",
+      "master": "7699656714"
+    },
+    "city": {
+      "incoming": "Tiruchirappalli",
+      "master": "Bhind"
+    }
+  }
+}

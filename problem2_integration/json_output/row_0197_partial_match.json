@@ -1,0 +1,16 @@
+{
+  "source_row": 197,
+  "customer_id": "C02033",
+  "matched_master_id": "C02033",
+  "name": "Omaja Dubey",
+  "available_information": {
+    "name": "Omaja Dubey",
+    "address": "87, Goel Ganj",
+    "city": "Amravati"
+  },
+  "missing_information": [
+    "email",
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

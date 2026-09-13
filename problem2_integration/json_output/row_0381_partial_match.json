@@ -1,0 +1,16 @@
+{
+  "source_row": 381,
+  "customer_id": "C02236",
+  "matched_master_id": "C02236",
+  "name": "Yashvi Doctor",
+  "available_information": {
+    "name": "Yashvi Doctor",
+    "email": "yashvi.doctor2236@example.in",
+    "phone": "9121728158"
+  },
+  "missing_information": [
+    "address",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

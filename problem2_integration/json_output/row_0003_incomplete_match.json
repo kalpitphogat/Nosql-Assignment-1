@@ -1,0 +1,16 @@
+{
+  "source_row": 3,
+  "customer_id": null,
+  "matched_master_id": null,
+  "name": "Lekha Mitra",
+  "available_information": {
+    "name": "Lekha Mitra"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address",
+    "city"
+  ],
+  "match_status": "incomplete_match"
+}

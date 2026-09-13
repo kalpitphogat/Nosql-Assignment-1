@@ -1,0 +1,16 @@
+{
+  "source_row": 1300,
+  "customer_id": null,
+  "matched_master_id": "C02491",
+  "name": "Ekta Gill",
+  "available_information": {
+    "name": "Ekta Gill",
+    "city": "Haldia"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

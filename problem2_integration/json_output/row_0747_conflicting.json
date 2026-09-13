@@ -1,0 +1,23 @@
+{
+  "source_row": 747,
+  "customer_id": "C00339",
+  "matched_master_id": "C00339",
+  "name": "Ishani Sandal",
+  "available_information": {
+    "phone": "6332082013",
+    "address": "72/04 Narang Marg",
+    "city": "Tiruvottiyur"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "name": {
+      "incoming": "Ishani Sandal",
+      "master": "Saanvi Vaidya"
+    },
+    "email": {
+      "incoming": "yasti.narayanan73034@yahoo.com",
+      "master": "saanvi.vaidya339@gmail.com"
+    }
+  }
+}

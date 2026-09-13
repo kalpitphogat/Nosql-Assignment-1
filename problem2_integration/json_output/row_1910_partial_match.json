@@ -1,0 +1,16 @@
+{
+  "source_row": 1910,
+  "customer_id": "C01841",
+  "matched_master_id": "C01841",
+  "name": "Oliver Hegde",
+  "available_information": {
+    "name": "Oliver Hegde",
+    "city": "Kurnool"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

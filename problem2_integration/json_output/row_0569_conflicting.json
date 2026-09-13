@@ -1,0 +1,23 @@
+{
+  "source_row": 569,
+  "customer_id": "C02598",
+  "matched_master_id": "C02598",
+  "name": "Girik Lad",
+  "available_information": {
+    "name": "Girik Lad",
+    "email": "girik.lad2598@hotmail.com",
+    "city": "Jaipur"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "phone": {
+      "incoming": "6380753865",
+      "master": "8644580613"
+    },
+    "address": {
+      "incoming": "805, Radhakrishnan Zila",
+      "master": "09/50 Mann Street"
+    }
+  }
+}

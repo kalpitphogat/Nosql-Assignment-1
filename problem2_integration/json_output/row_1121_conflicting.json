@@ -1,0 +1,20 @@
+{
+  "source_row": 1121,
+  "customer_id": "C01360",
+  "matched_master_id": "C01360",
+  "name": "Jagat Borah",
+  "available_information": {
+    "name": "Jagat Borah",
+    "phone": "6434512456",
+    "address": "83/908, Mitra Circle",
+    "city": "Buxar"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "email": {
+      "incoming": "tarak.ramakrishnan88034@example.in",
+      "master": "jagat.borah1360@outlook.com"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "source_row": 267,
+  "customer_id": "C00112",
+  "matched_master_id": "C00112",
+  "name": "Arya Dutta",
+  "available_information": {
+    "name": "Arya Dutta",
+    "email": "arya.dutta112@gmail.com",
+    "address": "H.No. 75 Pingle Road"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "phone": {
+      "incoming": "9936372800",
+      "master": "8911959336"
+    },
+    "city": {
+      "incoming": "Warangal",
+      "master": "Katihar"
+    }
+  }
+}

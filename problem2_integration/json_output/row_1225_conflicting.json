@@ -1,0 +1,23 @@
+{
+  "source_row": 1225,
+  "customer_id": "C01033",
+  "matched_master_id": "C01033",
+  "name": "Vasatika Naidu",
+  "available_information": {
+    "name": "Vasatika Naidu",
+    "phone": "8165828539",
+    "city": "Korba"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "email": {
+      "incoming": "neha.hora99200@example.in",
+      "master": "vasatika.naidu1033@outlook.com"
+    },
+    "address": {
+      "incoming": "68 Narasimhan Marg",
+      "master": "H.No. 52 Khare Chowk"
+    }
+  }
+}

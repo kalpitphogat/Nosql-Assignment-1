@@ -1,0 +1,23 @@
+{
+  "source_row": 42,
+  "customer_id": "C02714",
+  "matched_master_id": "C02714",
+  "name": "Vaishnavi Ahluwalia",
+  "available_information": {
+    "name": "Vaishnavi Ahluwalia",
+    "phone": "9057892356",
+    "address": "H.No. 728, Radhakrishnan"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "email": {
+      "incoming": "sudiksha.chauhan63058@hotmail.com",
+      "master": "vaishnavi.ahluwalia2714@outlook.com"
+    },
+    "city": {
+      "incoming": "Arrah",
+      "master": "Khora"
+    }
+  }
+}

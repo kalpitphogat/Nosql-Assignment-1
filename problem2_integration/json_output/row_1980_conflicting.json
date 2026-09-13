@@ -1,0 +1,20 @@
+{
+  "source_row": 1980,
+  "customer_id": "C00931",
+  "matched_master_id": "C00931",
+  "name": "Nirja Sha",
+  "available_information": {
+    "name": "Nirja Sha",
+    "email": "nirja.sha931@yahoo.com",
+    "address": "H.No. 710, Viswanathan Marg",
+    "city": "Rewa"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "phone": {
+      "incoming": "6856937899",
+      "master": "8653947438"
+    }
+  }
+}

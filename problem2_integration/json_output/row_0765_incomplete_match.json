@@ -1,0 +1,16 @@
+{
+  "source_row": 765,
+  "customer_id": null,
+  "matched_master_id": null,
+  "name": "Bachittar Sheth",
+  "available_information": {
+    "name": "Bachittar Sheth"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address",
+    "city"
+  ],
+  "match_status": "incomplete_match"
+}

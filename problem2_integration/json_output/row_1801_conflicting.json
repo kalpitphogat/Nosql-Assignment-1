@@ -1,0 +1,23 @@
+{
+  "source_row": 1801,
+  "customer_id": "C01592",
+  "matched_master_id": "C01592",
+  "name": "Sanaya Bal",
+  "available_information": {
+    "name": "Sanaya Bal",
+    "email": "sanaya.bal1592@gmail.com",
+    "address": "33 Varghese"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "phone": {
+      "incoming": "7248651125",
+      "master": "7953631531"
+    },
+    "city": {
+      "incoming": "Pondicherry",
+      "master": "Tiruchirappalli"
+    }
+  }
+}

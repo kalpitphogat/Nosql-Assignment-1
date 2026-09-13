@@ -1,0 +1,16 @@
+{
+  "source_row": 1547,
+  "customer_id": "C00781",
+  "matched_master_id": "C00781",
+  "name": "Hamsini Apte",
+  "available_information": {
+    "name": "Hamsini Apte",
+    "email": "hamsini.apte781@yahoo.com",
+    "phone": "9503499620",
+    "address": "44/82, Chaudhuri"
+  },
+  "missing_information": [
+    "city"
+  ],
+  "match_status": "partial_match"
+}

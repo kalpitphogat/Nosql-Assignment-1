@@ -1,0 +1,16 @@
+{
+  "source_row": 673,
+  "customer_id": "C01233",
+  "matched_master_id": "C01233",
+  "name": "Quincy Khare",
+  "available_information": {
+    "name": "Quincy Khare",
+    "email": "quincy.khare1233@outlook.com",
+    "city": "Nangloi Jat"
+  },
+  "missing_information": [
+    "phone",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

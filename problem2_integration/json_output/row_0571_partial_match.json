@@ -1,0 +1,16 @@
+{
+  "source_row": 571,
+  "customer_id": "C00417",
+  "matched_master_id": "C00417",
+  "name": "Vedhika Mand",
+  "available_information": {
+    "name": "Vedhika Mand",
+    "phone": "9940207252",
+    "address": "H.No. 236, Babu Path"
+  },
+  "missing_information": [
+    "email",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

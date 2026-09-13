@@ -1,0 +1,20 @@
+{
+  "source_row": 501,
+  "customer_id": "C00220",
+  "matched_master_id": "C00220",
+  "name": "Nathaniel Din",
+  "available_information": {
+    "name": "Nathaniel Din",
+    "email": "nathaniel.din220@example.in",
+    "phone": "6111117119",
+    "address": "80/05 Kant"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "city": {
+      "incoming": "Tezpur",
+      "master": "Kottayam"
+    }
+  }
+}

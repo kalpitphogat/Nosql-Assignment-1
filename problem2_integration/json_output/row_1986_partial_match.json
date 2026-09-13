@@ -1,0 +1,16 @@
+{
+  "source_row": 1986,
+  "customer_id": null,
+  "matched_master_id": "C02667",
+  "name": "Yauvani Soman",
+  "available_information": {
+    "name": "Yauvani Soman",
+    "city": "Barasat"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

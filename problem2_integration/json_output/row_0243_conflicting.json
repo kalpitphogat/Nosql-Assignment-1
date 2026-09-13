@@ -1,0 +1,20 @@
+{
+  "source_row": 243,
+  "customer_id": "C02361",
+  "matched_master_id": "C02361",
+  "name": "Widisha Yogi",
+  "available_information": {
+    "name": "Widisha Yogi",
+    "email": "widisha.yogi2361@hotmail.com",
+    "phone": "9855952952",
+    "city": "Vasai-Virar"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "address": {
+      "incoming": "31/29, De Marg",
+      "master": "846, Ratta Circle"
+    }
+  }
+}

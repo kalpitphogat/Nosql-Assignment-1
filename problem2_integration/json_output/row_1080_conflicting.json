@@ -1,0 +1,20 @@
+{
+  "source_row": 1080,
+  "customer_id": "C00926",
+  "matched_master_id": "C00926",
+  "name": "Amruta Wali",
+  "available_information": {
+    "name": "Amruta Wali",
+    "phone": "8645026347",
+    "address": "H.No. 40 Dalal Road",
+    "city": "Sonipat"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "email": {
+      "incoming": "nirja.soni44612@example.in",
+      "master": "amruta.wali926@example.in"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "source_row": 1668,
+  "customer_id": null,
+  "matched_master_id": "C02868",
+  "name": "Nicholas Jaggi",
+  "available_information": {
+    "name": "Nicholas Jaggi",
+    "city": "Kulti"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

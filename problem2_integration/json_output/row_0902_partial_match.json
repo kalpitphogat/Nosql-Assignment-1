@@ -1,0 +1,16 @@
+{
+  "source_row": 902,
+  "customer_id": "C00036",
+  "matched_master_id": "C00036",
+  "name": "Bhanumati Dave",
+  "available_information": {
+    "name": "Bhanumati Dave",
+    "email": "bhanumati.dave36@example.in",
+    "phone": "7934658697",
+    "city": "Orai"
+  },
+  "missing_information": [
+    "address"
+  ],
+  "match_status": "partial_match"
+}

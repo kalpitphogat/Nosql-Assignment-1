@@ -1,0 +1,16 @@
+{
+  "source_row": 154,
+  "customer_id": "C02643",
+  "matched_master_id": "C02643",
+  "name": "Eshana Dewan",
+  "available_information": {
+    "name": "Eshana Dewan",
+    "email": "eshana.dewan2643@hotmail.com"
+  },
+  "missing_information": [
+    "phone",
+    "address",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

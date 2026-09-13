@@ -1,0 +1,23 @@
+{
+  "source_row": 623,
+  "customer_id": "C02087",
+  "matched_master_id": "C02087",
+  "name": "Kabir Tank",
+  "available_information": {
+    "name": "Kabir Tank",
+    "email": "kabir.tank2087@outlook.com",
+    "phone": "8639938391"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "address": {
+      "incoming": "H.No. 938, Ganguly",
+      "master": "H.No. 53, Sama Circle"
+    },
+    "city": {
+      "incoming": "Kolkata",
+      "master": "Bongaigaon"
+    }
+  }
+}

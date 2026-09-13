@@ -1,0 +1,16 @@
+{
+  "source_row": 61,
+  "customer_id": null,
+  "matched_master_id": "C00021",
+  "name": "RANBIR PANDIT",
+  "available_information": {
+    "name": "RANBIR PANDIT",
+    "phone": "7393522425",
+    "address": "H.No. 483 Kuruvilla Ganj",
+    "city": "Nizamabad"
+  },
+  "missing_information": [
+    "email"
+  ],
+  "match_status": "partial_match"
+}

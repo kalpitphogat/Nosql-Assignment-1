@@ -1,0 +1,16 @@
+{
+  "source_row": 936,
+  "customer_id": "C00933",
+  "matched_master_id": "C00933",
+  "name": "Arin Chanda",
+  "available_information": {
+    "name": "Arin Chanda",
+    "email": "arin.chanda933@outlook.com",
+    "city": "Narasaraopet"
+  },
+  "missing_information": [
+    "phone",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

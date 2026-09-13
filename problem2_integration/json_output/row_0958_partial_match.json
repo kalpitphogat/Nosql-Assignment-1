@@ -1,0 +1,16 @@
+{
+  "source_row": 958,
+  "customer_id": "C01494",
+  "matched_master_id": "C01494",
+  "name": "Krishna Das",
+  "available_information": {
+    "name": "Krishna Das",
+    "phone": "7041775003",
+    "address": "H.No. 145, Bose Ganj",
+    "city": "Sangli-Miraj & Kupwad"
+  },
+  "missing_information": [
+    "email"
+  ],
+  "match_status": "partial_match"
+}

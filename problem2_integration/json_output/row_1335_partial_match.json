@@ -1,0 +1,16 @@
+{
+  "source_row": 1335,
+  "customer_id": "C01669",
+  "matched_master_id": "C01669",
+  "name": "Onkar Krishnamurthy",
+  "available_information": {
+    "name": "Onkar Krishnamurthy",
+    "email": "onkar.krishnamurthy1669@example.in",
+    "address": "H.No. 85 Jaggi Ganj",
+    "city": "Ratlam"
+  },
+  "missing_information": [
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

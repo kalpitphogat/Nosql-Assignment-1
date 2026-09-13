@@ -1,0 +1,16 @@
+{
+  "source_row": 451,
+  "customer_id": "C00123",
+  "matched_master_id": "C00123",
+  "name": "Yatin Patla",
+  "available_information": {
+    "name": "Yatin Patla",
+    "email": "yatin.patla123@hotmail.com",
+    "city": "Fatehpur"
+  },
+  "missing_information": [
+    "phone",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

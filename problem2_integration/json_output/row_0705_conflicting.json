@@ -1,0 +1,20 @@
+{
+  "source_row": 705,
+  "customer_id": "C00743",
+  "matched_master_id": "C00743",
+  "name": "Ekantika Narayanan",
+  "available_information": {
+    "name": "Ekantika Narayanan",
+    "email": "ekantika.narayanan743@outlook.com",
+    "phone": "9334377705",
+    "city": "Berhampur"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "address": {
+      "incoming": "49/081 Lad Marg",
+      "master": "852, Kota Chowk"
+    }
+  }
+}

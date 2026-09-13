@@ -1,0 +1,16 @@
+{
+  "source_row": 1956,
+  "customer_id": "C01118",
+  "matched_master_id": "C01118",
+  "name": "Qasim Pai",
+  "available_information": {
+    "name": "Qasim Pai",
+    "email": "qasim.pai1118@outlook.com",
+    "phone": "8751187865",
+    "city": "Bulandshahr"
+  },
+  "missing_information": [
+    "address"
+  ],
+  "match_status": "partial_match"
+}

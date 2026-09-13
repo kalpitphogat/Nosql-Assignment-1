@@ -1,0 +1,16 @@
+{
+  "source_row": 1176,
+  "customer_id": null,
+  "matched_master_id": "C01754",
+  "name": "turvi sekhon",
+  "available_information": {
+    "name": "turvi sekhon",
+    "email": "turvi.sekhon1754@example.in",
+    "address": "H.No. 186 Krish",
+    "city": "Pune"
+  },
+  "missing_information": [
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

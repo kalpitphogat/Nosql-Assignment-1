@@ -1,0 +1,16 @@
+{
+  "source_row": 1065,
+  "customer_id": "C00429",
+  "matched_master_id": "C00429",
+  "name": "Ikbal Agrawal",
+  "available_information": {
+    "name": "Ikbal Agrawal",
+    "city": "Anantapuram"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

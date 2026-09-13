@@ -1,0 +1,23 @@
+{
+  "source_row": 1652,
+  "customer_id": "C01909",
+  "matched_master_id": "C01909",
+  "name": "Osha Hora",
+  "available_information": {
+    "name": "Osha Hora",
+    "phone": "8409251235",
+    "address": "647 Edwin Ganj"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "email": {
+      "incoming": "zilmil.palan72588@example.in",
+      "master": "osha.hora1909@example.in"
+    },
+    "city": {
+      "incoming": "Madurai",
+      "master": "Bijapur"
+    }
+  }
+}

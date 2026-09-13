@@ -1,0 +1,23 @@
+{
+  "source_row": 1729,
+  "customer_id": "C02236",
+  "matched_master_id": "C02236",
+  "name": "Yashvi Doctor",
+  "available_information": {
+    "name": "Yashvi Doctor",
+    "address": "H.No. 014, Balakrishnan Ganj",
+    "city": "Warangal"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "email": {
+      "incoming": "chakradev.naidu53465@gmail.com",
+      "master": "yashvi.doctor2236@example.in"
+    },
+    "phone": {
+      "incoming": "6594960414",
+      "master": "9121728158"
+    }
+  }
+}

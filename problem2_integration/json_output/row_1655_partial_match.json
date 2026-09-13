@@ -1,0 +1,16 @@
+{
+  "source_row": 1655,
+  "customer_id": null,
+  "matched_master_id": "C02049",
+  "name": "sai narain",
+  "available_information": {
+    "name": "sai narain",
+    "email": "sai.narain2049@gmail.com",
+    "address": "H.No. 616, Sheth Path",
+    "city": "Bally"
+  },
+  "missing_information": [
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

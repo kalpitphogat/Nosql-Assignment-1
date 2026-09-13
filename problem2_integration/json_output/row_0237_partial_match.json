@@ -1,0 +1,16 @@
+{
+  "source_row": 237,
+  "customer_id": "C02202",
+  "matched_master_id": "C02202",
+  "name": "Yashawini Chokshi",
+  "available_information": {
+    "name": "Yashawini Chokshi",
+    "address": "H.No. 481, Balan Nagar",
+    "city": "Coimbatore"
+  },
+  "missing_information": [
+    "email",
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

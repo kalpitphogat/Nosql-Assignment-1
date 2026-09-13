@@ -1,0 +1,16 @@
+{
+  "source_row": 1752,
+  "customer_id": "C02470",
+  "matched_master_id": "C02470",
+  "name": "Parth Chowdhury",
+  "available_information": {
+    "name": "Parth Chowdhury",
+    "email": "parth.chowdhury2470@hotmail.com",
+    "city": "Nadiad"
+  },
+  "missing_information": [
+    "phone",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

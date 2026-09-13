@@ -1,0 +1,23 @@
+{
+  "source_row": 168,
+  "customer_id": "C02083",
+  "matched_master_id": "C02083",
+  "name": "Neelima Mahajan",
+  "available_information": {
+    "email": "wyatt.pandya2083@outlook.com",
+    "phone": "9633300601",
+    "address": "78, Bhatnagar"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "name": {
+      "incoming": "Neelima Mahajan",
+      "master": "Wyatt Pandya"
+    },
+    "city": {
+      "incoming": "Deoghar",
+      "master": "Guna"
+    }
+  }
+}

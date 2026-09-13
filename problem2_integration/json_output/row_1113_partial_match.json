@@ -1,0 +1,16 @@
+{
+  "source_row": 1113,
+  "customer_id": "C01997",
+  "matched_master_id": "C01997",
+  "name": "Pranit Dey",
+  "available_information": {
+    "name": "Pranit Dey",
+    "email": "pranit.dey1997@example.in"
+  },
+  "missing_information": [
+    "phone",
+    "address",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

@@ -1,0 +1,23 @@
+{
+  "source_row": 172,
+  "customer_id": "C01068",
+  "matched_master_id": "C01068",
+  "name": "Vincent Kala",
+  "available_information": {
+    "name": "Vincent Kala",
+    "address": "H.No. 169 Sridhar Circle",
+    "city": "Kishanganj"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "email": {
+      "incoming": "pratyush.bhatia79620@hotmail.com",
+      "master": "vincent.kala1068@example.in"
+    },
+    "phone": {
+      "incoming": "6622356154",
+      "master": "9190905076"
+    }
+  }
+}

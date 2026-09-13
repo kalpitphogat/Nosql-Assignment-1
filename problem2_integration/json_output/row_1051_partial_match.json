@@ -1,0 +1,16 @@
+{
+  "source_row": 1051,
+  "customer_id": "C00813",
+  "matched_master_id": "C00813",
+  "name": "Oviya Saini",
+  "available_information": {
+    "name": "Oviya Saini",
+    "email": "oviya.saini813@hotmail.com",
+    "address": "H.No. 68, Wagle Zila",
+    "city": "Bharatpur"
+  },
+  "missing_information": [
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

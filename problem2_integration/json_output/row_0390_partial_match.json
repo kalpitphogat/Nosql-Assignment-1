@@ -1,0 +1,16 @@
+{
+  "source_row": 390,
+  "customer_id": null,
+  "matched_master_id": "C01576",
+  "name": "DIPTA DE",
+  "available_information": {
+    "name": "DIPTA DE",
+    "phone": "8487304431",
+    "address": "380, Narang Chowk",
+    "city": "Narasaraopet"
+  },
+  "missing_information": [
+    "email"
+  ],
+  "match_status": "partial_match"
+}

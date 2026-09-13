@@ -1,0 +1,16 @@
+{
+  "source_row": 535,
+  "customer_id": "C02696",
+  "matched_master_id": "C02696",
+  "name": "Xiti Manne",
+  "available_information": {
+    "name": "Xiti Manne",
+    "email": "xiti.manne2696@gmail.com",
+    "phone": "8653183881"
+  },
+  "missing_information": [
+    "address",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

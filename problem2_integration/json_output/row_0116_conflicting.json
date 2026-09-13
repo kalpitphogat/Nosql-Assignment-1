@@ -1,0 +1,20 @@
+{
+  "source_row": 116,
+  "customer_id": "C01918",
+  "matched_master_id": "C01918",
+  "name": "Devansh Sharma",
+  "available_information": {
+    "name": "Devansh Sharma",
+    "email": "devansh.sharma1918@example.in",
+    "address": "H.No. 201, Sachdeva Ganj",
+    "city": "Gopalpur"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "phone": {
+      "incoming": "9457807439",
+      "master": "9994287579"
+    }
+  }
+}

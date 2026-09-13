@@ -1,0 +1,20 @@
+{
+  "source_row": 774,
+  "customer_id": "C01072",
+  "matched_master_id": "C01072",
+  "name": "Yashica Mani",
+  "available_information": {
+    "name": "Yashica Mani",
+    "email": "yashica.mani1072@gmail.com",
+    "address": "H.No. 871, Rana Chowk",
+    "city": "North Dumdum"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "phone": {
+      "incoming": "6434911358",
+      "master": "6234450255"
+    }
+  }
+}

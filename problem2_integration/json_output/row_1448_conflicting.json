@@ -1,0 +1,20 @@
+{
+  "source_row": 1448,
+  "customer_id": "C02562",
+  "matched_master_id": "C02562",
+  "name": "Veda Choudhry",
+  "available_information": {
+    "email": "sachi.choudhary2562@gmail.com",
+    "phone": "8630510106",
+    "address": "H.No. 928 Batta Road",
+    "city": "Tiruvottiyur"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "name": {
+      "incoming": "Veda Choudhry",
+      "master": "Sachi Choudhary"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "source_row": 409,
+  "customer_id": "C01116",
+  "matched_master_id": "C01116",
+  "name": "Ekanta Bassi",
+  "available_information": {
+    "name": "Ekanta Bassi",
+    "email": "ekanta.bassi1116@hotmail.com",
+    "city": "Narasaraopet"
+  },
+  "missing_information": [
+    "phone",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

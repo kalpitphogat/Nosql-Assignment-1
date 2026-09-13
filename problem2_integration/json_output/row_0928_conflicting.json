@@ -1,0 +1,23 @@
+{
+  "source_row": 928,
+  "customer_id": "C00028",
+  "matched_master_id": "C00028",
+  "name": "Pranit Mangat",
+  "available_information": {
+    "name": "Pranit Mangat",
+    "email": "pranit.mangat28@yahoo.com",
+    "city": "Naihati"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "phone": {
+      "incoming": "8350637922",
+      "master": "7407336375"
+    },
+    "address": {
+      "incoming": "841 Biswas Chowk",
+      "master": "80, Rastogi Street"
+    }
+  }
+}

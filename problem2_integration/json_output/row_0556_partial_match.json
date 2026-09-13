@@ -1,0 +1,16 @@
+{
+  "source_row": 556,
+  "customer_id": "C02028",
+  "matched_master_id": "C02028",
+  "name": "Ekantika Sanghvi",
+  "available_information": {
+    "name": "Ekantika Sanghvi",
+    "phone": "7886068670",
+    "address": "H.No. 010 Sodhi Nagar",
+    "city": "Alwar"
+  },
+  "missing_information": [
+    "email"
+  ],
+  "match_status": "partial_match"
+}

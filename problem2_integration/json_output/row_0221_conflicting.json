@@ -1,0 +1,23 @@
+{
+  "source_row": 221,
+  "customer_id": "C00181",
+  "matched_master_id": "C00181",
+  "name": "Eshana Bir",
+  "available_information": {
+    "name": "Eshana Bir",
+    "email": "eshana.bir181@yahoo.com",
+    "city": "Shahjahanpur"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "phone": {
+      "incoming": "9795342698",
+      "master": "9967867595"
+    },
+    "address": {
+      "incoming": "52/97, Sarma Path",
+      "master": "505, Mammen Chowk"
+    }
+  }
+}

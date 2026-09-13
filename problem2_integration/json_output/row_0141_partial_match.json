@@ -1,0 +1,16 @@
+{
+  "source_row": 141,
+  "customer_id": "C02788",
+  "matched_master_id": "C02788",
+  "name": "Rudra Sachdev",
+  "available_information": {
+    "name": "Rudra Sachdev",
+    "email": "rudra.sachdev2788@gmail.com",
+    "address": "H.No. 01 Balakrishnan Marg"
+  },
+  "missing_information": [
+    "phone",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

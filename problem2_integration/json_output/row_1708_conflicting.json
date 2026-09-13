@@ -1,0 +1,20 @@
+{
+  "source_row": 1708,
+  "customer_id": "C01103",
+  "matched_master_id": "C01103",
+  "name": "Hardik Pradhan",
+  "available_information": {
+    "name": "Hardik Pradhan",
+    "email": "hardik.pradhan1103@example.in",
+    "address": "H.No. 678 Trivedi Road",
+    "city": "Ranchi"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "phone": {
+      "incoming": "6013651399",
+      "master": "9726096564"
+    }
+  }
+}

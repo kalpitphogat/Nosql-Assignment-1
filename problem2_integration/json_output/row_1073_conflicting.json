@@ -1,0 +1,23 @@
+{
+  "source_row": 1073,
+  "customer_id": "C02201",
+  "matched_master_id": "C02201",
+  "name": "Indali Magar",
+  "available_information": {
+    "name": "Indali Magar",
+    "phone": "9541791241",
+    "city": "Firozabad"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "email": {
+      "incoming": "bhavika.jayaraman92834@gmail.com",
+      "master": "indali.magar2201@hotmail.com"
+    },
+    "address": {
+      "incoming": "H.No. 945, Andra Path",
+      "master": "57/71 Ahuja Chowk"
+    }
+  }
+}

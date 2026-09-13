@@ -1,0 +1,16 @@
+{
+  "source_row": 514,
+  "customer_id": null,
+  "matched_master_id": "C01042",
+  "name": null,
+  "available_information": {
+    "email": "ojasvi.kala1042@example.in",
+    "phone": "7984495055",
+    "city": "Nagpur"
+  },
+  "missing_information": [
+    "name",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

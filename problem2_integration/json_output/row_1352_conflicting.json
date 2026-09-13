@@ -1,0 +1,23 @@
+{
+  "source_row": 1352,
+  "customer_id": "C02230",
+  "matched_master_id": "C02230",
+  "name": "Abeer Misra",
+  "available_information": {
+    "name": "Abeer Misra",
+    "email": "abeer.misra2230@hotmail.com",
+    "city": "Pimpri-Chinchwad"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "phone": {
+      "incoming": "6767902093",
+      "master": "7129927348"
+    },
+    "address": {
+      "incoming": "90, Halder Road",
+      "master": "H.No. 25, Edwin Chowk"
+    }
+  }
+}

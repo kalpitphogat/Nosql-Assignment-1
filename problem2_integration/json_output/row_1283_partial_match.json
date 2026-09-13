@@ -1,0 +1,16 @@
+{
+  "source_row": 1283,
+  "customer_id": "C01573",
+  "matched_master_id": "C01573",
+  "name": "Rachana Nori",
+  "available_information": {
+    "name": "Rachana Nori",
+    "email": "rachana.nori1573@hotmail.com",
+    "phone": "6930602848",
+    "city": "Akola"
+  },
+  "missing_information": [
+    "address"
+  ],
+  "match_status": "partial_match"
+}

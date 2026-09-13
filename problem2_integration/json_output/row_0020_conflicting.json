@@ -1,0 +1,20 @@
+{
+  "source_row": 20,
+  "customer_id": "C02101",
+  "matched_master_id": "C02101",
+  "name": "Nitara Saxena",
+  "available_information": {
+    "name": "Nitara Saxena",
+    "email": "nitara.saxena2101@yahoo.com",
+    "phone": "7355778293",
+    "city": "Solapur"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "address": {
+      "incoming": "26/99 Mani Chowk",
+      "master": "H.No. 147, Bawa"
+    }
+  }
+}

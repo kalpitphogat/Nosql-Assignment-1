@@ -1,0 +1,20 @@
+{
+  "source_row": 1822,
+  "customer_id": "C00633",
+  "matched_master_id": "C00633",
+  "name": "Maanas Shah",
+  "available_information": {
+    "name": "Maanas Shah",
+    "email": "maanas.shah633@hotmail.com",
+    "address": "H.No. 28 Sekhon Circle",
+    "city": "Aurangabad"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "phone": {
+      "incoming": "9687103866",
+      "master": "6877051815"
+    }
+  }
+}

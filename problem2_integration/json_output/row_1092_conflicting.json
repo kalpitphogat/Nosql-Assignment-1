@@ -1,0 +1,23 @@
+{
+  "source_row": 1092,
+  "customer_id": "C00748",
+  "matched_master_id": "C00748",
+  "name": "Ekiya Chaudhry",
+  "available_information": {
+    "name": "Ekiya Chaudhry",
+    "email": "ekiya.chaudhry748@example.in",
+    "phone": "9565001818"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "address": {
+      "incoming": "407, Setty Street",
+      "master": "10/501 Malhotra Road"
+    },
+    "city": {
+      "incoming": "Tinsukia",
+      "master": "Kulti"
+    }
+  }
+}

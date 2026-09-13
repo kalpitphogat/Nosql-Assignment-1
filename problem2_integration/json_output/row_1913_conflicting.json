@@ -1,0 +1,20 @@
+{
+  "source_row": 1913,
+  "customer_id": "C01660",
+  "matched_master_id": "C01660",
+  "name": "Kritika Rau",
+  "available_information": {
+    "name": "Kritika Rau",
+    "email": "kritika.rau1660@gmail.com",
+    "phone": "8288371475",
+    "address": "75/93, Misra Ganj"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "city": {
+      "incoming": "Bangalore",
+      "master": "Jalandhar"
+    }
+  }
+}

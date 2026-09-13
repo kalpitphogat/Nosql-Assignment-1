@@ -1,0 +1,23 @@
+{
+  "source_row": 331,
+  "customer_id": "C01243",
+  "matched_master_id": "C01243",
+  "name": "Veda Sandal",
+  "available_information": {
+    "name": "Veda Sandal",
+    "address": "02/46 Mutti Marg",
+    "city": "Pondicherry"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "email": {
+      "incoming": "pratyush.dua72709@example.in",
+      "master": "veda.sandal1243@yahoo.com"
+    },
+    "phone": {
+      "incoming": "8190039071",
+      "master": "9119359914"
+    }
+  }
+}

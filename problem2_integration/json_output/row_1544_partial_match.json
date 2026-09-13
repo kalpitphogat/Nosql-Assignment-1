@@ -1,0 +1,16 @@
+{
+  "source_row": 1544,
+  "customer_id": "C00348",
+  "matched_master_id": "C00348",
+  "name": "Ranveer Prasad",
+  "available_information": {
+    "name": "Ranveer Prasad",
+    "phone": "6054405299"
+  },
+  "missing_information": [
+    "email",
+    "address",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

@@ -1,0 +1,20 @@
+{
+  "source_row": 1455,
+  "customer_id": "C01831",
+  "matched_master_id": "C01831",
+  "name": "Anamika Sami",
+  "available_information": {
+    "name": "Anamika Sami",
+    "email": "anamika.sami1831@outlook.com",
+    "address": "31/991, Bora Nagar",
+    "city": "Karawal Nagar"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "phone": {
+      "incoming": "7926439011",
+      "master": "7304317396"
+    }
+  }
+}

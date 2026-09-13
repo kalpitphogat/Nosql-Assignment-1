@@ -1,0 +1,9 @@
+Matching summary statistics
+==============================
+Total incoming records: 2000
+
+complete_match      :   400  ( 20.0%)
+partial_match       :   657  ( 32.9%)
+incomplete_match    :   193  (  9.7%)
+new_entity          :   400  ( 20.0%)
+conflicting         :   350  ( 17.5%)

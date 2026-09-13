@@ -1,0 +1,20 @@
+{
+  "source_row": 1616,
+  "customer_id": "C02184",
+  "matched_master_id": "C02184",
+  "name": "Anya Bir",
+  "available_information": {
+    "name": "Anya Bir",
+    "email": "anya.bir2184@outlook.com",
+    "phone": "6038759505",
+    "address": "431 Upadhyay Ganj"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "city": {
+      "incoming": "Dindigul",
+      "master": "Tiruchirappalli"
+    }
+  }
+}

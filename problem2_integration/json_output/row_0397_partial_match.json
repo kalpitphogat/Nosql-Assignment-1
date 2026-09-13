@@ -1,0 +1,16 @@
+{
+  "source_row": 397,
+  "customer_id": "C00357",
+  "matched_master_id": "C00357",
+  "name": "Tarak Subramaniam",
+  "available_information": {
+    "name": "Tarak Subramaniam",
+    "address": "25/20 Dhillon Chowk",
+    "city": "Warangal"
+  },
+  "missing_information": [
+    "email",
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

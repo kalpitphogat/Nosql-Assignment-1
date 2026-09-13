@@ -1,0 +1,16 @@
+{
+  "source_row": 97,
+  "customer_id": null,
+  "matched_master_id": null,
+  "name": "Megha Naik",
+  "available_information": {
+    "name": "Megha Naik"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address",
+    "city"
+  ],
+  "match_status": "incomplete_match"
+}

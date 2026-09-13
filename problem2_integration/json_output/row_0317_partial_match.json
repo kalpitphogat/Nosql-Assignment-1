@@ -1,0 +1,16 @@
+{
+  "source_row": 317,
+  "customer_id": "C02912",
+  "matched_master_id": "C02912",
+  "name": "Umang Gola",
+  "available_information": {
+    "name": "Umang Gola",
+    "address": "29/87, Buch Chowk"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

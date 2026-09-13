@@ -1,0 +1,16 @@
+{
+  "source_row": 558,
+  "customer_id": "C02500",
+  "matched_master_id": "C02500",
+  "name": "Chatura Nazareth",
+  "available_information": {
+    "name": "Chatura Nazareth",
+    "email": "chatura.nazareth2500@example.in",
+    "phone": "8382037063",
+    "city": "Kirari Suleman Nagar"
+  },
+  "missing_information": [
+    "address"
+  ],
+  "match_status": "partial_match"
+}

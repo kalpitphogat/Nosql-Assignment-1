@@ -1,0 +1,23 @@
+{
+  "source_row": 40,
+  "customer_id": "C02559",
+  "matched_master_id": "C02559",
+  "name": "Karan Shah",
+  "available_information": {
+    "email": "dev.natt2559@yahoo.com",
+    "address": "57/94 Rai Chowk",
+    "city": "Khammam"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "name": {
+      "incoming": "Karan Shah",
+      "master": "Dev Natt"
+    },
+    "phone": {
+      "incoming": "6418572881",
+      "master": "8087471298"
+    }
+  }
+}

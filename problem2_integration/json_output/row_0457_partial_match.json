@@ -1,0 +1,16 @@
+{
+  "source_row": 457,
+  "customer_id": "C02341",
+  "matched_master_id": "C02341",
+  "name": "Ganga Sura",
+  "available_information": {
+    "name": "Ganga Sura",
+    "email": "ganga.sura2341@yahoo.com",
+    "address": "79/868, Subramanian Street",
+    "city": "Panvel"
+  },
+  "missing_information": [
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

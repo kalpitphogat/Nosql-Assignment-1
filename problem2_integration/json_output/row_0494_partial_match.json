@@ -1,0 +1,16 @@
+{
+  "source_row": 494,
+  "customer_id": null,
+  "matched_master_id": "C01885",
+  "name": "Thomas Gokhale",
+  "available_information": {
+    "name": "Thomas Gokhale",
+    "address": "H.No. 265, Solanki Marg",
+    "city": "Howrah"
+  },
+  "missing_information": [
+    "email",
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

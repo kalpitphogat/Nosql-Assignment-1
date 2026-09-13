@@ -1,0 +1,16 @@
+{
+  "source_row": 244,
+  "customer_id": "C00049",
+  "matched_master_id": "C00049",
+  "name": "Jonathan Kala",
+  "available_information": {
+    "name": "Jonathan Kala",
+    "phone": "8346619082",
+    "address": "H.No. 679, Murthy Circle",
+    "city": "Bhavnagar"
+  },
+  "missing_information": [
+    "email"
+  ],
+  "match_status": "partial_match"
+}

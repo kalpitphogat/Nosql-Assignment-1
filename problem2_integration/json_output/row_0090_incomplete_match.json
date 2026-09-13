@@ -1,0 +1,16 @@
+{
+  "source_row": 90,
+  "customer_id": null,
+  "matched_master_id": null,
+  "name": "Falak Brar",
+  "available_information": {
+    "name": "Falak Brar"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address",
+    "city"
+  ],
+  "match_status": "incomplete_match"
+}

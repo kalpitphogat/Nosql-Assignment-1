@@ -1,0 +1,20 @@
+{
+  "source_row": 1701,
+  "customer_id": "C02006",
+  "matched_master_id": "C02006",
+  "name": "Charvi Sundaram",
+  "available_information": {
+    "name": "Charvi Sundaram",
+    "email": "charvi.sundaram2006@outlook.com",
+    "address": "41/143 Khurana Zila",
+    "city": "Karaikudi"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "phone": {
+      "incoming": "6785434366",
+      "master": "9720133552"
+    }
+  }
+}

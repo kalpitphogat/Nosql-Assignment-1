@@ -1,0 +1,20 @@
+{
+  "source_row": 1266,
+  "customer_id": "C00500",
+  "matched_master_id": "C00500",
+  "name": "Liam Borra",
+  "available_information": {
+    "name": "Liam Borra",
+    "email": "liam.borra500@yahoo.com",
+    "phone": "9933518254",
+    "city": "Warangal"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "address": {
+      "incoming": "345 Ratti Nagar",
+      "master": "82/551, Om Path"
+    }
+  }
+}

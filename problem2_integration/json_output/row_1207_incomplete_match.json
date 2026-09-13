@@ -1,0 +1,16 @@
+{
+  "source_row": 1207,
+  "customer_id": null,
+  "matched_master_id": null,
+  "name": "Omkaar Bhalla",
+  "available_information": {
+    "name": "Omkaar Bhalla"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address",
+    "city"
+  ],
+  "match_status": "incomplete_match"
+}

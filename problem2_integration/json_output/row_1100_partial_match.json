@@ -1,0 +1,16 @@
+{
+  "source_row": 1100,
+  "customer_id": "C00329",
+  "matched_master_id": "C00329",
+  "name": "Damyanti Wadhwa",
+  "available_information": {
+    "name": "Damyanti Wadhwa",
+    "email": "damyanti.wadhwa329@hotmail.com",
+    "phone": "7994363665",
+    "city": "Kolhapur"
+  },
+  "missing_information": [
+    "address"
+  ],
+  "match_status": "partial_match"
+}

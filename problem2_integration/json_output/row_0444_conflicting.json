@@ -1,0 +1,20 @@
+{
+  "source_row": 444,
+  "customer_id": "C02659",
+  "matched_master_id": "C02659",
+  "name": "Ekanta Aggarwal",
+  "available_information": {
+    "email": "zinal.walia2659@gmail.com",
+    "phone": "7387123157",
+    "address": "149 Borde Nagar",
+    "city": "Gangtok"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "name": {
+      "incoming": "Ekanta Aggarwal",
+      "master": "Zinal Walia"
+    }
+  }
+}

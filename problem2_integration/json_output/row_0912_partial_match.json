@@ -1,0 +1,16 @@
+{
+  "source_row": 912,
+  "customer_id": null,
+  "matched_master_id": "C02237",
+  "name": "Zaid Shukla",
+  "available_information": {
+    "name": "Zaid Shukla",
+    "address": "85/446 Dasgupta Road",
+    "city": "Bhalswa Jahangir Pur"
+  },
+  "missing_information": [
+    "email",
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

@@ -1,0 +1,16 @@
+{
+  "source_row": 1045,
+  "customer_id": "C01525",
+  "matched_master_id": "C01525",
+  "name": "Chandran Pradhan",
+  "available_information": {
+    "name": "Chandran Pradhan",
+    "phone": "7797527488",
+    "address": "773, Sinha Path"
+  },
+  "missing_information": [
+    "email",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

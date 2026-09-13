@@ -1,0 +1,16 @@
+{
+  "source_row": 1604,
+  "customer_id": null,
+  "matched_master_id": "C02894",
+  "name": "krishna murthy",
+  "available_information": {
+    "name": "krishna murthy",
+    "email": "krishna.murthy2894@gmail.com",
+    "address": "57/916, Pal Marg",
+    "city": "Raipur"
+  },
+  "missing_information": [
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

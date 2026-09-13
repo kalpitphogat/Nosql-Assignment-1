@@ -1,0 +1,23 @@
+{
+  "source_row": 454,
+  "customer_id": "C01518",
+  "matched_master_id": "C01518",
+  "name": "Brijesh Sachdev",
+  "available_information": {
+    "name": "Brijesh Sachdev",
+    "email": "brijesh.sachdev1518@hotmail.com",
+    "phone": "7859285476"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "address": {
+      "incoming": "H.No. 420, Dhaliwal Zila",
+      "master": "099 Oommen Chowk"
+    },
+    "city": {
+      "incoming": "Pimpri-Chinchwad",
+      "master": "Visakhapatnam"
+    }
+  }
+}

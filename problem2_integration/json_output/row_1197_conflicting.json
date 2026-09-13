@@ -1,0 +1,20 @@
+{
+  "source_row": 1197,
+  "customer_id": "C00240",
+  "matched_master_id": "C00240",
+  "name": "Vedhika Chopra",
+  "available_information": {
+    "name": "Vedhika Chopra",
+    "email": "vedhika.chopra240@yahoo.com",
+    "phone": "6535074499",
+    "address": "73 Choudhury Street"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "city": {
+      "incoming": "Bangalore",
+      "master": "Bhiwani"
+    }
+  }
+}

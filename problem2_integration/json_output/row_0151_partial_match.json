@@ -1,0 +1,16 @@
+{
+  "source_row": 151,
+  "customer_id": "C02810",
+  "matched_master_id": "C02810",
+  "name": "Aarush Sane",
+  "available_information": {
+    "name": "Aarush Sane",
+    "address": "92/358 Banik Path",
+    "city": "Rampur"
+  },
+  "missing_information": [
+    "email",
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

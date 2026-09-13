@@ -1,0 +1,20 @@
+{
+  "source_row": 1892,
+  "customer_id": "C01927",
+  "matched_master_id": "C01927",
+  "name": "Krish Arya",
+  "available_information": {
+    "name": "Krish Arya",
+    "email": "krish.arya1927@hotmail.com",
+    "address": "88/367, Mitter Road",
+    "city": "Tenali"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "phone": {
+      "incoming": "7778682481",
+      "master": "8425117562"
+    }
+  }
+}

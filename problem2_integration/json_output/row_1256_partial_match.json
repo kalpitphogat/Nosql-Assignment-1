@@ -1,0 +1,16 @@
+{
+  "source_row": 1256,
+  "customer_id": "C01106",
+  "matched_master_id": "C01106",
+  "name": "Ucchal Sangha",
+  "available_information": {
+    "name": "Ucchal Sangha",
+    "email": "ucchal.sangha1106@hotmail.com",
+    "phone": "9167531561",
+    "address": "27/82, Murty Road"
+  },
+  "missing_information": [
+    "city"
+  ],
+  "match_status": "partial_match"
+}

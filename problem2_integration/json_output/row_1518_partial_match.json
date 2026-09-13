@@ -1,0 +1,16 @@
+{
+  "source_row": 1518,
+  "customer_id": "C01485",
+  "matched_master_id": "C01485",
+  "name": "Indali Tandon",
+  "available_information": {
+    "name": "Indali Tandon",
+    "phone": "9081644731"
+  },
+  "missing_information": [
+    "email",
+    "address",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

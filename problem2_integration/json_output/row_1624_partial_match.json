@@ -1,0 +1,16 @@
+{
+  "source_row": 1624,
+  "customer_id": null,
+  "matched_master_id": "C02213",
+  "name": "Quincy Bose",
+  "available_information": {
+    "name": "Quincy Bose",
+    "city": "Miryalaguda"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

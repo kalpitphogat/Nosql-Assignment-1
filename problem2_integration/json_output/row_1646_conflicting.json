@@ -1,0 +1,20 @@
+{
+  "source_row": 1646,
+  "customer_id": "C01091",
+  "matched_master_id": "C01091",
+  "name": "Nilima Sridhar",
+  "available_information": {
+    "email": "orinder.bajaj1091@outlook.com",
+    "phone": "8369778655",
+    "address": "80/808 Morar",
+    "city": "Muzaffarpur"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "name": {
+      "incoming": "Nilima Sridhar",
+      "master": "Orinder Bajaj"
+    }
+  }
+}

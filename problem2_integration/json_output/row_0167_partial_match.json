@@ -1,0 +1,16 @@
+{
+  "source_row": 167,
+  "customer_id": "C01498",
+  "matched_master_id": "C01498",
+  "name": "Oviya Nagy",
+  "available_information": {
+    "name": "Oviya Nagy",
+    "phone": "9418076103",
+    "address": "284 Muni Street"
+  },
+  "missing_information": [
+    "email",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

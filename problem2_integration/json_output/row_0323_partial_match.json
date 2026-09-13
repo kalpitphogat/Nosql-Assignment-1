@@ -1,0 +1,16 @@
+{
+  "source_row": 323,
+  "customer_id": "C01681",
+  "matched_master_id": "C01681",
+  "name": "Atharv Mangal",
+  "available_information": {
+    "name": "Atharv Mangal",
+    "phone": "7876174924",
+    "city": "Mangalore"
+  },
+  "missing_information": [
+    "email",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

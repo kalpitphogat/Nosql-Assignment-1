@@ -1,0 +1,16 @@
+{
+  "source_row": 264,
+  "customer_id": "C00281",
+  "matched_master_id": "C00281",
+  "name": "Prisha Acharya",
+  "available_information": {
+    "name": "Prisha Acharya",
+    "email": "prisha.acharya281@outlook.com",
+    "phone": "9024210190",
+    "address": "276, Dubey Circle"
+  },
+  "missing_information": [
+    "city"
+  ],
+  "match_status": "partial_match"
+}

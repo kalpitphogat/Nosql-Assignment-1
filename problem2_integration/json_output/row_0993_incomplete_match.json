@@ -1,0 +1,16 @@
+{
+  "source_row": 993,
+  "customer_id": null,
+  "matched_master_id": null,
+  "name": "Om Pandya",
+  "available_information": {
+    "name": "Om Pandya"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address",
+    "city"
+  ],
+  "match_status": "incomplete_match"
+}

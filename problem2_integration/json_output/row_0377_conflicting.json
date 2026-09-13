@@ -1,0 +1,20 @@
+{
+  "source_row": 377,
+  "customer_id": "C01509",
+  "matched_master_id": "C01509",
+  "name": "Aayush Cherian",
+  "available_information": {
+    "name": "Aayush Cherian",
+    "phone": "9981807911",
+    "address": "862 Joshi Street",
+    "city": "Amaravati"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "email": {
+      "incoming": "siddharth.chada59534@hotmail.com",
+      "master": "aayush.cherian1509@outlook.com"
+    }
+  }
+}

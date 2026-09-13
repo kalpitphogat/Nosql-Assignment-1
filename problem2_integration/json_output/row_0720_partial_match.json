@@ -1,0 +1,16 @@
+{
+  "source_row": 720,
+  "customer_id": "C01120",
+  "matched_master_id": "C01120",
+  "name": "Yashica Behl",
+  "available_information": {
+    "name": "Yashica Behl",
+    "phone": "7223042025",
+    "city": "Ghaziabad"
+  },
+  "missing_information": [
+    "email",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

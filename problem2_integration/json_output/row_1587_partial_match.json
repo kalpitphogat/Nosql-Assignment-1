@@ -1,0 +1,16 @@
+{
+  "source_row": 1587,
+  "customer_id": "C02126",
+  "matched_master_id": "C02126",
+  "name": "Arjun Bawa",
+  "available_information": {
+    "name": "Arjun Bawa",
+    "email": "arjun.bawa2126@yahoo.com",
+    "address": "20/89, Bajwa Street",
+    "city": "Kirari Suleman Nagar"
+  },
+  "missing_information": [
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

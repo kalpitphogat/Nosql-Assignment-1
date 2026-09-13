@@ -1,0 +1,16 @@
+{
+  "source_row": 1158,
+  "customer_id": "C00487",
+  "matched_master_id": "C00487",
+  "name": "Hredhaan Badami",
+  "available_information": {
+    "name": "Hredhaan Badami",
+    "email": "hredhaan.badami487@hotmail.com",
+    "address": "397, De Street",
+    "city": "Morena"
+  },
+  "missing_information": [
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

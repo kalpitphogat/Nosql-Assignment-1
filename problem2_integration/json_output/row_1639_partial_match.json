@@ -1,0 +1,16 @@
+{
+  "source_row": 1639,
+  "customer_id": "C01531",
+  "matched_master_id": "C01531",
+  "name": "Pranav Anand",
+  "available_information": {
+    "name": "Pranav Anand",
+    "email": "pranav.anand1531@outlook.com",
+    "phone": "8209869887"
+  },
+  "missing_information": [
+    "address",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

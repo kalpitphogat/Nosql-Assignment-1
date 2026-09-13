@@ -1,0 +1,16 @@
+{
+  "source_row": 885,
+  "customer_id": "C02455",
+  "matched_master_id": "C02455",
+  "name": "Yoshita Mohan",
+  "available_information": {
+    "name": "Yoshita Mohan",
+    "email": "yoshita.mohan2455@example.in",
+    "phone": "9684444835",
+    "address": "74/760, Yohannan Ganj"
+  },
+  "missing_information": [
+    "city"
+  ],
+  "match_status": "partial_match"
+}

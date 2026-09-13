@@ -1,0 +1,16 @@
+{
+  "source_row": 1495,
+  "customer_id": "C00611",
+  "matched_master_id": "C00611",
+  "name": "Abhimanyu Ramesh",
+  "available_information": {
+    "name": "Abhimanyu Ramesh",
+    "address": "583 Sahota Circle"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

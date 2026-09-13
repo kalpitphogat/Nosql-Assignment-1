@@ -1,0 +1,23 @@
+{
+  "source_row": 1279,
+  "customer_id": "C01002",
+  "matched_master_id": "C01002",
+  "name": "Oscar Kalita",
+  "available_information": {
+    "phone": "7486541561",
+    "address": "H.No. 591 Sur Circle",
+    "city": "Alwar"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "name": {
+      "incoming": "Oscar Kalita",
+      "master": "Jeet Dua"
+    },
+    "email": {
+      "incoming": "gabriel.biswas36144@yahoo.com",
+      "master": "jeet.dua1002@yahoo.com"
+    }
+  }
+}

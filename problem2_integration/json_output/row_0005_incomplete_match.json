@@ -1,0 +1,16 @@
+{
+  "source_row": 5,
+  "customer_id": null,
+  "matched_master_id": null,
+  "name": "Ekansh Sodhi",
+  "available_information": {
+    "name": "Ekansh Sodhi"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address",
+    "city"
+  ],
+  "match_status": "incomplete_match"
+}

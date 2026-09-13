@@ -1,0 +1,16 @@
+{
+  "source_row": 643,
+  "customer_id": "C02392",
+  "matched_master_id": "C02392",
+  "name": "Naveen Agarwal",
+  "available_information": {
+    "name": "Naveen Agarwal",
+    "email": "naveen.agarwal2392@hotmail.com",
+    "phone": "9299722495",
+    "address": "45/88, Parsa Road"
+  },
+  "missing_information": [
+    "city"
+  ],
+  "match_status": "partial_match"
+}

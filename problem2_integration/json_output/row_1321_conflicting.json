@@ -1,0 +1,20 @@
+{
+  "source_row": 1321,
+  "customer_id": "C00783",
+  "matched_master_id": "C00783",
+  "name": "Wakeeta Shankar",
+  "available_information": {
+    "name": "Wakeeta Shankar",
+    "email": "wakeeta.shankar783@gmail.com",
+    "phone": "7237968922",
+    "city": "Panchkula"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "address": {
+      "incoming": "92/303, Butala",
+      "master": "94/341, Sethi Zila"
+    }
+  }
+}

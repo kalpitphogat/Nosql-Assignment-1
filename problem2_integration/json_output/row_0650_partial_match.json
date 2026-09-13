@@ -1,0 +1,16 @@
+{
+  "source_row": 650,
+  "customer_id": null,
+  "matched_master_id": "C01129",
+  "name": "jeremiah mukhopadhyay",
+  "available_information": {
+    "name": "jeremiah mukhopadhyay",
+    "email": "jeremiah.mukhopadhyay1129@example.in",
+    "address": "18/068, Talwar Street",
+    "city": "Bhiwani"
+  },
+  "missing_information": [
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

@@ -1,0 +1,16 @@
+{
+  "source_row": 211,
+  "customer_id": null,
+  "matched_master_id": null,
+  "name": "Nitara Saxena",
+  "available_information": {
+    "name": "Nitara Saxena"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address",
+    "city"
+  ],
+  "match_status": "incomplete_match"
+}

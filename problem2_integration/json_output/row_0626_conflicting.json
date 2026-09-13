@@ -1,0 +1,23 @@
+{
+  "source_row": 626,
+  "customer_id": "C01221",
+  "matched_master_id": "C01221",
+  "name": "Bhavya Toor",
+  "available_information": {
+    "email": "vasana.subramanian1221@example.in",
+    "address": "886 Chana Street",
+    "city": "Siliguri"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "name": {
+      "incoming": "Bhavya Toor",
+      "master": "Vasana Subramanian"
+    },
+    "phone": {
+      "incoming": "6413606330",
+      "master": "9268339299"
+    }
+  }
+}

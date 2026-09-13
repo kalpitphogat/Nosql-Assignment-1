@@ -1,0 +1,23 @@
+{
+  "source_row": 1461,
+  "customer_id": "C01276",
+  "matched_master_id": "C01276",
+  "name": "Jagvi Joshi",
+  "available_information": {
+    "name": "Jagvi Joshi",
+    "email": "jagvi.joshi1276@gmail.com",
+    "city": "Arrah"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "phone": {
+      "incoming": "6759164912",
+      "master": "8144910853"
+    },
+    "address": {
+      "incoming": "76 Bhattacharyya Chowk",
+      "master": "37, Nayar Road"
+    }
+  }
+}

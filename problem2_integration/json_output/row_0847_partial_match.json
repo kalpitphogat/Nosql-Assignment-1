@@ -1,0 +1,16 @@
+{
+  "source_row": 847,
+  "customer_id": "C00279",
+  "matched_master_id": "C00279",
+  "name": "Hiral Kata",
+  "available_information": {
+    "name": "Hiral Kata",
+    "email": "hiral.kata279@gmail.com",
+    "city": "Hindupur"
+  },
+  "missing_information": [
+    "phone",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

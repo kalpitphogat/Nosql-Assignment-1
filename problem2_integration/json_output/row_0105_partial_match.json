@@ -1,0 +1,16 @@
+{
+  "source_row": 105,
+  "customer_id": null,
+  "matched_master_id": "C02703",
+  "name": "YASHAWINI DIXIT",
+  "available_information": {
+    "name": "YASHAWINI DIXIT",
+    "phone": "7510356657",
+    "address": "395, Sachdeva Nagar",
+    "city": "Jodhpur"
+  },
+  "missing_information": [
+    "email"
+  ],
+  "match_status": "partial_match"
+}

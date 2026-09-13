@@ -1,0 +1,16 @@
+{
+  "source_row": 550,
+  "customer_id": null,
+  "matched_master_id": "C00742",
+  "name": "Barkha Dasgupta",
+  "available_information": {
+    "name": "Barkha Dasgupta",
+    "address": "52/26, Bajwa Road",
+    "city": "Ambarnath"
+  },
+  "missing_information": [
+    "email",
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

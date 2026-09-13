@@ -1,0 +1,20 @@
+{
+  "source_row": 1664,
+  "customer_id": "C02052",
+  "matched_master_id": "C02052",
+  "name": "Bakhshi Dalal",
+  "available_information": {
+    "name": "Bakhshi Dalal",
+    "email": "bakhshi.dalal2052@outlook.com",
+    "phone": "7815824431",
+    "address": "66/795 Upadhyay Nagar"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "city": {
+      "incoming": "Hubli\u2013Dharwad",
+      "master": "Mehsana"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "source_row": 914,
+  "customer_id": "C00669",
+  "matched_master_id": "C00669",
+  "name": "Chakrika Chaudry",
+  "available_information": {
+    "name": "Chakrika Chaudry",
+    "phone": "9187302749"
+  },
+  "missing_information": [
+    "email",
+    "address",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

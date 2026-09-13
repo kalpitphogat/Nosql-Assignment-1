@@ -1,0 +1,16 @@
+{
+  "source_row": 1260,
+  "customer_id": "C01362",
+  "matched_master_id": "C01362",
+  "name": "Megha Grewal",
+  "available_information": {
+    "name": "Megha Grewal",
+    "email": "megha.grewal1362@yahoo.com",
+    "phone": "7585782953"
+  },
+  "missing_information": [
+    "address",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

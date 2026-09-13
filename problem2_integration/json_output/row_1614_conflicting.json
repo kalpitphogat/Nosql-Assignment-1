@@ -1,0 +1,23 @@
+{
+  "source_row": 1614,
+  "customer_id": "C01128",
+  "matched_master_id": "C01128",
+  "name": "Tanvi Sehgal",
+  "available_information": {
+    "name": "Tanvi Sehgal",
+    "phone": "7830585603",
+    "city": "Bikaner"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "email": {
+      "incoming": "advaith.nori30279@outlook.com",
+      "master": "tanvi.sehgal1128@yahoo.com"
+    },
+    "address": {
+      "incoming": "H.No. 89, Dyal Nagar",
+      "master": "H.No. 09, Nori Circle"
+    }
+  }
+}

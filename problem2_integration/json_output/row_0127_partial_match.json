@@ -1,0 +1,16 @@
+{
+  "source_row": 127,
+  "customer_id": "C01565",
+  "matched_master_id": "C01565",
+  "name": "Eshana Chahal",
+  "available_information": {
+    "name": "Eshana Chahal",
+    "phone": "8409175816"
+  },
+  "missing_information": [
+    "email",
+    "address",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

@@ -1,0 +1,16 @@
+{
+  "source_row": 314,
+  "customer_id": "C00353",
+  "matched_master_id": "C00353",
+  "name": "Aarav Kar",
+  "available_information": {
+    "name": "Aarav Kar",
+    "city": "Ramagundam"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

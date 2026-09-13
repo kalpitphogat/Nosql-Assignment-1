@@ -1,0 +1,16 @@
+{
+  "source_row": 1156,
+  "customer_id": "C00818",
+  "matched_master_id": "C00818",
+  "name": "Chameli Tripathi",
+  "available_information": {
+    "name": "Chameli Tripathi",
+    "phone": "7108852843",
+    "address": "59/601, Kala Chowk",
+    "city": "Visakhapatnam"
+  },
+  "missing_information": [
+    "email"
+  ],
+  "match_status": "partial_match"
+}

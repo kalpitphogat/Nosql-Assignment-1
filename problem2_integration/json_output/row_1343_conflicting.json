@@ -1,0 +1,23 @@
+{
+  "source_row": 1343,
+  "customer_id": "C00287",
+  "matched_master_id": "C00287",
+  "name": "Leela Mangal",
+  "available_information": {
+    "name": "Leela Mangal",
+    "phone": "9382015637",
+    "address": "H.No. 12, Chad Marg"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "email": {
+      "incoming": "yashica.ganesh11145@yahoo.com",
+      "master": "leela.mangal287@gmail.com"
+    },
+    "city": {
+      "incoming": "Tirupati",
+      "master": "Pallavaram"
+    }
+  }
+}

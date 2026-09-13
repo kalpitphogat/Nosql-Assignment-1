@@ -1,0 +1,16 @@
+{
+  "source_row": 1172,
+  "customer_id": "C00273",
+  "matched_master_id": "C00273",
+  "name": "Jeet Shenoy",
+  "available_information": {
+    "name": "Jeet Shenoy",
+    "email": "jeet.shenoy273@gmail.com",
+    "address": "81/34, Mohan Path",
+    "city": "Amroha"
+  },
+  "missing_information": [
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

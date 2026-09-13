@@ -1,0 +1,23 @@
+{
+  "source_row": 301,
+  "customer_id": "C01983",
+  "matched_master_id": "C01983",
+  "name": "Mason Ganesh",
+  "available_information": {
+    "email": "anya.bandi1983@hotmail.com",
+    "phone": "8331496764",
+    "address": "H.No. 645, Saran Zila"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "name": {
+      "incoming": "Mason Ganesh",
+      "master": "Anya Bandi"
+    },
+    "city": {
+      "incoming": "Madurai",
+      "master": "Bijapur"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "source_row": 399,
+  "customer_id": "C01565",
+  "matched_master_id": "C01565",
+  "name": "Rudra Vaidya",
+  "available_information": {
+    "phone": "8409175816",
+    "address": "04/85, Gupta Street",
+    "city": "Sikar"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "name": {
+      "incoming": "Rudra Vaidya",
+      "master": "Eshana Chahal"
+    },
+    "email": {
+      "incoming": "samaksh.mander14347@outlook.com",
+      "master": "eshana.chahal1565@example.in"
+    }
+  }
+}

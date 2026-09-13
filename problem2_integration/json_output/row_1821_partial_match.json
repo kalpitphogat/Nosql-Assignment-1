@@ -1,0 +1,16 @@
+{
+  "source_row": 1821,
+  "customer_id": "C00186",
+  "matched_master_id": "C00186",
+  "name": "Ishita Rajagopalan",
+  "available_information": {
+    "name": "Ishita Rajagopalan",
+    "email": "ishita.rajagopalan186@yahoo.com",
+    "phone": "9636432926",
+    "city": "Ghaziabad"
+  },
+  "missing_information": [
+    "address"
+  ],
+  "match_status": "partial_match"
+}

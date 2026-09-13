@@ -1,0 +1,20 @@
+{
+  "source_row": 1382,
+  "customer_id": "C01797",
+  "matched_master_id": "C01797",
+  "name": "Ishita Golla",
+  "available_information": {
+    "name": "Ishita Golla",
+    "email": "ishita.golla1797@yahoo.com",
+    "phone": "7908216320",
+    "address": "84/045, Sharma Street"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "city": {
+      "incoming": "Bokaro",
+      "master": "Jammu"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "source_row": 1186,
+  "customer_id": "C01545",
+  "matched_master_id": "C01545",
+  "name": "Urmi Wason",
+  "available_information": {
+    "email": "zansi.dugar1545@example.in",
+    "address": "92/95 Gill Circle",
+    "city": "Bettiah"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "name": {
+      "incoming": "Urmi Wason",
+      "master": "Zansi Dugar"
+    },
+    "phone": {
+      "incoming": "9115620071",
+      "master": "7535210465"
+    }
+  }
+}

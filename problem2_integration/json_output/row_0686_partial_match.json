@@ -1,0 +1,16 @@
+{
+  "source_row": 686,
+  "customer_id": "C01115",
+  "matched_master_id": "C01115",
+  "name": "Nisha Sathe",
+  "available_information": {
+    "name": "Nisha Sathe",
+    "email": "nisha.sathe1115@hotmail.com",
+    "address": "59/62 Chander Path"
+  },
+  "missing_information": [
+    "phone",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

@@ -1,0 +1,23 @@
+{
+  "source_row": 1206,
+  "customer_id": "C01183",
+  "matched_master_id": "C01183",
+  "name": "Pranav Golla",
+  "available_information": {
+    "name": "Pranav Golla",
+    "email": "pranav.golla1183@gmail.com",
+    "address": "969, Ahuja Street"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "phone": {
+      "incoming": "7518739945",
+      "master": "6019928158"
+    },
+    "city": {
+      "incoming": "Ujjain",
+      "master": "Gandhidham"
+    }
+  }
+}

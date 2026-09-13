@@ -1,0 +1,16 @@
+{
+  "source_row": 1815,
+  "customer_id": null,
+  "matched_master_id": "C00689",
+  "name": null,
+  "available_information": {
+    "email": "faras.aggarwal689@outlook.com",
+    "phone": "6412093780",
+    "city": "Chennai"
+  },
+  "missing_information": [
+    "name",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

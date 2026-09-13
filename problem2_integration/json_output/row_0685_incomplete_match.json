@@ -1,0 +1,16 @@
+{
+  "source_row": 685,
+  "customer_id": null,
+  "matched_master_id": null,
+  "name": "Utkarsh Badal",
+  "available_information": {
+    "name": "Utkarsh Badal"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address",
+    "city"
+  ],
+  "match_status": "incomplete_match"
+}

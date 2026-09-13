@@ -1,0 +1,23 @@
+{
+  "source_row": 1733,
+  "customer_id": "C02949",
+  "matched_master_id": "C02949",
+  "name": "Bachittar Sahota",
+  "available_information": {
+    "name": "Bachittar Sahota",
+    "email": "bachittar.sahota2949@outlook.com",
+    "city": "Madanapalle"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "phone": {
+      "incoming": "8710826346",
+      "master": "9069231754"
+    },
+    "address": {
+      "incoming": "21, Saxena Marg",
+      "master": "H.No. 299, Rajan Street"
+    }
+  }
+}

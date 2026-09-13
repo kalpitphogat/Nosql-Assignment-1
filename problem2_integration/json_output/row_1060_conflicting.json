@@ -1,0 +1,23 @@
+{
+  "source_row": 1060,
+  "customer_id": "C02636",
+  "matched_master_id": "C02636",
+  "name": "Shivansh Krishnamurthy",
+  "available_information": {
+    "email": "wazir.sachdev2636@example.in",
+    "phone": "9099477503",
+    "address": "663, Brar Chowk"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "name": {
+      "incoming": "Shivansh Krishnamurthy",
+      "master": "Wazir Sachdev"
+    },
+    "city": {
+      "incoming": "Lucknow",
+      "master": "Gudivada"
+    }
+  }
+}

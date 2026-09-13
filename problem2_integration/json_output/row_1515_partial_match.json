@@ -1,0 +1,16 @@
+{
+  "source_row": 1515,
+  "customer_id": "C00398",
+  "matched_master_id": "C00398",
+  "name": "Bhavya Dugal",
+  "available_information": {
+    "name": "Bhavya Dugal",
+    "email": "bhavya.dugal398@example.in",
+    "address": "88/432, Raman Street"
+  },
+  "missing_information": [
+    "phone",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

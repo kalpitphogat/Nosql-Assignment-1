@@ -1,0 +1,23 @@
+{
+  "source_row": 1066,
+  "customer_id": "C00626",
+  "matched_master_id": "C00626",
+  "name": "Orinder Walia",
+  "available_information": {
+    "email": "alexander.memon626@hotmail.com",
+    "phone": "7733223511",
+    "city": "Suryapet"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "name": {
+      "incoming": "Orinder Walia",
+      "master": "Alexander Memon"
+    },
+    "address": {
+      "incoming": "83 Vig Street",
+      "master": "70 Bora Marg"
+    }
+  }
+}

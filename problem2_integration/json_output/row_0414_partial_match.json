@@ -1,0 +1,16 @@
+{
+  "source_row": 414,
+  "customer_id": "C02812",
+  "matched_master_id": "C02812",
+  "name": "Gaurika Rajagopalan",
+  "available_information": {
+    "name": "Gaurika Rajagopalan",
+    "address": "906 Chana"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

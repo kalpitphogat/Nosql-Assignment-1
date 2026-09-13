@@ -1,0 +1,16 @@
+{
+  "source_row": 1858,
+  "customer_id": "C00906",
+  "matched_master_id": "C00906",
+  "name": "Charan Yohannan",
+  "available_information": {
+    "name": "Charan Yohannan",
+    "email": "charan.yohannan906@yahoo.com",
+    "phone": "6251302325",
+    "city": "Maheshtala"
+  },
+  "missing_information": [
+    "address"
+  ],
+  "match_status": "partial_match"
+}

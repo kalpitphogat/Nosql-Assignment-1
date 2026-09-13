@@ -1,0 +1,16 @@
+{
+  "source_row": 156,
+  "customer_id": "C00583",
+  "matched_master_id": "C00583",
+  "name": "Qabil Swaminathan",
+  "available_information": {
+    "name": "Qabil Swaminathan",
+    "phone": "7750345045"
+  },
+  "missing_information": [
+    "email",
+    "address",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

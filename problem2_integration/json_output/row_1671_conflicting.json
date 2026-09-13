@@ -1,0 +1,23 @@
+{
+  "source_row": 1671,
+  "customer_id": "C01779",
+  "matched_master_id": "C01779",
+  "name": "Divya Manda",
+  "available_information": {
+    "name": "Divya Manda",
+    "phone": "8194224945",
+    "address": "08/23 Gill Ganj"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "email": {
+      "incoming": "onkar.peri77198@outlook.com",
+      "master": "divya.manda1779@hotmail.com"
+    },
+    "city": {
+      "incoming": "Bally",
+      "master": "Karaikudi"
+    }
+  }
+}

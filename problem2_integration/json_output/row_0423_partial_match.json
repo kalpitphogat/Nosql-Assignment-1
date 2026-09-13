@@ -1,0 +1,16 @@
+{
+  "source_row": 423,
+  "customer_id": "C01750",
+  "matched_master_id": "C01750",
+  "name": "Vritti Kaul",
+  "available_information": {
+    "name": "Vritti Kaul",
+    "phone": "8411804181",
+    "city": "Adoni"
+  },
+  "missing_information": [
+    "email",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

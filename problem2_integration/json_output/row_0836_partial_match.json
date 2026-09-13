@@ -1,0 +1,16 @@
+{
+  "source_row": 836,
+  "customer_id": null,
+  "matched_master_id": "C00168",
+  "name": null,
+  "available_information": {
+    "email": "bhavani.raj168@example.in",
+    "phone": "9362808794",
+    "city": "Raurkela Industrial Township"
+  },
+  "missing_information": [
+    "name",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

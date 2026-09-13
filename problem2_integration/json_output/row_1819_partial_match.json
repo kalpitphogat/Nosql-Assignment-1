@@ -1,0 +1,16 @@
+{
+  "source_row": 1819,
+  "customer_id": "C00223",
+  "matched_master_id": "C00223",
+  "name": "Faris Saini",
+  "available_information": {
+    "name": "Faris Saini",
+    "phone": "9265712092",
+    "address": "440 Patil Street"
+  },
+  "missing_information": [
+    "email",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

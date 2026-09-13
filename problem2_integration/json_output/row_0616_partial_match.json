@@ -1,0 +1,16 @@
+{
+  "source_row": 616,
+  "customer_id": null,
+  "matched_master_id": "C00013",
+  "name": "Bishakha Shetty",
+  "available_information": {
+    "name": "Bishakha Shetty",
+    "city": "Khammam"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

@@ -1,0 +1,16 @@
+{
+  "source_row": 759,
+  "customer_id": null,
+  "matched_master_id": "C01714",
+  "name": "Pranav Batra",
+  "available_information": {
+    "name": "Pranav Batra",
+    "city": "Erode"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

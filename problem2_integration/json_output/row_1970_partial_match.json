@@ -1,0 +1,16 @@
+{
+  "source_row": 1970,
+  "customer_id": "C00207",
+  "matched_master_id": "C00207",
+  "name": "Chanchal Gour",
+  "available_information": {
+    "name": "Chanchal Gour",
+    "email": "chanchal.gour207@yahoo.com",
+    "phone": "9502268617"
+  },
+  "missing_information": [
+    "address",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

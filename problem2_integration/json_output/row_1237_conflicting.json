@@ -1,0 +1,23 @@
+{
+  "source_row": 1237,
+  "customer_id": "C02116",
+  "matched_master_id": "C02116",
+  "name": "Rohan Sane",
+  "available_information": {
+    "email": "niharika.raja2116@hotmail.com",
+    "address": "H.No. 32, Kunda Street",
+    "city": "Tirunelveli"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "name": {
+      "incoming": "Rohan Sane",
+      "master": "Niharika Raja"
+    },
+    "phone": {
+      "incoming": "9261602021",
+      "master": "6246230581"
+    }
+  }
+}

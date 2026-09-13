@@ -1,0 +1,20 @@
+{
+  "source_row": 1028,
+  "customer_id": "C00756",
+  "matched_master_id": "C00756",
+  "name": "Aachal Chaudhary",
+  "available_information": {
+    "name": "Aachal Chaudhary",
+    "email": "aachal.chaudhary756@outlook.com",
+    "address": "25 Kari Chowk",
+    "city": "Darbhanga"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "phone": {
+      "incoming": "8149105134",
+      "master": "9043599043"
+    }
+  }
+}

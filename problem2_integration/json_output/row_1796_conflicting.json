@@ -1,0 +1,23 @@
+{
+  "source_row": 1796,
+  "customer_id": "C02901",
+  "matched_master_id": "C02901",
+  "name": "Kashish Chahal",
+  "available_information": {
+    "name": "Kashish Chahal",
+    "phone": "7849282492",
+    "address": "12/300, Kalla Street"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "email": {
+      "incoming": "warinder.divan37187@hotmail.com",
+      "master": "kashish.chahal2901@yahoo.com"
+    },
+    "city": {
+      "incoming": "Karimnagar",
+      "master": "Pondicherry"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "source_row": 348,
+  "customer_id": null,
+  "matched_master_id": null,
+  "name": null,
+  "available_information": {
+    "city": "Madhyamgram"
+  },
+  "missing_information": [
+    "name",
+    "email",
+    "phone",
+    "address"
+  ],
+  "match_status": "incomplete_match"
+}

@@ -1,0 +1,16 @@
+{
+  "source_row": 229,
+  "customer_id": null,
+  "matched_master_id": "C00638",
+  "name": "NATHAN KHARE",
+  "available_information": {
+    "name": "NATHAN KHARE",
+    "phone": "7448188705",
+    "address": "52/831 Sathe Path",
+    "city": "Sri Ganganagar"
+  },
+  "missing_information": [
+    "email"
+  ],
+  "match_status": "partial_match"
+}

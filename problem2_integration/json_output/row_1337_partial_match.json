@@ -1,0 +1,16 @@
+{
+  "source_row": 1337,
+  "customer_id": "C02382",
+  "matched_master_id": "C02382",
+  "name": "Wazir Chadha",
+  "available_information": {
+    "name": "Wazir Chadha",
+    "email": "wazir.chadha2382@example.in",
+    "phone": "7277393564",
+    "city": "Madurai"
+  },
+  "missing_information": [
+    "address"
+  ],
+  "match_status": "partial_match"
+}

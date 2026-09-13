@@ -1,0 +1,16 @@
+{
+  "source_row": 1601,
+  "customer_id": "C02887",
+  "matched_master_id": "C02887",
+  "name": "Chavvi Mangal",
+  "available_information": {
+    "name": "Chavvi Mangal",
+    "address": "H.No. 50, Pradhan Zila",
+    "city": "Tumkur"
+  },
+  "missing_information": [
+    "email",
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

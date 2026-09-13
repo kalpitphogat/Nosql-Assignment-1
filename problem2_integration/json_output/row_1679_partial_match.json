@@ -1,0 +1,16 @@
+{
+  "source_row": 1679,
+  "customer_id": "C01199",
+  "matched_master_id": "C01199",
+  "name": "Januja Raj",
+  "available_information": {
+    "name": "Januja Raj",
+    "phone": "8200604919"
+  },
+  "missing_information": [
+    "email",
+    "address",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

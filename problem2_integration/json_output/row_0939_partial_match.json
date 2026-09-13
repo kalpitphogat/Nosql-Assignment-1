@@ -1,0 +1,16 @@
+{
+  "source_row": 939,
+  "customer_id": "C02743",
+  "matched_master_id": "C02743",
+  "name": "Barkha Varty",
+  "available_information": {
+    "name": "Barkha Varty",
+    "phone": "7038273601",
+    "address": "H.No. 908 Bains Road",
+    "city": "Kottayam"
+  },
+  "missing_information": [
+    "email"
+  ],
+  "match_status": "partial_match"
+}

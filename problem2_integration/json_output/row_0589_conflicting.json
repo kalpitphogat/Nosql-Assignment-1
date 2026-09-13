@@ -1,0 +1,23 @@
+{
+  "source_row": 589,
+  "customer_id": "C00313",
+  "matched_master_id": "C00313",
+  "name": "Ubika Narula",
+  "available_information": {
+    "name": "Ubika Narula",
+    "phone": "8189846702",
+    "city": "Unnao"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "email": {
+      "incoming": "aarnav.chopra98812@outlook.com",
+      "master": "ubika.narula313@example.in"
+    },
+    "address": {
+      "incoming": "71/832 Goswami Road",
+      "master": "92 Mammen Path"
+    }
+  }
+}

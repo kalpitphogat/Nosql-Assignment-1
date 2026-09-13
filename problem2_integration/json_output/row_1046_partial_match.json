@@ -1,0 +1,16 @@
+{
+  "source_row": 1046,
+  "customer_id": "C01062",
+  "matched_master_id": "C01062",
+  "name": "Jacob Rao",
+  "available_information": {
+    "name": "Jacob Rao",
+    "phone": "6796812927",
+    "address": "H.No. 309, Karnik Street"
+  },
+  "missing_information": [
+    "email",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

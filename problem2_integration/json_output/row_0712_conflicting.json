@@ -1,0 +1,23 @@
+{
+  "source_row": 712,
+  "customer_id": "C00057",
+  "matched_master_id": "C00057",
+  "name": "Mitali Ramaswamy",
+  "available_information": {
+    "name": "Mitali Ramaswamy",
+    "email": "mitali.ramaswamy57@example.in",
+    "city": "Raurkela Industrial Township"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "phone": {
+      "incoming": "9820432460",
+      "master": "9778074582"
+    },
+    "address": {
+      "incoming": "45 Dixit Path",
+      "master": "978, Kohli Zila"
+    }
+  }
+}

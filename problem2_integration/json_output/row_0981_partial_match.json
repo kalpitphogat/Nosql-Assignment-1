@@ -1,0 +1,16 @@
+{
+  "source_row": 981,
+  "customer_id": "C02022",
+  "matched_master_id": "C02022",
+  "name": "Abeer Prashad",
+  "available_information": {
+    "name": "Abeer Prashad",
+    "city": "Davanagere"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

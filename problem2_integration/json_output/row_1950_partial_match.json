@@ -1,0 +1,16 @@
+{
+  "source_row": 1950,
+  "customer_id": "C02157",
+  "matched_master_id": "C02157",
+  "name": "Madhav Singh",
+  "available_information": {
+    "name": "Madhav Singh",
+    "address": "H.No. 493, Samra Path"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

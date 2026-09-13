@@ -1,0 +1,16 @@
+{
+  "source_row": 598,
+  "customer_id": null,
+  "matched_master_id": "C01642",
+  "name": "Wakeeta Aurora",
+  "available_information": {
+    "name": "Wakeeta Aurora",
+    "address": "19, Kanda Chowk",
+    "city": "Ozhukarai"
+  },
+  "missing_information": [
+    "email",
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

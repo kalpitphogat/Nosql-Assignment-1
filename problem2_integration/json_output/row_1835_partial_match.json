@@ -1,0 +1,16 @@
+{
+  "source_row": 1835,
+  "customer_id": null,
+  "matched_master_id": "C00841",
+  "name": "bhavika lala",
+  "available_information": {
+    "name": "bhavika lala",
+    "email": "bhavika.lala841@yahoo.com",
+    "address": "H.No. 734, Jayaraman Path",
+    "city": "Giridih"
+  },
+  "missing_information": [
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

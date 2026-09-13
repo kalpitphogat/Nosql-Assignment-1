@@ -1,0 +1,16 @@
+{
+  "source_row": 66,
+  "customer_id": "C02747",
+  "matched_master_id": "C02747",
+  "name": "Ekapad De",
+  "available_information": {
+    "name": "Ekapad De",
+    "address": "72/43 Loyal Street"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

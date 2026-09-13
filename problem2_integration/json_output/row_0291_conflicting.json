@@ -1,0 +1,20 @@
+{
+  "source_row": 291,
+  "customer_id": "C00331",
+  "matched_master_id": "C00331",
+  "name": "Yochana Wason",
+  "available_information": {
+    "name": "Yochana Wason",
+    "phone": "9170863771",
+    "address": "801 Devan Road",
+    "city": "Panipat"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "email": {
+      "incoming": "samar.lad89164@yahoo.com",
+      "master": "yochana.wason331@example.in"
+    }
+  }
+}

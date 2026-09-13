@@ -1,0 +1,16 @@
+{
+  "source_row": 460,
+  "customer_id": null,
+  "matched_master_id": "C02628",
+  "name": "Ekantika Bali",
+  "available_information": {
+    "name": "Ekantika Bali",
+    "address": "39 Choudhary Chowk",
+    "city": "Gudivada"
+  },
+  "missing_information": [
+    "email",
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

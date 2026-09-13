@@ -1,0 +1,23 @@
+{
+  "source_row": 100,
+  "customer_id": "C02888",
+  "matched_master_id": "C02888",
+  "name": "Tejas Patla",
+  "available_information": {
+    "name": "Tejas Patla",
+    "email": "tejas.patla2888@hotmail.com",
+    "city": "Bardhaman"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "phone": {
+      "incoming": "6124597880",
+      "master": "8284815012"
+    },
+    "address": {
+      "incoming": "492, Grover Nagar",
+      "master": "446 Pall Ganj"
+    }
+  }
+}

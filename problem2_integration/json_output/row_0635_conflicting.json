@@ -1,0 +1,23 @@
+{
+  "source_row": 635,
+  "customer_id": "C00915",
+  "matched_master_id": "C00915",
+  "name": "Yatan Kaur",
+  "available_information": {
+    "name": "Yatan Kaur",
+    "phone": "6130484084",
+    "city": "Varanasi"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "email": {
+      "incoming": "pallavi.mahajan78906@example.in",
+      "master": "yatan.kaur915@outlook.com"
+    },
+    "address": {
+      "incoming": "62 Raja Circle",
+      "master": "253 Barad Street"
+    }
+  }
+}

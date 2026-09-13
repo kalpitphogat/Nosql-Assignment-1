@@ -1,0 +1,23 @@
+{
+  "source_row": 587,
+  "customer_id": "C01532",
+  "matched_master_id": "C01532",
+  "name": "Chandresh Desai",
+  "available_information": {
+    "phone": "6795813103",
+    "address": "H.No. 15, Bhatnagar Street",
+    "city": "Katni"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "name": {
+      "incoming": "Chandresh Desai",
+      "master": "Xalak Sani"
+    },
+    "email": {
+      "incoming": "sanya.mani17724@gmail.com",
+      "master": "xalak.sani1532@outlook.com"
+    }
+  }
+}

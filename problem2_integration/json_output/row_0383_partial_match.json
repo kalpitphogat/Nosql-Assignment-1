@@ -1,0 +1,16 @@
+{
+  "source_row": 383,
+  "customer_id": "C01421",
+  "matched_master_id": "C01421",
+  "name": "Patrick Parsa",
+  "available_information": {
+    "name": "Patrick Parsa",
+    "email": "patrick.parsa1421@gmail.com",
+    "phone": "8902159460",
+    "address": "H.No. 64 Parikh Zila"
+  },
+  "missing_information": [
+    "city"
+  ],
+  "match_status": "partial_match"
+}

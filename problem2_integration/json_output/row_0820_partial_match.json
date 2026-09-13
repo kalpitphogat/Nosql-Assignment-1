@@ -1,0 +1,16 @@
+{
+  "source_row": 820,
+  "customer_id": "C02958",
+  "matched_master_id": "C02958",
+  "name": "Abha Gokhale",
+  "available_information": {
+    "name": "Abha Gokhale",
+    "email": "abha.gokhale2958@outlook.com",
+    "city": "Bhiwani"
+  },
+  "missing_information": [
+    "phone",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

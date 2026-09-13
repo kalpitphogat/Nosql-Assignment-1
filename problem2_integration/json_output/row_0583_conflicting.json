@@ -1,0 +1,23 @@
+{
+  "source_row": 583,
+  "customer_id": "C02572",
+  "matched_master_id": "C02572",
+  "name": "Libni Wali",
+  "available_information": {
+    "name": "Libni Wali",
+    "email": "libni.wali2572@outlook.com",
+    "phone": "9926279557"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "address": {
+      "incoming": "982 Balakrishnan Path",
+      "master": "89, Singhal Path"
+    },
+    "city": {
+      "incoming": "Tiruvottiyur",
+      "master": "Dehradun"
+    }
+  }
+}

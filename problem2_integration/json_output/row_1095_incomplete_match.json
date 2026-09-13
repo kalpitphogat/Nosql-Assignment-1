@@ -1,0 +1,16 @@
+{
+  "source_row": 1095,
+  "customer_id": null,
+  "matched_master_id": null,
+  "name": "Chakradhar Hayer",
+  "available_information": {
+    "name": "Chakradhar Hayer"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address",
+    "city"
+  ],
+  "match_status": "incomplete_match"
+}

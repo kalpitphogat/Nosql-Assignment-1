@@ -1,0 +1,23 @@
+{
+  "source_row": 1579,
+  "customer_id": "C01959",
+  "matched_master_id": "C01959",
+  "name": "Mohammed Bera",
+  "available_information": {
+    "name": "Mohammed Bera",
+    "phone": "7301900624",
+    "city": "Katihar"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "email": {
+      "incoming": "parth.bawa17418@outlook.com",
+      "master": "mohammed.bera1959@example.in"
+    },
+    "address": {
+      "incoming": "H.No. 753, Sankar Nagar",
+      "master": "57, Murty Zila"
+    }
+  }
+}

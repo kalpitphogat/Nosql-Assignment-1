@@ -1,0 +1,16 @@
+{
+  "source_row": 356,
+  "customer_id": "C02804",
+  "matched_master_id": "C02804",
+  "name": "Daniel Rastogi",
+  "available_information": {
+    "name": "Daniel Rastogi",
+    "email": "daniel.rastogi2804@yahoo.com",
+    "address": "H.No. 808, Edwin Chowk"
+  },
+  "missing_information": [
+    "phone",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

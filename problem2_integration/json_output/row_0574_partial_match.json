@@ -1,0 +1,16 @@
+{
+  "source_row": 574,
+  "customer_id": null,
+  "matched_master_id": "C01780",
+  "name": "AGASTYA LALA",
+  "available_information": {
+    "name": "AGASTYA LALA",
+    "phone": "6137852363",
+    "address": "90 Gour Chowk",
+    "city": "Ulhasnagar"
+  },
+  "missing_information": [
+    "email"
+  ],
+  "match_status": "partial_match"
+}

@@ -1,0 +1,16 @@
+{
+  "source_row": 1469,
+  "customer_id": null,
+  "matched_master_id": "C01364",
+  "name": null,
+  "available_information": {
+    "email": "neha.baria1364@hotmail.com",
+    "phone": "6186221745",
+    "city": "Kakinada"
+  },
+  "missing_information": [
+    "name",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

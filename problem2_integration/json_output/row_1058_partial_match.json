@@ -1,0 +1,16 @@
+{
+  "source_row": 1058,
+  "customer_id": "C01685",
+  "matched_master_id": "C01685",
+  "name": "Wriddhish Ramesh",
+  "available_information": {
+    "name": "Wriddhish Ramesh",
+    "city": "Srikakulam"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

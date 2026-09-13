@@ -1,0 +1,20 @@
+{
+  "source_row": 152,
+  "customer_id": "C00323",
+  "matched_master_id": "C00323",
+  "name": "Veda Date",
+  "available_information": {
+    "name": "Veda Date",
+    "email": "veda.date323@example.in",
+    "phone": "9100240806",
+    "city": "Kozhikode"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "address": {
+      "incoming": "86 De Nagar",
+      "master": "22 Arora Circle"
+    }
+  }
+}

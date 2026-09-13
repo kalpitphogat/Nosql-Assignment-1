@@ -1,0 +1,23 @@
+{
+  "source_row": 1817,
+  "customer_id": "C01979",
+  "matched_master_id": "C01979",
+  "name": "Laban Vasa",
+  "available_information": {
+    "name": "Laban Vasa",
+    "address": "H.No. 106, Seshadri Zila",
+    "city": "Dewas"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "email": {
+      "incoming": "zaid.edwin22138@gmail.com",
+      "master": "laban.vasa1979@outlook.com"
+    },
+    "phone": {
+      "incoming": "8054526407",
+      "master": "7319580881"
+    }
+  }
+}

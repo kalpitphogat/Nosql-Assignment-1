@@ -1,0 +1,16 @@
+{
+  "source_row": 480,
+  "customer_id": "C01507",
+  "matched_master_id": "C01507",
+  "name": "Prisha Menon",
+  "available_information": {
+    "name": "Prisha Menon",
+    "email": "prisha.menon1507@example.in",
+    "address": "67, Natt Nagar"
+  },
+  "missing_information": [
+    "phone",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

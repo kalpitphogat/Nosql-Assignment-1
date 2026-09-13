@@ -1,0 +1,16 @@
+{
+  "source_row": 848,
+  "customer_id": "C01783",
+  "matched_master_id": "C01783",
+  "name": "Qabil Chana",
+  "available_information": {
+    "name": "Qabil Chana",
+    "email": "qabil.chana1783@gmail.com",
+    "phone": "6144868857",
+    "city": "Bidar"
+  },
+  "missing_information": [
+    "address"
+  ],
+  "match_status": "partial_match"
+}

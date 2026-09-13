@@ -1,0 +1,16 @@
+{
+  "source_row": 898,
+  "customer_id": null,
+  "matched_master_id": "C00449",
+  "name": "DAYITA ANNE",
+  "available_information": {
+    "name": "DAYITA ANNE",
+    "phone": "7876386978",
+    "address": "H.No. 65 Sem Circle",
+    "city": "Pimpri-Chinchwad"
+  },
+  "missing_information": [
+    "email"
+  ],
+  "match_status": "partial_match"
+}

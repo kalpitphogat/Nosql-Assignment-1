@@ -1,0 +1,16 @@
+{
+  "source_row": 192,
+  "customer_id": null,
+  "matched_master_id": null,
+  "name": "Gabriel Kala",
+  "available_information": {
+    "name": "Gabriel Kala"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address",
+    "city"
+  ],
+  "match_status": "incomplete_match"
+}

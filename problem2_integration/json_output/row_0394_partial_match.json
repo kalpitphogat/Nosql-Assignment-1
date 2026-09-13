@@ -1,0 +1,16 @@
+{
+  "source_row": 394,
+  "customer_id": "C01104",
+  "matched_master_id": "C01104",
+  "name": "Nandini Guha",
+  "available_information": {
+    "name": "Nandini Guha",
+    "email": "nandini.guha1104@example.in"
+  },
+  "missing_information": [
+    "phone",
+    "address",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

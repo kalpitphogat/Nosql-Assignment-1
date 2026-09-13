@@ -1,0 +1,16 @@
+{
+  "source_row": 1734,
+  "customer_id": null,
+  "matched_master_id": "C00561",
+  "name": "BANJEET GANESH",
+  "available_information": {
+    "name": "BANJEET GANESH",
+    "phone": "6636761331",
+    "address": "72/41 Grewal",
+    "city": "Jhansi"
+  },
+  "missing_information": [
+    "email"
+  ],
+  "match_status": "partial_match"
+}

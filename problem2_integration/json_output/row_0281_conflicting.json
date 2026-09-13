@@ -1,0 +1,23 @@
+{
+  "source_row": 281,
+  "customer_id": "C00508",
+  "matched_master_id": "C00508",
+  "name": "Amrita Mane",
+  "available_information": {
+    "name": "Amrita Mane",
+    "address": "42/40, Shanker Zila",
+    "city": "Bhilwara"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "email": {
+      "incoming": "shaurya.deshpande32727@yahoo.com",
+      "master": "amrita.mane508@gmail.com"
+    },
+    "phone": {
+      "incoming": "7831527733",
+      "master": "6122707022"
+    }
+  }
+}

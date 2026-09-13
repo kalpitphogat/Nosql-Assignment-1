@@ -1,0 +1,23 @@
+{
+  "source_row": 1686,
+  "customer_id": "C00671",
+  "matched_master_id": "C00671",
+  "name": "Alexander Sampath",
+  "available_information": {
+    "name": "Alexander Sampath",
+    "email": "alexander.sampath671@outlook.com",
+    "phone": "6049009918"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "address": {
+      "incoming": "93/38, Dash Street",
+      "master": "35/331, Lala Nagar"
+    },
+    "city": {
+      "incoming": "Tenali",
+      "master": "Kota"
+    }
+  }
+}

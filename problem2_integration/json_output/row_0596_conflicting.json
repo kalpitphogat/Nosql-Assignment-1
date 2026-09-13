@@ -1,0 +1,20 @@
+{
+  "source_row": 596,
+  "customer_id": "C00794",
+  "matched_master_id": "C00794",
+  "name": "Girindra Gupta",
+  "available_information": {
+    "name": "Girindra Gupta",
+    "email": "girindra.gupta794@hotmail.com",
+    "phone": "6012874012",
+    "address": "52/92, Garde Path"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "city": {
+      "incoming": "Suryapet",
+      "master": "Ramagundam"
+    }
+  }
+}

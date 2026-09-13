@@ -1,0 +1,16 @@
+{
+  "source_row": 471,
+  "customer_id": null,
+  "matched_master_id": null,
+  "name": "Yasti Dhaliwal",
+  "available_information": {
+    "name": "Yasti Dhaliwal"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address",
+    "city"
+  ],
+  "match_status": "incomplete_match"
+}

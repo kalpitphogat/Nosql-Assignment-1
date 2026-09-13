@@ -1,0 +1,16 @@
+{
+  "source_row": 683,
+  "customer_id": "C00306",
+  "matched_master_id": "C00306",
+  "name": "Vinaya Sawhney",
+  "available_information": {
+    "name": "Vinaya Sawhney",
+    "email": "vinaya.sawhney306@hotmail.com"
+  },
+  "missing_information": [
+    "phone",
+    "address",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

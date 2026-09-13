@@ -1,0 +1,23 @@
+{
+  "source_row": 1190,
+  "customer_id": "C02793",
+  "matched_master_id": "C02793",
+  "name": "Nirja Hans",
+  "available_information": {
+    "email": "yatin.kothari2793@yahoo.com",
+    "address": "58/96 Pandey Marg",
+    "city": "Tirunelveli"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "name": {
+      "incoming": "Nirja Hans",
+      "master": "Yatin Kothari"
+    },
+    "phone": {
+      "incoming": "7880205354",
+      "master": "7331880046"
+    }
+  }
+}

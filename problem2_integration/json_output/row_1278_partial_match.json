@@ -1,0 +1,16 @@
+{
+  "source_row": 1278,
+  "customer_id": null,
+  "matched_master_id": "C02346",
+  "name": "finn rama",
+  "available_information": {
+    "name": "finn rama",
+    "email": "finn.rama2346@gmail.com",
+    "address": "42/849, Warrior Path",
+    "city": "Nandyal"
+  },
+  "missing_information": [
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

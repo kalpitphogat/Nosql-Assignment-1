@@ -1,0 +1,16 @@
+{
+  "source_row": 1560,
+  "customer_id": "C01503",
+  "matched_master_id": "C01503",
+  "name": "Amruta Dalal",
+  "available_information": {
+    "name": "Amruta Dalal",
+    "email": "amruta.dalal1503@yahoo.com",
+    "phone": "7195596372",
+    "city": "Aligarh"
+  },
+  "missing_information": [
+    "address"
+  ],
+  "match_status": "partial_match"
+}

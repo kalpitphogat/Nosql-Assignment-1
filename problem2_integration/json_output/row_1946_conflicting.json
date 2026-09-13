@@ -1,0 +1,20 @@
+{
+  "source_row": 1946,
+  "customer_id": "C00609",
+  "matched_master_id": "C00609",
+  "name": "Ishanvi Sastry",
+  "available_information": {
+    "name": "Ishanvi Sastry",
+    "email": "ishanvi.sastry609@example.in",
+    "phone": "6322702731",
+    "address": "58/100 Golla Chowk"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "city": {
+      "incoming": "Amravati",
+      "master": "Udupi"
+    }
+  }
+}

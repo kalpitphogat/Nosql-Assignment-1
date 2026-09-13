@@ -1,0 +1,23 @@
+{
+  "source_row": 1017,
+  "customer_id": "C01024",
+  "matched_master_id": "C01024",
+  "name": "Qabil Sarraf",
+  "available_information": {
+    "name": "Qabil Sarraf",
+    "email": "qabil.sarraf1024@example.in",
+    "address": "542 Ramachandran Chowk"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "phone": {
+      "incoming": "9168171876",
+      "master": "7096723500"
+    },
+    "city": {
+      "incoming": "Raurkela Industrial Township",
+      "master": "Shimla"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "source_row": 1710,
+  "customer_id": "C01207",
+  "matched_master_id": "C01207",
+  "name": "Nilima Bath",
+  "available_information": {
+    "name": "Nilima Bath",
+    "phone": "8804095082",
+    "city": "Rohtak"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "email": {
+      "incoming": "yatin.warrior70382@hotmail.com",
+      "master": "nilima.bath1207@outlook.com"
+    },
+    "address": {
+      "incoming": "775 Tiwari Circle",
+      "master": "010, Bobal Street"
+    }
+  }
+}

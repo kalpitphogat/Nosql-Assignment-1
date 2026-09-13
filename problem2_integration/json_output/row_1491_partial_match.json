@@ -1,0 +1,16 @@
+{
+  "source_row": 1491,
+  "customer_id": "C00178",
+  "matched_master_id": "C00178",
+  "name": "Rayaan Wali",
+  "available_information": {
+    "name": "Rayaan Wali",
+    "phone": "8928180736"
+  },
+  "missing_information": [
+    "email",
+    "address",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

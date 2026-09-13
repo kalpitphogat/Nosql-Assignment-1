@@ -1,0 +1,23 @@
+{
+  "source_row": 1850,
+  "customer_id": "C02672",
+  "matched_master_id": "C02672",
+  "name": "Balvan Mistry",
+  "available_information": {
+    "name": "Balvan Mistry",
+    "email": "balvan.mistry2672@example.in",
+    "city": "Mangalore"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "phone": {
+      "incoming": "6418376058",
+      "master": "8758747122"
+    },
+    "address": {
+      "incoming": "75/566, Din",
+      "master": "92, Deshmukh Marg"
+    }
+  }
+}

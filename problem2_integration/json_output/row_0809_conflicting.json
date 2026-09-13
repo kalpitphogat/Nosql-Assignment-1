@@ -1,0 +1,23 @@
+{
+  "source_row": 809,
+  "customer_id": "C02039",
+  "matched_master_id": "C02039",
+  "name": "Tanmayi Nadkarni",
+  "available_information": {
+    "name": "Tanmayi Nadkarni",
+    "email": "tanmayi.nadkarni2039@gmail.com",
+    "address": "56/964, Patla Street"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "phone": {
+      "incoming": "6859395408",
+      "master": "6266093446"
+    },
+    "city": {
+      "incoming": "Phusro",
+      "master": "Saharanpur"
+    }
+  }
+}

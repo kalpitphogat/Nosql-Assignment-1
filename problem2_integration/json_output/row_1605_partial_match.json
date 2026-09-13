@@ -1,0 +1,16 @@
+{
+  "source_row": 1605,
+  "customer_id": "C01464",
+  "matched_master_id": "C01464",
+  "name": "Kavya Boase",
+  "available_information": {
+    "name": "Kavya Boase",
+    "email": "kavya.boase1464@outlook.com",
+    "phone": "9321772198"
+  },
+  "missing_information": [
+    "address",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

@@ -1,0 +1,16 @@
+{
+  "source_row": 1681,
+  "customer_id": null,
+  "matched_master_id": null,
+  "name": "Libni Batra",
+  "available_information": {
+    "name": "Libni Batra"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address",
+    "city"
+  ],
+  "match_status": "incomplete_match"
+}

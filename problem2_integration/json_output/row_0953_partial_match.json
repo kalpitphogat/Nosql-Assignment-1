@@ -1,0 +1,16 @@
+{
+  "source_row": 953,
+  "customer_id": "C01774",
+  "matched_master_id": "C01774",
+  "name": "Gopal Talwar",
+  "available_information": {
+    "name": "Gopal Talwar",
+    "email": "gopal.talwar1774@example.in",
+    "city": "Thane"
+  },
+  "missing_information": [
+    "phone",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

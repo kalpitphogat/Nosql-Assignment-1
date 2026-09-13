@@ -1,0 +1,16 @@
+{
+  "source_row": 129,
+  "customer_id": "C01736",
+  "matched_master_id": "C01736",
+  "name": "Balveer Suri",
+  "available_information": {
+    "name": "Balveer Suri",
+    "phone": "9673275900",
+    "city": "Raichur"
+  },
+  "missing_information": [
+    "email",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

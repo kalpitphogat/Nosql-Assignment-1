@@ -1,0 +1,16 @@
+{
+  "source_row": 1721,
+  "customer_id": "C01994",
+  "matched_master_id": "C01994",
+  "name": "Ekavir Konda",
+  "available_information": {
+    "name": "Ekavir Konda",
+    "address": "953 Vaidya Street",
+    "city": "Orai"
+  },
+  "missing_information": [
+    "email",
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

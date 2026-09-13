@@ -1,0 +1,20 @@
+{
+  "source_row": 1411,
+  "customer_id": "C01215",
+  "matched_master_id": "C01215",
+  "name": "Bahadurjit Ram",
+  "available_information": {
+    "name": "Bahadurjit Ram",
+    "email": "bahadurjit.ram1215@gmail.com",
+    "address": "43 Sharma",
+    "city": "Amaravati"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "phone": {
+      "incoming": "7798896221",
+      "master": "8918272134"
+    }
+  }
+}

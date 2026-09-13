@@ -1,0 +1,16 @@
+{
+  "source_row": 1533,
+  "customer_id": "C02284",
+  "matched_master_id": "C02284",
+  "name": "Mohammed Natarajan",
+  "available_information": {
+    "name": "Mohammed Natarajan",
+    "phone": "9610185808",
+    "address": "94 Patla Street",
+    "city": "Bhavnagar"
+  },
+  "missing_information": [
+    "email"
+  ],
+  "match_status": "partial_match"
+}

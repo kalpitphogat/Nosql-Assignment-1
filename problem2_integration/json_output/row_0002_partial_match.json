@@ -1,0 +1,16 @@
+{
+  "source_row": 2,
+  "customer_id": "C02658",
+  "matched_master_id": "C02658",
+  "name": "Rehaan Mahajan",
+  "available_information": {
+    "name": "Rehaan Mahajan",
+    "address": "35 Shetty"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

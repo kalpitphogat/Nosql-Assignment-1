@@ -1,0 +1,16 @@
+{
+  "source_row": 13,
+  "customer_id": "C01529",
+  "matched_master_id": "C01529",
+  "name": "Kevin Mannan",
+  "available_information": {
+    "name": "Kevin Mannan",
+    "phone": "8082066985"
+  },
+  "missing_information": [
+    "email",
+    "address",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

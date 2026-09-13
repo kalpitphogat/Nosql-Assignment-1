@@ -1,0 +1,16 @@
+{
+  "source_row": 475,
+  "customer_id": null,
+  "matched_master_id": "C01065",
+  "name": "Bhavini Kaul",
+  "available_information": {
+    "name": "Bhavini Kaul",
+    "city": "Nagaon"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

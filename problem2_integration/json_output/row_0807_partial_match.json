@@ -1,0 +1,16 @@
+{
+  "source_row": 807,
+  "customer_id": "C00518",
+  "matched_master_id": "C00518",
+  "name": "Sarthak Chad",
+  "available_information": {
+    "name": "Sarthak Chad",
+    "email": "sarthak.chad518@hotmail.com",
+    "phone": "8739509368"
+  },
+  "missing_information": [
+    "address",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

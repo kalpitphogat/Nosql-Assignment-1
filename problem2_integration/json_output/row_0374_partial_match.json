@@ -1,0 +1,16 @@
+{
+  "source_row": 374,
+  "customer_id": "C01764",
+  "matched_master_id": "C01764",
+  "name": "Warda Jaggi",
+  "available_information": {
+    "name": "Warda Jaggi",
+    "email": "warda.jaggi1764@gmail.com",
+    "phone": "7459390527",
+    "city": "Rajpur Sonarpur"
+  },
+  "missing_information": [
+    "address"
+  ],
+  "match_status": "partial_match"
+}

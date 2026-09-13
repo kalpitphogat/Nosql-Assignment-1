@@ -1,0 +1,23 @@
+{
+  "source_row": 887,
+  "customer_id": "C01655",
+  "matched_master_id": "C01655",
+  "name": "Kabir Banerjee",
+  "available_information": {
+    "email": "jeevika.natarajan1655@outlook.com",
+    "phone": "6993613060",
+    "address": "23/571 Chawla"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "name": {
+      "incoming": "Kabir Banerjee",
+      "master": "Jeevika Natarajan"
+    },
+    "city": {
+      "incoming": "Mumbai",
+      "master": "Begusarai"
+    }
+  }
+}

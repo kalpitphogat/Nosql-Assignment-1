@@ -1,0 +1,16 @@
+{
+  "source_row": 1661,
+  "customer_id": "C00292",
+  "matched_master_id": "C00292",
+  "name": "Isha Bora",
+  "available_information": {
+    "name": "Isha Bora",
+    "phone": "7783305442"
+  },
+  "missing_information": [
+    "email",
+    "address",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

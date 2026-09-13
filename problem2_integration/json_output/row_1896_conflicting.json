@@ -1,0 +1,23 @@
+{
+  "source_row": 1896,
+  "customer_id": "C00560",
+  "matched_master_id": "C00560",
+  "name": "Upasna Gara",
+  "available_information": {
+    "email": "nirja.rao560@hotmail.com",
+    "phone": "8137227318",
+    "address": "78/768 Kunda Street"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "name": {
+      "incoming": "Upasna Gara",
+      "master": "Nirja Rao"
+    },
+    "city": {
+      "incoming": "Sambalpur",
+      "master": "Kadapa"
+    }
+  }
+}

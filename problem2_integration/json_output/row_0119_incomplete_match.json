@@ -1,0 +1,16 @@
+{
+  "source_row": 119,
+  "customer_id": null,
+  "matched_master_id": null,
+  "name": "Vyanjana Samra",
+  "available_information": {
+    "name": "Vyanjana Samra"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address",
+    "city"
+  ],
+  "match_status": "incomplete_match"
+}

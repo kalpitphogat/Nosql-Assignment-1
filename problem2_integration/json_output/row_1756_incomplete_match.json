@@ -1,0 +1,16 @@
+{
+  "source_row": 1756,
+  "customer_id": null,
+  "matched_master_id": null,
+  "name": "Quincy Khare",
+  "available_information": {
+    "name": "Quincy Khare"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address",
+    "city"
+  ],
+  "match_status": "incomplete_match"
+}

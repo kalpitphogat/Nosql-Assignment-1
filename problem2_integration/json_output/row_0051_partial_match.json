@@ -1,0 +1,16 @@
+{
+  "source_row": 51,
+  "customer_id": "C02870",
+  "matched_master_id": "C02870",
+  "name": "Hiral Biswas",
+  "available_information": {
+    "name": "Hiral Biswas",
+    "email": "hiral.biswas2870@outlook.com",
+    "phone": "8697806783",
+    "address": "72/16 Chana Zila"
+  },
+  "missing_information": [
+    "city"
+  ],
+  "match_status": "partial_match"
+}

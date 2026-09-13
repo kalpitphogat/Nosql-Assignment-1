@@ -1,0 +1,16 @@
+{
+  "source_row": 1960,
+  "customer_id": "C01745",
+  "matched_master_id": "C01745",
+  "name": "Christopher Sharma",
+  "available_information": {
+    "name": "Christopher Sharma",
+    "email": "christopher.sharma1745@yahoo.com",
+    "phone": "6790781810",
+    "address": "H.No. 10, Morar Marg"
+  },
+  "missing_information": [
+    "city"
+  ],
+  "match_status": "partial_match"
+}

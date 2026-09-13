@@ -1,0 +1,16 @@
+{
+  "source_row": 1643,
+  "customer_id": null,
+  "matched_master_id": "C00982",
+  "name": "Wishi Upadhyay",
+  "available_information": {
+    "name": "Wishi Upadhyay",
+    "city": "Bally"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

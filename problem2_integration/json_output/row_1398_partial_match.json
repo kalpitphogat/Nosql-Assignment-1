@@ -1,0 +1,16 @@
+{
+  "source_row": 1398,
+  "customer_id": null,
+  "matched_master_id": "C02591",
+  "name": "Raghav Sekhon",
+  "available_information": {
+    "name": "Raghav Sekhon",
+    "address": "H.No. 32, Deep Nagar",
+    "city": "Baranagar"
+  },
+  "missing_information": [
+    "email",
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

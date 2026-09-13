@@ -1,0 +1,16 @@
+{
+  "source_row": 605,
+  "customer_id": "C00972",
+  "matched_master_id": "C00972",
+  "name": "Utkarsh Keer",
+  "available_information": {
+    "name": "Utkarsh Keer",
+    "address": "H.No. 38, Bhardwaj Street"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

@@ -1,0 +1,23 @@
+{
+  "source_row": 1098,
+  "customer_id": "C02713",
+  "matched_master_id": "C02713",
+  "name": "Eiravati Sant",
+  "available_information": {
+    "email": "ethan.kaul2713@hotmail.com",
+    "phone": "8981382905",
+    "city": "Bikaner"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "name": {
+      "incoming": "Eiravati Sant",
+      "master": "Ethan Kaul"
+    },
+    "address": {
+      "incoming": "H.No. 29, Kara Street",
+      "master": "H.No. 035, Gaba Nagar"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "source_row": 415,
+  "customer_id": "C02026",
+  "matched_master_id": "C02026",
+  "name": "Atharv Dugar",
+  "available_information": {
+    "name": "Atharv Dugar",
+    "address": "092, Kannan Ganj",
+    "city": "Amritsar"
+  },
+  "missing_information": [
+    "email",
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

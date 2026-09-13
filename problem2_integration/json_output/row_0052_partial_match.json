@@ -1,0 +1,16 @@
+{
+  "source_row": 52,
+  "customer_id": "C02907",
+  "matched_master_id": "C02907",
+  "name": "Pallavi Goswami",
+  "available_information": {
+    "name": "Pallavi Goswami",
+    "email": "pallavi.goswami2907@gmail.com",
+    "phone": "9493551247",
+    "address": "H.No. 373, Chacko Street"
+  },
+  "missing_information": [
+    "city"
+  ],
+  "match_status": "partial_match"
+}

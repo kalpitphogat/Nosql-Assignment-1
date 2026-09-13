@@ -1,0 +1,23 @@
+{
+  "source_row": 1943,
+  "customer_id": "C00539",
+  "matched_master_id": "C00539",
+  "name": "Warinder Bava",
+  "available_information": {
+    "email": "bakhshi.chandra539@hotmail.com",
+    "address": "33/726, Aggarwal Ganj",
+    "city": "Aligarh"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "name": {
+      "incoming": "Warinder Bava",
+      "master": "Bakhshi Chandra"
+    },
+    "phone": {
+      "incoming": "6967179412",
+      "master": "8597355448"
+    }
+  }
+}

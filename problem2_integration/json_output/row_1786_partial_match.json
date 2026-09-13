@@ -1,0 +1,16 @@
+{
+  "source_row": 1786,
+  "customer_id": null,
+  "matched_master_id": "C01890",
+  "name": null,
+  "available_information": {
+    "email": "odika.bhavsar1890@outlook.com",
+    "phone": "6767596882",
+    "city": "Indore"
+  },
+  "missing_information": [
+    "name",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

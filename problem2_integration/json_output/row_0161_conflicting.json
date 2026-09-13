@@ -1,0 +1,23 @@
+{
+  "source_row": 161,
+  "customer_id": "C01302",
+  "matched_master_id": "C01302",
+  "name": "Gunbir Lad",
+  "available_information": {
+    "name": "Gunbir Lad",
+    "address": "48/31, Contractor Marg",
+    "city": "Kochi"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "email": {
+      "incoming": "benjamin.sanghvi97232@hotmail.com",
+      "master": "gunbir.lad1302@yahoo.com"
+    },
+    "phone": {
+      "incoming": "8795614418",
+      "master": "9702340331"
+    }
+  }
+}

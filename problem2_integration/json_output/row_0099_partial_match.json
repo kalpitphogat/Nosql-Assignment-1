@@ -1,0 +1,16 @@
+{
+  "source_row": 99,
+  "customer_id": "C02839",
+  "matched_master_id": "C02839",
+  "name": "Umang Wagle",
+  "available_information": {
+    "name": "Umang Wagle",
+    "phone": "9670526801",
+    "address": "78 Agarwal Zila",
+    "city": "Barasat"
+  },
+  "missing_information": [
+    "email"
+  ],
+  "match_status": "partial_match"
+}

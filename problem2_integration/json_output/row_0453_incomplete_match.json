@@ -1,0 +1,16 @@
+{
+  "source_row": 453,
+  "customer_id": null,
+  "matched_master_id": null,
+  "name": "Aarush Subramaniam",
+  "available_information": {
+    "name": "Aarush Subramaniam"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address",
+    "city"
+  ],
+  "match_status": "incomplete_match"
+}

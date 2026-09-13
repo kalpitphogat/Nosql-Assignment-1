@@ -1,0 +1,23 @@
+{
+  "source_row": 1876,
+  "customer_id": "C00178",
+  "matched_master_id": "C00178",
+  "name": "Gunbir Anand",
+  "available_information": {
+    "email": "rayaan.wali178@example.in",
+    "phone": "8928180736",
+    "address": "49, Gole Circle"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "name": {
+      "incoming": "Gunbir Anand",
+      "master": "Rayaan Wali"
+    },
+    "city": {
+      "incoming": "Kadapa",
+      "master": "Morbi"
+    }
+  }
+}

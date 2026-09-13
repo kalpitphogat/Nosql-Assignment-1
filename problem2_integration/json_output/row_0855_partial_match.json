@@ -1,0 +1,16 @@
+{
+  "source_row": 855,
+  "customer_id": null,
+  "matched_master_id": "C02025",
+  "name": null,
+  "available_information": {
+    "email": "gautami.madan2025@outlook.com",
+    "phone": "9756148190",
+    "city": "Vadodara"
+  },
+  "missing_information": [
+    "name",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

@@ -1,0 +1,16 @@
+{
+  "source_row": 1468,
+  "customer_id": null,
+  "matched_master_id": "C00470",
+  "name": "SATHVIK KEER",
+  "available_information": {
+    "name": "SATHVIK KEER",
+    "phone": "6003060251",
+    "address": "H.No. 240, Luthra Nagar",
+    "city": "Singrauli"
+  },
+  "missing_information": [
+    "email"
+  ],
+  "match_status": "partial_match"
+}

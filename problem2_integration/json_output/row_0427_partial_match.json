@@ -1,0 +1,16 @@
+{
+  "source_row": 427,
+  "customer_id": "C01486",
+  "matched_master_id": "C01486",
+  "name": "Nidra Pant",
+  "available_information": {
+    "name": "Nidra Pant",
+    "phone": "7527515669"
+  },
+  "missing_information": [
+    "email",
+    "address",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

@@ -1,0 +1,16 @@
+{
+  "source_row": 1964,
+  "customer_id": null,
+  "matched_master_id": "C00139",
+  "name": "Vrinda Pathak",
+  "available_information": {
+    "name": "Vrinda Pathak",
+    "city": "Anantapuram"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

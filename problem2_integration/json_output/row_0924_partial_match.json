@@ -1,0 +1,16 @@
+{
+  "source_row": 924,
+  "customer_id": null,
+  "matched_master_id": "C00565",
+  "name": "Henry Mander",
+  "available_information": {
+    "name": "Henry Mander",
+    "city": "Raiganj"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

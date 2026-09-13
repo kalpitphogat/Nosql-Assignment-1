@@ -1,0 +1,16 @@
+{
+  "source_row": 1164,
+  "customer_id": "C02651",
+  "matched_master_id": "C02651",
+  "name": "Radhika Rajagopalan",
+  "available_information": {
+    "name": "Radhika Rajagopalan",
+    "email": "radhika.rajagopalan2651@yahoo.com",
+    "phone": "6402418622"
+  },
+  "missing_information": [
+    "address",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

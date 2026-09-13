@@ -1,0 +1,16 @@
+{
+  "source_row": 1064,
+  "customer_id": "C02088",
+  "matched_master_id": "C02088",
+  "name": "Omya Deep",
+  "available_information": {
+    "name": "Omya Deep",
+    "address": "78/507, Kapoor Ganj"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

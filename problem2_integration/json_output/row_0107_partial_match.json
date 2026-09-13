@@ -1,0 +1,16 @@
+{
+  "source_row": 107,
+  "customer_id": "C00550",
+  "matched_master_id": "C00550",
+  "name": "Kai Thakkar",
+  "available_information": {
+    "name": "Kai Thakkar",
+    "address": "H.No. 77 Dewan Marg",
+    "city": "Delhi"
+  },
+  "missing_information": [
+    "email",
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

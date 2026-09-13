@@ -1,0 +1,16 @@
+{
+  "source_row": 577,
+  "customer_id": "C01178",
+  "matched_master_id": "C01178",
+  "name": "Upkaar Chakrabarti",
+  "available_information": {
+    "name": "Upkaar Chakrabarti",
+    "city": "Shahjahanpur"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

@@ -1,0 +1,20 @@
+{
+  "source_row": 594,
+  "customer_id": "C02480",
+  "matched_master_id": "C02480",
+  "name": "Warda Kanda",
+  "available_information": {
+    "name": "Warda Kanda",
+    "email": "warda.kanda2480@yahoo.com",
+    "phone": "7519995273",
+    "city": "Nagpur"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "address": {
+      "incoming": "68/185, Ramesh Nagar",
+      "master": "H.No. 80 Viswanathan Path"
+    }
+  }
+}

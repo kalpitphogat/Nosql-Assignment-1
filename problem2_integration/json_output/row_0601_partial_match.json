@@ -1,0 +1,16 @@
+{
+  "source_row": 601,
+  "customer_id": "C02784",
+  "matched_master_id": "C02784",
+  "name": "Zaid Parekh",
+  "available_information": {
+    "name": "Zaid Parekh",
+    "phone": "6745776166",
+    "address": "71/59, Agarwal Chowk"
+  },
+  "missing_information": [
+    "email",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

@@ -1,0 +1,16 @@
+{
+  "source_row": 382,
+  "customer_id": null,
+  "matched_master_id": null,
+  "name": "Arya Mohanty",
+  "available_information": {
+    "name": "Arya Mohanty"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address",
+    "city"
+  ],
+  "match_status": "incomplete_match"
+}

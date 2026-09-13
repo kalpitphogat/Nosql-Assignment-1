@@ -1,0 +1,16 @@
+{
+  "source_row": 113,
+  "customer_id": "C01857",
+  "matched_master_id": "C01857",
+  "name": "Banjeet Dave",
+  "available_information": {
+    "name": "Banjeet Dave",
+    "email": "banjeet.dave1857@gmail.com",
+    "phone": "7083464717",
+    "city": "Raebareli"
+  },
+  "missing_information": [
+    "address"
+  ],
+  "match_status": "partial_match"
+}

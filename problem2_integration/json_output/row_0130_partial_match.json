@@ -1,0 +1,16 @@
+{
+  "source_row": 130,
+  "customer_id": null,
+  "matched_master_id": "C01408",
+  "name": "Rachita Baria",
+  "available_information": {
+    "name": "Rachita Baria",
+    "city": "Rourkela"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

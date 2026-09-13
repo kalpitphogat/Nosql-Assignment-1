@@ -1,0 +1,16 @@
+{
+  "source_row": 108,
+  "customer_id": "C01659",
+  "matched_master_id": "C01659",
+  "name": "Geetika Bhargava",
+  "available_information": {
+    "name": "Geetika Bhargava",
+    "email": "geetika.bhargava1659@example.in",
+    "phone": "6226389988",
+    "city": "Phusro"
+  },
+  "missing_information": [
+    "address"
+  ],
+  "match_status": "partial_match"
+}

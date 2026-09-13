@@ -1,0 +1,16 @@
+{
+  "source_row": 461,
+  "customer_id": "C01168",
+  "matched_master_id": "C01168",
+  "name": "Osha Korpal",
+  "available_information": {
+    "name": "Osha Korpal",
+    "phone": "9871586786",
+    "address": "63/535, Bora Road"
+  },
+  "missing_information": [
+    "email",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

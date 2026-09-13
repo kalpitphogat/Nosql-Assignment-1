@@ -1,0 +1,16 @@
+{
+  "source_row": 1481,
+  "customer_id": "C00865",
+  "matched_master_id": "C00865",
+  "name": "Ikbal Natt",
+  "available_information": {
+    "name": "Ikbal Natt",
+    "email": "ikbal.natt865@gmail.com",
+    "phone": "9004238269",
+    "city": "Hubli\u2013Dharwad"
+  },
+  "missing_information": [
+    "address"
+  ],
+  "match_status": "partial_match"
+}

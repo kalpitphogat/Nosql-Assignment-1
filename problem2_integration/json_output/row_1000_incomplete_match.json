@@ -1,0 +1,16 @@
+{
+  "source_row": 1000,
+  "customer_id": null,
+  "matched_master_id": null,
+  "name": "Chandani Deo",
+  "available_information": {
+    "name": "Chandani Deo"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address",
+    "city"
+  ],
+  "match_status": "incomplete_match"
+}

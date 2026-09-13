@@ -1,0 +1,20 @@
+{
+  "source_row": 1650,
+  "customer_id": "C00727",
+  "matched_master_id": "C00727",
+  "name": "Widisha Hari",
+  "available_information": {
+    "name": "Widisha Hari",
+    "email": "widisha.hari727@gmail.com",
+    "phone": "7591785927",
+    "city": "Mahbubnagar"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "address": {
+      "incoming": "H.No. 65 Solanki Path",
+      "master": "295 Sama Marg"
+    }
+  }
+}

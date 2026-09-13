@@ -1,0 +1,16 @@
+{
+  "source_row": 1435,
+  "customer_id": "C02762",
+  "matched_master_id": "C02762",
+  "name": "Eshana Bhatt",
+  "available_information": {
+    "name": "Eshana Bhatt",
+    "address": "H.No. 649, Bava Chowk"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

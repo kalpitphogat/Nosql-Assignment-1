@@ -1,0 +1,16 @@
+{
+  "source_row": 1798,
+  "customer_id": "C00525",
+  "matched_master_id": "C00525",
+  "name": "Tejas Aurora",
+  "available_information": {
+    "name": "Tejas Aurora",
+    "email": "tejas.aurora525@outlook.com",
+    "phone": "6808788860",
+    "city": "Orai"
+  },
+  "missing_information": [
+    "address"
+  ],
+  "match_status": "partial_match"
+}

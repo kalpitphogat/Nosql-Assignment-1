@@ -1,0 +1,16 @@
+{
+  "source_row": 292,
+  "customer_id": "C00144",
+  "matched_master_id": "C00144",
+  "name": "Riya Tandon",
+  "available_information": {
+    "name": "Riya Tandon",
+    "email": "riya.tandon144@yahoo.com",
+    "city": "Srikakulam"
+  },
+  "missing_information": [
+    "phone",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

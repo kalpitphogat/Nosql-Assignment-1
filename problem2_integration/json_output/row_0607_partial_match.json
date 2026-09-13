@@ -1,0 +1,16 @@
+{
+  "source_row": 607,
+  "customer_id": null,
+  "matched_master_id": "C02808",
+  "name": "JOSHUA KALLA",
+  "available_information": {
+    "name": "JOSHUA KALLA",
+    "phone": "9154427710",
+    "address": "H.No. 689, Prabhu Marg",
+    "city": "Mau"
+  },
+  "missing_information": [
+    "email"
+  ],
+  "match_status": "partial_match"
+}

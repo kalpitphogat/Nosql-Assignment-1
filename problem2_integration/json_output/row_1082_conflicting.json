@@ -1,0 +1,23 @@
+{
+  "source_row": 1082,
+  "customer_id": "C02752",
+  "matched_master_id": "C02752",
+  "name": "Madhav Kari",
+  "available_information": {
+    "email": "urvi.pal2752@gmail.com",
+    "phone": "6925364913",
+    "city": "Kadapa"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "name": {
+      "incoming": "Madhav Kari",
+      "master": "Urvi Pal"
+    },
+    "address": {
+      "incoming": "H.No. 58 Bhatnagar Path",
+      "master": "H.No. 087, Bhattacharyya Path"
+    }
+  }
+}

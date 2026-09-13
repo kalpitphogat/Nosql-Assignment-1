@@ -1,0 +1,23 @@
+{
+  "source_row": 1690,
+  "customer_id": "C02919",
+  "matched_master_id": "C02919",
+  "name": "Maanav Devan",
+  "available_information": {
+    "email": "dalaja.misra2919@outlook.com",
+    "phone": "7199007300",
+    "address": "H.No. 423, Master Nagar"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "name": {
+      "incoming": "Maanav Devan",
+      "master": "Dalaja Misra"
+    },
+    "city": {
+      "incoming": "Hajipur",
+      "master": "Solapur"
+    }
+  }
+}

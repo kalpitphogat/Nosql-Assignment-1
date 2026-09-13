@@ -1,0 +1,16 @@
+{
+  "source_row": 35,
+  "customer_id": null,
+  "matched_master_id": null,
+  "name": "Bhavika Bobal",
+  "available_information": {
+    "name": "Bhavika Bobal"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address",
+    "city"
+  ],
+  "match_status": "incomplete_match"
+}

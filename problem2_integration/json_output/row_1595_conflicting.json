@@ -1,0 +1,20 @@
+{
+  "source_row": 1595,
+  "customer_id": "C00363",
+  "matched_master_id": "C00363",
+  "name": "Noah Char",
+  "available_information": {
+    "name": "Noah Char",
+    "email": "noah.char363@yahoo.com",
+    "phone": "8158247586",
+    "city": "Raipur"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "address": {
+      "incoming": "35/534, Balasubramanian Zila",
+      "master": "14/76 Parsa Ganj"
+    }
+  }
+}

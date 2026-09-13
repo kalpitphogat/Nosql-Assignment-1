@@ -1,0 +1,20 @@
+{
+  "source_row": 1770,
+  "customer_id": "C00023",
+  "matched_master_id": "C00023",
+  "name": "Irya Nori",
+  "available_information": {
+    "email": "anmol.sheth23@example.in",
+    "phone": "9871299028",
+    "address": "29/464, Mital Zila",
+    "city": "Silchar"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "name": {
+      "incoming": "Irya Nori",
+      "master": "Anmol Sheth"
+    }
+  }
+}

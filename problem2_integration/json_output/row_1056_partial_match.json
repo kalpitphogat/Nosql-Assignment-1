@@ -1,0 +1,16 @@
+{
+  "source_row": 1056,
+  "customer_id": "C02019",
+  "matched_master_id": "C02019",
+  "name": "Vivaan Tandon",
+  "available_information": {
+    "name": "Vivaan Tandon",
+    "phone": "7663974591",
+    "address": "362, Madan Zila"
+  },
+  "missing_information": [
+    "email",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

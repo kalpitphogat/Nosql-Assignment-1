@@ -1,0 +1,16 @@
+{
+  "source_row": 1760,
+  "customer_id": "C01479",
+  "matched_master_id": "C01479",
+  "name": "Balhaar Garde",
+  "available_information": {
+    "name": "Balhaar Garde",
+    "email": "balhaar.garde1479@yahoo.com",
+    "address": "82/48 Kashyap Street",
+    "city": "Allahabad"
+  },
+  "missing_information": [
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

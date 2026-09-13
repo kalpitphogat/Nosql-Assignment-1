@@ -1,0 +1,20 @@
+{
+  "source_row": 273,
+  "customer_id": "C02024",
+  "matched_master_id": "C02024",
+  "name": "Gavin Parmer",
+  "available_information": {
+    "name": "Gavin Parmer",
+    "email": "gavin.parmer2024@gmail.com",
+    "phone": "9788249617",
+    "city": "Amaravati"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "address": {
+      "incoming": "H.No. 97, Murthy Road",
+      "master": "H.No. 61 Parmar Zila"
+    }
+  }
+}

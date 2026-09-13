@@ -1,0 +1,16 @@
+{
+  "source_row": 364,
+  "customer_id": "C01163",
+  "matched_master_id": "C01163",
+  "name": "Chandresh Rajagopalan",
+  "available_information": {
+    "name": "Chandresh Rajagopalan",
+    "phone": "7562951977"
+  },
+  "missing_information": [
+    "email",
+    "address",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

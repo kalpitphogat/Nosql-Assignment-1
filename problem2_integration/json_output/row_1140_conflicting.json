@@ -1,0 +1,23 @@
+{
+  "source_row": 1140,
+  "customer_id": "C00612",
+  "matched_master_id": "C00612",
+  "name": "Xiti Raja",
+  "available_information": {
+    "email": "tripti.doctor612@yahoo.com",
+    "phone": "6841118158",
+    "address": "770, Krishna Path"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "name": {
+      "incoming": "Xiti Raja",
+      "master": "Tripti Doctor"
+    },
+    "city": {
+      "incoming": "Hazaribagh",
+      "master": "Katihar"
+    }
+  }
+}

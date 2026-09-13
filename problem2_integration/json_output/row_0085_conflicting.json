@@ -1,0 +1,23 @@
+{
+  "source_row": 85,
+  "customer_id": "C02488",
+  "matched_master_id": "C02488",
+  "name": "Vrinda Nayar",
+  "available_information": {
+    "name": "Vrinda Nayar",
+    "email": "vrinda.nayar2488@outlook.com",
+    "address": "199, Krish Marg"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "phone": {
+      "incoming": "9924596170",
+      "master": "8442520409"
+    },
+    "city": {
+      "incoming": "Ghaziabad",
+      "master": "Alappuzha"
+    }
+  }
+}

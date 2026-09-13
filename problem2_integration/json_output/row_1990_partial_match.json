@@ -1,0 +1,16 @@
+{
+  "source_row": 1990,
+  "customer_id": null,
+  "matched_master_id": "C01930",
+  "name": "Alexander Bajwa",
+  "available_information": {
+    "name": "Alexander Bajwa",
+    "city": "Gurgaon"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

@@ -1,0 +1,16 @@
+{
+  "source_row": 1802,
+  "customer_id": "C00536",
+  "matched_master_id": "C00536",
+  "name": "Aarnav Dua",
+  "available_information": {
+    "name": "Aarnav Dua",
+    "address": "19, Ray Road"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

@@ -1,0 +1,16 @@
+{
+  "source_row": 1674,
+  "customer_id": null,
+  "matched_master_id": "C00577",
+  "name": "DAKSH NAGY",
+  "available_information": {
+    "name": "DAKSH NAGY",
+    "phone": "8373171398",
+    "address": "71, Sengupta Ganj",
+    "city": "Ongole"
+  },
+  "missing_information": [
+    "email"
+  ],
+  "match_status": "partial_match"
+}

@@ -1,0 +1,16 @@
+{
+  "source_row": 508,
+  "customer_id": null,
+  "matched_master_id": "C02888",
+  "name": "tejas patla",
+  "available_information": {
+    "name": "tejas patla",
+    "email": "tejas.patla2888@hotmail.com",
+    "address": "446 Pall Ganj",
+    "city": "Bardhaman"
+  },
+  "missing_information": [
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

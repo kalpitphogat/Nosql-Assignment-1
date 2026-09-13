@@ -1,0 +1,16 @@
+{
+  "source_row": 531,
+  "customer_id": "C00540",
+  "matched_master_id": "C00540",
+  "name": "Falguni Balakrishnan",
+  "available_information": {
+    "name": "Falguni Balakrishnan",
+    "phone": "7384686415",
+    "address": "21 Bajaj Street",
+    "city": "Machilipatnam"
+  },
+  "missing_information": [
+    "email"
+  ],
+  "match_status": "partial_match"
+}

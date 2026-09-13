@@ -1,0 +1,16 @@
+{
+  "source_row": 191,
+  "customer_id": null,
+  "matched_master_id": "C02755",
+  "name": "Tejas Mani",
+  "available_information": {
+    "name": "Tejas Mani",
+    "city": "Begusarai"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

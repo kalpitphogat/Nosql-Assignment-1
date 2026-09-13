@@ -1,0 +1,16 @@
+{
+  "source_row": 1851,
+  "customer_id": "C01425",
+  "matched_master_id": "C01425",
+  "name": "Ijaya Sidhu",
+  "available_information": {
+    "name": "Ijaya Sidhu",
+    "address": "H.No. 31 Gara Zila",
+    "city": "Hosur"
+  },
+  "missing_information": [
+    "email",
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

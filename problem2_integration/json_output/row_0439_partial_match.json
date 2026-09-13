@@ -1,0 +1,16 @@
+{
+  "source_row": 439,
+  "customer_id": "C01076",
+  "matched_master_id": "C01076",
+  "name": "Upadhriti Atwal",
+  "available_information": {
+    "name": "Upadhriti Atwal",
+    "phone": "9903709496",
+    "address": "88/002 Manda Road"
+  },
+  "missing_information": [
+    "email",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

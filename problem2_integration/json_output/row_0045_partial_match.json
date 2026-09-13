@@ -1,0 +1,16 @@
+{
+  "source_row": 45,
+  "customer_id": null,
+  "matched_master_id": "C02329",
+  "name": "YOCHANA RAMAN",
+  "available_information": {
+    "name": "YOCHANA RAMAN",
+    "phone": "6510775494",
+    "address": "H.No. 193 Venkataraman Marg",
+    "city": "Gandhinagar"
+  },
+  "missing_information": [
+    "email"
+  ],
+  "match_status": "partial_match"
+}

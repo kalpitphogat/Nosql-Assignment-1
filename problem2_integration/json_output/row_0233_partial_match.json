@@ -1,0 +1,16 @@
+{
+  "source_row": 233,
+  "customer_id": "C01322",
+  "matched_master_id": "C01322",
+  "name": "Harinakshi Prashad",
+  "available_information": {
+    "name": "Harinakshi Prashad",
+    "email": "harinakshi.prashad1322@gmail.com",
+    "address": "967 Jain Chowk",
+    "city": "Bardhaman"
+  },
+  "missing_information": [
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

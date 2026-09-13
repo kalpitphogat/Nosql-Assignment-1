@@ -1,0 +1,20 @@
+{
+  "source_row": 235,
+  "customer_id": "C00636",
+  "matched_master_id": "C00636",
+  "name": "Meghana Sastry",
+  "available_information": {
+    "name": "Meghana Sastry",
+    "phone": "9021169504",
+    "address": "H.No. 279, Mital Chowk",
+    "city": "Vijayanagaram"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "email": {
+      "incoming": "madhavi.nair34463@gmail.com",
+      "master": "meghana.sastry636@outlook.com"
+    }
+  }
+}

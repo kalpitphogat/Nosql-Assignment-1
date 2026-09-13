@@ -1,0 +1,16 @@
+{
+  "source_row": 1012,
+  "customer_id": "C00994",
+  "matched_master_id": "C00994",
+  "name": "Qadim Chakraborty",
+  "available_information": {
+    "name": "Qadim Chakraborty",
+    "email": "qadim.chakraborty994@outlook.com"
+  },
+  "missing_information": [
+    "phone",
+    "address",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

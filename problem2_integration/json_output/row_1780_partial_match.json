@@ -1,0 +1,16 @@
+{
+  "source_row": 1780,
+  "customer_id": "C00475",
+  "matched_master_id": "C00475",
+  "name": "Triveni Balakrishnan",
+  "available_information": {
+    "name": "Triveni Balakrishnan",
+    "address": "H.No. 436, Chadha Circle"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

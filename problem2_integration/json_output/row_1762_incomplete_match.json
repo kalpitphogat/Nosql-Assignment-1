@@ -1,0 +1,16 @@
+{
+  "source_row": 1762,
+  "customer_id": null,
+  "matched_master_id": null,
+  "name": "Jacob Nagar",
+  "available_information": {
+    "name": "Jacob Nagar"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address",
+    "city"
+  ],
+  "match_status": "incomplete_match"
+}

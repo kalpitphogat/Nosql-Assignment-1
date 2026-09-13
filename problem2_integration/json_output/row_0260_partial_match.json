@@ -1,0 +1,16 @@
+{
+  "source_row": 260,
+  "customer_id": "C02520",
+  "matched_master_id": "C02520",
+  "name": "Vedant Sachdev",
+  "available_information": {
+    "name": "Vedant Sachdev",
+    "email": "vedant.sachdev2520@gmail.com",
+    "address": "62/335 Dara Chowk",
+    "city": "Thoothukudi"
+  },
+  "missing_information": [
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

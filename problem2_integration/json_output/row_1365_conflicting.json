@@ -1,0 +1,20 @@
+{
+  "source_row": 1365,
+  "customer_id": "C01854",
+  "matched_master_id": "C01854",
+  "name": "Owen Pathak",
+  "available_information": {
+    "name": "Owen Pathak",
+    "phone": "9649435200",
+    "address": "H.No. 103 Sen Marg",
+    "city": "Bharatpur"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "email": {
+      "incoming": "abha.bassi86149@hotmail.com",
+      "master": "owen.pathak1854@gmail.com"
+    }
+  }
+}

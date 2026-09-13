@@ -1,0 +1,23 @@
+{
+  "source_row": 98,
+  "customer_id": "C02917",
+  "matched_master_id": "C02917",
+  "name": "Pallavi Edwin",
+  "available_information": {
+    "name": "Pallavi Edwin",
+    "email": "pallavi.edwin2917@example.in",
+    "city": "Korba"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "phone": {
+      "incoming": "7624581062",
+      "master": "8647059067"
+    },
+    "address": {
+      "incoming": "87, Bala Chowk",
+      "master": "94 Apte Path"
+    }
+  }
+}

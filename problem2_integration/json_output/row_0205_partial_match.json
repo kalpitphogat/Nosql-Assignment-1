@@ -1,0 +1,16 @@
+{
+  "source_row": 205,
+  "customer_id": "C01937",
+  "matched_master_id": "C01937",
+  "name": "Tanmayi Gokhale",
+  "available_information": {
+    "name": "Tanmayi Gokhale",
+    "email": "tanmayi.gokhale1937@gmail.com",
+    "phone": "9322860189",
+    "address": "058 Vyas Ganj"
+  },
+  "missing_information": [
+    "city"
+  ],
+  "match_status": "partial_match"
+}

@@ -1,0 +1,16 @@
+{
+  "source_row": 387,
+  "customer_id": "C02598",
+  "matched_master_id": "C02598",
+  "name": "Girik Lad",
+  "available_information": {
+    "name": "Girik Lad",
+    "city": "Jaipur"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

@@ -1,0 +1,23 @@
+{
+  "source_row": 1236,
+  "customer_id": "C00772",
+  "matched_master_id": "C00772",
+  "name": "Ethan Sule",
+  "available_information": {
+    "name": "Ethan Sule",
+    "email": "ethan.sule772@gmail.com",
+    "address": "99 Tella Nagar"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "phone": {
+      "incoming": "7948381726",
+      "master": "8483374525"
+    },
+    "city": {
+      "incoming": "Mahbubnagar",
+      "master": "Hapur"
+    }
+  }
+}

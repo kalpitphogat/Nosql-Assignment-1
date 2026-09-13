@@ -1,0 +1,23 @@
+{
+  "source_row": 585,
+  "customer_id": "C00308",
+  "matched_master_id": "C00308",
+  "name": "Qabil Samra",
+  "available_information": {
+    "name": "Qabil Samra",
+    "email": "qabil.samra308@yahoo.com",
+    "address": "60 Rama Street"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "phone": {
+      "incoming": "7765118580",
+      "master": "8050059282"
+    },
+    "city": {
+      "incoming": "Chandigarh",
+      "master": "Yamunanagar"
+    }
+  }
+}

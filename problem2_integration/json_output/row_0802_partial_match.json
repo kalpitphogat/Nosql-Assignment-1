@@ -1,0 +1,16 @@
+{
+  "source_row": 802,
+  "customer_id": null,
+  "matched_master_id": "C01648",
+  "name": "azad deol",
+  "available_information": {
+    "name": "azad deol",
+    "email": "azad.deol1648@outlook.com",
+    "address": "40, Devan Circle",
+    "city": "Hajipur"
+  },
+  "missing_information": [
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

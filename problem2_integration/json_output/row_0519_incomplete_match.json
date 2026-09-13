@@ -1,0 +1,16 @@
+{
+  "source_row": 519,
+  "customer_id": null,
+  "matched_master_id": null,
+  "name": "Ryan Chaudhry",
+  "available_information": {
+    "name": "Ryan Chaudhry"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address",
+    "city"
+  ],
+  "match_status": "incomplete_match"
+}

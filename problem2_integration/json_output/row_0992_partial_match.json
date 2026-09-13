@@ -1,0 +1,16 @@
+{
+  "source_row": 992,
+  "customer_id": "C02473",
+  "matched_master_id": "C02473",
+  "name": "Ishita Chahal",
+  "available_information": {
+    "name": "Ishita Chahal",
+    "phone": "6539494372"
+  },
+  "missing_information": [
+    "email",
+    "address",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

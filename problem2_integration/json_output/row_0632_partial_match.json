@@ -1,0 +1,16 @@
+{
+  "source_row": 632,
+  "customer_id": "C01020",
+  "matched_master_id": "C01020",
+  "name": "Jeevika Dua",
+  "available_information": {
+    "name": "Jeevika Dua",
+    "city": "Imphal"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

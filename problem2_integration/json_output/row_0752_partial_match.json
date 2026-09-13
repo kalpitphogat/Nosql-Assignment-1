@@ -1,0 +1,16 @@
+{
+  "source_row": 752,
+  "customer_id": "C02705",
+  "matched_master_id": "C02705",
+  "name": "Pavani Sundaram",
+  "available_information": {
+    "name": "Pavani Sundaram",
+    "email": "pavani.sundaram2705@yahoo.com",
+    "address": "H.No. 73 Uppal Zila"
+  },
+  "missing_information": [
+    "phone",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

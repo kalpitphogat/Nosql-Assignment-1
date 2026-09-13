@@ -1,0 +1,16 @@
+{
+  "source_row": 814,
+  "customer_id": "C01173",
+  "matched_master_id": "C01173",
+  "name": "Ekaraj Wable",
+  "available_information": {
+    "name": "Ekaraj Wable",
+    "email": "ekaraj.wable1173@hotmail.com",
+    "address": "H.No. 144, Nadkarni Chowk",
+    "city": "Chandrapur"
+  },
+  "missing_information": [
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

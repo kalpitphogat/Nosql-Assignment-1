@@ -1,0 +1,16 @@
+{
+  "source_row": 586,
+  "customer_id": "C01396",
+  "matched_master_id": "C01396",
+  "name": "Hemani Thakur",
+  "available_information": {
+    "name": "Hemani Thakur",
+    "address": "580, Sant Zila"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

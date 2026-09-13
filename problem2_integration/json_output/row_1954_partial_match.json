@@ -1,0 +1,16 @@
+{
+  "source_row": 1954,
+  "customer_id": "C02262",
+  "matched_master_id": "C02262",
+  "name": "Zehaan Rastogi",
+  "available_information": {
+    "name": "Zehaan Rastogi",
+    "phone": "6245132456",
+    "address": "46, Tiwari Ganj"
+  },
+  "missing_information": [
+    "email",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

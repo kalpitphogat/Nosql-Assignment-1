@@ -1,0 +1,20 @@
+{
+  "source_row": 1376,
+  "customer_id": "C02353",
+  "matched_master_id": "C02353",
+  "name": "Chatresh Pillay",
+  "available_information": {
+    "name": "Chatresh Pillay",
+    "email": "chatresh.pillay2353@yahoo.com",
+    "address": "806, Sha Road",
+    "city": "Bihar Sharif"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "phone": {
+      "incoming": "8883793400",
+      "master": "7997143049"
+    }
+  }
+}

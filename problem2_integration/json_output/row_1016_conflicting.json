@@ -1,0 +1,23 @@
+{
+  "source_row": 1016,
+  "customer_id": "C01700",
+  "matched_master_id": "C01700",
+  "name": "Michael Barad",
+  "available_information": {
+    "name": "Michael Barad",
+    "email": "michael.barad1700@yahoo.com",
+    "city": "New Delhi"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "phone": {
+      "incoming": "7967442000",
+      "master": "9490680871"
+    },
+    "address": {
+      "incoming": "33/55, Narain Nagar",
+      "master": "H.No. 52, Setty Circle"
+    }
+  }
+}

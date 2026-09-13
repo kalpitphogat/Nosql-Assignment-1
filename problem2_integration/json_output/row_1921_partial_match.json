@@ -1,0 +1,16 @@
+{
+  "source_row": 1921,
+  "customer_id": "C01617",
+  "matched_master_id": "C01617",
+  "name": "Jonathan Rege",
+  "available_information": {
+    "name": "Jonathan Rege",
+    "email": "jonathan.rege1617@example.in",
+    "address": "93/327, Naik Marg",
+    "city": "Thanjavur"
+  },
+  "missing_information": [
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

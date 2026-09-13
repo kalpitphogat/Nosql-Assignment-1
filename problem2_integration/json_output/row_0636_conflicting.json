@@ -1,0 +1,20 @@
+{
+  "source_row": 636,
+  "customer_id": "C00484",
+  "matched_master_id": "C00484",
+  "name": "Aryan Hegde",
+  "available_information": {
+    "name": "Aryan Hegde",
+    "email": "aryan.hegde484@example.in",
+    "phone": "8646047868",
+    "address": "H.No. 845 Mohan Road"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "city": {
+      "incoming": "Patiala",
+      "master": "Mahbubnagar"
+    }
+  }
+}

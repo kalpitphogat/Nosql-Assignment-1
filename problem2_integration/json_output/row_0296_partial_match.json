@@ -1,0 +1,16 @@
+{
+  "source_row": 296,
+  "customer_id": "C00071",
+  "matched_master_id": "C00071",
+  "name": "Qarin Dada",
+  "available_information": {
+    "name": "Qarin Dada",
+    "email": "qarin.dada71@example.in",
+    "city": "Gandhinagar"
+  },
+  "missing_information": [
+    "phone",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

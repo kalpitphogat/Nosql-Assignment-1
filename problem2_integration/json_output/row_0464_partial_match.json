@@ -1,0 +1,16 @@
+{
+  "source_row": 464,
+  "customer_id": null,
+  "matched_master_id": "C00755",
+  "name": "faraj dyal",
+  "available_information": {
+    "name": "faraj dyal",
+    "email": "faraj.dyal755@outlook.com",
+    "address": "30/852, Basu Circle",
+    "city": "Nanded"
+  },
+  "missing_information": [
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

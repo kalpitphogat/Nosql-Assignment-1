@@ -1,0 +1,20 @@
+{
+  "source_row": 1543,
+  "customer_id": "C02477",
+  "matched_master_id": "C02477",
+  "name": "Peter Varkey",
+  "available_information": {
+    "email": "gautami.rajagopalan2477@example.in",
+    "phone": "7047912560",
+    "address": "H.No. 511, Sastry Street",
+    "city": "Haldia"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "name": {
+      "incoming": "Peter Varkey",
+      "master": "Gautami Rajagopalan"
+    }
+  }
+}

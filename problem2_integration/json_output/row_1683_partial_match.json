@@ -1,0 +1,16 @@
+{
+  "source_row": 1683,
+  "customer_id": "C00197",
+  "matched_master_id": "C00197",
+  "name": "Qadim Sura",
+  "available_information": {
+    "name": "Qadim Sura",
+    "email": "qadim.sura197@outlook.com",
+    "address": "77/60, Pillay Path",
+    "city": "Sultan Pur Majra"
+  },
+  "missing_information": [
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

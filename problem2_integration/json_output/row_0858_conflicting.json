@@ -1,0 +1,23 @@
+{
+  "source_row": 858,
+  "customer_id": "C02331",
+  "matched_master_id": "C02331",
+  "name": "Anita Sen",
+  "available_information": {
+    "email": "kalpit.shroff2331@gmail.com",
+    "address": "714, Nair Zila",
+    "city": "Pali"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "name": {
+      "incoming": "Anita Sen",
+      "master": "Kalpit Shroff"
+    },
+    "phone": {
+      "incoming": "8896386691",
+      "master": "8702692789"
+    }
+  }
+}

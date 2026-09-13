@@ -1,0 +1,16 @@
+{
+  "source_row": 1003,
+  "customer_id": "C02770",
+  "matched_master_id": "C02770",
+  "name": "Neel Tak",
+  "available_information": {
+    "name": "Neel Tak",
+    "email": "neel.tak2770@hotmail.com",
+    "phone": "6138695080",
+    "address": "58, Kapoor Chowk"
+  },
+  "missing_information": [
+    "city"
+  ],
+  "match_status": "partial_match"
+}

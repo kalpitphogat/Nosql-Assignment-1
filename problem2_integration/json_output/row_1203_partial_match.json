@@ -1,0 +1,16 @@
+{
+  "source_row": 1203,
+  "customer_id": null,
+  "matched_master_id": "C00828",
+  "name": "chameli babu",
+  "available_information": {
+    "name": "chameli babu",
+    "email": "chameli.babu828@outlook.com",
+    "address": "645 Bhatia Ganj",
+    "city": "Kamarhati"
+  },
+  "missing_information": [
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

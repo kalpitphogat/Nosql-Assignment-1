@@ -1,0 +1,23 @@
+{
+  "source_row": 1460,
+  "customer_id": "C01254",
+  "matched_master_id": "C01254",
+  "name": "Janaki Bhavsar",
+  "available_information": {
+    "name": "Janaki Bhavsar",
+    "phone": "9513860184",
+    "city": "Nadiad"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "email": {
+      "incoming": "aadi.sathe65687@example.in",
+      "master": "janaki.bhavsar1254@example.in"
+    },
+    "address": {
+      "incoming": "86/437 Bose Zila",
+      "master": "H.No. 131 Chandran Chowk"
+    }
+  }
+}

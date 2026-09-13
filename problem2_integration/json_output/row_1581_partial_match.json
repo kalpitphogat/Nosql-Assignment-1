@@ -1,0 +1,16 @@
+{
+  "source_row": 1581,
+  "customer_id": "C00047",
+  "matched_master_id": "C00047",
+  "name": "Jasmit Nath",
+  "available_information": {
+    "name": "Jasmit Nath",
+    "address": "11/189 Palla Zila",
+    "city": "Mira-Bhayandar"
+  },
+  "missing_information": [
+    "email",
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

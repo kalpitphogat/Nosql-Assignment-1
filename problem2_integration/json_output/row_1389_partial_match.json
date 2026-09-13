@@ -1,0 +1,16 @@
+{
+  "source_row": 1389,
+  "customer_id": null,
+  "matched_master_id": "C02520",
+  "name": "Vedant Sachdev",
+  "available_information": {
+    "name": "Vedant Sachdev",
+    "city": "Thoothukudi"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

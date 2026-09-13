@@ -1,0 +1,16 @@
+{
+  "source_row": 369,
+  "customer_id": "C02100",
+  "matched_master_id": "C02100",
+  "name": "Aarav Arya",
+  "available_information": {
+    "name": "Aarav Arya",
+    "email": "aarav.arya2100@outlook.com",
+    "address": "01, Natt Chowk"
+  },
+  "missing_information": [
+    "phone",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

@@ -1,0 +1,23 @@
+{
+  "source_row": 82,
+  "customer_id": "C01234",
+  "matched_master_id": "C01234",
+  "name": "Brinda Chokshi",
+  "available_information": {
+    "email": "om.iyer1234@yahoo.com",
+    "phone": "6683258729",
+    "city": "Firozabad"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "name": {
+      "incoming": "Brinda Chokshi",
+      "master": "Om Iyer"
+    },
+    "address": {
+      "incoming": "H.No. 34 Handa Ganj",
+      "master": "H.No. 80 Andra Nagar"
+    }
+  }
+}

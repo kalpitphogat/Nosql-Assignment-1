@@ -1,0 +1,16 @@
+{
+  "source_row": 133,
+  "customer_id": "C01625",
+  "matched_master_id": "C01625",
+  "name": "Christopher Verma",
+  "available_information": {
+    "name": "Christopher Verma",
+    "address": "298 Master"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

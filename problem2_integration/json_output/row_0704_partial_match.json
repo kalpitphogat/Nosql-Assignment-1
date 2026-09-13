@@ -1,0 +1,16 @@
+{
+  "source_row": 704,
+  "customer_id": "C01859",
+  "matched_master_id": "C01859",
+  "name": "Ranveer Bhatti",
+  "available_information": {
+    "name": "Ranveer Bhatti",
+    "phone": "6389821512"
+  },
+  "missing_information": [
+    "email",
+    "address",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

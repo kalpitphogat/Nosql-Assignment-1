@@ -1,0 +1,16 @@
+{
+  "source_row": 1429,
+  "customer_id": null,
+  "matched_master_id": "C00959",
+  "name": "Warinder Ranganathan",
+  "available_information": {
+    "name": "Warinder Ranganathan",
+    "address": "32, Sane",
+    "city": "Barasat"
+  },
+  "missing_information": [
+    "email",
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

@@ -1,0 +1,16 @@
+{
+  "source_row": 603,
+  "customer_id": "C02415",
+  "matched_master_id": "C02415",
+  "name": "Max Sangha",
+  "available_information": {
+    "name": "Max Sangha",
+    "email": "max.sangha2415@example.in",
+    "city": "Gangtok"
+  },
+  "missing_information": [
+    "phone",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

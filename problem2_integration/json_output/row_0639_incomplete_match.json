@@ -1,0 +1,16 @@
+{
+  "source_row": 639,
+  "customer_id": null,
+  "matched_master_id": null,
+  "name": "Dakshesh Prabhakar",
+  "available_information": {
+    "name": "Dakshesh Prabhakar"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address",
+    "city"
+  ],
+  "match_status": "incomplete_match"
+}

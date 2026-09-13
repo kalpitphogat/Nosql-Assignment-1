@@ -1,0 +1,16 @@
+{
+  "source_row": 1407,
+  "customer_id": "C00567",
+  "matched_master_id": "C00567",
+  "name": "Nikita Gopal",
+  "available_information": {
+    "name": "Nikita Gopal",
+    "phone": "6316006697"
+  },
+  "missing_information": [
+    "email",
+    "address",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

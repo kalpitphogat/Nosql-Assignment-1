@@ -1,0 +1,16 @@
+{
+  "source_row": 176,
+  "customer_id": "C01955",
+  "matched_master_id": "C01955",
+  "name": "Tanvi Kuruvilla",
+  "available_information": {
+    "name": "Tanvi Kuruvilla",
+    "email": "tanvi.kuruvilla1955@gmail.com",
+    "city": "Ahmedabad"
+  },
+  "missing_information": [
+    "phone",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

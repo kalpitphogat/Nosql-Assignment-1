@@ -1,0 +1,16 @@
+{
+  "source_row": 327,
+  "customer_id": "C01780",
+  "matched_master_id": "C01780",
+  "name": "Agastya Lala",
+  "available_information": {
+    "name": "Agastya Lala",
+    "email": "agastya.lala1780@example.in"
+  },
+  "missing_information": [
+    "phone",
+    "address",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

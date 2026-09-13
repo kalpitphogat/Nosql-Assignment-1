@@ -1,0 +1,16 @@
+{
+  "source_row": 303,
+  "customer_id": "C01226",
+  "matched_master_id": "C01226",
+  "name": "Jeremiah Narayan",
+  "available_information": {
+    "name": "Jeremiah Narayan",
+    "email": "jeremiah.narayan1226@hotmail.com",
+    "address": "60/077 Uppal Nagar"
+  },
+  "missing_information": [
+    "phone",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

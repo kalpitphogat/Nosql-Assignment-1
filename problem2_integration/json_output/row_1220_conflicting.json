@@ -1,0 +1,20 @@
+{
+  "source_row": 1220,
+  "customer_id": "C00156",
+  "matched_master_id": "C00156",
+  "name": "Azaan Khalsa",
+  "available_information": {
+    "name": "Azaan Khalsa",
+    "phone": "7477283855",
+    "address": "62/049 Keer Ganj",
+    "city": "Hospet"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "email": {
+      "incoming": "leena.prabhu74318@outlook.com",
+      "master": "azaan.khalsa156@outlook.com"
+    }
+  }
+}

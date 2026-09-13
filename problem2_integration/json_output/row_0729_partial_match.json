@@ -1,0 +1,16 @@
+{
+  "source_row": 729,
+  "customer_id": "C00231",
+  "matched_master_id": "C00231",
+  "name": "Lakshit Sangha",
+  "available_information": {
+    "name": "Lakshit Sangha",
+    "email": "lakshit.sangha231@gmail.com",
+    "phone": "9509519981",
+    "address": "47 Dugal Ganj"
+  },
+  "missing_information": [
+    "city"
+  ],
+  "match_status": "partial_match"
+}

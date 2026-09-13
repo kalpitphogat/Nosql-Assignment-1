@@ -1,0 +1,23 @@
+{
+  "source_row": 170,
+  "customer_id": "C00669",
+  "matched_master_id": "C00669",
+  "name": "Chakrika Chaudry",
+  "available_information": {
+    "name": "Chakrika Chaudry",
+    "address": "92/28, Choudhary Ganj",
+    "city": "Hospet"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "email": {
+      "incoming": "kritika.mukherjee25697@example.in",
+      "master": "chakrika.chaudry669@example.in"
+    },
+    "phone": {
+      "incoming": "7070618675",
+      "master": "9187302749"
+    }
+  }
+}

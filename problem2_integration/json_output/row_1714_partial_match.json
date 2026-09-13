@@ -1,0 +1,16 @@
+{
+  "source_row": 1714,
+  "customer_id": null,
+  "matched_master_id": "C02996",
+  "name": "chanchal nagi",
+  "available_information": {
+    "name": "chanchal nagi",
+    "email": "chanchal.nagi2996@outlook.com",
+    "address": "90/79, Sabharwal Ganj",
+    "city": "Buxar"
+  },
+  "missing_information": [
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

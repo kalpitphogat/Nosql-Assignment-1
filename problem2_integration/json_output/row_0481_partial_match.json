@@ -1,0 +1,16 @@
+{
+  "source_row": 481,
+  "customer_id": null,
+  "matched_master_id": "C01970",
+  "name": "chandresh saha",
+  "available_information": {
+    "name": "chandresh saha",
+    "email": "chandresh.saha1970@gmail.com",
+    "address": "H.No. 788 Babu Circle",
+    "city": "Mau"
+  },
+  "missing_information": [
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

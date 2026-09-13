@@ -1,0 +1,23 @@
+{
+  "source_row": 1277,
+  "customer_id": "C00854",
+  "matched_master_id": "C00854",
+  "name": "Chandresh Dewan",
+  "available_information": {
+    "name": "Chandresh Dewan",
+    "phone": "7367361333",
+    "address": "35/358 Mahal Circle"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "email": {
+      "incoming": "yochana.ratta46625@outlook.com",
+      "master": "chandresh.dewan854@outlook.com"
+    },
+    "city": {
+      "incoming": "Singrauli",
+      "master": "Bulandshahr"
+    }
+  }
+}

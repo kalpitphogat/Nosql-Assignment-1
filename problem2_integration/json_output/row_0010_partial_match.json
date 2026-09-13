@@ -1,0 +1,16 @@
+{
+  "source_row": 10,
+  "customer_id": null,
+  "matched_master_id": "C00098",
+  "name": "Yamini Roy",
+  "available_information": {
+    "name": "Yamini Roy",
+    "address": "46 Solanki Ganj",
+    "city": "Panvel"
+  },
+  "missing_information": [
+    "email",
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

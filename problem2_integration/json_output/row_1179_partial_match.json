@@ -1,0 +1,16 @@
+{
+  "source_row": 1179,
+  "customer_id": null,
+  "matched_master_id": "C01146",
+  "name": "qabil trivedi",
+  "available_information": {
+    "name": "qabil trivedi",
+    "email": "qabil.trivedi1146@outlook.com",
+    "address": "H.No. 15 Peri",
+    "city": "Rampur"
+  },
+  "missing_information": [
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

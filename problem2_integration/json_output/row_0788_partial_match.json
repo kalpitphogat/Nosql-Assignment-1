@@ -1,0 +1,16 @@
+{
+  "source_row": 788,
+  "customer_id": "C00356",
+  "matched_master_id": "C00356",
+  "name": "Arunima Sani",
+  "available_information": {
+    "name": "Arunima Sani",
+    "email": "arunima.sani356@outlook.com"
+  },
+  "missing_information": [
+    "phone",
+    "address",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

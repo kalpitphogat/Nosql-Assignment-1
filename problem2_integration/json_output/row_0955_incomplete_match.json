@@ -1,0 +1,16 @@
+{
+  "source_row": 955,
+  "customer_id": null,
+  "matched_master_id": null,
+  "name": "Jeremiah Mukhopadhyay",
+  "available_information": {
+    "name": "Jeremiah Mukhopadhyay"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address",
+    "city"
+  ],
+  "match_status": "incomplete_match"
+}

@@ -1,0 +1,16 @@
+{
+  "source_row": 525,
+  "customer_id": "C02708",
+  "matched_master_id": "C02708",
+  "name": "Aarna Iyengar",
+  "available_information": {
+    "name": "Aarna Iyengar",
+    "address": "43/907 Morar Marg",
+    "city": "Bhavnagar"
+  },
+  "missing_information": [
+    "email",
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

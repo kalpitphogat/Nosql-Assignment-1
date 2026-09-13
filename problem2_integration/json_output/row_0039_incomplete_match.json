@@ -1,0 +1,16 @@
+{
+  "source_row": 39,
+  "customer_id": null,
+  "matched_master_id": null,
+  "name": "Joshua Lala",
+  "available_information": {
+    "name": "Joshua Lala"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address",
+    "city"
+  ],
+  "match_status": "incomplete_match"
+}

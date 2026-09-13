@@ -1,0 +1,16 @@
+{
+  "source_row": 396,
+  "customer_id": null,
+  "matched_master_id": "C00007",
+  "name": "MANAN RAU",
+  "available_information": {
+    "name": "MANAN RAU",
+    "phone": "6585056840",
+    "address": "49/614, Kalita Path",
+    "city": "Ramagundam"
+  },
+  "missing_information": [
+    "email"
+  ],
+  "match_status": "partial_match"
+}

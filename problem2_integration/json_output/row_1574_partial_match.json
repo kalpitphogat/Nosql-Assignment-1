@@ -1,0 +1,16 @@
+{
+  "source_row": 1574,
+  "customer_id": null,
+  "matched_master_id": "C01136",
+  "name": "Balvan Ratta",
+  "available_information": {
+    "name": "Balvan Ratta",
+    "city": "Bhiwandi"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

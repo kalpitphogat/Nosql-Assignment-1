@@ -1,0 +1,16 @@
+{
+  "source_row": 253,
+  "customer_id": "C00054",
+  "matched_master_id": "C00054",
+  "name": "Gaurika Joshi",
+  "available_information": {
+    "name": "Gaurika Joshi",
+    "phone": "9672511899",
+    "address": "H.No. 292 Deol Ganj",
+    "city": "Jhansi"
+  },
+  "missing_information": [
+    "email"
+  ],
+  "match_status": "partial_match"
+}

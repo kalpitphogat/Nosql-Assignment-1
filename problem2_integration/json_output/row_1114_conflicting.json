@@ -1,0 +1,23 @@
+{
+  "source_row": 1114,
+  "customer_id": "C02643",
+  "matched_master_id": "C02643",
+  "name": "Eshana Dewan",
+  "available_information": {
+    "name": "Eshana Dewan",
+    "email": "eshana.dewan2643@hotmail.com",
+    "address": "H.No. 189 Sarma"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "phone": {
+      "incoming": "6076972612",
+      "master": "8187194237"
+    },
+    "city": {
+      "incoming": "Bidhannagar",
+      "master": "Ghaziabad"
+    }
+  }
+}

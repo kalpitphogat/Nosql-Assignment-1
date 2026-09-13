@@ -1,0 +1,16 @@
+{
+  "source_row": 497,
+  "customer_id": "C00191",
+  "matched_master_id": "C00191",
+  "name": "Bahadurjit Khurana",
+  "available_information": {
+    "name": "Bahadurjit Khurana",
+    "email": "bahadurjit.khurana191@yahoo.com",
+    "address": "14/878, Barman Circle"
+  },
+  "missing_information": [
+    "phone",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

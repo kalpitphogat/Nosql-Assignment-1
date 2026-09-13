@@ -1,0 +1,16 @@
+{
+  "source_row": 463,
+  "customer_id": "C02061",
+  "matched_master_id": "C02061",
+  "name": "Rachana Panchal",
+  "available_information": {
+    "name": "Rachana Panchal",
+    "address": "42/770 Gupta Ganj"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

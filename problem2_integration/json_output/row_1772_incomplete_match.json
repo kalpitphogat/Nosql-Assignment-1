@@ -1,0 +1,16 @@
+{
+  "source_row": 1772,
+  "customer_id": null,
+  "matched_master_id": null,
+  "name": "Christopher Verma",
+  "available_information": {
+    "name": "Christopher Verma"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address",
+    "city"
+  ],
+  "match_status": "incomplete_match"
+}

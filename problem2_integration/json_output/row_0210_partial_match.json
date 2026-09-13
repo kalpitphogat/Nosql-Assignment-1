@@ -1,0 +1,16 @@
+{
+  "source_row": 210,
+  "customer_id": null,
+  "matched_master_id": "C00076",
+  "name": "neha kanda",
+  "available_information": {
+    "name": "neha kanda",
+    "email": "neha.kanda76@yahoo.com",
+    "address": "H.No. 83, Ratta Road",
+    "city": "Bihar Sharif"
+  },
+  "missing_information": [
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

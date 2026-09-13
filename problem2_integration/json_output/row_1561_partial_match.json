@@ -1,0 +1,16 @@
+{
+  "source_row": 1561,
+  "customer_id": "C01238",
+  "matched_master_id": "C01238",
+  "name": "Dev Mammen",
+  "available_information": {
+    "name": "Dev Mammen",
+    "email": "dev.mammen1238@example.in",
+    "phone": "8615089042",
+    "city": "Parbhani"
+  },
+  "missing_information": [
+    "address"
+  ],
+  "match_status": "partial_match"
+}

@@ -1,0 +1,23 @@
+{
+  "source_row": 307,
+  "customer_id": "C00160",
+  "matched_master_id": "C00160",
+  "name": "Yashoda Sule",
+  "available_information": {
+    "phone": "6666730197",
+    "address": "H.No. 98 Sethi Circle",
+    "city": "Indore"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "name": {
+      "incoming": "Yashoda Sule",
+      "master": "Rudra Pall"
+    },
+    "email": {
+      "incoming": "ucchal.sawhney98462@yahoo.com",
+      "master": "rudra.pall160@outlook.com"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "source_row": 349,
+  "customer_id": "C00375",
+  "matched_master_id": "C00375",
+  "name": "Amaira Bhargava",
+  "available_information": {
+    "email": "yagnesh.grewal375@example.in",
+    "phone": "6299702576",
+    "city": "Madhyamgram"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "name": {
+      "incoming": "Amaira Bhargava",
+      "master": "Yagnesh Grewal"
+    },
+    "address": {
+      "incoming": "81/16 Pillai",
+      "master": "698 Sanghvi Circle"
+    }
+  }
+}

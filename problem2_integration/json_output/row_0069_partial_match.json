@@ -1,0 +1,16 @@
+{
+  "source_row": 69,
+  "customer_id": "C02645",
+  "matched_master_id": "C02645",
+  "name": "Bahadurjit Buch",
+  "available_information": {
+    "name": "Bahadurjit Buch",
+    "email": "bahadurjit.buch2645@gmail.com",
+    "phone": "6273010435",
+    "city": "Guna"
+  },
+  "missing_information": [
+    "address"
+  ],
+  "match_status": "partial_match"
+}

@@ -1,0 +1,16 @@
+{
+  "source_row": 1183,
+  "customer_id": "C01461",
+  "matched_master_id": "C01461",
+  "name": "Ranbir Char",
+  "available_information": {
+    "name": "Ranbir Char",
+    "address": "13, Radhakrishnan Ganj",
+    "city": "Amroha"
+  },
+  "missing_information": [
+    "email",
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

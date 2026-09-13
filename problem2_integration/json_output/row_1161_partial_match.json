@@ -1,0 +1,16 @@
+{
+  "source_row": 1161,
+  "customer_id": "C01756",
+  "matched_master_id": "C01756",
+  "name": "Shravya Kapadia",
+  "available_information": {
+    "name": "Shravya Kapadia",
+    "email": "shravya.kapadia1756@gmail.com",
+    "phone": "8897406268",
+    "city": "Muzaffarnagar"
+  },
+  "missing_information": [
+    "address"
+  ],
+  "match_status": "partial_match"
+}

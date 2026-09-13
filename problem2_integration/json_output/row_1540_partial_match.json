@@ -1,0 +1,16 @@
+{
+  "source_row": 1540,
+  "customer_id": "C02933",
+  "matched_master_id": "C02933",
+  "name": "Lila Guha",
+  "available_information": {
+    "name": "Lila Guha",
+    "email": "lila.guha2933@yahoo.com",
+    "address": "16, Sahni Path",
+    "city": "Tumkur"
+  },
+  "missing_information": [
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

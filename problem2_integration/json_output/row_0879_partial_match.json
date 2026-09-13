@@ -1,0 +1,16 @@
+{
+  "source_row": 879,
+  "customer_id": null,
+  "matched_master_id": "C01978",
+  "name": null,
+  "available_information": {
+    "email": "oscar.rana1978@gmail.com",
+    "phone": "9619504524",
+    "city": "Kanpur"
+  },
+  "missing_information": [
+    "name",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

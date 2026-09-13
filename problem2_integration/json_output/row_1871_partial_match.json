@@ -1,0 +1,16 @@
+{
+  "source_row": 1871,
+  "customer_id": "C02081",
+  "matched_master_id": "C02081",
+  "name": "Vyanjana Apte",
+  "available_information": {
+    "name": "Vyanjana Apte",
+    "email": "vyanjana.apte2081@yahoo.com",
+    "phone": "7712911296",
+    "address": "851, Raval Nagar"
+  },
+  "missing_information": [
+    "city"
+  ],
+  "match_status": "partial_match"
+}

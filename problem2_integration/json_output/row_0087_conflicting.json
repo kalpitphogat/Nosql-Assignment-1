@@ -1,0 +1,23 @@
+{
+  "source_row": 87,
+  "customer_id": "C00346",
+  "matched_master_id": "C00346",
+  "name": "Shivansh Devi",
+  "available_information": {
+    "phone": "9178345767",
+    "address": "94/08, Vyas Path",
+    "city": "Faridabad"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "name": {
+      "incoming": "Shivansh Devi",
+      "master": "Jackson Agrawal"
+    },
+    "email": {
+      "incoming": "vrinda.mukherjee38157@gmail.com",
+      "master": "jackson.agrawal346@example.in"
+    }
+  }
+}

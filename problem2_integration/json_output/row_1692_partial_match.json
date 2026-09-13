@@ -1,0 +1,16 @@
+{
+  "source_row": 1692,
+  "customer_id": "C00226",
+  "matched_master_id": "C00226",
+  "name": "Anita Chandra",
+  "available_information": {
+    "name": "Anita Chandra",
+    "email": "anita.chandra226@example.in",
+    "address": "74/397 Kakar Circle",
+    "city": "Miryalaguda"
+  },
+  "missing_information": [
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

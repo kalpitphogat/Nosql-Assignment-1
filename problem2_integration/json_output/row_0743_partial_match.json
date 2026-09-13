@@ -1,0 +1,16 @@
+{
+  "source_row": 743,
+  "customer_id": "C02509",
+  "matched_master_id": "C02509",
+  "name": "Siddharth Kari",
+  "available_information": {
+    "name": "Siddharth Kari",
+    "address": "H.No. 14 Mukhopadhyay Marg",
+    "city": "Gurgaon"
+  },
+  "missing_information": [
+    "email",
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

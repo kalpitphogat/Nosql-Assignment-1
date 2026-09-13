@@ -1,0 +1,23 @@
+{
+  "source_row": 797,
+  "customer_id": "C01904",
+  "matched_master_id": "C01904",
+  "name": "Brinda Bala",
+  "available_information": {
+    "name": "Brinda Bala",
+    "address": "16/132 Behl Street",
+    "city": "Udupi"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "email": {
+      "incoming": "atharv.thaker69843@outlook.com",
+      "master": "brinda.bala1904@yahoo.com"
+    },
+    "phone": {
+      "incoming": "8381202372",
+      "master": "6632382400"
+    }
+  }
+}

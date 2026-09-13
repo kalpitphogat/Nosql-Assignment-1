@@ -1,0 +1,16 @@
+{
+  "source_row": 763,
+  "customer_id": "C00556",
+  "matched_master_id": "C00556",
+  "name": "Tanvi Shanker",
+  "available_information": {
+    "name": "Tanvi Shanker",
+    "phone": "6177810620",
+    "address": "961 Ghose Circle"
+  },
+  "missing_information": [
+    "email",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

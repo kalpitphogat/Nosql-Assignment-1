@@ -1,0 +1,20 @@
+{
+  "source_row": 353,
+  "customer_id": "C01792",
+  "matched_master_id": "C01792",
+  "name": "Kamala Apte",
+  "available_information": {
+    "name": "Kamala Apte",
+    "email": "kamala.apte1792@example.in",
+    "phone": "7756115134",
+    "city": "Adoni"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "address": {
+      "incoming": "81/143 Bala Road",
+      "master": "H.No. 293 Mukherjee Zila"
+    }
+  }
+}

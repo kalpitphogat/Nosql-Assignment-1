@@ -1,0 +1,16 @@
+{
+  "source_row": 593,
+  "customer_id": "C02545",
+  "matched_master_id": "C02545",
+  "name": "Amara Balay",
+  "available_information": {
+    "name": "Amara Balay",
+    "city": "Hajipur"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

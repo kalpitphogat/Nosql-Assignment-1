@@ -1,0 +1,16 @@
+{
+  "source_row": 1882,
+  "customer_id": "C02268",
+  "matched_master_id": "C02268",
+  "name": "David Bora",
+  "available_information": {
+    "name": "David Bora",
+    "phone": "7786563440",
+    "address": "30/267, Narayanan Street"
+  },
+  "missing_information": [
+    "email",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

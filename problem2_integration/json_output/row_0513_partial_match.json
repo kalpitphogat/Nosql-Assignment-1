@@ -1,0 +1,16 @@
+{
+  "source_row": 513,
+  "customer_id": "C00730",
+  "matched_master_id": "C00730",
+  "name": "Gagan Memon",
+  "available_information": {
+    "name": "Gagan Memon",
+    "phone": "8172133022"
+  },
+  "missing_information": [
+    "email",
+    "address",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

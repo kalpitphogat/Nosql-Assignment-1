@@ -1,0 +1,23 @@
+{
+  "source_row": 93,
+  "customer_id": "C02423",
+  "matched_master_id": "C02423",
+  "name": "Daksh Dayal",
+  "available_information": {
+    "phone": "9488521414",
+    "address": "03/931 Sibal",
+    "city": "Dhule"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "name": {
+      "incoming": "Daksh Dayal",
+      "master": "Aayush Bhagat"
+    },
+    "email": {
+      "incoming": "nakul.walla75722@yahoo.com",
+      "master": "aayush.bhagat2423@gmail.com"
+    }
+  }
+}

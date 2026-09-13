@@ -1,0 +1,16 @@
+{
+  "source_row": 118,
+  "customer_id": null,
+  "matched_master_id": "C00019",
+  "name": "AARINI OZA",
+  "available_information": {
+    "name": "AARINI OZA",
+    "phone": "6215477346",
+    "address": "H.No. 422 Kari Marg",
+    "city": "Berhampore"
+  },
+  "missing_information": [
+    "email"
+  ],
+  "match_status": "partial_match"
+}

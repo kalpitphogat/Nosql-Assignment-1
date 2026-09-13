@@ -1,0 +1,20 @@
+{
+  "source_row": 518,
+  "customer_id": "C00438",
+  "matched_master_id": "C00438",
+  "name": "Megha Sekhon",
+  "available_information": {
+    "name": "Megha Sekhon",
+    "phone": "8650839223",
+    "address": "65, Bhakta Nagar",
+    "city": "Sasaram"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "email": {
+      "incoming": "utkarsh.date36055@outlook.com",
+      "master": "megha.sekhon438@example.in"
+    }
+  }
+}

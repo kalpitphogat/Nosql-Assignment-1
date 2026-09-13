@@ -1,0 +1,16 @@
+{
+  "source_row": 592,
+  "customer_id": "C00580",
+  "matched_master_id": "C00580",
+  "name": "Christopher Varkey",
+  "available_information": {
+    "name": "Christopher Varkey",
+    "address": "92/741, Choudhry Path",
+    "city": "Nellore"
+  },
+  "missing_information": [
+    "email",
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

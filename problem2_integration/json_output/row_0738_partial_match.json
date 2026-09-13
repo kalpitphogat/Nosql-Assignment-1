@@ -1,0 +1,16 @@
+{
+  "source_row": 738,
+  "customer_id": null,
+  "matched_master_id": "C02801",
+  "name": null,
+  "available_information": {
+    "email": "prisha.gola2801@yahoo.com",
+    "phone": "6501023127",
+    "city": "Kolhapur"
+  },
+  "missing_information": [
+    "name",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

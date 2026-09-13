@@ -1,0 +1,16 @@
+{
+  "source_row": 547,
+  "customer_id": "C00974",
+  "matched_master_id": "C00974",
+  "name": "Shravya Raja",
+  "available_information": {
+    "name": "Shravya Raja",
+    "phone": "6905717634",
+    "address": "H.No. 41, Sawhney Road",
+    "city": "Kota"
+  },
+  "missing_information": [
+    "email"
+  ],
+  "match_status": "partial_match"
+}

@@ -1,0 +1,16 @@
+{
+  "source_row": 1243,
+  "customer_id": "C02985",
+  "matched_master_id": "C02985",
+  "name": "Nachiket Rout",
+  "available_information": {
+    "name": "Nachiket Rout",
+    "address": "77/781, Chacko Circle"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

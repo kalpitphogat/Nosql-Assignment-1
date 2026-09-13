@@ -1,0 +1,20 @@
+{
+  "source_row": 1640,
+  "customer_id": "C00223",
+  "matched_master_id": "C00223",
+  "name": "Faris Saini",
+  "available_information": {
+    "name": "Faris Saini",
+    "email": "faris.saini223@gmail.com",
+    "phone": "9265712092",
+    "city": "Buxar"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "address": {
+      "incoming": "H.No. 19 Soman Ganj",
+      "master": "440 Patil Street"
+    }
+  }
+}

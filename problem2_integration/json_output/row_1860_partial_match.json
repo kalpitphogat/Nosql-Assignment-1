@@ -1,0 +1,16 @@
+{
+  "source_row": 1860,
+  "customer_id": "C00199",
+  "matched_master_id": "C00199",
+  "name": "Netra Pau",
+  "available_information": {
+    "name": "Netra Pau",
+    "email": "netra.pau199@hotmail.com",
+    "address": "714 Mann Circle",
+    "city": "New Delhi"
+  },
+  "missing_information": [
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

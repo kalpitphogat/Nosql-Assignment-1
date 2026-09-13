@@ -1,0 +1,16 @@
+{
+  "source_row": 1535,
+  "customer_id": "C01348",
+  "matched_master_id": "C01348",
+  "name": "Devika Mital",
+  "available_information": {
+    "name": "Devika Mital",
+    "email": "devika.mital1348@example.in",
+    "address": "H.No. 27, Khosla Chowk"
+  },
+  "missing_information": [
+    "phone",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

@@ -1,0 +1,16 @@
+{
+  "source_row": 456,
+  "customer_id": "C02876",
+  "matched_master_id": "C02876",
+  "name": "Gautami Krishna",
+  "available_information": {
+    "name": "Gautami Krishna",
+    "phone": "8204632563",
+    "address": "27/25 Balasubramanian Path"
+  },
+  "missing_information": [
+    "email",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

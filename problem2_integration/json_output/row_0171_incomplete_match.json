@@ -1,0 +1,16 @@
+{
+  "source_row": 171,
+  "customer_id": null,
+  "matched_master_id": null,
+  "name": "Chasmum Dhingra",
+  "available_information": {
+    "name": "Chasmum Dhingra"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address",
+    "city"
+  ],
+  "match_status": "incomplete_match"
+}

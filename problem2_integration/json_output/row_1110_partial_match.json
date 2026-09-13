@@ -1,0 +1,16 @@
+{
+  "source_row": 1110,
+  "customer_id": "C00841",
+  "matched_master_id": "C00841",
+  "name": "Bhavika Lala",
+  "available_information": {
+    "name": "Bhavika Lala",
+    "address": "H.No. 734, Jayaraman Path"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

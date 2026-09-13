@@ -1,0 +1,16 @@
+{
+  "source_row": 126,
+  "customer_id": null,
+  "matched_master_id": null,
+  "name": "Panini Mander",
+  "available_information": {
+    "name": "Panini Mander"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address",
+    "city"
+  ],
+  "match_status": "incomplete_match"
+}

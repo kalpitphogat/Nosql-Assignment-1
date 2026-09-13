@@ -1,0 +1,23 @@
+{
+  "source_row": 904,
+  "customer_id": "C01883",
+  "matched_master_id": "C01883",
+  "name": "Quincy Chada",
+  "available_information": {
+    "phone": "6228327357",
+    "address": "51/62, Pall Path",
+    "city": "Pune"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "name": {
+      "incoming": "Quincy Chada",
+      "master": "Ekaja Upadhyay"
+    },
+    "email": {
+      "incoming": "diya.memon42184@hotmail.com",
+      "master": "ekaja.upadhyay1883@outlook.com"
+    }
+  }
+}

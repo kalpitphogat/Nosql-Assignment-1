@@ -1,0 +1,20 @@
+{
+  "source_row": 1565,
+  "customer_id": "C00365",
+  "matched_master_id": "C00365",
+  "name": "Azad Chakrabarti",
+  "available_information": {
+    "name": "Azad Chakrabarti",
+    "email": "azad.chakrabarti365@gmail.com",
+    "phone": "7592864724",
+    "city": "Ratlam"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "address": {
+      "incoming": "88/48, Palan Circle",
+      "master": "66, Dua Path"
+    }
+  }
+}

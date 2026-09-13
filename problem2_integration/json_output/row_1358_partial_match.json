@@ -1,0 +1,16 @@
+{
+  "source_row": 1358,
+  "customer_id": "C01834",
+  "matched_master_id": "C01834",
+  "name": "Pahal Tailor",
+  "available_information": {
+    "name": "Pahal Tailor",
+    "email": "pahal.tailor1834@hotmail.com",
+    "phone": "7442029670",
+    "address": "89/885 Kata Zila"
+  },
+  "missing_information": [
+    "city"
+  ],
+  "match_status": "partial_match"
+}

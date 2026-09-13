@@ -1,0 +1,16 @@
+{
+  "source_row": 813,
+  "customer_id": null,
+  "matched_master_id": "C00469",
+  "name": "yahvi goswami",
+  "available_information": {
+    "name": "yahvi goswami",
+    "email": "yahvi.goswami469@yahoo.com",
+    "address": "91/588 Nagar",
+    "city": "Pondicherry"
+  },
+  "missing_information": [
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

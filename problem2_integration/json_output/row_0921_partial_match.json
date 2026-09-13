@@ -1,0 +1,16 @@
+{
+  "source_row": 921,
+  "customer_id": "C01703",
+  "matched_master_id": "C01703",
+  "name": "Harish Bhalla",
+  "available_information": {
+    "name": "Harish Bhalla",
+    "phone": "6936433637",
+    "address": "73/55, Baral Road",
+    "city": "Raiganj"
+  },
+  "missing_information": [
+    "email"
+  ],
+  "match_status": "partial_match"
+}

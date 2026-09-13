@@ -1,0 +1,16 @@
+{
+  "source_row": 499,
+  "customer_id": "C02494",
+  "matched_master_id": "C02494",
+  "name": "Jagdish Sahota",
+  "available_information": {
+    "name": "Jagdish Sahota",
+    "email": "jagdish.sahota2494@yahoo.com",
+    "address": "48/759 Devan Path",
+    "city": "Narasaraopet"
+  },
+  "missing_information": [
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

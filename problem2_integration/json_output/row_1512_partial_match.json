@@ -1,0 +1,16 @@
+{
+  "source_row": 1512,
+  "customer_id": "C02825",
+  "matched_master_id": "C02825",
+  "name": "Gautami Memon",
+  "available_information": {
+    "name": "Gautami Memon",
+    "email": "gautami.memon2825@yahoo.com",
+    "phone": "8824191063",
+    "city": "Hajipur"
+  },
+  "missing_information": [
+    "address"
+  ],
+  "match_status": "partial_match"
+}

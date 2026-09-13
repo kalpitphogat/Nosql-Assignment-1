@@ -1,0 +1,16 @@
+{
+  "source_row": 1415,
+  "customer_id": "C00822",
+  "matched_master_id": "C00822",
+  "name": "Gayathri Deo",
+  "available_information": {
+    "name": "Gayathri Deo",
+    "address": "H.No. 42, Thaman Nagar",
+    "city": "Jamshedpur"
+  },
+  "missing_information": [
+    "email",
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

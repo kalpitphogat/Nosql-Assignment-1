@@ -1,0 +1,16 @@
+{
+  "source_row": 344,
+  "customer_id": "C01655",
+  "matched_master_id": "C01655",
+  "name": "Jeevika Natarajan",
+  "available_information": {
+    "name": "Jeevika Natarajan",
+    "address": "23/571 Chawla"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

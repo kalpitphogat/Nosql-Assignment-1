@@ -1,0 +1,16 @@
+{
+  "source_row": 691,
+  "customer_id": null,
+  "matched_master_id": "C02545",
+  "name": "Amara Balay",
+  "available_information": {
+    "name": "Amara Balay",
+    "address": "H.No. 30, Parikh Road",
+    "city": "Hajipur"
+  },
+  "missing_information": [
+    "email",
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

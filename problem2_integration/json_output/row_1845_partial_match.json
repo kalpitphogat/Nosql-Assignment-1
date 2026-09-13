@@ -1,0 +1,16 @@
+{
+  "source_row": 1845,
+  "customer_id": null,
+  "matched_master_id": "C00784",
+  "name": "VYANJANA PALAN",
+  "available_information": {
+    "name": "VYANJANA PALAN",
+    "phone": "9893170621",
+    "address": "08/028 Anand Ganj",
+    "city": "Tezpur"
+  },
+  "missing_information": [
+    "email"
+  ],
+  "match_status": "partial_match"
+}

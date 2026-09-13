@@ -1,0 +1,16 @@
+{
+  "source_row": 1824,
+  "customer_id": "C01444",
+  "matched_master_id": "C01444",
+  "name": "Wakeeta Chauhan",
+  "available_information": {
+    "name": "Wakeeta Chauhan",
+    "address": "H.No. 28 Kothari Marg",
+    "city": "Satara"
+  },
+  "missing_information": [
+    "email",
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

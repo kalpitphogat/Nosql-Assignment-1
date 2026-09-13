@@ -1,0 +1,16 @@
+{
+  "source_row": 65,
+  "customer_id": null,
+  "matched_master_id": null,
+  "name": "Ubika Loyal",
+  "available_information": {
+    "name": "Ubika Loyal"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address",
+    "city"
+  ],
+  "match_status": "incomplete_match"
+}

@@ -1,0 +1,16 @@
+{
+  "source_row": 404,
+  "customer_id": null,
+  "matched_master_id": "C02397",
+  "name": "Aarush Raval",
+  "available_information": {
+    "name": "Aarush Raval",
+    "city": "Agartala"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

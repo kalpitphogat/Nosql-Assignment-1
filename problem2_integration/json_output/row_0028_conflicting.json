@@ -1,0 +1,23 @@
+{
+  "source_row": 28,
+  "customer_id": "C01759",
+  "matched_master_id": "C01759",
+  "name": "Maanas Ben",
+  "available_information": {
+    "name": "Maanas Ben",
+    "email": "maanas.ben1759@example.in",
+    "phone": "8327069035"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "address": {
+      "incoming": "61/623 Chaudhuri Street",
+      "master": "074 Kalita Zila"
+    },
+    "city": {
+      "incoming": "Kota",
+      "master": "Jodhpur"
+    }
+  }
+}

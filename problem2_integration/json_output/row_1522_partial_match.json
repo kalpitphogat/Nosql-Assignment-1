@@ -1,0 +1,16 @@
+{
+  "source_row": 1522,
+  "customer_id": null,
+  "matched_master_id": "C01526",
+  "name": null,
+  "available_information": {
+    "email": "champak.bir1526@yahoo.com",
+    "phone": "7412525470",
+    "city": "Anantapuram"
+  },
+  "missing_information": [
+    "name",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

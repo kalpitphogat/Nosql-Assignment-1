@@ -1,0 +1,16 @@
+{
+  "source_row": 1962,
+  "customer_id": null,
+  "matched_master_id": "C00849",
+  "name": "aadi tara",
+  "available_information": {
+    "name": "aadi tara",
+    "email": "aadi.tara849@outlook.com",
+    "address": "00, Goyal Street",
+    "city": "Kadapa"
+  },
+  "missing_information": [
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

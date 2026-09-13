@@ -1,0 +1,23 @@
+{
+  "source_row": 1043,
+  "customer_id": "C01350",
+  "matched_master_id": "C01350",
+  "name": "Pavani Bhagat",
+  "available_information": {
+    "email": "wriddhish.chana1350@gmail.com",
+    "phone": "7157124930",
+    "address": "82, Sibal Path"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "name": {
+      "incoming": "Pavani Bhagat",
+      "master": "Wriddhish Chana"
+    },
+    "city": {
+      "incoming": "Loni",
+      "master": "Motihari"
+    }
+  }
+}

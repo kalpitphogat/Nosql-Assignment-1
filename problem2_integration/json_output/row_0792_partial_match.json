@@ -1,0 +1,16 @@
+{
+  "source_row": 792,
+  "customer_id": "C01746",
+  "matched_master_id": "C01746",
+  "name": "Agastya Venkatesh",
+  "available_information": {
+    "name": "Agastya Venkatesh",
+    "city": "Vijayawada"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

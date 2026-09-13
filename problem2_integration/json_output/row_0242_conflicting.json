@@ -1,0 +1,20 @@
+{
+  "source_row": 242,
+  "customer_id": "C02651",
+  "matched_master_id": "C02651",
+  "name": "Radhika Rajagopalan",
+  "available_information": {
+    "name": "Radhika Rajagopalan",
+    "email": "radhika.rajagopalan2651@yahoo.com",
+    "address": "73/174 Raman Zila",
+    "city": "Moradabad"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "phone": {
+      "incoming": "8951855345",
+      "master": "6402418622"
+    }
+  }
+}

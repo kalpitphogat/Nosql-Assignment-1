@@ -1,0 +1,23 @@
+{
+  "source_row": 625,
+  "customer_id": "C02147",
+  "matched_master_id": "C02147",
+  "name": "Mason Dugar",
+  "available_information": {
+    "name": "Mason Dugar",
+    "email": "mason.dugar2147@hotmail.com",
+    "address": "H.No. 99 Bala Ganj"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "phone": {
+      "incoming": "6024345858",
+      "master": "7008510585"
+    },
+    "city": {
+      "incoming": "Karimnagar",
+      "master": "Kolhapur"
+    }
+  }
+}

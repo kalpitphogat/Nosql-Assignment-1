@@ -1,0 +1,31 @@
+  p_brand   |          p_type           | p_size | supplier_cnt 
+------------+---------------------------+--------+--------------
+ Brand#45   | MEDIUM BRUSHED BRASS      |     31 |           32
+ Brand#53   | PROMO ANODIZED BRASS      |     50 |           32
+ Brand#55   | MEDIUM BRUSHED COPPER     |     17 |           28
+ Brand#11   | STANDARD POLISHED TIN     |     39 |           24
+ Brand#13   | MEDIUM BRUSHED NICKEL     |      1 |           24
+ Brand#14   | ECONOMY ANODIZED TIN      |     50 |           24
+ Brand#15   | SMALL ANODIZED BRASS      |     45 |           24
+ Brand#15   | SMALL BURNISHED NICKEL    |     19 |           24
+ Brand#22   | SMALL BURNISHED BRASS     |     19 |           24
+ Brand#25   | SMALL BURNISHED COPPER    |     17 |           24
+ Brand#35   | ECONOMY POLISHED TIN      |     50 |           24
+ Brand#35   | PROMO PLATED TIN          |     39 |           24
+ Brand#35   | STANDARD BRUSHED COPPER   |     31 |           24
+ Brand#41   | ECONOMY POLISHED TIN      |     19 |           24
+ Brand#42   | LARGE POLISHED NICKEL     |      1 |           24
+ Brand#44   | STANDARD ANODIZED COPPER  |     31 |           24
+ Brand#54   | ECONOMY BRUSHED COPPER    |      1 |           24
+ Brand#54   | LARGE ANODIZED TIN        |      1 |           24
+ Brand#54   | STANDARD ANODIZED TIN     |     50 |           24
+ Brand#14   | PROMO ANODIZED NICKEL     |     45 |           23
+ Brand#35   | PROMO BRUSHED STEEL       |     28 |           23
+ Brand#11   | ECONOMY BRUSHED COPPER    |     45 |           20
+ Brand#11   | PROMO BURNISHED NICKEL    |     28 |           20
+ Brand#12   | LARGE POLISHED COPPER     |     39 |           20
+ Brand#12   | MEDIUM BRUSHED NICKEL     |     39 |           20
+ Brand#12   | STANDARD PLATED BRASS     |     19 |           20
+ Brand#12   | STANDARD POLISHED STEEL   |     50 |           20
+ Brand#13   | LARGE BURNISHED NICKEL    |     19 |           20
+... (truncated, full output was    18121 lines) ...

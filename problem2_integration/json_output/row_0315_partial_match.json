@@ -1,0 +1,16 @@
+{
+  "source_row": 315,
+  "customer_id": "C01964",
+  "matched_master_id": "C01964",
+  "name": "Yatan Kamdar",
+  "available_information": {
+    "name": "Yatan Kamdar",
+    "phone": "7162974205",
+    "address": "H.No. 96, Bhatia Ganj",
+    "city": "Srikakulam"
+  },
+  "missing_information": [
+    "email"
+  ],
+  "match_status": "partial_match"
+}

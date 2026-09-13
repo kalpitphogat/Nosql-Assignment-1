@@ -1,0 +1,16 @@
+{
+  "source_row": 1038,
+  "customer_id": null,
+  "matched_master_id": null,
+  "name": "Kala Tripathi",
+  "available_information": {
+    "name": "Kala Tripathi"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address",
+    "city"
+  ],
+  "match_status": "incomplete_match"
+}

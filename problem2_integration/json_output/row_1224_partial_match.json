@@ -1,0 +1,16 @@
+{
+  "source_row": 1224,
+  "customer_id": "C00268",
+  "matched_master_id": "C00268",
+  "name": "Wahab Nadkarni",
+  "available_information": {
+    "name": "Wahab Nadkarni",
+    "email": "wahab.nadkarni268@hotmail.com",
+    "phone": "9383052600",
+    "city": "Machilipatnam"
+  },
+  "missing_information": [
+    "address"
+  ],
+  "match_status": "partial_match"
+}

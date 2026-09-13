@@ -1,0 +1,23 @@
+{
+  "source_row": 408,
+  "customer_id": "C00569",
+  "matched_master_id": "C00569",
+  "name": "Forum Virk",
+  "available_information": {
+    "email": "peter.chowdhury569@example.in",
+    "phone": "6999056767",
+    "city": "Anantapur"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "name": {
+      "incoming": "Forum Virk",
+      "master": "Peter Chowdhury"
+    },
+    "address": {
+      "incoming": "69/59, Sem Path",
+      "master": "16/775 Mahal Path"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "source_row": 652,
+  "customer_id": null,
+  "matched_master_id": "C01935",
+  "name": "Kala Samra",
+  "available_information": {
+    "name": "Kala Samra",
+    "city": "Guntakal"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

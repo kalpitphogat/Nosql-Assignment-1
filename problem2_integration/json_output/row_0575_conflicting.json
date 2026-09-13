@@ -1,0 +1,20 @@
+{
+  "source_row": 575,
+  "customer_id": "C02277",
+  "matched_master_id": "C02277",
+  "name": "Reyansh Pandya",
+  "available_information": {
+    "name": "Reyansh Pandya",
+    "email": "reyansh.pandya2277@gmail.com",
+    "phone": "8448197821",
+    "city": "Sambalpur"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "address": {
+      "incoming": "H.No. 86, Varughese Path",
+      "master": "28/65, Gokhale Path"
+    }
+  }
+}

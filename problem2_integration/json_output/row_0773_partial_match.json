@@ -1,0 +1,16 @@
+{
+  "source_row": 773,
+  "customer_id": null,
+  "matched_master_id": "C00858",
+  "name": "madhav ganguly",
+  "available_information": {
+    "name": "madhav ganguly",
+    "email": "madhav.ganguly858@example.in",
+    "address": "50/943, Ratti Road",
+    "city": "Malegaon"
+  },
+  "missing_information": [
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

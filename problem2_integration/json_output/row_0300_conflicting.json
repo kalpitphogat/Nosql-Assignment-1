@@ -1,0 +1,20 @@
+{
+  "source_row": 300,
+  "customer_id": "C01209",
+  "matched_master_id": "C01209",
+  "name": "Jyoti Gola",
+  "available_information": {
+    "email": "ekanta.dugar1209@example.in",
+    "phone": "6655222768",
+    "address": "72/087, Murthy Nagar",
+    "city": "Ghaziabad"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "name": {
+      "incoming": "Jyoti Gola",
+      "master": "Ekanta Dugar"
+    }
+  }
+}

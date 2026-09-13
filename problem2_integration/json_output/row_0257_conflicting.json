@@ -1,0 +1,23 @@
+{
+  "source_row": 257,
+  "customer_id": "C00476",
+  "matched_master_id": "C00476",
+  "name": "Patrick Zachariah",
+  "available_information": {
+    "phone": "6888745428",
+    "address": "68/296, Yadav Street",
+    "city": "Kamarhati"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "name": {
+      "incoming": "Patrick Zachariah",
+      "master": "Fitan Kar"
+    },
+    "email": {
+      "incoming": "eesha.keer98918@gmail.com",
+      "master": "fitan.kar476@example.in"
+    }
+  }
+}

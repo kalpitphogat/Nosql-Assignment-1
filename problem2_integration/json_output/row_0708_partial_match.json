@@ -1,0 +1,16 @@
+{
+  "source_row": 708,
+  "customer_id": "C01345",
+  "matched_master_id": "C01345",
+  "name": "Sarthak Murthy",
+  "available_information": {
+    "name": "Sarthak Murthy",
+    "city": "Medininagar"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

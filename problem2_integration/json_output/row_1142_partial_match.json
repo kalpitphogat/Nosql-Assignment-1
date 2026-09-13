@@ -1,0 +1,16 @@
+{
+  "source_row": 1142,
+  "customer_id": "C02826",
+  "matched_master_id": "C02826",
+  "name": "Falak Arya",
+  "available_information": {
+    "name": "Falak Arya",
+    "phone": "7527842372",
+    "address": "867, Gupta Ganj",
+    "city": "Bally"
+  },
+  "missing_information": [
+    "email"
+  ],
+  "match_status": "partial_match"
+}

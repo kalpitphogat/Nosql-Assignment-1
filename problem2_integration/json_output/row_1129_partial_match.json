@@ -1,0 +1,16 @@
+{
+  "source_row": 1129,
+  "customer_id": "C00444",
+  "matched_master_id": "C00444",
+  "name": "Damini Sandhu",
+  "available_information": {
+    "name": "Damini Sandhu",
+    "email": "damini.sandhu444@outlook.com"
+  },
+  "missing_information": [
+    "phone",
+    "address",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

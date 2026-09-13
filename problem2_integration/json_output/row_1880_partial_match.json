@@ -1,0 +1,16 @@
+{
+  "source_row": 1880,
+  "customer_id": null,
+  "matched_master_id": "C02813",
+  "name": null,
+  "available_information": {
+    "email": "indali.nadkarni2813@gmail.com",
+    "phone": "7946534234",
+    "city": "Erode"
+  },
+  "missing_information": [
+    "name",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

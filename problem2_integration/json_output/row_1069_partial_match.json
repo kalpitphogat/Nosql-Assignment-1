@@ -1,0 +1,16 @@
+{
+  "source_row": 1069,
+  "customer_id": "C01016",
+  "matched_master_id": "C01016",
+  "name": "Urvashi Raval",
+  "available_information": {
+    "name": "Urvashi Raval",
+    "email": "urvashi.raval1016@yahoo.com",
+    "phone": "9677711723",
+    "city": "Ahmednagar"
+  },
+  "missing_information": [
+    "address"
+  ],
+  "match_status": "partial_match"
+}

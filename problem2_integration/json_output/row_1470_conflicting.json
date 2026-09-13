@@ -1,0 +1,23 @@
+{
+  "source_row": 1470,
+  "customer_id": "C00967",
+  "matched_master_id": "C00967",
+  "name": "Yashoda Bera",
+  "available_information": {
+    "email": "warinder.de967@yahoo.com",
+    "phone": "7517223773",
+    "city": "Chandrapur"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "name": {
+      "incoming": "Yashoda Bera",
+      "master": "Warinder De"
+    },
+    "address": {
+      "incoming": "H.No. 62 Barad Street",
+      "master": "83 Hari Marg"
+    }
+  }
+}

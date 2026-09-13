@@ -1,0 +1,16 @@
+{
+  "source_row": 175,
+  "customer_id": null,
+  "matched_master_id": null,
+  "name": "Yoshita Bajaj",
+  "available_information": {
+    "name": "Yoshita Bajaj"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address",
+    "city"
+  ],
+  "match_status": "incomplete_match"
+}

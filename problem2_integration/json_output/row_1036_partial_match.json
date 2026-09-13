@@ -1,0 +1,16 @@
+{
+  "source_row": 1036,
+  "customer_id": "C01650",
+  "matched_master_id": "C01650",
+  "name": "Balvan Borde",
+  "available_information": {
+    "name": "Balvan Borde",
+    "city": "Akola"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

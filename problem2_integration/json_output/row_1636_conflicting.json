@@ -1,0 +1,23 @@
+{
+  "source_row": 1636,
+  "customer_id": "C01456",
+  "matched_master_id": "C01456",
+  "name": "Charvi Ranganathan",
+  "available_information": {
+    "email": "rohan.sastry1456@hotmail.com",
+    "phone": "7624708115",
+    "city": "Srinagar"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "name": {
+      "incoming": "Charvi Ranganathan",
+      "master": "Rohan Sastry"
+    },
+    "address": {
+      "incoming": "05 Hayer Path",
+      "master": "H.No. 70 Sabharwal Marg"
+    }
+  }
+}

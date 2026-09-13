@@ -1,0 +1,16 @@
+{
+  "source_row": 189,
+  "customer_id": null,
+  "matched_master_id": "C00903",
+  "name": "OLIVER SANGHVI",
+  "available_information": {
+    "name": "OLIVER SANGHVI",
+    "phone": "7352752331",
+    "address": "H.No. 814, Bhakta Zila",
+    "city": "Bongaigaon"
+  },
+  "missing_information": [
+    "email"
+  ],
+  "match_status": "partial_match"
+}

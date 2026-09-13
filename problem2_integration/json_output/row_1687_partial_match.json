@@ -1,0 +1,16 @@
+{
+  "source_row": 1687,
+  "customer_id": "C01719",
+  "matched_master_id": "C01719",
+  "name": "Anita Nagi",
+  "available_information": {
+    "name": "Anita Nagi",
+    "email": "anita.nagi1719@example.in",
+    "phone": "6213518674",
+    "city": "Alappuzha"
+  },
+  "missing_information": [
+    "address"
+  ],
+  "match_status": "partial_match"
+}

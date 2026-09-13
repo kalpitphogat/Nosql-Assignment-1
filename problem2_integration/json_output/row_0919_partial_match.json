@@ -1,0 +1,16 @@
+{
+  "source_row": 919,
+  "customer_id": "C01294",
+  "matched_master_id": "C01294",
+  "name": "Isha Devi",
+  "available_information": {
+    "name": "Isha Devi",
+    "email": "isha.devi1294@outlook.com",
+    "address": "80/04, Sachdev Chowk"
+  },
+  "missing_information": [
+    "phone",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

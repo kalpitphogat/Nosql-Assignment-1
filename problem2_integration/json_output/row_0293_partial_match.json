@@ -1,0 +1,16 @@
+{
+  "source_row": 293,
+  "customer_id": null,
+  "matched_master_id": "C00148",
+  "name": "Tanvi Balasubramanian",
+  "available_information": {
+    "name": "Tanvi Balasubramanian",
+    "address": "544, Mander Nagar",
+    "city": "Adoni"
+  },
+  "missing_information": [
+    "email",
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

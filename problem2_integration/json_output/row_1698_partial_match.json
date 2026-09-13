@@ -1,0 +1,16 @@
+{
+  "source_row": 1698,
+  "customer_id": "C00777",
+  "matched_master_id": "C00777",
+  "name": "Owen Sarkar",
+  "available_information": {
+    "name": "Owen Sarkar",
+    "email": "owen.sarkar777@gmail.com",
+    "phone": "6064547287",
+    "address": "H.No. 368, Balasubramanian Nagar"
+  },
+  "missing_information": [
+    "city"
+  ],
+  "match_status": "partial_match"
+}

@@ -1,0 +1,16 @@
+{
+  "source_row": 115,
+  "customer_id": "C01869",
+  "matched_master_id": "C01869",
+  "name": "Farhan Mani",
+  "available_information": {
+    "name": "Farhan Mani",
+    "phone": "6248541083",
+    "address": "23/964 Vora Marg"
+  },
+  "missing_information": [
+    "email",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

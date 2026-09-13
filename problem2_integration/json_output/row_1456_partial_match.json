@@ -1,0 +1,16 @@
+{
+  "source_row": 1456,
+  "customer_id": null,
+  "matched_master_id": "C00783",
+  "name": null,
+  "available_information": {
+    "email": "wakeeta.shankar783@gmail.com",
+    "phone": "7237968922",
+    "city": "Panchkula"
+  },
+  "missing_information": [
+    "name",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

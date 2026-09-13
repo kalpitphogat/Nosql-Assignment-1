@@ -1,0 +1,20 @@
+{
+  "source_row": 1528,
+  "customer_id": "C01014",
+  "matched_master_id": "C01014",
+  "name": "Rajata Sundaram",
+  "available_information": {
+    "email": "ishaan.sami1014@gmail.com",
+    "phone": "7720150833",
+    "address": "H.No. 832 Verma Road",
+    "city": "Jammu"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "name": {
+      "incoming": "Rajata Sundaram",
+      "master": "Ishaan Sami"
+    }
+  }
+}

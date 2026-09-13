@@ -1,0 +1,16 @@
+{
+  "source_row": 837,
+  "customer_id": null,
+  "matched_master_id": null,
+  "name": "Qadim Sura",
+  "available_information": {
+    "name": "Qadim Sura"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address",
+    "city"
+  ],
+  "match_status": "incomplete_match"
+}

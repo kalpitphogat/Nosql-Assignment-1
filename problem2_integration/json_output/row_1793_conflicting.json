@@ -1,0 +1,23 @@
+{
+  "source_row": 1793,
+  "customer_id": "C02427",
+  "matched_master_id": "C02427",
+  "name": "Abeer Contractor",
+  "available_information": {
+    "name": "Abeer Contractor",
+    "address": "91/71 Kunda",
+    "city": "Hapur"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "email": {
+      "incoming": "chasmum.ahluwalia24748@hotmail.com",
+      "master": "abeer.contractor2427@outlook.com"
+    },
+    "phone": {
+      "incoming": "6098741673",
+      "master": "8414575572"
+    }
+  }
+}

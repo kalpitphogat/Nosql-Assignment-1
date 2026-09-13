@@ -1,0 +1,16 @@
+{
+  "source_row": 140,
+  "customer_id": "C01704",
+  "matched_master_id": "C01704",
+  "name": "Chandran Swamy",
+  "available_information": {
+    "name": "Chandran Swamy",
+    "phone": "7265093762"
+  },
+  "missing_information": [
+    "email",
+    "address",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

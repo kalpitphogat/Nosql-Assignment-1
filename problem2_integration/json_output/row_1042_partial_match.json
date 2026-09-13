@@ -1,0 +1,16 @@
+{
+  "source_row": 1042,
+  "customer_id": "C00139",
+  "matched_master_id": "C00139",
+  "name": "Vrinda Pathak",
+  "available_information": {
+    "name": "Vrinda Pathak",
+    "phone": "8014057369",
+    "address": "370 Khalsa Ganj"
+  },
+  "missing_information": [
+    "email",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

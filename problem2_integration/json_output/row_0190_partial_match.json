@@ -1,0 +1,16 @@
+{
+  "source_row": 190,
+  "customer_id": "C02913",
+  "matched_master_id": "C02913",
+  "name": "Abhimanyu Dube",
+  "available_information": {
+    "name": "Abhimanyu Dube",
+    "phone": "6064020246"
+  },
+  "missing_information": [
+    "email",
+    "address",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

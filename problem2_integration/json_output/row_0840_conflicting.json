@@ -1,0 +1,23 @@
+{
+  "source_row": 840,
+  "customer_id": "C02059",
+  "matched_master_id": "C02059",
+  "name": "Yochana Pathak",
+  "available_information": {
+    "name": "Yochana Pathak",
+    "address": "01/916, Lad Nagar",
+    "city": "Purnia"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "email": {
+      "incoming": "amruta.ramachandran75613@gmail.com",
+      "master": "yochana.pathak2059@example.in"
+    },
+    "phone": {
+      "incoming": "7839017111",
+      "master": "9374981368"
+    }
+  }
+}

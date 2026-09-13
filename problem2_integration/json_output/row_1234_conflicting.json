@@ -1,0 +1,23 @@
+{
+  "source_row": 1234,
+  "customer_id": "C01840",
+  "matched_master_id": "C01840",
+  "name": "Brinda Ghosh",
+  "available_information": {
+    "name": "Brinda Ghosh",
+    "address": "H.No. 685, Ramesh Marg",
+    "city": "Katni"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "email": {
+      "incoming": "aahana.pandey57871@gmail.com",
+      "master": "brinda.ghosh1840@gmail.com"
+    },
+    "phone": {
+      "incoming": "8100946123",
+      "master": "7283316604"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "source_row": 1364,
+  "customer_id": null,
+  "matched_master_id": "C00754",
+  "name": "nidra bera",
+  "available_information": {
+    "name": "nidra bera",
+    "email": "nidra.bera754@outlook.com",
+    "address": "H.No. 68, Kade Path",
+    "city": "Dehradun"
+  },
+  "missing_information": [
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

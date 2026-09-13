@@ -1,0 +1,16 @@
+{
+  "source_row": 775,
+  "customer_id": "C02142",
+  "matched_master_id": "C02142",
+  "name": "Nikita Subramaniam",
+  "available_information": {
+    "name": "Nikita Subramaniam",
+    "phone": "6130778577"
+  },
+  "missing_information": [
+    "email",
+    "address",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

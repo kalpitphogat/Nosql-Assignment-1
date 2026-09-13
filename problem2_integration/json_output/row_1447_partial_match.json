@@ -1,0 +1,16 @@
+{
+  "source_row": 1447,
+  "customer_id": null,
+  "matched_master_id": "C02040",
+  "name": "Ekavir Tiwari",
+  "available_information": {
+    "name": "Ekavir Tiwari",
+    "address": "H.No. 827, Ramachandran Zila",
+    "city": "Munger"
+  },
+  "missing_information": [
+    "email",
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

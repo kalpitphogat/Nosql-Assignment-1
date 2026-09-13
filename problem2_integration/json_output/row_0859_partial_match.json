@@ -1,0 +1,16 @@
+{
+  "source_row": 859,
+  "customer_id": null,
+  "matched_master_id": "C02395",
+  "name": "Jyoti Suresh",
+  "available_information": {
+    "name": "Jyoti Suresh",
+    "city": "Ramagundam"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

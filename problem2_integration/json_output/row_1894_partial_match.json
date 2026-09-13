@@ -1,0 +1,16 @@
+{
+  "source_row": 1894,
+  "customer_id": "C00616",
+  "matched_master_id": "C00616",
+  "name": "Zarna Saraf",
+  "available_information": {
+    "name": "Zarna Saraf",
+    "email": "zarna.saraf616@hotmail.com",
+    "phone": "8434481744",
+    "city": "Allahabad"
+  },
+  "missing_information": [
+    "address"
+  ],
+  "match_status": "partial_match"
+}

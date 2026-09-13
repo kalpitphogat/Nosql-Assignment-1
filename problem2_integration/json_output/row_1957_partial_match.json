@@ -1,0 +1,16 @@
+{
+  "source_row": 1957,
+  "customer_id": "C00221",
+  "matched_master_id": "C00221",
+  "name": "Yuvraj Dutt",
+  "available_information": {
+    "name": "Yuvraj Dutt",
+    "email": "yuvraj.dutt221@example.in",
+    "phone": "8557725554"
+  },
+  "missing_information": [
+    "address",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

@@ -1,0 +1,16 @@
+{
+  "source_row": 1294,
+  "customer_id": null,
+  "matched_master_id": "C01480",
+  "name": "Tarak Subramaniam",
+  "available_information": {
+    "name": "Tarak Subramaniam",
+    "city": "Saharanpur"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

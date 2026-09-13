@@ -1,0 +1,16 @@
+{
+  "source_row": 55,
+  "customer_id": "C02220",
+  "matched_master_id": "C02220",
+  "name": "Gayathri Sarraf",
+  "available_information": {
+    "name": "Gayathri Sarraf",
+    "email": "gayathri.sarraf2220@hotmail.com",
+    "address": "904, Rau Circle"
+  },
+  "missing_information": [
+    "phone",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

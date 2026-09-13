@@ -1,0 +1,20 @@
+{
+  "source_row": 1332,
+  "customer_id": "C01309",
+  "matched_master_id": "C01309",
+  "name": "Frederick Kara",
+  "available_information": {
+    "name": "Frederick Kara",
+    "phone": "8786474248",
+    "address": "92/02, Sanghvi Road",
+    "city": "Bettiah"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "email": {
+      "incoming": "jeevika.bhatia87307@example.in",
+      "master": "frederick.kara1309@yahoo.com"
+    }
+  }
+}

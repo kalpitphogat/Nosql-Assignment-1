@@ -1,0 +1,16 @@
+{
+  "source_row": 472,
+  "customer_id": null,
+  "matched_master_id": "C02193",
+  "name": "Turvi Rau",
+  "available_information": {
+    "name": "Turvi Rau",
+    "city": "Dharmavaram"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

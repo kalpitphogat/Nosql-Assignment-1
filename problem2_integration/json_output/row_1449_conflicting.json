@@ -1,0 +1,23 @@
+{
+  "source_row": 1449,
+  "customer_id": "C01220",
+  "matched_master_id": "C01220",
+  "name": "Bishakha Majumdar",
+  "available_information": {
+    "name": "Bishakha Majumdar",
+    "address": "15/411, Shan Chowk",
+    "city": "Katni"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "email": {
+      "incoming": "nandini.bhatt47239@outlook.com",
+      "master": "bishakha.majumdar1220@hotmail.com"
+    },
+    "phone": {
+      "incoming": "9568773507",
+      "master": "8030014719"
+    }
+  }
+}

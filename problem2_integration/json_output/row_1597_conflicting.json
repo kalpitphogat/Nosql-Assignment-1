@@ -1,0 +1,20 @@
+{
+  "source_row": 1597,
+  "customer_id": "C01824",
+  "matched_master_id": "C01824",
+  "name": "Suhani Basu",
+  "available_information": {
+    "name": "Suhani Basu",
+    "email": "suhani.basu1824@outlook.com",
+    "phone": "6904901335",
+    "address": "H.No. 09, Mangal Road"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "city": {
+      "incoming": "Guntakal",
+      "master": "Nandyal"
+    }
+  }
+}

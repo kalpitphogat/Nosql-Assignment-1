@@ -1,0 +1,16 @@
+{
+  "source_row": 278,
+  "customer_id": null,
+  "matched_master_id": "C01307",
+  "name": "Teerth Kanda",
+  "available_information": {
+    "name": "Teerth Kanda",
+    "address": "H.No. 988 Chaudhari Path",
+    "city": "Begusarai"
+  },
+  "missing_information": [
+    "email",
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

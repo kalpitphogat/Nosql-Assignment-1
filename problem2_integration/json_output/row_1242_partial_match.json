@@ -1,0 +1,16 @@
+{
+  "source_row": 1242,
+  "customer_id": "C02409",
+  "matched_master_id": "C02409",
+  "name": "Fariq Vig",
+  "available_information": {
+    "name": "Fariq Vig",
+    "phone": "9763811266"
+  },
+  "missing_information": [
+    "email",
+    "address",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

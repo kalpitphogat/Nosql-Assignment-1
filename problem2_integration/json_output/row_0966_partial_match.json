@@ -1,0 +1,16 @@
+{
+  "source_row": 966,
+  "customer_id": null,
+  "matched_master_id": "C02571",
+  "name": "Qushi Naidu",
+  "available_information": {
+    "name": "Qushi Naidu",
+    "address": "21 Choudhry Nagar",
+    "city": "Jamshedpur"
+  },
+  "missing_information": [
+    "email",
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

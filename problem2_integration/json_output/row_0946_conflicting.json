@@ -1,0 +1,20 @@
+{
+  "source_row": 946,
+  "customer_id": "C00283",
+  "matched_master_id": "C00283",
+  "name": "Bishakha Chaudhry",
+  "available_information": {
+    "name": "Bishakha Chaudhry",
+    "phone": "8647645313",
+    "address": "30/710 Wadhwa Nagar",
+    "city": "Nizamabad"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "email": {
+      "incoming": "ekaja.bhagat62729@example.in",
+      "master": "bishakha.chaudhry283@outlook.com"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "source_row": 762,
+  "customer_id": "C02246",
+  "matched_master_id": "C02246",
+  "name": "Nisha Sengupta",
+  "available_information": {
+    "name": "Nisha Sengupta",
+    "address": "16/15, Deo Marg"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

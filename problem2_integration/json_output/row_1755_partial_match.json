@@ -1,0 +1,16 @@
+{
+  "source_row": 1755,
+  "customer_id": null,
+  "matched_master_id": "C00482",
+  "name": "baljiwan nori",
+  "available_information": {
+    "name": "baljiwan nori",
+    "email": "baljiwan.nori482@gmail.com",
+    "address": "061 Raj Street",
+    "city": "Gorakhpur"
+  },
+  "missing_information": [
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

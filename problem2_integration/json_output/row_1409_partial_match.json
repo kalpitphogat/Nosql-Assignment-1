@@ -1,0 +1,16 @@
+{
+  "source_row": 1409,
+  "customer_id": null,
+  "matched_master_id": "C00204",
+  "name": "Riya Ramakrishnan",
+  "available_information": {
+    "name": "Riya Ramakrishnan",
+    "city": "Kharagpur"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

@@ -1,0 +1,20 @@
+{
+  "source_row": 1198,
+  "customer_id": "C02731",
+  "matched_master_id": "C02731",
+  "name": "Theodore Bhatnagar",
+  "available_information": {
+    "name": "Theodore Bhatnagar",
+    "email": "theodore.bhatnagar2731@yahoo.com",
+    "address": "32/65 Bhatia Circle",
+    "city": "Meerut"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "phone": {
+      "incoming": "6889533984",
+      "master": "9113523922"
+    }
+  }
+}

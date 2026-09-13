@@ -1,0 +1,16 @@
+{
+  "source_row": 1089,
+  "customer_id": null,
+  "matched_master_id": "C01729",
+  "name": "George Deol",
+  "available_information": {
+    "name": "George Deol",
+    "address": "H.No. 914, Mall Street",
+    "city": "Morbi"
+  },
+  "missing_information": [
+    "email",
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

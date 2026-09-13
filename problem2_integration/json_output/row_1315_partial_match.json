@@ -1,0 +1,16 @@
+{
+  "source_row": 1315,
+  "customer_id": "C00369",
+  "matched_master_id": "C00369",
+  "name": "Urishilla Trivedi",
+  "available_information": {
+    "name": "Urishilla Trivedi",
+    "phone": "7951033851",
+    "address": "74, More Path"
+  },
+  "missing_information": [
+    "email",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

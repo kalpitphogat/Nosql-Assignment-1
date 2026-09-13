@@ -1,0 +1,23 @@
+{
+  "source_row": 1769,
+  "customer_id": "C01280",
+  "matched_master_id": "C01280",
+  "name": "Megha Tak",
+  "available_information": {
+    "name": "Megha Tak",
+    "email": "megha.tak1280@outlook.com",
+    "city": "Surendranagar Dudhrej"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "phone": {
+      "incoming": "9256074342",
+      "master": "8702068768"
+    },
+    "address": {
+      "incoming": "H.No. 920, Barman Road",
+      "master": "H.No. 34, Wali Chowk"
+    }
+  }
+}

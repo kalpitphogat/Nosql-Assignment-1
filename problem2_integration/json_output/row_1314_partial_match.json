@@ -1,0 +1,16 @@
+{
+  "source_row": 1314,
+  "customer_id": "C02098",
+  "matched_master_id": "C02098",
+  "name": "Udant Chanda",
+  "available_information": {
+    "name": "Udant Chanda",
+    "city": "Gulbarga"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

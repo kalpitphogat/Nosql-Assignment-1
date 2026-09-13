@@ -1,0 +1,16 @@
+{
+  "source_row": 706,
+  "customer_id": null,
+  "matched_master_id": "C01806",
+  "name": null,
+  "available_information": {
+    "email": "ishita.raju1806@example.in",
+    "phone": "8027190202",
+    "city": "Tiruvottiyur"
+  },
+  "missing_information": [
+    "name",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

@@ -1,0 +1,16 @@
+{
+  "source_row": 950,
+  "customer_id": "C02047",
+  "matched_master_id": "C02047",
+  "name": "Ekansh Wagle",
+  "available_information": {
+    "name": "Ekansh Wagle",
+    "phone": "8318512194",
+    "address": "26, Vohra Nagar",
+    "city": "Mumbai"
+  },
+  "missing_information": [
+    "email"
+  ],
+  "match_status": "partial_match"
+}

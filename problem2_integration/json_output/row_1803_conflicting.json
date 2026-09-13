@@ -1,0 +1,20 @@
+{
+  "source_row": 1803,
+  "customer_id": "C02304",
+  "matched_master_id": "C02304",
+  "name": "Darika Saraf",
+  "available_information": {
+    "name": "Darika Saraf",
+    "email": "darika.saraf2304@gmail.com",
+    "phone": "8666356159",
+    "city": "Bettiah"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "address": {
+      "incoming": "H.No. 59, Bhargava Chowk",
+      "master": "60/943 Goswami Path"
+    }
+  }
+}

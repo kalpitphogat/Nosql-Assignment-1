@@ -1,0 +1,16 @@
+{
+  "source_row": 676,
+  "customer_id": null,
+  "matched_master_id": "C01766",
+  "name": "Aradhana Dave",
+  "available_information": {
+    "name": "Aradhana Dave",
+    "address": "86 Raj Road",
+    "city": "Satna"
+  },
+  "missing_information": [
+    "email",
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

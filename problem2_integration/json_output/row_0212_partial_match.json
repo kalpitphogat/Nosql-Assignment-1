@@ -1,0 +1,16 @@
+{
+  "source_row": 212,
+  "customer_id": "C02309",
+  "matched_master_id": "C02309",
+  "name": "Daniel Varma",
+  "available_information": {
+    "name": "Daniel Varma",
+    "email": "daniel.varma2309@hotmail.com",
+    "city": "Gangtok"
+  },
+  "missing_information": [
+    "phone",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

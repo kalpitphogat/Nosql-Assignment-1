@@ -1,0 +1,16 @@
+{
+  "source_row": 230,
+  "customer_id": "C00761",
+  "matched_master_id": "C00761",
+  "name": "Irya Bedi",
+  "available_information": {
+    "name": "Irya Bedi",
+    "email": "irya.bedi761@yahoo.com"
+  },
+  "missing_information": [
+    "phone",
+    "address",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

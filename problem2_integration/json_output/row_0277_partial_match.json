@@ -1,0 +1,16 @@
+{
+  "source_row": 277,
+  "customer_id": null,
+  "matched_master_id": "C01881",
+  "name": null,
+  "available_information": {
+    "email": "kiaan.gola1881@outlook.com",
+    "phone": "7075707007",
+    "city": "Sangli-Miraj & Kupwad"
+  },
+  "missing_information": [
+    "name",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

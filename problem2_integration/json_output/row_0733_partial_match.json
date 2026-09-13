@@ -1,0 +1,16 @@
+{
+  "source_row": 733,
+  "customer_id": "C02314",
+  "matched_master_id": "C02314",
+  "name": "Tripti Prashad",
+  "available_information": {
+    "name": "Tripti Prashad",
+    "phone": "8057385230"
+  },
+  "missing_information": [
+    "email",
+    "address",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

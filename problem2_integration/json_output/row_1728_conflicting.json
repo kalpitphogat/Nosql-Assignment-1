@@ -1,0 +1,23 @@
+{
+  "source_row": 1728,
+  "customer_id": "C01862",
+  "matched_master_id": "C01862",
+  "name": "Divya Warrior",
+  "available_information": {
+    "name": "Divya Warrior",
+    "phone": "8562329694",
+    "address": "38/27 Venkatesh Circle"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "email": {
+      "incoming": "zayyan.garg34392@hotmail.com",
+      "master": "divya.warrior1862@yahoo.com"
+    },
+    "city": {
+      "incoming": "Udaipur",
+      "master": "Guntur"
+    }
+  }
+}

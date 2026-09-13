@@ -1,0 +1,16 @@
+{
+  "source_row": 1169,
+  "customer_id": null,
+  "matched_master_id": null,
+  "name": "Hredhaan Badami",
+  "available_information": {
+    "name": "Hredhaan Badami"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address",
+    "city"
+  ],
+  "match_status": "incomplete_match"
+}

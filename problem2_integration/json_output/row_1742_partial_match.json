@@ -1,0 +1,16 @@
+{
+  "source_row": 1742,
+  "customer_id": null,
+  "matched_master_id": "C02694",
+  "name": null,
+  "available_information": {
+    "email": "janya.pillay2694@outlook.com",
+    "phone": "8144660983",
+    "city": "Kulti"
+  },
+  "missing_information": [
+    "name",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

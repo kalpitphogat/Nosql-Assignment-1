@@ -1,0 +1,20 @@
+{
+  "source_row": 964,
+  "customer_id": "C00138",
+  "matched_master_id": "C00138",
+  "name": "Vihaan Dass",
+  "available_information": {
+    "name": "Vihaan Dass",
+    "email": "vihaan.dass138@gmail.com",
+    "phone": "6460540597",
+    "city": "Rohtak"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "address": {
+      "incoming": "H.No. 21 Kapoor Street",
+      "master": "H.No. 013 Butala Ganj"
+    }
+  }
+}

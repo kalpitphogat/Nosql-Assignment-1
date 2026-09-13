@@ -1,0 +1,16 @@
+{
+  "source_row": 1505,
+  "customer_id": null,
+  "matched_master_id": null,
+  "name": "Abha Seth",
+  "available_information": {
+    "name": "Abha Seth"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address",
+    "city"
+  ],
+  "match_status": "incomplete_match"
+}

@@ -1,0 +1,16 @@
+{
+  "source_row": 892,
+  "customer_id": null,
+  "matched_master_id": null,
+  "name": null,
+  "available_information": {
+    "city": "Chittoor"
+  },
+  "missing_information": [
+    "name",
+    "email",
+    "phone",
+    "address"
+  ],
+  "match_status": "incomplete_match"
+}

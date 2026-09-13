@@ -1,0 +1,16 @@
+{
+  "source_row": 220,
+  "customer_id": null,
+  "matched_master_id": "C00296",
+  "name": "idika behl",
+  "available_information": {
+    "name": "idika behl",
+    "email": "idika.behl296@outlook.com",
+    "address": "04/249 Parmar Circle",
+    "city": "Gaya"
+  },
+  "missing_information": [
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

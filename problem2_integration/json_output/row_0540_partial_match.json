@@ -1,0 +1,16 @@
+{
+  "source_row": 540,
+  "customer_id": "C00148",
+  "matched_master_id": "C00148",
+  "name": "Tanvi Balasubramanian",
+  "available_information": {
+    "name": "Tanvi Balasubramanian",
+    "phone": "7179075614",
+    "address": "544, Mander Nagar"
+  },
+  "missing_information": [
+    "email",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

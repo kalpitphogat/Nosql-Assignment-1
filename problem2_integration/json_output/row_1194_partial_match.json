@@ -1,0 +1,16 @@
+{
+  "source_row": 1194,
+  "customer_id": "C00666",
+  "matched_master_id": "C00666",
+  "name": "Tara Bhatt",
+  "available_information": {
+    "name": "Tara Bhatt",
+    "phone": "6450696388"
+  },
+  "missing_information": [
+    "email",
+    "address",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

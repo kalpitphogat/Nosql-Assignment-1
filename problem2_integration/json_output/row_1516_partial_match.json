@@ -1,0 +1,16 @@
+{
+  "source_row": 1516,
+  "customer_id": null,
+  "matched_master_id": "C02820",
+  "name": "ZASHIL PATEL",
+  "available_information": {
+    "name": "ZASHIL PATEL",
+    "phone": "8069066697",
+    "address": "549, Kadakia Zila",
+    "city": "Jorhat"
+  },
+  "missing_information": [
+    "email"
+  ],
+  "match_status": "partial_match"
+}

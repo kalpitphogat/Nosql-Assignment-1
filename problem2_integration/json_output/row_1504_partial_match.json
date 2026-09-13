@@ -1,0 +1,16 @@
+{
+  "source_row": 1504,
+  "customer_id": "C00877",
+  "matched_master_id": "C00877",
+  "name": "Bhavini Seshadri",
+  "available_information": {
+    "name": "Bhavini Seshadri",
+    "address": "957, Desai Zila"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

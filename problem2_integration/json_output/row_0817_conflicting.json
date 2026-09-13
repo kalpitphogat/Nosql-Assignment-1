@@ -1,0 +1,20 @@
+{
+  "source_row": 817,
+  "customer_id": "C01414",
+  "matched_master_id": "C01414",
+  "name": "Logan Rajagopalan",
+  "available_information": {
+    "name": "Logan Rajagopalan",
+    "email": "logan.rajagopalan1414@hotmail.com",
+    "address": "52/46, D\u2019Alia Ganj",
+    "city": "Jalgaon"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "phone": {
+      "incoming": "9782603459",
+      "master": "6431543963"
+    }
+  }
+}

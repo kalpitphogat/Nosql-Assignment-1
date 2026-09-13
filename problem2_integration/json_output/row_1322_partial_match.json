@@ -1,0 +1,16 @@
+{
+  "source_row": 1322,
+  "customer_id": "C00341",
+  "matched_master_id": "C00341",
+  "name": "Lopa Modi",
+  "available_information": {
+    "name": "Lopa Modi",
+    "address": "094, Joshi Street"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

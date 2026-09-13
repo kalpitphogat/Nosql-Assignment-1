@@ -1,0 +1,16 @@
+{
+  "source_row": 1551,
+  "customer_id": null,
+  "matched_master_id": "C01344",
+  "name": "Vrishti Sane",
+  "available_information": {
+    "name": "Vrishti Sane",
+    "city": "Durgapur"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

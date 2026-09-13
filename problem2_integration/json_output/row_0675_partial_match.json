@@ -1,0 +1,16 @@
+{
+  "source_row": 675,
+  "customer_id": null,
+  "matched_master_id": "C02983",
+  "name": "Manan Kale",
+  "available_information": {
+    "name": "Manan Kale",
+    "city": "Suryapet"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

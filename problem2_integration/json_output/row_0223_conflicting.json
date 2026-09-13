@@ -1,0 +1,23 @@
+{
+  "source_row": 223,
+  "customer_id": "C02408",
+  "matched_master_id": "C02408",
+  "name": "Rajata Kulkarni",
+  "available_information": {
+    "email": "hemangini.baria2408@example.in",
+    "address": "50 Dey Marg",
+    "city": "Amravati"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "name": {
+      "incoming": "Rajata Kulkarni",
+      "master": "Hemangini Baria"
+    },
+    "phone": {
+      "incoming": "7066248997",
+      "master": "7269447552"
+    }
+  }
+}

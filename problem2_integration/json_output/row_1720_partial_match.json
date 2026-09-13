@@ -1,0 +1,16 @@
+{
+  "source_row": 1720,
+  "customer_id": "C02725",
+  "matched_master_id": "C02725",
+  "name": "Ekani Karnik",
+  "available_information": {
+    "name": "Ekani Karnik",
+    "email": "ekani.karnik2725@example.in",
+    "address": "716, Salvi Ganj",
+    "city": "Sambhal"
+  },
+  "missing_information": [
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

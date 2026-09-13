@@ -1,0 +1,16 @@
+{
+  "source_row": 1548,
+  "customer_id": "C01134",
+  "matched_master_id": "C01134",
+  "name": "Mekhala Bhalla",
+  "available_information": {
+    "name": "Mekhala Bhalla",
+    "email": "mekhala.bhalla1134@example.in",
+    "address": "85 Sharaf Zila"
+  },
+  "missing_information": [
+    "phone",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

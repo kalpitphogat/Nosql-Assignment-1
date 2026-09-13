@@ -1,0 +1,20 @@
+{
+  "source_row": 1827,
+  "customer_id": "C00259",
+  "matched_master_id": "C00259",
+  "name": "Omkaar Buch",
+  "available_information": {
+    "name": "Omkaar Buch",
+    "email": "omkaar.buch259@example.in",
+    "phone": "7273086041",
+    "address": "04/794 Sheth Road"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "city": {
+      "incoming": "Bellary",
+      "master": "Tadepalligudem"
+    }
+  }
+}

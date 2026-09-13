@@ -1,0 +1,16 @@
+{
+  "source_row": 1626,
+  "customer_id": null,
+  "matched_master_id": "C01280",
+  "name": "Megha Tak",
+  "available_information": {
+    "name": "Megha Tak",
+    "address": "H.No. 34, Wali Chowk",
+    "city": "Surendranagar Dudhrej"
+  },
+  "missing_information": [
+    "email",
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

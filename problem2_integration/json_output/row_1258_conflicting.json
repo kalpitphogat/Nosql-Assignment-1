@@ -1,0 +1,20 @@
+{
+  "source_row": 1258,
+  "customer_id": "C01724",
+  "matched_master_id": "C01724",
+  "name": "Pushti Chander",
+  "available_information": {
+    "name": "Pushti Chander",
+    "email": "pushti.chander1724@yahoo.com",
+    "address": "52/38 Mann Circle",
+    "city": "Nadiad"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "phone": {
+      "incoming": "6609783531",
+      "master": "6078304275"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "source_row": 426,
+  "customer_id": null,
+  "matched_master_id": "C02307",
+  "name": "Ikshita Narayan",
+  "available_information": {
+    "name": "Ikshita Narayan",
+    "address": "09/30, Gade Street",
+    "city": "Bidhannagar"
+  },
+  "missing_information": [
+    "email",
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

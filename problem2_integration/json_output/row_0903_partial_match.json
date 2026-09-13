@@ -1,0 +1,16 @@
+{
+  "source_row": 903,
+  "customer_id": null,
+  "matched_master_id": "C01930",
+  "name": "Alexander Bajwa",
+  "available_information": {
+    "name": "Alexander Bajwa",
+    "address": "H.No. 60, Raval Zila",
+    "city": "Gurgaon"
+  },
+  "missing_information": [
+    "email",
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

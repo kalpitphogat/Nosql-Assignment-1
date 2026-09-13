@@ -1,0 +1,16 @@
+{
+  "source_row": 1067,
+  "customer_id": null,
+  "matched_master_id": "C00535",
+  "name": "Vanya Dara",
+  "available_information": {
+    "name": "Vanya Dara",
+    "city": "Gandhidham"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

@@ -1,0 +1,16 @@
+{
+  "source_row": 734,
+  "customer_id": "C01472",
+  "matched_master_id": "C01472",
+  "name": "Peter Jha",
+  "available_information": {
+    "name": "Peter Jha",
+    "city": "Gandhinagar"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

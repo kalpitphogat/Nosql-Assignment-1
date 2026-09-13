@@ -1,0 +1,23 @@
+{
+  "source_row": 1412,
+  "customer_id": "C02364",
+  "matched_master_id": "C02364",
+  "name": "Dominic Bahl",
+  "available_information": {
+    "name": "Dominic Bahl",
+    "address": "H.No. 015, Ahuja Circle",
+    "city": "Jammu"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "email": {
+      "incoming": "bhavya.prabhakar73474@example.in",
+      "master": "dominic.bahl2364@example.in"
+    },
+    "phone": {
+      "incoming": "6876625968",
+      "master": "8801127808"
+    }
+  }
+}

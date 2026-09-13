@@ -1,0 +1,16 @@
+{
+  "source_row": 937,
+  "customer_id": null,
+  "matched_master_id": "C00371",
+  "name": null,
+  "available_information": {
+    "email": "chaman.borra371@gmail.com",
+    "phone": "6811196577",
+    "city": "Muzaffarpur"
+  },
+  "missing_information": [
+    "name",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

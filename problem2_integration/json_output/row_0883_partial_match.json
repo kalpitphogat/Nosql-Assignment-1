@@ -1,0 +1,16 @@
+{
+  "source_row": 883,
+  "customer_id": "C02335",
+  "matched_master_id": "C02335",
+  "name": "Nidra Dua",
+  "available_information": {
+    "name": "Nidra Dua",
+    "email": "nidra.dua2335@gmail.com",
+    "address": "94, Prabhu Circle"
+  },
+  "missing_information": [
+    "phone",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

@@ -1,0 +1,16 @@
+{
+  "source_row": 926,
+  "customer_id": null,
+  "matched_master_id": null,
+  "name": "Zayyan Sarma",
+  "available_information": {
+    "name": "Zayyan Sarma"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address",
+    "city"
+  ],
+  "match_status": "incomplete_match"
+}

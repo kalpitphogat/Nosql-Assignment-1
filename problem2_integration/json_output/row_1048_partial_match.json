@@ -1,0 +1,16 @@
+{
+  "source_row": 1048,
+  "customer_id": "C01462",
+  "matched_master_id": "C01462",
+  "name": "Advik Goel",
+  "available_information": {
+    "name": "Advik Goel",
+    "email": "advik.goel1462@gmail.com",
+    "phone": "9612735197"
+  },
+  "missing_information": [
+    "address",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

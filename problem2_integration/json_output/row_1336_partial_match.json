@@ -1,0 +1,16 @@
+{
+  "source_row": 1336,
+  "customer_id": "C00227",
+  "matched_master_id": "C00227",
+  "name": "Umang Iyengar",
+  "available_information": {
+    "name": "Umang Iyengar",
+    "email": "umang.iyengar227@hotmail.com",
+    "address": "737, Mangat Zila"
+  },
+  "missing_information": [
+    "phone",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

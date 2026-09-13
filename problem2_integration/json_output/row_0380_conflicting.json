@@ -1,0 +1,23 @@
+{
+  "source_row": 380,
+  "customer_id": "C00015",
+  "matched_master_id": "C00015",
+  "name": "Mahika Kamdar",
+  "available_information": {
+    "name": "Mahika Kamdar",
+    "phone": "9824550403",
+    "city": "Howrah"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "email": {
+      "incoming": "anmol.aurora48100@outlook.com",
+      "master": "mahika.kamdar15@gmail.com"
+    },
+    "address": {
+      "incoming": "408, Tella Nagar",
+      "master": "H.No. 93 Narain Circle"
+    }
+  }
+}

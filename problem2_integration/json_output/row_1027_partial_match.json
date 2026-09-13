@@ -1,0 +1,16 @@
+{
+  "source_row": 1027,
+  "customer_id": "C01201",
+  "matched_master_id": "C01201",
+  "name": "Ekalinga Kashyap",
+  "available_information": {
+    "name": "Ekalinga Kashyap",
+    "email": "ekalinga.kashyap1201@example.in"
+  },
+  "missing_information": [
+    "phone",
+    "address",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

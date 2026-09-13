@@ -1,0 +1,16 @@
+{
+  "source_row": 687,
+  "customer_id": "C01811",
+  "matched_master_id": "C01811",
+  "name": "Anjali Patel",
+  "available_information": {
+    "name": "Anjali Patel",
+    "email": "anjali.patel1811@gmail.com",
+    "address": "05 Jhaveri Chowk"
+  },
+  "missing_information": [
+    "phone",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

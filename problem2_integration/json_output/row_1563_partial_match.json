@@ -1,0 +1,16 @@
+{
+  "source_row": 1563,
+  "customer_id": null,
+  "matched_master_id": "C02863",
+  "name": "nitesh ramaswamy",
+  "available_information": {
+    "name": "nitesh ramaswamy",
+    "email": "nitesh.ramaswamy2863@gmail.com",
+    "address": "78, Mammen Nagar",
+    "city": "Munger"
+  },
+  "missing_information": [
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

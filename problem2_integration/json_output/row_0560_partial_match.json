@@ -1,0 +1,16 @@
+{
+  "source_row": 560,
+  "customer_id": "C00167",
+  "matched_master_id": "C00167",
+  "name": "Adweta Soni",
+  "available_information": {
+    "name": "Adweta Soni",
+    "email": "adweta.soni167@gmail.com",
+    "address": "H.No. 31, Verma Zila",
+    "city": "Amritsar"
+  },
+  "missing_information": [
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

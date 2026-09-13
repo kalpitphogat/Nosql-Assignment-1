@@ -1,0 +1,16 @@
+{
+  "source_row": 1977,
+  "customer_id": "C01872",
+  "matched_master_id": "C01872",
+  "name": "Avi Memon",
+  "available_information": {
+    "name": "Avi Memon",
+    "email": "avi.memon1872@hotmail.com"
+  },
+  "missing_information": [
+    "phone",
+    "address",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

@@ -1,0 +1,16 @@
+{
+  "source_row": 938,
+  "customer_id": "C02608",
+  "matched_master_id": "C02608",
+  "name": "Alka Narayanan",
+  "available_information": {
+    "name": "Alka Narayanan",
+    "email": "alka.narayanan2608@example.in",
+    "phone": "8727407450",
+    "address": "05/38 Sastry Path"
+  },
+  "missing_information": [
+    "city"
+  ],
+  "match_status": "partial_match"
+}

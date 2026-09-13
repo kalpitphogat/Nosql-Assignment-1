@@ -1,0 +1,23 @@
+{
+  "source_row": 289,
+  "customer_id": "C02270",
+  "matched_master_id": "C02270",
+  "name": "Inaya Ghosh",
+  "available_information": {
+    "name": "Inaya Ghosh",
+    "email": "inaya.ghosh2270@hotmail.com",
+    "phone": "9970047816"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "address": {
+      "incoming": "85/35 Nath Chowk",
+      "master": "H.No. 417, Sachdev"
+    },
+    "city": {
+      "incoming": "Mira-Bhayandar",
+      "master": "Gorakhpur"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "source_row": 1888,
+  "customer_id": null,
+  "matched_master_id": "C02885",
+  "name": "Vanya Sabharwal",
+  "available_information": {
+    "name": "Vanya Sabharwal",
+    "address": "61, Sha Nagar",
+    "city": "Bhubaneswar"
+  },
+  "missing_information": [
+    "email",
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

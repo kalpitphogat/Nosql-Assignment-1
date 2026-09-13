@@ -1,0 +1,20 @@
+{
+  "source_row": 631,
+  "customer_id": "C00298",
+  "matched_master_id": "C00298",
+  "name": "Anya Shah",
+  "available_information": {
+    "email": "dhriti.ahuja298@yahoo.com",
+    "phone": "7763742605",
+    "address": "49 Bedi",
+    "city": "Aurangabad"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "name": {
+      "incoming": "Anya Shah",
+      "master": "Dhriti Ahuja"
+    }
+  }
+}

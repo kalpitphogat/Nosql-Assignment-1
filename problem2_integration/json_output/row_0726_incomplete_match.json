@@ -1,0 +1,16 @@
+{
+  "source_row": 726,
+  "customer_id": null,
+  "matched_master_id": null,
+  "name": "Matthew Gokhale",
+  "available_information": {
+    "name": "Matthew Gokhale"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address",
+    "city"
+  ],
+  "match_status": "incomplete_match"
+}

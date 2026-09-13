@@ -1,0 +1,16 @@
+{
+  "source_row": 1831,
+  "customer_id": "C02096",
+  "matched_master_id": "C02096",
+  "name": "Caleb Nagar",
+  "available_information": {
+    "name": "Caleb Nagar",
+    "city": "Morena"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

@@ -1,0 +1,16 @@
+{
+  "source_row": 778,
+  "customer_id": "C00633",
+  "matched_master_id": "C00633",
+  "name": "Maanas Shah",
+  "available_information": {
+    "name": "Maanas Shah",
+    "email": "maanas.shah633@hotmail.com",
+    "address": "H.No. 28 Sekhon Circle"
+  },
+  "missing_information": [
+    "phone",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

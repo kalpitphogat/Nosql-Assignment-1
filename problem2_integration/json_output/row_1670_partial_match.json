@@ -1,0 +1,16 @@
+{
+  "source_row": 1670,
+  "customer_id": null,
+  "matched_master_id": "C01071",
+  "name": "charles mammen",
+  "available_information": {
+    "name": "charles mammen",
+    "email": "charles.mammen1071@hotmail.com",
+    "address": "98/718, Raghavan Chowk",
+    "city": "Sri Ganganagar"
+  },
+  "missing_information": [
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

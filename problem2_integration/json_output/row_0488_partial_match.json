@@ -1,0 +1,16 @@
+{
+  "source_row": 488,
+  "customer_id": null,
+  "matched_master_id": "C00152",
+  "name": "Azaan More",
+  "available_information": {
+    "name": "Azaan More",
+    "address": "H.No. 42, Aggarwal Circle",
+    "city": "Loni"
+  },
+  "missing_information": [
+    "email",
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

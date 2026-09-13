@@ -1,0 +1,16 @@
+{
+  "source_row": 1746,
+  "customer_id": "C00311",
+  "matched_master_id": "C00311",
+  "name": "Sanaya Raj",
+  "available_information": {
+    "name": "Sanaya Raj",
+    "email": "sanaya.raj311@gmail.com",
+    "phone": "8945641516"
+  },
+  "missing_information": [
+    "address",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

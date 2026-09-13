@@ -1,0 +1,16 @@
+{
+  "source_row": 642,
+  "customer_id": null,
+  "matched_master_id": "C02511",
+  "name": "MEGHANA YADAV",
+  "available_information": {
+    "name": "MEGHANA YADAV",
+    "phone": "9399426377",
+    "address": "04/550, Parikh Road",
+    "city": "Danapur"
+  },
+  "missing_information": [
+    "email"
+  ],
+  "match_status": "partial_match"
+}

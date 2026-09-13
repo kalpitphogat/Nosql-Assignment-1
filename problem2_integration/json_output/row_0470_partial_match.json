@@ -1,0 +1,16 @@
+{
+  "source_row": 470,
+  "customer_id": "C00400",
+  "matched_master_id": "C00400",
+  "name": "Madhavi Agate",
+  "available_information": {
+    "name": "Madhavi Agate",
+    "email": "madhavi.agate400@hotmail.com",
+    "city": "Nangloi Jat"
+  },
+  "missing_information": [
+    "phone",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

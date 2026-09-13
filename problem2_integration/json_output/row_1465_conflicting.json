@@ -1,0 +1,20 @@
+{
+  "source_row": 1465,
+  "customer_id": "C02939",
+  "matched_master_id": "C02939",
+  "name": "Matthew Ghosh",
+  "available_information": {
+    "name": "Matthew Ghosh",
+    "email": "matthew.ghosh2939@yahoo.com",
+    "phone": "7467208405",
+    "address": "65/477 Sandhu Nagar"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "city": {
+      "incoming": "Gudivada",
+      "master": "Nagaon"
+    }
+  }
+}

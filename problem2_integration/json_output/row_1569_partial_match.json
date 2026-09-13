@@ -1,0 +1,16 @@
+{
+  "source_row": 1569,
+  "customer_id": "C02540",
+  "matched_master_id": "C02540",
+  "name": "Dipta Bhattacharyya",
+  "available_information": {
+    "name": "Dipta Bhattacharyya",
+    "email": "dipta.bhattacharyya2540@yahoo.com",
+    "phone": "7664858227"
+  },
+  "missing_information": [
+    "address",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

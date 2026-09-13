@@ -1,0 +1,16 @@
+{
+  "source_row": 1068,
+  "customer_id": "C00872",
+  "matched_master_id": "C00872",
+  "name": "Meera Nigam",
+  "available_information": {
+    "name": "Meera Nigam",
+    "email": "meera.nigam872@outlook.com",
+    "phone": "8104904045",
+    "address": "61 Barad Nagar"
+  },
+  "missing_information": [
+    "city"
+  ],
+  "match_status": "partial_match"
+}

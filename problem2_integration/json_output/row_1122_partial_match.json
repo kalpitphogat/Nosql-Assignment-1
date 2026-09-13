@@ -1,0 +1,16 @@
+{
+  "source_row": 1122,
+  "customer_id": "C00774",
+  "matched_master_id": "C00774",
+  "name": "Qabil Hegde",
+  "available_information": {
+    "name": "Qabil Hegde",
+    "email": "qabil.hegde774@hotmail.com",
+    "address": "665, Bhardwaj Circle",
+    "city": "Sasaram"
+  },
+  "missing_information": [
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

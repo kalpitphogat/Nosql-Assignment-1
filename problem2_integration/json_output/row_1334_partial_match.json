@@ -1,0 +1,16 @@
+{
+  "source_row": 1334,
+  "customer_id": "C01635",
+  "matched_master_id": "C01635",
+  "name": "Onkar Choudhary",
+  "available_information": {
+    "name": "Onkar Choudhary",
+    "email": "onkar.choudhary1635@example.in"
+  },
+  "missing_information": [
+    "phone",
+    "address",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

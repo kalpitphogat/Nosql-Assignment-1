@@ -1,0 +1,16 @@
+{
+  "source_row": 70,
+  "customer_id": "C01279",
+  "matched_master_id": "C01279",
+  "name": "Lakshit Char",
+  "available_information": {
+    "name": "Lakshit Char",
+    "email": "lakshit.char1279@outlook.com",
+    "address": "822, Kari Circle",
+    "city": "Jamshedpur"
+  },
+  "missing_information": [
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

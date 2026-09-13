@@ -1,0 +1,23 @@
+{
+  "source_row": 262,
+  "customer_id": "C02244",
+  "matched_master_id": "C02244",
+  "name": "Karan Sangha",
+  "available_information": {
+    "name": "Karan Sangha",
+    "email": "karan.sangha2244@gmail.com",
+    "city": "Mirzapur"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "phone": {
+      "incoming": "7900631390",
+      "master": "6920274047"
+    },
+    "address": {
+      "incoming": "29, Joshi Street",
+      "master": "56, Rajan Circle"
+    }
+  }
+}

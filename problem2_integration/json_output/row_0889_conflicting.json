@@ -1,0 +1,23 @@
+{
+  "source_row": 889,
+  "customer_id": "C00061",
+  "matched_master_id": "C00061",
+  "name": "Anirudh Basak",
+  "available_information": {
+    "name": "Anirudh Basak",
+    "phone": "6738973000",
+    "city": "Varanasi"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "email": {
+      "incoming": "yahvi.dixit35636@yahoo.com",
+      "master": "anirudh.basak61@example.in"
+    },
+    "address": {
+      "incoming": "47/73 Shere Marg",
+      "master": "72 Rajan Chowk"
+    }
+  }
+}

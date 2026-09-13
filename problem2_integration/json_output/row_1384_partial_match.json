@@ -1,0 +1,16 @@
+{
+  "source_row": 1384,
+  "customer_id": "C01923",
+  "matched_master_id": "C01923",
+  "name": "Aashi Nair",
+  "available_information": {
+    "name": "Aashi Nair",
+    "address": "09/91 Palan"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

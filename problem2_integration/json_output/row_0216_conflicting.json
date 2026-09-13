@@ -1,0 +1,20 @@
+{
+  "source_row": 216,
+  "customer_id": "C01016",
+  "matched_master_id": "C01016",
+  "name": "Urvashi Raval",
+  "available_information": {
+    "name": "Urvashi Raval",
+    "email": "urvashi.raval1016@yahoo.com",
+    "phone": "9677711723",
+    "address": "52/31, Sandal Circle"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "city": {
+      "incoming": "Thiruvananthapuram",
+      "master": "Ahmednagar"
+    }
+  }
+}

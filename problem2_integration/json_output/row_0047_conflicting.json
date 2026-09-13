@@ -1,0 +1,20 @@
+{
+  "source_row": 47,
+  "customer_id": "C00779",
+  "matched_master_id": "C00779",
+  "name": "Ekta Deshpande",
+  "available_information": {
+    "name": "Ekta Deshpande",
+    "email": "ekta.deshpande779@outlook.com",
+    "phone": "8119102732",
+    "city": "Lucknow"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "address": {
+      "incoming": "62/663 Nayar Path",
+      "master": "71, Ghosh Path"
+    }
+  }
+}

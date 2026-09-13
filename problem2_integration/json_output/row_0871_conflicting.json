@@ -1,0 +1,23 @@
+{
+  "source_row": 871,
+  "customer_id": "C02907",
+  "matched_master_id": "C02907",
+  "name": "Adya Palla",
+  "available_information": {
+    "email": "pallavi.goswami2907@gmail.com",
+    "address": "H.No. 373, Chacko Street",
+    "city": "Lucknow"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "name": {
+      "incoming": "Adya Palla",
+      "master": "Pallavi Goswami"
+    },
+    "phone": {
+      "incoming": "9950072194",
+      "master": "9493551247"
+    }
+  }
+}

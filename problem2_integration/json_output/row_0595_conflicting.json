@@ -1,0 +1,23 @@
+{
+  "source_row": 595,
+  "customer_id": "C00073",
+  "matched_master_id": "C00073",
+  "name": "Caleb Chaudhary",
+  "available_information": {
+    "email": "jagat.badal73@gmail.com",
+    "address": "H.No. 18, Desai Marg",
+    "city": "Saharsa"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "name": {
+      "incoming": "Caleb Chaudhary",
+      "master": "Jagat Badal"
+    },
+    "phone": {
+      "incoming": "7310795767",
+      "master": "8057659281"
+    }
+  }
+}

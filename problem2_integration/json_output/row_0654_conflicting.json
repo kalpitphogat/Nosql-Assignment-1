@@ -1,0 +1,20 @@
+{
+  "source_row": 654,
+  "customer_id": "C02702",
+  "matched_master_id": "C02702",
+  "name": "Henry Pandey",
+  "available_information": {
+    "email": "eesha.khanna2702@example.in",
+    "phone": "9881982554",
+    "address": "09, Karnik Marg",
+    "city": "Mango"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "name": {
+      "incoming": "Henry Pandey",
+      "master": "Eesha Khanna"
+    }
+  }
+}

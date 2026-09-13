@@ -1,0 +1,16 @@
+{
+  "source_row": 581,
+  "customer_id": null,
+  "matched_master_id": null,
+  "name": "Hamsini Brahmbhatt",
+  "available_information": {
+    "name": "Hamsini Brahmbhatt"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address",
+    "city"
+  ],
+  "match_status": "incomplete_match"
+}

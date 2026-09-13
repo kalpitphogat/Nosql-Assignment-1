@@ -1,0 +1,16 @@
+{
+  "source_row": 340,
+  "customer_id": "C02854",
+  "matched_master_id": "C02854",
+  "name": "Xavier Mistry",
+  "available_information": {
+    "name": "Xavier Mistry",
+    "email": "xavier.mistry2854@hotmail.com",
+    "city": "Meerut"
+  },
+  "missing_information": [
+    "phone",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

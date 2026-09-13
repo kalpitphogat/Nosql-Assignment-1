@@ -1,0 +1,16 @@
+{
+  "source_row": 1703,
+  "customer_id": "C01647",
+  "matched_master_id": "C01647",
+  "name": "Avi Dugar",
+  "available_information": {
+    "name": "Avi Dugar",
+    "phone": "8777894562",
+    "address": "H.No. 094 Khatri Chowk",
+    "city": "Srinagar"
+  },
+  "missing_information": [
+    "email"
+  ],
+  "match_status": "partial_match"
+}

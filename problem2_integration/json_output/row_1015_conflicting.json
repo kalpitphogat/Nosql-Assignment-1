@@ -1,0 +1,23 @@
+{
+  "source_row": 1015,
+  "customer_id": "C02760",
+  "matched_master_id": "C02760",
+  "name": "Arin Hora",
+  "available_information": {
+    "name": "Arin Hora",
+    "address": "14/405, Sinha Marg",
+    "city": "Junagadh"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "email": {
+      "incoming": "tanay.hayer34818@yahoo.com",
+      "master": "arin.hora2760@outlook.com"
+    },
+    "phone": {
+      "incoming": "7361370926",
+      "master": "6268037858"
+    }
+  }
+}

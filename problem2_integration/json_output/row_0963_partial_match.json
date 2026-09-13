@@ -1,0 +1,16 @@
+{
+  "source_row": 963,
+  "customer_id": null,
+  "matched_master_id": "C00576",
+  "name": null,
+  "available_information": {
+    "email": "nitara.sane576@gmail.com",
+    "phone": "6376524256",
+    "city": "Durgapur"
+  },
+  "missing_information": [
+    "name",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

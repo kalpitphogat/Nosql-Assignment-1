@@ -1,0 +1,16 @@
+{
+  "source_row": 1998,
+  "customer_id": null,
+  "matched_master_id": "C02858",
+  "name": "Aarna Chakraborty",
+  "available_information": {
+    "name": "Aarna Chakraborty",
+    "city": "Kadapa"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

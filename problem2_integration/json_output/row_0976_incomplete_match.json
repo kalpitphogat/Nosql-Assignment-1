@@ -1,0 +1,16 @@
+{
+  "source_row": 976,
+  "customer_id": null,
+  "matched_master_id": null,
+  "name": "Chandran Swamy",
+  "available_information": {
+    "name": "Chandran Swamy"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address",
+    "city"
+  ],
+  "match_status": "incomplete_match"
+}

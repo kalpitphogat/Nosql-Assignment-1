@@ -1,0 +1,23 @@
+{
+  "source_row": 1884,
+  "customer_id": "C02745",
+  "matched_master_id": "C02745",
+  "name": "Oeshi Butala",
+  "available_information": {
+    "name": "Oeshi Butala",
+    "phone": "7857535389",
+    "city": "Amritsar"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "email": {
+      "incoming": "chandresh.mistry19002@outlook.com",
+      "master": "oeshi.butala2745@outlook.com"
+    },
+    "address": {
+      "incoming": "H.No. 571, Raj Ganj",
+      "master": "03/43, Solanki Ganj"
+    }
+  }
+}

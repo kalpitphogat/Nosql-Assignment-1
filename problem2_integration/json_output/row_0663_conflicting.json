@@ -1,0 +1,23 @@
+{
+  "source_row": 663,
+  "customer_id": "C02730",
+  "matched_master_id": "C02730",
+  "name": "Chavvi Chakrabarti",
+  "available_information": {
+    "email": "joshua.bandi2730@outlook.com",
+    "phone": "8622230314",
+    "city": "Berhampur"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "name": {
+      "incoming": "Chavvi Chakrabarti",
+      "master": "Joshua Bandi"
+    },
+    "address": {
+      "incoming": "113, Misra Chowk",
+      "master": "20/098, Pau Chowk"
+    }
+  }
+}

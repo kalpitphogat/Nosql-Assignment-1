@@ -1,0 +1,16 @@
+{
+  "source_row": 690,
+  "customer_id": null,
+  "matched_master_id": "C02276",
+  "name": "Gaurangi Jhaveri",
+  "available_information": {
+    "name": "Gaurangi Jhaveri",
+    "address": "90/38, Rout Circle",
+    "city": "Bihar Sharif"
+  },
+  "missing_information": [
+    "email",
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

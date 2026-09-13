@@ -1,0 +1,23 @@
+{
+  "source_row": 328,
+  "customer_id": "C02808",
+  "matched_master_id": "C02808",
+  "name": "Joshua Kalla",
+  "available_information": {
+    "name": "Joshua Kalla",
+    "email": "joshua.kalla2808@yahoo.com",
+    "city": "Mau"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "phone": {
+      "incoming": "8423672250",
+      "master": "9154427710"
+    },
+    "address": {
+      "incoming": "H.No. 04, Gill Road",
+      "master": "H.No. 689, Prabhu Marg"
+    }
+  }
+}

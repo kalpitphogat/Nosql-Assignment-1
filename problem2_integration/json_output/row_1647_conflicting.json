@@ -1,0 +1,20 @@
+{
+  "source_row": 1647,
+  "customer_id": "C02486",
+  "matched_master_id": "C02486",
+  "name": "Abeer Som",
+  "available_information": {
+    "email": "harini.gaba2486@hotmail.com",
+    "phone": "8971384134",
+    "address": "39/753, Bobal Path",
+    "city": "Danapur"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "name": {
+      "incoming": "Abeer Som",
+      "master": "Harini Gaba"
+    }
+  }
+}

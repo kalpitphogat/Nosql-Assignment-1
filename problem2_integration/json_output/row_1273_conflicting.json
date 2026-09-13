@@ -1,0 +1,23 @@
+{
+  "source_row": 1273,
+  "customer_id": "C00399",
+  "matched_master_id": "C00399",
+  "name": "Ridhi Vasa",
+  "available_information": {
+    "name": "Ridhi Vasa",
+    "phone": "9980780650",
+    "address": "24/126 Badal Nagar"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "email": {
+      "incoming": "shivani.doctor30015@example.in",
+      "master": "ridhi.vasa399@gmail.com"
+    },
+    "city": {
+      "incoming": "Ratlam",
+      "master": "Jaunpur"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "source_row": 1911,
+  "customer_id": "C01313",
+  "matched_master_id": "C01313",
+  "name": "Mugdha Khurana",
+  "available_information": {
+    "name": "Mugdha Khurana",
+    "phone": "6394119157",
+    "address": "28/078, Bedi Path"
+  },
+  "missing_information": [
+    "email",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

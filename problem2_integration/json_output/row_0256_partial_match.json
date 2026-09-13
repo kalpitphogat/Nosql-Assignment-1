@@ -1,0 +1,16 @@
+{
+  "source_row": 256,
+  "customer_id": "C00562",
+  "matched_master_id": "C00562",
+  "name": "Yashvi Menon",
+  "available_information": {
+    "name": "Yashvi Menon",
+    "email": "yashvi.menon562@gmail.com",
+    "address": "86/98, Bhalla Circle",
+    "city": "Bhiwandi"
+  },
+  "missing_information": [
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

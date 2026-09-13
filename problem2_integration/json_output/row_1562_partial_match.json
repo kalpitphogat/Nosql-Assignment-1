@@ -1,0 +1,16 @@
+{
+  "source_row": 1562,
+  "customer_id": "C01884",
+  "matched_master_id": "C01884",
+  "name": "Jhalak Narasimhan",
+  "available_information": {
+    "name": "Jhalak Narasimhan",
+    "phone": "8712483052",
+    "address": "H.No. 73, Karan Circle"
+  },
+  "missing_information": [
+    "email",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

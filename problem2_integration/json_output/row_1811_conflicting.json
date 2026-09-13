@@ -1,0 +1,23 @@
+{
+  "source_row": 1811,
+  "customer_id": "C00857",
+  "matched_master_id": "C00857",
+  "name": "Rachit Bassi",
+  "available_information": {
+    "name": "Rachit Bassi",
+    "phone": "9793986653",
+    "city": "Dhule"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "email": {
+      "incoming": "noah.doshi52830@gmail.com",
+      "master": "rachit.bassi857@hotmail.com"
+    },
+    "address": {
+      "incoming": "369 Gera Chowk",
+      "master": "H.No. 58 Oza Street"
+    }
+  }
+}

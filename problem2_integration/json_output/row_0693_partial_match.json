@@ -1,0 +1,16 @@
+{
+  "source_row": 693,
+  "customer_id": "C00248",
+  "matched_master_id": "C00248",
+  "name": "Ishanvi Mishra",
+  "available_information": {
+    "name": "Ishanvi Mishra",
+    "phone": "6058806740"
+  },
+  "missing_information": [
+    "email",
+    "address",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

@@ -1,0 +1,16 @@
+{
+  "source_row": 1867,
+  "customer_id": "C01189",
+  "matched_master_id": "C01189",
+  "name": "Chaitaly Taneja",
+  "available_information": {
+    "name": "Chaitaly Taneja",
+    "phone": "6270255384",
+    "address": "H.No. 75 Murty Road",
+    "city": "Bikaner"
+  },
+  "missing_information": [
+    "email"
+  ],
+  "match_status": "partial_match"
+}

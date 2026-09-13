@@ -1,0 +1,16 @@
+{
+  "source_row": 110,
+  "customer_id": "C02550",
+  "matched_master_id": "C02550",
+  "name": "Qadim Rana",
+  "available_information": {
+    "name": "Qadim Rana",
+    "address": "16 Shere Street"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

@@ -1,0 +1,23 @@
+{
+  "source_row": 1282,
+  "customer_id": "C00870",
+  "matched_master_id": "C00870",
+  "name": "Ijaya Mandal",
+  "available_information": {
+    "name": "Ijaya Mandal",
+    "email": "ijaya.mandal870@hotmail.com",
+    "phone": "7241170434"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "address": {
+      "incoming": "H.No. 990, Bhalla Street",
+      "master": "H.No. 380 Tak Path"
+    },
+    "city": {
+      "incoming": "Nanded",
+      "master": "Naihati"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "source_row": 845,
+  "customer_id": "C00664",
+  "matched_master_id": "C00664",
+  "name": "Garima Varkey",
+  "available_information": {
+    "name": "Garima Varkey",
+    "phone": "9916422605",
+    "address": "45/154 Garg Ganj",
+    "city": "Junagadh"
+  },
+  "missing_information": [
+    "email"
+  ],
+  "match_status": "partial_match"
+}

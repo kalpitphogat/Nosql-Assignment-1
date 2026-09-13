@@ -1,0 +1,16 @@
+{
+  "source_row": 1211,
+  "customer_id": "C00785",
+  "matched_master_id": "C00785",
+  "name": "Qarin Anand",
+  "available_information": {
+    "name": "Qarin Anand",
+    "email": "qarin.anand785@gmail.com"
+  },
+  "missing_information": [
+    "phone",
+    "address",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

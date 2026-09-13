@@ -1,0 +1,20 @@
+{
+  "source_row": 144,
+  "customer_id": "C02168",
+  "matched_master_id": "C02168",
+  "name": "Bahadurjit Bhagat",
+  "available_information": {
+    "email": "nilima.oommen2168@yahoo.com",
+    "phone": "8779201523",
+    "address": "58, Natt Path",
+    "city": "Panchkula"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "name": {
+      "incoming": "Bahadurjit Bhagat",
+      "master": "Nilima Oommen"
+    }
+  }
+}

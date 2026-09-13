@@ -1,0 +1,20 @@
+{
+  "source_row": 1109,
+  "customer_id": "C00606",
+  "matched_master_id": "C00606",
+  "name": "Thomas Parmer",
+  "available_information": {
+    "email": "rayaan.mohan606@example.in",
+    "phone": "9691893708",
+    "address": "H.No. 73, Shetty Road",
+    "city": "Muzaffarpur"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "name": {
+      "incoming": "Thomas Parmer",
+      "master": "Rayaan Mohan"
+    }
+  }
+}

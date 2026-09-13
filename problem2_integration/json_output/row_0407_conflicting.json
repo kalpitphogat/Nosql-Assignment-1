@@ -1,0 +1,20 @@
+{
+  "source_row": 407,
+  "customer_id": "C00712",
+  "matched_master_id": "C00712",
+  "name": "Parth Pandit",
+  "available_information": {
+    "email": "irya.sem712@outlook.com",
+    "phone": "8211951954",
+    "address": "39/89, Bhagat Ganj",
+    "city": "Gwalior"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "name": {
+      "incoming": "Parth Pandit",
+      "master": "Irya Sem"
+    }
+  }
+}

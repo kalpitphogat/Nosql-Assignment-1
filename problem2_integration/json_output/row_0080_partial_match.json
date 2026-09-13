@@ -1,0 +1,16 @@
+{
+  "source_row": 80,
+  "customer_id": "C01288",
+  "matched_master_id": "C01288",
+  "name": "Maya Bava",
+  "available_information": {
+    "name": "Maya Bava",
+    "email": "maya.bava1288@gmail.com"
+  },
+  "missing_information": [
+    "phone",
+    "address",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

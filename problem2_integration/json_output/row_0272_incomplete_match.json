@@ -1,0 +1,16 @@
+{
+  "source_row": 272,
+  "customer_id": null,
+  "matched_master_id": null,
+  "name": "Urmi Varughese",
+  "available_information": {
+    "name": "Urmi Varughese"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address",
+    "city"
+  ],
+  "match_status": "incomplete_match"
+}

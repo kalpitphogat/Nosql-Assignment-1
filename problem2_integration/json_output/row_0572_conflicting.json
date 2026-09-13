@@ -1,0 +1,20 @@
+{
+  "source_row": 572,
+  "customer_id": "C00059",
+  "matched_master_id": "C00059",
+  "name": "Mahika Chander",
+  "available_information": {
+    "name": "Mahika Chander",
+    "email": "mahika.chander59@example.in",
+    "address": "96, Babu",
+    "city": "Singrauli"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "phone": {
+      "incoming": "9136168283",
+      "master": "6307438633"
+    }
+  }
+}

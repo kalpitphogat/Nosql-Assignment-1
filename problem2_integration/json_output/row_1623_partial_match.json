@@ -1,0 +1,16 @@
+{
+  "source_row": 1623,
+  "customer_id": "C02628",
+  "matched_master_id": "C02628",
+  "name": "Ekantika Bali",
+  "available_information": {
+    "name": "Ekantika Bali",
+    "email": "ekantika.bali2628@outlook.com",
+    "address": "39 Choudhary Chowk"
+  },
+  "missing_information": [
+    "phone",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

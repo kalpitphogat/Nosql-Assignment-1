@@ -1,0 +1,20 @@
+{
+  "source_row": 853,
+  "customer_id": "C02011",
+  "matched_master_id": "C02011",
+  "name": "Mohammed Mammen",
+  "available_information": {
+    "name": "Mohammed Mammen",
+    "email": "mohammed.mammen2011@hotmail.com",
+    "address": "537, Dugar Chowk",
+    "city": "Indore"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "phone": {
+      "incoming": "8652939861",
+      "master": "7801930313"
+    }
+  }
+}

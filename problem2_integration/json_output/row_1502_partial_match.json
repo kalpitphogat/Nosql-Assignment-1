@@ -1,0 +1,16 @@
+{
+  "source_row": 1502,
+  "customer_id": null,
+  "matched_master_id": "C01973",
+  "name": "VANSHA MURTY",
+  "available_information": {
+    "name": "VANSHA MURTY",
+    "phone": "7813846464",
+    "address": "67/87 Samra Circle",
+    "city": "Coimbatore"
+  },
+  "missing_information": [
+    "email"
+  ],
+  "match_status": "partial_match"
+}

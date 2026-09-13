@@ -1,0 +1,16 @@
+{
+  "source_row": 731,
+  "customer_id": null,
+  "matched_master_id": "C02161",
+  "name": "Vincent Barman",
+  "available_information": {
+    "name": "Vincent Barman",
+    "city": "Bhiwani"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

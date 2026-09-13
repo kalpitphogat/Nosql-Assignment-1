@@ -1,0 +1,16 @@
+{
+  "source_row": 1025,
+  "customer_id": null,
+  "matched_master_id": "C00677",
+  "name": "Divya Aggarwal",
+  "available_information": {
+    "name": "Divya Aggarwal",
+    "city": "Tezpur"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

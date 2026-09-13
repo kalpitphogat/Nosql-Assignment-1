@@ -1,0 +1,16 @@
+{
+  "source_row": 880,
+  "customer_id": "C00687",
+  "matched_master_id": "C00687",
+  "name": "Advay Sachdev",
+  "available_information": {
+    "name": "Advay Sachdev",
+    "email": "advay.sachdev687@outlook.com",
+    "address": "79 Varty Road",
+    "city": "Agra"
+  },
+  "missing_information": [
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

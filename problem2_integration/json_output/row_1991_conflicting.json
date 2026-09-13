@@ -1,0 +1,20 @@
+{
+  "source_row": 1991,
+  "customer_id": "C01102",
+  "matched_master_id": "C01102",
+  "name": "Raksha Seshadri",
+  "available_information": {
+    "name": "Raksha Seshadri",
+    "phone": "7982771817",
+    "address": "32 Gola Zila",
+    "city": "Salem"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "email": {
+      "incoming": "ekansh.patil20240@outlook.com",
+      "master": "raksha.seshadri1102@example.in"
+    }
+  }
+}

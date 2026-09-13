@@ -1,0 +1,16 @@
+{
+  "source_row": 700,
+  "customer_id": "C02307",
+  "matched_master_id": "C02307",
+  "name": "Ikshita Narayan",
+  "available_information": {
+    "name": "Ikshita Narayan",
+    "email": "ikshita.narayan2307@yahoo.com",
+    "address": "09/30, Gade Street"
+  },
+  "missing_information": [
+    "phone",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

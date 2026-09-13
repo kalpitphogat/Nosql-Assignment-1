@@ -1,0 +1,16 @@
+{
+  "source_row": 1828,
+  "customer_id": "C02711",
+  "matched_master_id": "C02711",
+  "name": "Amruta Misra",
+  "available_information": {
+    "name": "Amruta Misra",
+    "phone": "9937231824"
+  },
+  "missing_information": [
+    "email",
+    "address",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

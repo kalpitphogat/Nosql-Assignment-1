@@ -1,0 +1,16 @@
+{
+  "source_row": 1509,
+  "customer_id": null,
+  "matched_master_id": null,
+  "name": "Kiaan Dugal",
+  "available_information": {
+    "name": "Kiaan Dugal"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address",
+    "city"
+  ],
+  "match_status": "incomplete_match"
+}

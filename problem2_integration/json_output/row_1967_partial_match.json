@@ -1,0 +1,16 @@
+{
+  "source_row": 1967,
+  "customer_id": "C02983",
+  "matched_master_id": "C02983",
+  "name": "Manan Kale",
+  "available_information": {
+    "name": "Manan Kale",
+    "phone": "7414802253",
+    "address": "99/112 Minhas Zila"
+  },
+  "missing_information": [
+    "email",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

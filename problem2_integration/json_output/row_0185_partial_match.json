@@ -1,0 +1,16 @@
+{
+  "source_row": 185,
+  "customer_id": null,
+  "matched_master_id": "C02007",
+  "name": null,
+  "available_information": {
+    "email": "champak.solanki2007@outlook.com",
+    "phone": "7908640363",
+    "city": "Raichur"
+  },
+  "missing_information": [
+    "name",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

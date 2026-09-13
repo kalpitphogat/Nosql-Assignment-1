@@ -1,0 +1,16 @@
+{
+  "source_row": 1600,
+  "customer_id": "C02111",
+  "matched_master_id": "C02111",
+  "name": "Tripti Ratta",
+  "available_information": {
+    "name": "Tripti Ratta",
+    "address": "H.No. 823, Nazareth Marg",
+    "city": "Kolhapur"
+  },
+  "missing_information": [
+    "email",
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

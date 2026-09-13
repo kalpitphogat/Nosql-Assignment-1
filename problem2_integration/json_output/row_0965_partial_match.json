@@ -1,0 +1,16 @@
+{
+  "source_row": 965,
+  "customer_id": null,
+  "matched_master_id": "C01981",
+  "name": "Eesha Bains",
+  "available_information": {
+    "name": "Eesha Bains",
+    "city": "Panipat"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

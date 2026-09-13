@@ -1,0 +1,23 @@
+{
+  "source_row": 1776,
+  "customer_id": "C02156",
+  "matched_master_id": "C02156",
+  "name": "Xalak Raval",
+  "available_information": {
+    "email": "abhimanyu.nayar2156@example.in",
+    "phone": "9049101954",
+    "address": "H.No. 90, Keer Path"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "name": {
+      "incoming": "Xalak Raval",
+      "master": "Abhimanyu Nayar"
+    },
+    "city": {
+      "incoming": "Siwan",
+      "master": "Kakinada"
+    }
+  }
+}

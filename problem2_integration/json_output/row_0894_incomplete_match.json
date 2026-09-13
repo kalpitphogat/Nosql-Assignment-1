@@ -1,0 +1,16 @@
+{
+  "source_row": 894,
+  "customer_id": null,
+  "matched_master_id": null,
+  "name": "Faraj Patil",
+  "available_information": {
+    "name": "Faraj Patil"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address",
+    "city"
+  ],
+  "match_status": "incomplete_match"
+}

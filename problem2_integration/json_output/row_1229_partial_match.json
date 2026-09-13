@@ -1,0 +1,16 @@
+{
+  "source_row": 1229,
+  "customer_id": "C01290",
+  "matched_master_id": "C01290",
+  "name": "Ubika Ghosh",
+  "available_information": {
+    "name": "Ubika Ghosh",
+    "phone": "7570778583"
+  },
+  "missing_information": [
+    "email",
+    "address",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

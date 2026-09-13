@@ -1,0 +1,16 @@
+{
+  "source_row": 615,
+  "customer_id": null,
+  "matched_master_id": null,
+  "name": "Siya Chacko",
+  "available_information": {
+    "name": "Siya Chacko"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address",
+    "city"
+  ],
+  "match_status": "incomplete_match"
+}

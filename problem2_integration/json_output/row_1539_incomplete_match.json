@@ -1,0 +1,16 @@
+{
+  "source_row": 1539,
+  "customer_id": null,
+  "matched_master_id": null,
+  "name": "Aadhya Sheth",
+  "available_information": {
+    "name": "Aadhya Sheth"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address",
+    "city"
+  ],
+  "match_status": "incomplete_match"
+}

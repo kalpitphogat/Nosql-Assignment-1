@@ -1,0 +1,23 @@
+{
+  "source_row": 1568,
+  "customer_id": "C01396",
+  "matched_master_id": "C01396",
+  "name": "Hemani Thakur",
+  "available_information": {
+    "name": "Hemani Thakur",
+    "email": "hemani.thakur1396@hotmail.com",
+    "city": "Hospet"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "phone": {
+      "incoming": "6335577288",
+      "master": "8724386212"
+    },
+    "address": {
+      "incoming": "77, Raja Nagar",
+      "master": "580, Sant Zila"
+    }
+  }
+}

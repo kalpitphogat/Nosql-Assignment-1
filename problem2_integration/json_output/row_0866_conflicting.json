@@ -1,0 +1,20 @@
+{
+  "source_row": 866,
+  "customer_id": "C00749",
+  "matched_master_id": "C00749",
+  "name": "Rudra Naik",
+  "available_information": {
+    "email": "januja.biswas749@hotmail.com",
+    "phone": "8072766431",
+    "address": "00/45, Batta Marg",
+    "city": "Serampore"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "name": {
+      "incoming": "Rudra Naik",
+      "master": "Januja Biswas"
+    }
+  }
+}

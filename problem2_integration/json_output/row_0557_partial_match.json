@@ -1,0 +1,16 @@
+{
+  "source_row": 557,
+  "customer_id": null,
+  "matched_master_id": "C00052",
+  "name": "Ranbir Chanda",
+  "available_information": {
+    "name": "Ranbir Chanda",
+    "address": "H.No. 90 Borah Chowk",
+    "city": "Kota"
+  },
+  "missing_information": [
+    "email",
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

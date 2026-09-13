@@ -1,0 +1,16 @@
+{
+  "source_row": 931,
+  "customer_id": null,
+  "matched_master_id": null,
+  "name": "Bina Raval",
+  "available_information": {
+    "name": "Bina Raval"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address",
+    "city"
+  ],
+  "match_status": "incomplete_match"
+}

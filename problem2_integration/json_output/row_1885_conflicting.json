@@ -1,0 +1,23 @@
+{
+  "source_row": 1885,
+  "customer_id": "C00691",
+  "matched_master_id": "C00691",
+  "name": "Champak Loke",
+  "available_information": {
+    "phone": "9199912769",
+    "address": "26/103, Mukhopadhyay Chowk",
+    "city": "Patna"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "name": {
+      "incoming": "Champak Loke",
+      "master": "Dhriti Balasubramanian"
+    },
+    "email": {
+      "incoming": "jason.vig56336@hotmail.com",
+      "master": "dhriti.balasubramanian691@gmail.com"
+    }
+  }
+}

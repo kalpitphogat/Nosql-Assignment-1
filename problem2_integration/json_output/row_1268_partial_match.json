@@ -1,0 +1,16 @@
+{
+  "source_row": 1268,
+  "customer_id": "C02222",
+  "matched_master_id": "C02222",
+  "name": "Vedant Sawhney",
+  "available_information": {
+    "name": "Vedant Sawhney",
+    "email": "vedant.sawhney2222@gmail.com"
+  },
+  "missing_information": [
+    "phone",
+    "address",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

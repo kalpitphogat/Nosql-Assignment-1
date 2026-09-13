@@ -1,0 +1,16 @@
+{
+  "source_row": 1340,
+  "customer_id": "C02801",
+  "matched_master_id": "C02801",
+  "name": "Prisha Gola",
+  "available_information": {
+    "name": "Prisha Gola",
+    "email": "prisha.gola2801@yahoo.com",
+    "address": "55/602 Rout Road",
+    "city": "Kolhapur"
+  },
+  "missing_information": [
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

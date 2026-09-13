@@ -1,0 +1,16 @@
+{
+  "source_row": 1075,
+  "customer_id": "C02445",
+  "matched_master_id": "C02445",
+  "name": "Pratyush Balasubramanian",
+  "available_information": {
+    "name": "Pratyush Balasubramanian",
+    "phone": "7694500572"
+  },
+  "missing_information": [
+    "email",
+    "address",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

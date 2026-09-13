@@ -1,0 +1,23 @@
+{
+  "source_row": 1492,
+  "customer_id": "C01047",
+  "matched_master_id": "C01047",
+  "name": "Ridhi Bora",
+  "available_information": {
+    "name": "Ridhi Bora",
+    "email": "ridhi.bora1047@hotmail.com",
+    "phone": "8048016208"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "address": {
+      "incoming": "H.No. 819 Dave Street",
+      "master": "78, Johal Ganj"
+    },
+    "city": {
+      "incoming": "Darbhanga",
+      "master": "Sagar"
+    }
+  }
+}

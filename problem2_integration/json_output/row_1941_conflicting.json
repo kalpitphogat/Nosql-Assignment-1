@@ -1,0 +1,20 @@
+{
+  "source_row": 1941,
+  "customer_id": "C00971",
+  "matched_master_id": "C00971",
+  "name": "Amol Dhaliwal",
+  "available_information": {
+    "email": "elijah.parsa971@hotmail.com",
+    "phone": "6193415076",
+    "address": "H.No. 482 Dar Street",
+    "city": "Gudivada"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "name": {
+      "incoming": "Amol Dhaliwal",
+      "master": "Elijah Parsa"
+    }
+  }
+}

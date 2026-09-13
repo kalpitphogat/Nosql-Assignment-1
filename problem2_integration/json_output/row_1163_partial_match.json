@@ -1,0 +1,16 @@
+{
+  "source_row": 1163,
+  "customer_id": "C02035",
+  "matched_master_id": "C02035",
+  "name": "Mitesh Parikh",
+  "available_information": {
+    "name": "Mitesh Parikh",
+    "email": "mitesh.parikh2035@gmail.com",
+    "phone": "7642129537",
+    "address": "H.No. 298, Bhakta"
+  },
+  "missing_information": [
+    "city"
+  ],
+  "match_status": "partial_match"
+}

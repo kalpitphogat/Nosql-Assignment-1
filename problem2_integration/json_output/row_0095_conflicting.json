@@ -1,0 +1,20 @@
+{
+  "source_row": 95,
+  "customer_id": "C01688",
+  "matched_master_id": "C01688",
+  "name": "Devika Brahmbhatt",
+  "available_information": {
+    "email": "farhan.bir1688@hotmail.com",
+    "phone": "9478595939",
+    "address": "H.No. 57 Borde Nagar",
+    "city": "Kottayam"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "name": {
+      "incoming": "Devika Brahmbhatt",
+      "master": "Farhan Bir"
+    }
+  }
+}

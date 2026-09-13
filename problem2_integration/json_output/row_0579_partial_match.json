@@ -1,0 +1,16 @@
+{
+  "source_row": 579,
+  "customer_id": "C00253",
+  "matched_master_id": "C00253",
+  "name": "Lajita Gupta",
+  "available_information": {
+    "name": "Lajita Gupta",
+    "city": "Kadapa"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

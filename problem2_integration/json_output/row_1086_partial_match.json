@@ -1,0 +1,16 @@
+{
+  "source_row": 1086,
+  "customer_id": "C02322",
+  "matched_master_id": "C02322",
+  "name": "Urishilla Patil",
+  "available_information": {
+    "name": "Urishilla Patil",
+    "city": "Barasat"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

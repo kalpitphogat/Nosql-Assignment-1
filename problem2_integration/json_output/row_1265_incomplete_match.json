@@ -1,0 +1,16 @@
+{
+  "source_row": 1265,
+  "customer_id": null,
+  "matched_master_id": null,
+  "name": "Pranav Golla",
+  "available_information": {
+    "name": "Pranav Golla"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address",
+    "city"
+  ],
+  "match_status": "incomplete_match"
+}

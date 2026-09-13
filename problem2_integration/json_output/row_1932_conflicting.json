@@ -1,0 +1,23 @@
+{
+  "source_row": 1932,
+  "customer_id": "C02452",
+  "matched_master_id": "C02452",
+  "name": "Michael Kannan",
+  "available_information": {
+    "name": "Michael Kannan",
+    "email": "michael.kannan2452@yahoo.com",
+    "address": "880 Brahmbhatt Ganj"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "phone": {
+      "incoming": "7696735012",
+      "master": "9636162294"
+    },
+    "city": {
+      "incoming": "Sri Ganganagar",
+      "master": "Howrah"
+    }
+  }
+}

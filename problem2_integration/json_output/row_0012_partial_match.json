@@ -1,0 +1,16 @@
+{
+  "source_row": 12,
+  "customer_id": "C01131",
+  "matched_master_id": "C01131",
+  "name": "Faris Pal",
+  "available_information": {
+    "name": "Faris Pal",
+    "address": "77, Dave Street"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

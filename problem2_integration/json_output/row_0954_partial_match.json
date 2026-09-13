@@ -1,0 +1,16 @@
+{
+  "source_row": 954,
+  "customer_id": "C00003",
+  "matched_master_id": "C00003",
+  "name": "Daksha Pai",
+  "available_information": {
+    "name": "Daksha Pai",
+    "email": "daksha.pai3@outlook.com",
+    "phone": "7186826128",
+    "address": "09/236, Krishnan Street"
+  },
+  "missing_information": [
+    "city"
+  ],
+  "match_status": "partial_match"
+}

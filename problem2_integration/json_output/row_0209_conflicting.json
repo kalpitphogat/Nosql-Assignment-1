@@ -1,0 +1,23 @@
+{
+  "source_row": 209,
+  "customer_id": "C02814",
+  "matched_master_id": "C02814",
+  "name": "Orinder Choudhry",
+  "available_information": {
+    "name": "Orinder Choudhry",
+    "email": "orinder.choudhry2814@gmail.com",
+    "phone": "6371299957"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "address": {
+      "incoming": "H.No. 10, Gill Chowk",
+      "master": "H.No. 73, Prasad Chowk"
+    },
+    "city": {
+      "incoming": "Rampur",
+      "master": "Ludhiana"
+    }
+  }
+}

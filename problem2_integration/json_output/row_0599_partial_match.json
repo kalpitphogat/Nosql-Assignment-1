@@ -1,0 +1,16 @@
+{
+  "source_row": 599,
+  "customer_id": "C02666",
+  "matched_master_id": "C02666",
+  "name": "Omkaar Salvi",
+  "available_information": {
+    "name": "Omkaar Salvi",
+    "phone": "9960209067"
+  },
+  "missing_information": [
+    "email",
+    "address",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

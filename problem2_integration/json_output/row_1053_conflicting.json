@@ -1,0 +1,23 @@
+{
+  "source_row": 1053,
+  "customer_id": "C00946",
+  "matched_master_id": "C00946",
+  "name": "Indira Parikh",
+  "available_information": {
+    "email": "ekapad.kunda946@gmail.com",
+    "phone": "6644205757",
+    "address": "510, Krishnan"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "name": {
+      "incoming": "Indira Parikh",
+      "master": "Ekapad Kunda"
+    },
+    "city": {
+      "incoming": "Nashik",
+      "master": "Singrauli"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "source_row": 1906,
+  "customer_id": "C02490",
+  "matched_master_id": "C02490",
+  "name": "Falak Gole",
+  "available_information": {
+    "name": "Falak Gole",
+    "email": "falak.gole2490@gmail.com",
+    "address": "671, Rajagopal",
+    "city": "Raiganj"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "phone": {
+      "incoming": "9965528925",
+      "master": "9070779638"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "source_row": 1390,
+  "customer_id": "C01774",
+  "matched_master_id": "C01774",
+  "name": "Gopal Talwar",
+  "available_information": {
+    "name": "Gopal Talwar",
+    "phone": "8952349867",
+    "address": "96/810 Singhal Path"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "email": {
+      "incoming": "chaitanya.prasad13239@example.in",
+      "master": "gopal.talwar1774@example.in"
+    },
+    "city": {
+      "incoming": "Gurgaon",
+      "master": "Thane"
+    }
+  }
+}

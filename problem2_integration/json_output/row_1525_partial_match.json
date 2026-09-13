@@ -1,0 +1,16 @@
+{
+  "source_row": 1525,
+  "customer_id": "C02766",
+  "matched_master_id": "C02766",
+  "name": "Om Ramesh",
+  "available_information": {
+    "name": "Om Ramesh",
+    "email": "om.ramesh2766@gmail.com",
+    "city": "Vijayanagaram"
+  },
+  "missing_information": [
+    "phone",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

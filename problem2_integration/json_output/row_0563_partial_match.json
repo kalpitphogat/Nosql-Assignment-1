@@ -1,0 +1,16 @@
+{
+  "source_row": 563,
+  "customer_id": "C00059",
+  "matched_master_id": "C00059",
+  "name": "Mahika Chander",
+  "available_information": {
+    "name": "Mahika Chander",
+    "email": "mahika.chander59@example.in",
+    "phone": "6307438633",
+    "address": "96, Babu"
+  },
+  "missing_information": [
+    "city"
+  ],
+  "match_status": "partial_match"
+}

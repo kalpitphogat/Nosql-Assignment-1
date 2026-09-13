@@ -1,0 +1,16 @@
+{
+  "source_row": 1199,
+  "customer_id": null,
+  "matched_master_id": "C01626",
+  "name": null,
+  "available_information": {
+    "email": "udant.yogi1626@hotmail.com",
+    "phone": "8397123799",
+    "city": "Ambattur"
+  },
+  "missing_information": [
+    "name",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

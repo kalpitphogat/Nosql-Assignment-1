@@ -1,0 +1,16 @@
+{
+  "source_row": 1979,
+  "customer_id": "C01364",
+  "matched_master_id": "C01364",
+  "name": "Neha Baria",
+  "available_information": {
+    "name": "Neha Baria",
+    "address": "161 Ram Chowk",
+    "city": "Kakinada"
+  },
+  "missing_information": [
+    "email",
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

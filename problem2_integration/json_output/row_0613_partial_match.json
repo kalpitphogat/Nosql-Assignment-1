@@ -1,0 +1,16 @@
+{
+  "source_row": 613,
+  "customer_id": "C00801",
+  "matched_master_id": "C00801",
+  "name": "Rehaan Sachar",
+  "available_information": {
+    "name": "Rehaan Sachar",
+    "email": "rehaan.sachar801@gmail.com",
+    "phone": "9732541855"
+  },
+  "missing_information": [
+    "address",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

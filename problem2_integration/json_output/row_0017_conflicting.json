@@ -1,0 +1,23 @@
+{
+  "source_row": 17,
+  "customer_id": "C01580",
+  "matched_master_id": "C01580",
+  "name": "Mekhala Golla",
+  "available_information": {
+    "name": "Mekhala Golla",
+    "email": "mekhala.golla1580@example.in",
+    "city": "Durg"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "phone": {
+      "incoming": "7526250384",
+      "master": "7414697692"
+    },
+    "address": {
+      "incoming": "434 Kar Circle",
+      "master": "H.No. 37, Barad Path"
+    }
+  }
+}

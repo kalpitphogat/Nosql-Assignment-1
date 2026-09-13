@@ -1,0 +1,16 @@
+{
+  "source_row": 989,
+  "customer_id": null,
+  "matched_master_id": "C02442",
+  "name": null,
+  "available_information": {
+    "email": "ekta.ramachandran2442@hotmail.com",
+    "phone": "6494312308",
+    "city": "Ratlam"
+  },
+  "missing_information": [
+    "name",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

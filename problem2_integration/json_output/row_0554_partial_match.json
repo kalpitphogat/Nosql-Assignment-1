@@ -1,0 +1,16 @@
+{
+  "source_row": 554,
+  "customer_id": "C01637",
+  "matched_master_id": "C01637",
+  "name": "Pranit Padmanabhan",
+  "available_information": {
+    "name": "Pranit Padmanabhan",
+    "email": "pranit.padmanabhan1637@gmail.com"
+  },
+  "missing_information": [
+    "phone",
+    "address",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

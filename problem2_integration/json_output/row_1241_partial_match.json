@@ -1,0 +1,16 @@
+{
+  "source_row": 1241,
+  "customer_id": "C01405",
+  "matched_master_id": "C01405",
+  "name": "Daniel Agate",
+  "available_information": {
+    "name": "Daniel Agate",
+    "email": "daniel.agate1405@outlook.com",
+    "phone": "7766489812",
+    "address": "27, Pal Marg"
+  },
+  "missing_information": [
+    "city"
+  ],
+  "match_status": "partial_match"
+}

@@ -1,0 +1,16 @@
+{
+  "source_row": 1916,
+  "customer_id": null,
+  "matched_master_id": "C00996",
+  "name": "MADHAV PRABHU",
+  "available_information": {
+    "name": "MADHAV PRABHU",
+    "phone": "8455321774",
+    "address": "29, Kapoor",
+    "city": "Salem"
+  },
+  "missing_information": [
+    "email"
+  ],
+  "match_status": "partial_match"
+}

@@ -1,0 +1,16 @@
+{
+  "source_row": 1374,
+  "customer_id": "C02275",
+  "matched_master_id": "C02275",
+  "name": "Matthew Sodhi",
+  "available_information": {
+    "name": "Matthew Sodhi",
+    "email": "matthew.sodhi2275@gmail.com",
+    "phone": "9876677551",
+    "address": "27, Bakshi Street"
+  },
+  "missing_information": [
+    "city"
+  ],
+  "match_status": "partial_match"
+}

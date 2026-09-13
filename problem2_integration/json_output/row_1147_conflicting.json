@@ -1,0 +1,23 @@
+{
+  "source_row": 1147,
+  "customer_id": "C01622",
+  "matched_master_id": "C01622",
+  "name": "Raagini Pall",
+  "available_information": {
+    "name": "Raagini Pall",
+    "email": "raagini.pall1622@outlook.com",
+    "address": "92/23 Sant Zila"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "phone": {
+      "incoming": "6267887554",
+      "master": "9043201951"
+    },
+    "city": {
+      "incoming": "Kalyan-Dombivli",
+      "master": "Bhatpara"
+    }
+  }
+}

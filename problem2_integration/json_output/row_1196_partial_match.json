@@ -1,0 +1,16 @@
+{
+  "source_row": 1196,
+  "customer_id": null,
+  "matched_master_id": "C00954",
+  "name": "Unnati Narang",
+  "available_information": {
+    "name": "Unnati Narang",
+    "city": "Gurgaon"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

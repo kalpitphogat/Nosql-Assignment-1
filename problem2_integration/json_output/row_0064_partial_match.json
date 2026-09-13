@@ -1,0 +1,16 @@
+{
+  "source_row": 64,
+  "customer_id": null,
+  "matched_master_id": "C01187",
+  "name": "Bhavya Karpe",
+  "available_information": {
+    "name": "Bhavya Karpe",
+    "city": "Raebareli"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

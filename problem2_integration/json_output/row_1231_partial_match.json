@@ -1,0 +1,16 @@
+{
+  "source_row": 1231,
+  "customer_id": null,
+  "matched_master_id": "C00596",
+  "name": "Upkaar Som",
+  "available_information": {
+    "name": "Upkaar Som",
+    "city": "Kolhapur"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

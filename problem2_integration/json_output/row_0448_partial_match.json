@@ -1,0 +1,16 @@
+{
+  "source_row": 448,
+  "customer_id": "C02362",
+  "matched_master_id": "C02362",
+  "name": "Finn Gara",
+  "available_information": {
+    "name": "Finn Gara",
+    "phone": "8063742111"
+  },
+  "missing_information": [
+    "email",
+    "address",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

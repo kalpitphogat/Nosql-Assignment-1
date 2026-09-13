@@ -1,0 +1,23 @@
+{
+  "source_row": 1438,
+  "customer_id": "C00850",
+  "matched_master_id": "C00850",
+  "name": "Urishilla Gokhale",
+  "available_information": {
+    "email": "chanakya.maharaj850@gmail.com",
+    "phone": "8783827662",
+    "address": "31/87 Pai Marg"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "name": {
+      "incoming": "Urishilla Gokhale",
+      "master": "Chanakya Maharaj"
+    },
+    "city": {
+      "incoming": "Parbhani",
+      "master": "Mysore"
+    }
+  }
+}

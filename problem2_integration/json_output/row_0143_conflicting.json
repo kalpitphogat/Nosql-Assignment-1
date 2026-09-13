@@ -1,0 +1,23 @@
+{
+  "source_row": 143,
+  "customer_id": "C00324",
+  "matched_master_id": "C00324",
+  "name": "Irya Mane",
+  "available_information": {
+    "email": "jhalak.mohan324@gmail.com",
+    "phone": "7100653697",
+    "city": "Mathura"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "name": {
+      "incoming": "Irya Mane",
+      "master": "Jhalak Mohan"
+    },
+    "address": {
+      "incoming": "54/251 Badal Ganj",
+      "master": "352 Som Road"
+    }
+  }
+}

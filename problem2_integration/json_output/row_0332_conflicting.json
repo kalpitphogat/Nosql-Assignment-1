@@ -1,0 +1,20 @@
+{
+  "source_row": 332,
+  "customer_id": "C01467",
+  "matched_master_id": "C01467",
+  "name": "Ijaya Goel",
+  "available_information": {
+    "name": "Ijaya Goel",
+    "phone": "7938379785",
+    "address": "H.No. 436 Dubey Nagar",
+    "city": "Bhilwara"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "email": {
+      "incoming": "mitali.pingle95851@example.in",
+      "master": "ijaya.goel1467@yahoo.com"
+    }
+  }
+}

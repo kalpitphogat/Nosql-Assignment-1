@@ -1,0 +1,16 @@
+{
+  "source_row": 864,
+  "customer_id": "C01235",
+  "matched_master_id": "C01235",
+  "name": "Daniel Dave",
+  "available_information": {
+    "name": "Daniel Dave",
+    "phone": "6214207003"
+  },
+  "missing_information": [
+    "email",
+    "address",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

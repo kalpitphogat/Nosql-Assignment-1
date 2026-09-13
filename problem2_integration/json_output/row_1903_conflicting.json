@@ -1,0 +1,23 @@
+{
+  "source_row": 1903,
+  "customer_id": "C02021",
+  "matched_master_id": "C02021",
+  "name": "Harsh Chatterjee",
+  "available_information": {
+    "phone": "8595817756",
+    "address": "69/509, Kumer Ganj",
+    "city": "Lucknow"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "name": {
+      "incoming": "Harsh Chatterjee",
+      "master": "Aarav Kannan"
+    },
+    "email": {
+      "incoming": "pallavi.trivedi61007@outlook.com",
+      "master": "aarav.kannan2021@yahoo.com"
+    }
+  }
+}

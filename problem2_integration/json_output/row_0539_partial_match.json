@@ -1,0 +1,16 @@
+{
+  "source_row": 539,
+  "customer_id": "C00724",
+  "matched_master_id": "C00724",
+  "name": "Riya Pathak",
+  "available_information": {
+    "name": "Riya Pathak",
+    "phone": "7171996625",
+    "city": "Tadepalligudem"
+  },
+  "missing_information": [
+    "email",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

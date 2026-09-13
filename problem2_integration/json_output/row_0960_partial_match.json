@@ -1,0 +1,16 @@
+{
+  "source_row": 960,
+  "customer_id": "C00468",
+  "matched_master_id": "C00468",
+  "name": "Timothy Magar",
+  "available_information": {
+    "name": "Timothy Magar",
+    "email": "timothy.magar468@yahoo.com",
+    "address": "25/475 Balasubramanian Street",
+    "city": "Gandhinagar"
+  },
+  "missing_information": [
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

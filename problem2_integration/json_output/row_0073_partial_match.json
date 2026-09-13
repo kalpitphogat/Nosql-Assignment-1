@@ -1,0 +1,16 @@
+{
+  "source_row": 73,
+  "customer_id": "C00916",
+  "matched_master_id": "C00916",
+  "name": "Chaitanya Chada",
+  "available_information": {
+    "name": "Chaitanya Chada",
+    "phone": "7841238306",
+    "address": "H.No. 58 Chahal"
+  },
+  "missing_information": [
+    "email",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

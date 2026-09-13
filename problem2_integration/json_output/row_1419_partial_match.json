@@ -1,0 +1,16 @@
+{
+  "source_row": 1419,
+  "customer_id": null,
+  "matched_master_id": "C02184",
+  "name": "ANYA BIR",
+  "available_information": {
+    "name": "ANYA BIR",
+    "phone": "6038759505",
+    "address": "431 Upadhyay Ganj",
+    "city": "Tiruchirappalli"
+  },
+  "missing_information": [
+    "email"
+  ],
+  "match_status": "partial_match"
+}

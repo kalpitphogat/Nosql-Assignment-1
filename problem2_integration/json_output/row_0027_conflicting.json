@@ -1,0 +1,23 @@
+{
+  "source_row": 27,
+  "customer_id": "C02666",
+  "matched_master_id": "C02666",
+  "name": "Adya Yadav",
+  "available_information": {
+    "email": "omkaar.salvi2666@yahoo.com",
+    "phone": "9960209067",
+    "city": "Jalgaon"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "name": {
+      "incoming": "Adya Yadav",
+      "master": "Omkaar Salvi"
+    },
+    "address": {
+      "incoming": "57/92, Tailor Chowk",
+      "master": "58 Raja Marg"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "source_row": 248,
+  "customer_id": "C00197",
+  "matched_master_id": "C00197",
+  "name": "Qadim Sura",
+  "available_information": {
+    "name": "Qadim Sura",
+    "email": "qadim.sura197@outlook.com",
+    "phone": "8471674301",
+    "address": "77/60, Pillay Path"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "city": {
+      "incoming": "Raurkela Industrial Township",
+      "master": "Sultan Pur Majra"
+    }
+  }
+}

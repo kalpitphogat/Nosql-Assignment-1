@@ -1,0 +1,16 @@
+{
+  "source_row": 890,
+  "customer_id": "C00020",
+  "matched_master_id": "C00020",
+  "name": "Ria Sabharwal",
+  "available_information": {
+    "name": "Ria Sabharwal",
+    "email": "ria.sabharwal20@yahoo.com",
+    "address": "54/400, Mitra Nagar",
+    "city": "Davanagere"
+  },
+  "missing_information": [
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

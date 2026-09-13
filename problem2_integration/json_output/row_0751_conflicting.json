@@ -1,0 +1,20 @@
+{
+  "source_row": 751,
+  "customer_id": "C02626",
+  "matched_master_id": "C02626",
+  "name": "Maanas Dey",
+  "available_information": {
+    "name": "Maanas Dey",
+    "email": "maanas.dey2626@outlook.com",
+    "phone": "7459827158",
+    "city": "Gudivada"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "address": {
+      "incoming": "832, Lal Road",
+      "master": "99, Mutti Street"
+    }
+  }
+}

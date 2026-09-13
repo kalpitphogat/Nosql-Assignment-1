@@ -1,0 +1,16 @@
+{
+  "source_row": 573,
+  "customer_id": "C02597",
+  "matched_master_id": "C02597",
+  "name": "Rajata Bala",
+  "available_information": {
+    "name": "Rajata Bala",
+    "email": "rajata.bala2597@gmail.com",
+    "phone": "6585734490",
+    "city": "Ambarnath"
+  },
+  "missing_information": [
+    "address"
+  ],
+  "match_status": "partial_match"
+}

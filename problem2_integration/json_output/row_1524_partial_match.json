@@ -1,0 +1,16 @@
+{
+  "source_row": 1524,
+  "customer_id": "C01474",
+  "matched_master_id": "C01474",
+  "name": "Vanya Warrior",
+  "available_information": {
+    "name": "Vanya Warrior",
+    "email": "vanya.warrior1474@yahoo.com",
+    "address": "56/672 Cherian Road",
+    "city": "Varanasi"
+  },
+  "missing_information": [
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

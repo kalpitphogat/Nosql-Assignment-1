@@ -1,0 +1,16 @@
+{
+  "source_row": 543,
+  "customer_id": null,
+  "matched_master_id": null,
+  "name": "Eshana Kakar",
+  "available_information": {
+    "name": "Eshana Kakar"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address",
+    "city"
+  ],
+  "match_status": "incomplete_match"
+}

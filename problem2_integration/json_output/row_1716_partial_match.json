@@ -1,0 +1,16 @@
+{
+  "source_row": 1716,
+  "customer_id": "C01046",
+  "matched_master_id": "C01046",
+  "name": "Hemani Jha",
+  "available_information": {
+    "name": "Hemani Jha",
+    "phone": "7429511847",
+    "city": "Kadapa"
+  },
+  "missing_information": [
+    "email",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

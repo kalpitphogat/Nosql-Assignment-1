@@ -1,0 +1,16 @@
+{
+  "source_row": 1403,
+  "customer_id": "C02296",
+  "matched_master_id": "C02296",
+  "name": "Watika Goda",
+  "available_information": {
+    "name": "Watika Goda",
+    "email": "watika.goda2296@outlook.com",
+    "phone": "9582520695",
+    "city": "Karimnagar"
+  },
+  "missing_information": [
+    "address"
+  ],
+  "match_status": "partial_match"
+}

@@ -1,0 +1,20 @@
+{
+  "source_row": 1185,
+  "customer_id": "C01313",
+  "matched_master_id": "C01313",
+  "name": "Mugdha Khurana",
+  "available_information": {
+    "name": "Mugdha Khurana",
+    "email": "mugdha.khurana1313@gmail.com",
+    "address": "28/078, Bedi Path",
+    "city": "Darbhanga"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "phone": {
+      "incoming": "6842807959",
+      "master": "6394119157"
+    }
+  }
+}

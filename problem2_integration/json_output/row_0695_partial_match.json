@@ -1,0 +1,16 @@
+{
+  "source_row": 695,
+  "customer_id": "C02636",
+  "matched_master_id": "C02636",
+  "name": "Wazir Sachdev",
+  "available_information": {
+    "name": "Wazir Sachdev",
+    "phone": "9099477503",
+    "address": "663, Brar Chowk",
+    "city": "Gudivada"
+  },
+  "missing_information": [
+    "email"
+  ],
+  "match_status": "partial_match"
+}

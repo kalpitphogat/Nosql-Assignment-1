@@ -1,0 +1,16 @@
+{
+  "source_row": 128,
+  "customer_id": "C00736",
+  "matched_master_id": "C00736",
+  "name": "Falak Batta",
+  "available_information": {
+    "name": "Falak Batta",
+    "email": "falak.batta736@gmail.com",
+    "phone": "8347369874",
+    "city": "Singrauli"
+  },
+  "missing_information": [
+    "address"
+  ],
+  "match_status": "partial_match"
+}

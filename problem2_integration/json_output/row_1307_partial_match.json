@@ -1,0 +1,16 @@
+{
+  "source_row": 1307,
+  "customer_id": "C02237",
+  "matched_master_id": "C02237",
+  "name": "Zaid Shukla",
+  "available_information": {
+    "name": "Zaid Shukla",
+    "email": "zaid.shukla2237@yahoo.com",
+    "phone": "7353291656",
+    "city": "Bhalswa Jahangir Pur"
+  },
+  "missing_information": [
+    "address"
+  ],
+  "match_status": "partial_match"
+}

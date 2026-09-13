@@ -1,0 +1,16 @@
+{
+  "source_row": 360,
+  "customer_id": "C01851",
+  "matched_master_id": "C01851",
+  "name": "Anusha Padmanabhan",
+  "available_information": {
+    "name": "Anusha Padmanabhan",
+    "email": "anusha.padmanabhan1851@hotmail.com",
+    "phone": "8434474510",
+    "address": "89/490 Das Nagar"
+  },
+  "missing_information": [
+    "city"
+  ],
+  "match_status": "partial_match"
+}

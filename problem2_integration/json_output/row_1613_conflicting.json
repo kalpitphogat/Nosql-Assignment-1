@@ -1,0 +1,20 @@
+{
+  "source_row": 1613,
+  "customer_id": "C02132",
+  "matched_master_id": "C02132",
+  "name": "Hamsini Gara",
+  "available_information": {
+    "name": "Hamsini Gara",
+    "email": "hamsini.gara2132@outlook.com",
+    "phone": "9446295542",
+    "city": "Asansol"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "address": {
+      "incoming": "H.No. 338, Choudhury",
+      "master": "932, Dutt"
+    }
+  }
+}

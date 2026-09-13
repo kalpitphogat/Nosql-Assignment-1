@@ -1,0 +1,16 @@
+{
+  "source_row": 710,
+  "customer_id": "C01424",
+  "matched_master_id": "C01424",
+  "name": "Arin Raval",
+  "available_information": {
+    "name": "Arin Raval",
+    "email": "arin.raval1424@example.in",
+    "phone": "7981335052",
+    "address": "509 Om Ganj"
+  },
+  "missing_information": [
+    "city"
+  ],
+  "match_status": "partial_match"
+}

@@ -1,0 +1,16 @@
+{
+  "source_row": 1550,
+  "customer_id": null,
+  "matched_master_id": "C01511",
+  "name": "vasudha kannan",
+  "available_information": {
+    "name": "vasudha kannan",
+    "email": "vasudha.kannan1511@outlook.com",
+    "address": "35 Nagi Zila",
+    "city": "Hyderabad"
+  },
+  "missing_information": [
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

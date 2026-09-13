@@ -1,0 +1,16 @@
+{
+  "source_row": 760,
+  "customer_id": "C00571",
+  "matched_master_id": "C00571",
+  "name": "Barkha Lanka",
+  "available_information": {
+    "name": "Barkha Lanka",
+    "phone": "9742735608",
+    "address": "650 Deep Zila"
+  },
+  "missing_information": [
+    "email",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

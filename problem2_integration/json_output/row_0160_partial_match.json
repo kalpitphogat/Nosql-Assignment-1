@@ -1,0 +1,16 @@
+{
+  "source_row": 160,
+  "customer_id": "C00370",
+  "matched_master_id": "C00370",
+  "name": "Vamakshi Bala",
+  "available_information": {
+    "name": "Vamakshi Bala",
+    "address": "21 Sama Zila",
+    "city": "Dehri"
+  },
+  "missing_information": [
+    "email",
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

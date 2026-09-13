@@ -1,0 +1,20 @@
+{
+  "source_row": 1696,
+  "customer_id": "C00831",
+  "matched_master_id": "C00831",
+  "name": "Harrison Guha",
+  "available_information": {
+    "name": "Harrison Guha",
+    "email": "harrison.guha831@outlook.com",
+    "phone": "9064327920",
+    "city": "Serampore"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "address": {
+      "incoming": "008, Gulati Road",
+      "master": "378, Krishnamurthy Zila"
+    }
+  }
+}

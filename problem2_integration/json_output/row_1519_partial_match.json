@@ -1,0 +1,16 @@
+{
+  "source_row": 1519,
+  "customer_id": null,
+  "matched_master_id": "C00490",
+  "name": "Nicholas Aurora",
+  "available_information": {
+    "name": "Nicholas Aurora",
+    "city": "Panvel"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

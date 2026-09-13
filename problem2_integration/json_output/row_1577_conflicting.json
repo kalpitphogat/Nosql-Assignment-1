@@ -1,0 +1,23 @@
+{
+  "source_row": 1577,
+  "customer_id": "C00952",
+  "matched_master_id": "C00952",
+  "name": "Xiti Halder",
+  "available_information": {
+    "email": "tarak.kari952@hotmail.com",
+    "address": "H.No. 98 Mukhopadhyay Nagar",
+    "city": "Shivpuri"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "name": {
+      "incoming": "Xiti Halder",
+      "master": "Tarak Kari"
+    },
+    "phone": {
+      "incoming": "8795518514",
+      "master": "6972397011"
+    }
+  }
+}

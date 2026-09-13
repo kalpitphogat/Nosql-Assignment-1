@@ -1,0 +1,20 @@
+{
+  "source_row": 1740,
+  "customer_id": "C01462",
+  "matched_master_id": "C01462",
+  "name": "Ayushman Chaudhari",
+  "available_information": {
+    "email": "advik.goel1462@gmail.com",
+    "phone": "9612735197",
+    "address": "50/625 Kaur Path",
+    "city": "Kota"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "name": {
+      "incoming": "Ayushman Chaudhari",
+      "master": "Advik Goel"
+    }
+  }
+}

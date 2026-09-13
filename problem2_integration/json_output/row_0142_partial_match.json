@@ -1,0 +1,16 @@
+{
+  "source_row": 142,
+  "customer_id": "C01946",
+  "matched_master_id": "C01946",
+  "name": "Vincent Malhotra",
+  "available_information": {
+    "name": "Vincent Malhotra",
+    "address": "34, Hora Circle"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

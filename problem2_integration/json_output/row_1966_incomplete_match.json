@@ -1,0 +1,16 @@
+{
+  "source_row": 1966,
+  "customer_id": null,
+  "matched_master_id": null,
+  "name": "Pranav Bedi",
+  "available_information": {
+    "name": "Pranav Bedi"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address",
+    "city"
+  ],
+  "match_status": "incomplete_match"
+}

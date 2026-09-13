@@ -1,0 +1,16 @@
+{
+  "source_row": 1328,
+  "customer_id": "C01353",
+  "matched_master_id": "C01353",
+  "name": "Jeevika Ravi",
+  "available_information": {
+    "name": "Jeevika Ravi",
+    "email": "jeevika.ravi1353@outlook.com",
+    "phone": "9486564186"
+  },
+  "missing_information": [
+    "address",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

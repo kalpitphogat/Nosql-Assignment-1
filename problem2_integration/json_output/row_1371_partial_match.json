@@ -1,0 +1,16 @@
+{
+  "source_row": 1371,
+  "customer_id": "C01839",
+  "matched_master_id": "C01839",
+  "name": "Damyanti Setty",
+  "available_information": {
+    "name": "Damyanti Setty",
+    "email": "damyanti.setty1839@hotmail.com",
+    "address": "65 Tank Circle",
+    "city": "Hajipur"
+  },
+  "missing_information": [
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

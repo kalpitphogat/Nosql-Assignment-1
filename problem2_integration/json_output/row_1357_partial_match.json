@@ -1,0 +1,16 @@
+{
+  "source_row": 1357,
+  "customer_id": null,
+  "matched_master_id": "C02303",
+  "name": null,
+  "available_information": {
+    "email": "manthan.roy2303@yahoo.com",
+    "phone": "6531627638",
+    "city": "Moradabad"
+  },
+  "missing_information": [
+    "name",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

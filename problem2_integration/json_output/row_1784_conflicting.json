@@ -1,0 +1,20 @@
+{
+  "source_row": 1784,
+  "customer_id": "C01084",
+  "matched_master_id": "C01084",
+  "name": "Kashish Radhakrishnan",
+  "available_information": {
+    "name": "Kashish Radhakrishnan",
+    "email": "kashish.radhakrishnan1084@example.in",
+    "address": "H.No. 640, Din Zila",
+    "city": "Jamnagar"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "phone": {
+      "incoming": "6332077425",
+      "master": "7991724330"
+    }
+  }
+}

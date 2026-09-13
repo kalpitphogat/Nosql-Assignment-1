@@ -1,0 +1,16 @@
+{
+  "source_row": 350,
+  "customer_id": null,
+  "matched_master_id": "C00509",
+  "name": "hemangini dhaliwal",
+  "available_information": {
+    "name": "hemangini dhaliwal",
+    "email": "hemangini.dhaliwal509@gmail.com",
+    "address": "H.No. 47, Kapur Marg",
+    "city": "Unnao"
+  },
+  "missing_information": [
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

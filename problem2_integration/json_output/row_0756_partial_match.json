@@ -1,0 +1,16 @@
+{
+  "source_row": 756,
+  "customer_id": "C02009",
+  "matched_master_id": "C02009",
+  "name": "Geetika Hayer",
+  "available_information": {
+    "name": "Geetika Hayer",
+    "phone": "8235828854",
+    "city": "Pune"
+  },
+  "missing_information": [
+    "email",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

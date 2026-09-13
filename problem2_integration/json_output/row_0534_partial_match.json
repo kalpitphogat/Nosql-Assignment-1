@@ -1,0 +1,16 @@
+{
+  "source_row": 534,
+  "customer_id": "C00159",
+  "matched_master_id": "C00159",
+  "name": "Anthony Jayaraman",
+  "available_information": {
+    "name": "Anthony Jayaraman",
+    "email": "anthony.jayaraman159@yahoo.com",
+    "address": "H.No. 212, Edwin Street",
+    "city": "Udupi"
+  },
+  "missing_information": [
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

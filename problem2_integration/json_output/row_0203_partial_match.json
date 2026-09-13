@@ -1,0 +1,16 @@
+{
+  "source_row": 203,
+  "customer_id": null,
+  "matched_master_id": "C02491",
+  "name": null,
+  "available_information": {
+    "email": "ekta.gill2491@hotmail.com",
+    "phone": "8606706977",
+    "city": "Haldia"
+  },
+  "missing_information": [
+    "name",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

@@ -1,0 +1,20 @@
+{
+  "source_row": 984,
+  "customer_id": "C02698",
+  "matched_master_id": "C02698",
+  "name": "Bahadurjit Jhaveri",
+  "available_information": {
+    "name": "Bahadurjit Jhaveri",
+    "email": "bahadurjit.jhaveri2698@example.in",
+    "address": "H.No. 14 Sekhon Chowk",
+    "city": "Pallavaram"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "phone": {
+      "incoming": "6487318478",
+      "master": "6596945066"
+    }
+  }
+}

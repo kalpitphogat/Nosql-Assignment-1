@@ -1,0 +1,16 @@
+{
+  "source_row": 536,
+  "customer_id": null,
+  "matched_master_id": "C02748",
+  "name": "Madhav Vora",
+  "available_information": {
+    "name": "Madhav Vora",
+    "city": "Erode"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

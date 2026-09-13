@@ -1,0 +1,16 @@
+{
+  "source_row": 1326,
+  "customer_id": "C02204",
+  "matched_master_id": "C02204",
+  "name": "Charvi Rai",
+  "available_information": {
+    "name": "Charvi Rai",
+    "email": "charvi.rai2204@gmail.com",
+    "phone": "8649808344",
+    "address": "09/869, Banik Circle"
+  },
+  "missing_information": [
+    "city"
+  ],
+  "match_status": "partial_match"
+}

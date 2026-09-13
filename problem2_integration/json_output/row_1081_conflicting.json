@@ -1,0 +1,23 @@
+{
+  "source_row": 1081,
+  "customer_id": "C00111",
+  "matched_master_id": "C00111",
+  "name": "Warhi Kaul",
+  "available_information": {
+    "name": "Warhi Kaul",
+    "email": "warhi.kaul111@gmail.com",
+    "address": "30/394, Dada Ganj"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "phone": {
+      "incoming": "6201226959",
+      "master": "6025870899"
+    },
+    "city": {
+      "incoming": "Ghaziabad",
+      "master": "North Dumdum"
+    }
+  }
+}

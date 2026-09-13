@@ -1,0 +1,23 @@
+{
+  "source_row": 1773,
+  "customer_id": "C02495",
+  "matched_master_id": "C02495",
+  "name": "Janaki Master",
+  "available_information": {
+    "name": "Janaki Master",
+    "email": "janaki.master2495@example.in",
+    "phone": "7804055031"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "address": {
+      "incoming": "04, Lanka Street",
+      "master": "71/24 Acharya Ganj"
+    },
+    "city": {
+      "incoming": "Rohtak",
+      "master": "Miryalaguda"
+    }
+  }
+}

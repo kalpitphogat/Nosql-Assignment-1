@@ -1,0 +1,16 @@
+{
+  "source_row": 1408,
+  "customer_id": "C00364",
+  "matched_master_id": "C00364",
+  "name": "Zayyan Bandi",
+  "available_information": {
+    "name": "Zayyan Bandi",
+    "phone": "7559318740",
+    "address": "860 Kata"
+  },
+  "missing_information": [
+    "email",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

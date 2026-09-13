@@ -1,0 +1,23 @@
+{
+  "source_row": 101,
+  "customer_id": "C02985",
+  "matched_master_id": "C02985",
+  "name": "Nachiket Rout",
+  "available_information": {
+    "name": "Nachiket Rout",
+    "phone": "9207213807",
+    "address": "77/781, Chacko Circle"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "email": {
+      "incoming": "pooja.bawa56533@yahoo.com",
+      "master": "nachiket.rout2985@yahoo.com"
+    },
+    "city": {
+      "incoming": "Aurangabad",
+      "master": "Ambattur"
+    }
+  }
+}

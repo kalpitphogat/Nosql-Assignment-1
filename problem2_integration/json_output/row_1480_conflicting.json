@@ -1,0 +1,23 @@
+{
+  "source_row": 1480,
+  "customer_id": "C01019",
+  "matched_master_id": "C01019",
+  "name": "Urmi Varughese",
+  "available_information": {
+    "name": "Urmi Varughese",
+    "phone": "7741190363",
+    "address": "54/82, Bajwa Circle"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "email": {
+      "incoming": "qasim.dara45349@example.in",
+      "master": "urmi.varughese1019@outlook.com"
+    },
+    "city": {
+      "incoming": "Serampore",
+      "master": "Khammam"
+    }
+  }
+}

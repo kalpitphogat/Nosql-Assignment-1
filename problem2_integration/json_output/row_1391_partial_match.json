@@ -1,0 +1,16 @@
+{
+  "source_row": 1391,
+  "customer_id": "C00349",
+  "matched_master_id": "C00349",
+  "name": "Tamanna Thakur",
+  "available_information": {
+    "name": "Tamanna Thakur",
+    "address": "78, Padmanabhan Road"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

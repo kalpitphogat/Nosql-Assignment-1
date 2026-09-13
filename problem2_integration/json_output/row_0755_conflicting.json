@@ -1,0 +1,20 @@
+{
+  "source_row": 755,
+  "customer_id": "C00192",
+  "matched_master_id": "C00192",
+  "name": "Faraj Patil",
+  "available_information": {
+    "name": "Faraj Patil",
+    "phone": "9142128807",
+    "address": "638 Sarkar Path",
+    "city": "Morbi"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "email": {
+      "incoming": "megha.vora83995@gmail.com",
+      "master": "faraj.patil192@yahoo.com"
+    }
+  }
+}

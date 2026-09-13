@@ -1,0 +1,16 @@
+{
+  "source_row": 881,
+  "customer_id": "C02129",
+  "matched_master_id": "C02129",
+  "name": "Ekta Konda",
+  "available_information": {
+    "name": "Ekta Konda",
+    "address": "H.No. 97, Mittal Ganj",
+    "city": "Kottayam"
+  },
+  "missing_information": [
+    "email",
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

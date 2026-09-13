@@ -1,0 +1,16 @@
+{
+  "source_row": 861,
+  "customer_id": "C01564",
+  "matched_master_id": "C01564",
+  "name": "Yagnesh Srinivasan",
+  "available_information": {
+    "name": "Yagnesh Srinivasan",
+    "phone": "9985845369",
+    "address": "03/465, Naik Circle",
+    "city": "Pudukkottai"
+  },
+  "missing_information": [
+    "email"
+  ],
+  "match_status": "partial_match"
+}

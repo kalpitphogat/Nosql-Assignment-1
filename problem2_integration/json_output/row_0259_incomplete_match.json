@@ -1,0 +1,16 @@
+{
+  "source_row": 259,
+  "customer_id": null,
+  "matched_master_id": null,
+  "name": "Mitesh Gulati",
+  "available_information": {
+    "name": "Mitesh Gulati"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address",
+    "city"
+  ],
+  "match_status": "incomplete_match"
+}

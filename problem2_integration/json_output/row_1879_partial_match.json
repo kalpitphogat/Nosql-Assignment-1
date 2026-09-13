@@ -1,0 +1,16 @@
+{
+  "source_row": 1879,
+  "customer_id": "C02962",
+  "matched_master_id": "C02962",
+  "name": "Deepa Sodhi",
+  "available_information": {
+    "name": "Deepa Sodhi",
+    "phone": "9389155334",
+    "address": "436 Cheema Road"
+  },
+  "missing_information": [
+    "email",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

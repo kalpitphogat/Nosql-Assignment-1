@@ -1,0 +1,20 @@
+{
+  "source_row": 634,
+  "customer_id": "C00338",
+  "matched_master_id": "C00338",
+  "name": "Jalsa Vasa",
+  "available_information": {
+    "name": "Jalsa Vasa",
+    "email": "jalsa.vasa338@outlook.com",
+    "address": "H.No. 03 Ram Nagar",
+    "city": "Muzaffarpur"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "phone": {
+      "incoming": "6378449265",
+      "master": "7511635578"
+    }
+  }
+}

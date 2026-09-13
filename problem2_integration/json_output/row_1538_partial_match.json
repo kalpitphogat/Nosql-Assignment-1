@@ -1,0 +1,16 @@
+{
+  "source_row": 1538,
+  "customer_id": "C01057",
+  "matched_master_id": "C01057",
+  "name": "Luke Wason",
+  "available_information": {
+    "name": "Luke Wason",
+    "phone": "9306177776"
+  },
+  "missing_information": [
+    "email",
+    "address",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

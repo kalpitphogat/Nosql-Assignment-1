@@ -1,0 +1,16 @@
+{
+  "source_row": 420,
+  "customer_id": "C02867",
+  "matched_master_id": "C02867",
+  "name": "Isaiah Tripathi",
+  "available_information": {
+    "name": "Isaiah Tripathi",
+    "email": "isaiah.tripathi2867@outlook.com",
+    "phone": "6368876759"
+  },
+  "missing_information": [
+    "address",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

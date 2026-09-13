@@ -1,0 +1,16 @@
+{
+  "source_row": 1284,
+  "customer_id": "C00744",
+  "matched_master_id": "C00744",
+  "name": "Jagvi Pandya",
+  "available_information": {
+    "name": "Jagvi Pandya",
+    "phone": "8315703387",
+    "address": "H.No. 642, Devan Road",
+    "city": "Sikar"
+  },
+  "missing_information": [
+    "email"
+  ],
+  "match_status": "partial_match"
+}

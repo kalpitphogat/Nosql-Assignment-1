@@ -1,0 +1,20 @@
+{
+  "source_row": 622,
+  "customer_id": "C01628",
+  "matched_master_id": "C01628",
+  "name": "Mahika Banik",
+  "available_information": {
+    "name": "Mahika Banik",
+    "phone": "9318909756",
+    "address": "H.No. 69, Nair Zila",
+    "city": "Tiruchirappalli"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "email": {
+      "incoming": "praneel.naik98032@gmail.com",
+      "master": "mahika.banik1628@gmail.com"
+    }
+  }
+}

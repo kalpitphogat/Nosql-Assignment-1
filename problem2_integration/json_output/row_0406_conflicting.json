@@ -1,0 +1,23 @@
+{
+  "source_row": 406,
+  "customer_id": "C02982",
+  "matched_master_id": "C02982",
+  "name": "Chakradev Iyengar",
+  "available_information": {
+    "email": "wriddhish.chaudhuri2982@hotmail.com",
+    "phone": "7342654519",
+    "city": "Jaipur"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "name": {
+      "incoming": "Chakradev Iyengar",
+      "master": "Wriddhish Chaudhuri"
+    },
+    "address": {
+      "incoming": "H.No. 249, Dave Road",
+      "master": "H.No. 69 Barman Zila"
+    }
+  }
+}

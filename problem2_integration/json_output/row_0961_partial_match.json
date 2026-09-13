@@ -1,0 +1,16 @@
+{
+  "source_row": 961,
+  "customer_id": "C00606",
+  "matched_master_id": "C00606",
+  "name": "Rayaan Mohan",
+  "available_information": {
+    "name": "Rayaan Mohan",
+    "phone": "9691893708",
+    "address": "H.No. 73, Shetty Road"
+  },
+  "missing_information": [
+    "email",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

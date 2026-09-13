@@ -1,0 +1,20 @@
+{
+  "source_row": 846,
+  "customer_id": "C00477",
+  "matched_master_id": "C00477",
+  "name": "Ijaya Sane",
+  "available_information": {
+    "email": "atharv.mukherjee477@hotmail.com",
+    "phone": "6511959264",
+    "address": "815, Raval",
+    "city": "Raebareli"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "name": {
+      "incoming": "Ijaya Sane",
+      "master": "Atharv Mukherjee"
+    }
+  }
+}

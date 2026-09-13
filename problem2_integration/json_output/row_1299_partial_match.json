@@ -1,0 +1,16 @@
+{
+  "source_row": 1299,
+  "customer_id": "C00318",
+  "matched_master_id": "C00318",
+  "name": "Umang Vala",
+  "available_information": {
+    "name": "Umang Vala",
+    "email": "umang.vala318@gmail.com",
+    "city": "Tinsukia"
+  },
+  "missing_information": [
+    "phone",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

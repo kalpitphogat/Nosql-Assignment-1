@@ -1,0 +1,20 @@
+{
+  "source_row": 524,
+  "customer_id": "C00738",
+  "matched_master_id": "C00738",
+  "name": "Barkha Hans",
+  "available_information": {
+    "name": "Barkha Hans",
+    "email": "barkha.hans738@gmail.com",
+    "address": "99/77, Kota Circle",
+    "city": "Ludhiana"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "phone": {
+      "incoming": "9555434403",
+      "master": "9753556706"
+    }
+  }
+}

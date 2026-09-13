@@ -1,0 +1,16 @@
+{
+  "source_row": 1570,
+  "customer_id": null,
+  "matched_master_id": "C01926",
+  "name": "ADWETA BEN",
+  "available_information": {
+    "name": "ADWETA BEN",
+    "phone": "8045392514",
+    "address": "H.No. 799, Samra Path",
+    "city": "Sambalpur"
+  },
+  "missing_information": [
+    "email"
+  ],
+  "match_status": "partial_match"
+}

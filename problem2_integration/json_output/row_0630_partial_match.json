@@ -1,0 +1,16 @@
+{
+  "source_row": 630,
+  "customer_id": "C00966",
+  "matched_master_id": "C00966",
+  "name": "Laksh Puri",
+  "available_information": {
+    "name": "Laksh Puri",
+    "phone": "8483407546"
+  },
+  "missing_information": [
+    "email",
+    "address",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

@@ -1,0 +1,16 @@
+{
+  "source_row": 224,
+  "customer_id": "C01710",
+  "matched_master_id": "C01710",
+  "name": "Samuel Ray",
+  "available_information": {
+    "name": "Samuel Ray",
+    "email": "samuel.ray1710@hotmail.com",
+    "phone": "6131418435",
+    "city": "Guna"
+  },
+  "missing_information": [
+    "address"
+  ],
+  "match_status": "partial_match"
+}

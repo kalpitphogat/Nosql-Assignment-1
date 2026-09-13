@@ -1,0 +1,23 @@
+{
+  "source_row": 1308,
+  "customer_id": "C00191",
+  "matched_master_id": "C00191",
+  "name": "Bahadurjit Khurana",
+  "available_information": {
+    "name": "Bahadurjit Khurana",
+    "phone": "7669094134",
+    "address": "14/878, Barman Circle"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "email": {
+      "incoming": "max.nayar11652@gmail.com",
+      "master": "bahadurjit.khurana191@yahoo.com"
+    },
+    "city": {
+      "incoming": "Surendranagar Dudhrej",
+      "master": "Shahjahanpur"
+    }
+  }
+}

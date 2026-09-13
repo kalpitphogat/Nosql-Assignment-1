@@ -1,0 +1,16 @@
+{
+  "source_row": 1175,
+  "customer_id": null,
+  "matched_master_id": "C01721",
+  "name": "Abhimanyu Halder",
+  "available_information": {
+    "name": "Abhimanyu Halder",
+    "city": "Chapra"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

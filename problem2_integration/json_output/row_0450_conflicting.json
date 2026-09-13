@@ -1,0 +1,20 @@
+{
+  "source_row": 450,
+  "customer_id": "C01061",
+  "matched_master_id": "C01061",
+  "name": "Zilmil Rao",
+  "available_information": {
+    "email": "vyanjana.madan1061@example.in",
+    "phone": "8902304301",
+    "address": "14/48 Tata Street",
+    "city": "Amaravati"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "name": {
+      "incoming": "Zilmil Rao",
+      "master": "Vyanjana Madan"
+    }
+  }
+}

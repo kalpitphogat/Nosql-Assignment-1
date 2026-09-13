@@ -1,0 +1,23 @@
+{
+  "source_row": 546,
+  "customer_id": "C02521",
+  "matched_master_id": "C02521",
+  "name": "Watika Thakur",
+  "available_information": {
+    "name": "Watika Thakur",
+    "address": "88/99 Biswas Ganj",
+    "city": "Bhusawal"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "email": {
+      "incoming": "arya.dara78204@example.in",
+      "master": "watika.thakur2521@outlook.com"
+    },
+    "phone": {
+      "incoming": "6704956564",
+      "master": "6291742892"
+    }
+  }
+}

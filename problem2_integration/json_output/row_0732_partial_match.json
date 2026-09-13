@@ -1,0 +1,16 @@
+{
+  "source_row": 732,
+  "customer_id": null,
+  "matched_master_id": "C00079",
+  "name": "Onveer Merchant",
+  "available_information": {
+    "name": "Onveer Merchant",
+    "city": "Howrah"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address"
+  ],
+  "match_status": "partial_match"
+}

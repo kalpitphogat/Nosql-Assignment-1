@@ -1,0 +1,23 @@
+{
+  "source_row": 744,
+  "customer_id": "C02466",
+  "matched_master_id": "C02466",
+  "name": "Jai Raval",
+  "available_information": {
+    "phone": "8442048822",
+    "address": "66/608 Kurian Street",
+    "city": "Coimbatore"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "name": {
+      "incoming": "Jai Raval",
+      "master": "Radha Misra"
+    },
+    "email": {
+      "incoming": "chaitaly.dugar55787@example.in",
+      "master": "radha.misra2466@example.in"
+    }
+  }
+}

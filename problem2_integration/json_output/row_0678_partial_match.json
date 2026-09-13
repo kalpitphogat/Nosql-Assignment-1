@@ -1,0 +1,16 @@
+{
+  "source_row": 678,
+  "customer_id": null,
+  "matched_master_id": "C02527",
+  "name": "ekaraj sami",
+  "available_information": {
+    "name": "ekaraj sami",
+    "email": "ekaraj.sami2527@outlook.com",
+    "address": "67 Malhotra Street",
+    "city": "Vijayawada"
+  },
+  "missing_information": [
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

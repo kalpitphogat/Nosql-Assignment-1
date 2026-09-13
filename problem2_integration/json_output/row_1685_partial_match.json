@@ -1,0 +1,16 @@
+{
+  "source_row": 1685,
+  "customer_id": "C02718",
+  "matched_master_id": "C02718",
+  "name": "Faris Kakar",
+  "available_information": {
+    "name": "Faris Kakar",
+    "email": "faris.kakar2718@outlook.com",
+    "address": "47/80 Saran Circle",
+    "city": "Mathura"
+  },
+  "missing_information": [
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

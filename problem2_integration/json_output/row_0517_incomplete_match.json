@@ -1,0 +1,16 @@
+{
+  "source_row": 517,
+  "customer_id": null,
+  "matched_master_id": null,
+  "name": "Chandran Venkataraman",
+  "available_information": {
+    "name": "Chandran Venkataraman"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address",
+    "city"
+  ],
+  "match_status": "incomplete_match"
+}

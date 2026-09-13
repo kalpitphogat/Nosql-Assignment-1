@@ -1,0 +1,16 @@
+{
+  "source_row": 1611,
+  "customer_id": null,
+  "matched_master_id": null,
+  "name": "Urvashi Kaul",
+  "available_information": {
+    "name": "Urvashi Kaul"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address",
+    "city"
+  ],
+  "match_status": "incomplete_match"
+}

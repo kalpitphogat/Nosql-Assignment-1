@@ -1,0 +1,16 @@
+{
+  "source_row": 923,
+  "customer_id": null,
+  "matched_master_id": null,
+  "name": "Indrajit Kant",
+  "available_information": {
+    "name": "Indrajit Kant"
+  },
+  "missing_information": [
+    "email",
+    "phone",
+    "address",
+    "city"
+  ],
+  "match_status": "incomplete_match"
+}

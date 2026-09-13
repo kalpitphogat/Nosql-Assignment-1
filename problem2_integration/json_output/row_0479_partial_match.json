@@ -1,0 +1,16 @@
+{
+  "source_row": 479,
+  "customer_id": null,
+  "matched_master_id": "C02465",
+  "name": "GAGAN SURA",
+  "available_information": {
+    "name": "GAGAN SURA",
+    "phone": "8789852232",
+    "address": "473, Rai Street",
+    "city": "Muzaffarnagar"
+  },
+  "missing_information": [
+    "email"
+  ],
+  "match_status": "partial_match"
+}

@@ -1,0 +1,23 @@
+{
+  "source_row": 947,
+  "customer_id": "C01082",
+  "matched_master_id": "C01082",
+  "name": "Shivani Dhillon",
+  "available_information": {
+    "name": "Shivani Dhillon",
+    "phone": "9812490630",
+    "city": "Ratlam"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "email": {
+      "incoming": "widisha.om78944@example.in",
+      "master": "shivani.dhillon1082@outlook.com"
+    },
+    "address": {
+      "incoming": "H.No. 767, Solanki Street",
+      "master": "H.No. 836, Doshi Marg"
+    }
+  }
+}

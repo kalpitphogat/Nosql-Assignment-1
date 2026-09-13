@@ -1,0 +1,20 @@
+{
+  "source_row": 829,
+  "customer_id": "C00248",
+  "matched_master_id": "C00248",
+  "name": "Ishanvi Mishra",
+  "available_information": {
+    "name": "Ishanvi Mishra",
+    "email": "ishanvi.mishra248@example.in",
+    "phone": "6058806740",
+    "address": "65 Mahajan Zila"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "city": {
+      "incoming": "Mumbai",
+      "master": "Jabalpur"
+    }
+  }
+}

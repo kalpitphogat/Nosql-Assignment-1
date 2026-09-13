@@ -1,0 +1,16 @@
+{
+  "source_row": 748,
+  "customer_id": null,
+  "matched_master_id": "C02756",
+  "name": "QADIM ISSAC",
+  "available_information": {
+    "name": "QADIM ISSAC",
+    "phone": "7165184788",
+    "address": "55, Mann Circle",
+    "city": "Hapur"
+  },
+  "missing_information": [
+    "email"
+  ],
+  "match_status": "partial_match"
+}

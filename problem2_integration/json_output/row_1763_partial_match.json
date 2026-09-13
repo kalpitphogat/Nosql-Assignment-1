@@ -1,0 +1,16 @@
+{
+  "source_row": 1763,
+  "customer_id": "C00642",
+  "matched_master_id": "C00642",
+  "name": "Owen Reddy",
+  "available_information": {
+    "name": "Owen Reddy",
+    "phone": "8951630368"
+  },
+  "missing_information": [
+    "email",
+    "address",
+    "city"
+  ],
+  "match_status": "partial_match"
+}

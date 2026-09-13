@@ -1,0 +1,23 @@
+{
+  "source_row": 1078,
+  "customer_id": "C00481",
+  "matched_master_id": "C00481",
+  "name": "Lajita Thakur",
+  "available_information": {
+    "name": "Lajita Thakur",
+    "email": "lajita.thakur481@hotmail.com",
+    "address": "H.No. 659, Bhasin Path"
+  },
+  "missing_information": [],
+  "match_status": "conflicting",
+  "conflicting_information": {
+    "phone": {
+      "incoming": "9423890961",
+      "master": "7128226817"
+    },
+    "city": {
+      "incoming": "Bokaro",
+      "master": "Agartala"
+    }
+  }
+}

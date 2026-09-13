@@ -1,0 +1,16 @@
+{
+  "source_row": 874,
+  "customer_id": null,
+  "matched_master_id": "C00014",
+  "name": "keya hayre",
+  "available_information": {
+    "name": "keya hayre",
+    "email": "keya.hayre14@yahoo.com",
+    "address": "94/960 Ganesh Path",
+    "city": "Ambarnath"
+  },
+  "missing_information": [
+    "phone"
+  ],
+  "match_status": "partial_match"
+}

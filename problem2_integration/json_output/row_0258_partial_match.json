@@ -1,0 +1,16 @@
+{
+  "source_row": 258,
+  "customer_id": null,
+  "matched_master_id": "C02387",
+  "name": "NIRJA PALLA",
+  "available_information": {
+    "name": "NIRJA PALLA",
+    "phone": "8936643766",
+    "address": "93/21 Dhawan Circle",
+    "city": "Bathinda"
+  },
+  "missing_information": [
+    "email"
+  ],
+  "match_status": "partial_match"
+}
