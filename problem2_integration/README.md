@@ -94,3 +94,34 @@ applicable" look identical.
 - A completely blank incoming row (all fields empty, including
   `customer_id`) is Incomplete Match, not New Entity, since there is
   nothing to distinguish it as a new customer either.
+
+## Which records get a JSON document
+JSON documents are written for `partial_match`, `incomplete_match`, and
+`conflicting` records — the ones the assignment asks to preserve
+(missing, irregular, or conflicting information). `complete_match` records
+need no special representation (every field agrees and a flat row is
+enough), and `new_entity` records are, by definition, brand-new customers
+with no master counterpart to reconcile against, so they are recorded in
+`classification_results.csv` rather than as reconciliation JSON. The full
+classification of *every* incoming record (all five categories) is in
+`classification_results.csv`; the summary counts are in
+`summary_statistics.txt`.
+
+## Difficulties encountered
+- **No clean key across the datasets.** Many incoming records have a blank
+  `customer_id` (or one shaped like `N…` that isn't in the master file), so
+  the match can't rely on the intended primary key alone — hence the
+  fall-through chain email → phone → name+city.
+- **Distinguishing "missing" from "conflicting" from "just new".** The
+  hardest boundary was Incomplete vs. New Entity: a record with only a name
+  and nothing else could be a new customer or a fragment of an existing
+  one. We resolved it conservatively (require a strong identifier or a
+  name+city pair before calling something a new entity), accepting that
+  some genuine new customers with sparse data are labelled Incomplete.
+- **Ambiguous weak matches.** Some emails/phones/names map to more than one
+  master row; rather than guess, these are routed to Incomplete
+  (`*_ambiguous`) so no arbitrary match is recorded.
+- **Data hygiene.** Phone numbers needed digit-only normalization and
+  email/name/city needed case-folding before comparison; addresses were
+  left un-normalized (free-text, no reliable canonical form), which is a
+  known source of missed matches.

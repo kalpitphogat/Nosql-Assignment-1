@@ -46,14 +46,22 @@ holds the full dataset in memory at once.
 
 ## Malformed-record handling
 
-A row is malformed if any of: fewer fields than the header declares, any of
-`category`/`quantity`/`price`/`date` is empty, `quantity` or `price` isn't
-numeric, or `date` isn't in `YYYY-MM-DD` form. Stage 1's `awk` checks every
-row against these rules; matches are appended to
+A row is malformed if any of: its field count differs from the header
+(fewer *or* more fields — so both a missing field and an extra field are
+caught), any of `category`/`quantity`/`price`/`date` is empty, `quantity`
+or `price` isn't numeric, or `date` isn't a `YYYY-MM-DD` string with a
+calendar-plausible month (01–12) and day (01–31). Stage 1's `awk` checks
+every row against these rules; matches are appended to
 `<input>.malformed_rows.tsv` and skipped (`next`) rather than aborting the
 script (`set -uo pipefail` is used, not `-e`, specifically so a malformed
 row doesn't kill the pipeline). The count of excluded rows is reported on
 stderr at the end of the run.
+
+This covers every malformed variant the supplied `generate_transactions
+--malformed` generator emits — missing field, extra field, non-numeric
+quantity (`INVALID`), non-numeric price (`N/A`), and invalid date
+(`2026-99-99`) — as well as the `invalid-date`/blank-field cases in the
+supplied `transactions_malformed.tsv`.
 
 ## Scalability results
 
@@ -88,9 +96,11 @@ limit stages are comparatively free.
 - No query planner/cost-based optimization — stage order is fixed by hand;
   a smarter engine might push the `HAVING` filter earlier or use a hash
   aggregate instead of sort-then-group.
-- Numeric/date validation is regex-based text matching, not true type
-  checking, so a superficially valid-looking but semantically wrong value
-  (e.g. `9999-99-99`) would pass through undetected.
+- Date validation checks format plus month (01–12) and day (01–31) ranges,
+  which rejects the generator's invalid `2026-99-99`; it does not do a full
+  per-month calendar check, so an impossible-but-in-range date like
+  `2026-02-30` would still pass. Numeric validation is regex-based text
+  matching rather than true type checking.
 - Portability: this was developed and tested with BSD `awk`/`sort`
   (macOS); GNU coreutils on Linux behave the same for the flags used here,
   but exact `sort` performance characteristics can differ across

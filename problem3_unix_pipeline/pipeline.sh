@@ -76,10 +76,18 @@ tail -n +2 "$INPUT" | \
 awk -F'\t' -v cat="$C_CAT" -v qty="$C_QTY" -v price="$C_PRICE" -v datecol="$C_DATE" \
     -v malformed="$MALFORMED" -v ncols="$NCOLS" '
     function is_number(x) { return (x ~ /^[0-9]+(\.[0-9]+)?$/) }
-    function is_date(x)   { return (x ~ /^[0-9]{4}-[0-9]{2}-[0-9]{2}$/) }
+    function is_date(x,   mo, dy) {
+        if (x !~ /^[0-9]{4}-[0-9]{2}-[0-9]{2}$/) return 0
+        mo = substr(x, 6, 2) + 0
+        dy = substr(x, 9, 2) + 0
+        # Reject calendar-invalid values (e.g. the generator emits 2026-99-99);
+        # a full days-per-month check is not needed to catch the malformed cases.
+        return (mo >= 1 && mo <= 12 && dy >= 1 && dy <= 31)
+    }
     {
         d = $datecol
-        if (NF < ncols || $cat == "" || $qty == "" || $price == "" || d == "" ||
+        # NF != ncols catches BOTH missing fields (fewer) and extra fields (more).
+        if (NF != ncols || $cat == "" || $qty == "" || $price == "" || d == "" ||
             !is_number($qty) || !is_number($price) || !is_date(d)) {
             print $0 >> malformed
             next
