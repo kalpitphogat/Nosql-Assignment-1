@@ -1,77 +1,109 @@
 nohup: ignoring input
 === Scale factor 32 ===
+qgen -r 42 -s 32: 22 queries -> queries/sf32
+psql:schema.sql:4: NOTICE:  table "lineitem" does not exist, skipping
+psql:schema.sql:4: NOTICE:  table "orders" does not exist, skipping
+psql:schema.sql:4: NOTICE:  table "partsupp" does not exist, skipping
+psql:schema.sql:4: NOTICE:  table "part" does not exist, skipping
+psql:schema.sql:4: NOTICE:  table "customer" does not exist, skipping
+psql:schema.sql:4: NOTICE:  table "supplier" does not exist, skipping
+psql:schema.sql:4: NOTICE:  table "nation" does not exist, skipping
+psql:schema.sql:4: NOTICE:  table "region" does not exist, skipping
 Generating data at SF=32 ...
-TPC-H Population Generator (Version 2.14.0)
+TPC-H Population Generator (Version 3.0.0)
 Copyright Transaction Processing Performance Council 1994 - 2010
 Loading SF=32 (34688.3 MB) ...
-Load + index + analyze: 633.444s, database size 54197.3 MB
-  SF=32 run=1 Q1: 21.100s ok
-  SF=32 run=1 Q2: 12.339s ok
-  SF=32 run=1 Q3: 5.571s ok
-  SF=32 run=1 Q4: 2.611s ok
-  SF=32 run=1 Q5: 6.449s ok
-  SF=32 run=1 Q6: 2.839s ok
-  SF=32 run=1 Q7: 17.067s ok
-  SF=32 run=1 Q8: 3.748s ok
-  SF=32 run=1 Q9: 22.141s ok
-  SF=32 run=1 Q10: 6.641s ok
-  SF=32 run=1 Q11: 2.424s ok
-  SF=32 run=1 Q12: 5.129s ok
-  SF=32 run=1 Q13: 62.880s ok
-  SF=32 run=1 Q14: 2.184s ok
-  SF=32 run=1 Q15: 8.603s ok
-  SF=32 run=1 Q16: 10.055s ok
-  SF=32 run=1 Q17: 14.992s ok
-  SF=32 run=1 Q18: 56.969s ok
-  SF=32 run=1 Q19: 0.912s ok
-  SF=32 run=1 Q20: 34.856s ok
-  SF=32 run=1 Q21: 9.911s ok
-  SF=32 run=1 Q22: 0.671s ok
-SF=32 run=1 total 310.092s, failed/timed-out queries: 0
-  SF=32 run=2 Q1: 21.205s ok
-  SF=32 run=2 Q2: 6.880s ok
-  SF=32 run=2 Q3: 5.414s ok
-  SF=32 run=2 Q4: 2.482s ok
-  SF=32 run=2 Q5: 6.464s ok
-  SF=32 run=2 Q6: 2.848s ok
-  SF=32 run=2 Q7: 15.762s ok
-  SF=32 run=2 Q8: 3.710s ok
-  SF=32 run=2 Q9: 22.233s ok
-  SF=32 run=2 Q10: 6.630s ok
-  SF=32 run=2 Q11: 2.428s ok
-  SF=32 run=2 Q12: 5.125s ok
-  SF=32 run=2 Q13: 62.829s ok
-  SF=32 run=2 Q14: 2.189s ok
-  SF=32 run=2 Q15: 8.628s ok
-  SF=32 run=2 Q16: 9.999s ok
-  SF=32 run=2 Q17: 15.237s ok
-  SF=32 run=2 Q18: 56.538s ok
-  SF=32 run=2 Q19: 1.513s ok
-  SF=32 run=2 Q20: 54.627s ok
-  SF=32 run=2 Q21: 10.264s ok
-  SF=32 run=2 Q22: 0.655s ok
-SF=32 run=2 total 323.660s, failed/timed-out queries: 0
-  SF=32 run=3 Q1: 21.206s ok
-  SF=32 run=3 Q2: 6.863s ok
-  SF=32 run=3 Q3: 5.459s ok
-  SF=32 run=3 Q4: 2.491s ok
-  SF=32 run=3 Q5: 6.475s ok
-  SF=32 run=3 Q6: 2.855s ok
-  SF=32 run=3 Q7: 15.759s ok
-  SF=32 run=3 Q8: 3.736s ok
-  SF=32 run=3 Q9: 22.182s ok
-  SF=32 run=3 Q10: 6.651s ok
-  SF=32 run=3 Q11: 2.434s ok
-  SF=32 run=3 Q12: 5.150s ok
-  SF=32 run=3 Q13: 62.926s ok
-  SF=32 run=3 Q14: 2.166s ok
-  SF=32 run=3 Q15: 8.593s ok
-  SF=32 run=3 Q16: 10.006s ok
-  SF=32 run=3 Q17: 15.071s ok
-  SF=32 run=3 Q18: 56.139s ok
-  SF=32 run=3 Q19: 0.649s ok
-  SF=32 run=3 Q20: 28.505s ok
-  SF=32 run=3 Q21: 11.049s ok
-  SF=32 run=3 Q22: 0.661s ok
-SF=32 run=3 total 297.026s, failed/timed-out queries: 0
+Load + index + analyze: 636.142s, database size 54197.3 MB
+  SF=32 run=0 Q1: 20.712s ok
+  SF=32 run=0 Q2: 7.497s ok
+  SF=32 run=0 Q3: 5.697s ok
+  SF=32 run=0 Q4: 2.803s ok
+  SF=32 run=0 Q5: 6.541s ok
+  SF=32 run=0 Q6: 2.880s ok
+  SF=32 run=0 Q7: 17.723s ok
+  SF=32 run=0 Q8: 3.056s ok
+  SF=32 run=0 Q9: 30.087s ok
+  SF=32 run=0 Q10: 7.525s ok
+  SF=32 run=0 Q11: 2.571s ok
+  SF=32 run=0 Q12: 5.169s ok
+  SF=32 run=0 Q13: 62.226s ok
+  SF=32 run=0 Q14: 2.512s ok
+  SF=32 run=0 Q15: 8.797s ok
+  SF=32 run=0 Q16: 8.533s ok
+  SF=32 run=0 Q17: 15.634s ok
+  SF=32 run=0 Q18: 56.640s ok
+  SF=32 run=0 Q19: 0.589s ok
+  SF=32 run=0 Q20: 28.846s ok
+  SF=32 run=0 Q21: 17.929s ok
+  SF=32 run=0 Q22: 0.744s ok
+SF=32 run=0 (warm-up) total 314.711s, failed/timed-out queries: 0
+  SF=32 run=1 Q1: 20.825s ok
+  SF=32 run=1 Q2: 6.969s ok
+  SF=32 run=1 Q3: 5.730s ok
+  SF=32 run=1 Q4: 2.531s ok
+  SF=32 run=1 Q5: 6.504s ok
+  SF=32 run=1 Q6: 2.876s ok
+  SF=32 run=1 Q7: 15.868s ok
+  SF=32 run=1 Q8: 2.577s ok
+  SF=32 run=1 Q9: 29.871s ok
+  SF=32 run=1 Q10: 7.551s ok
+  SF=32 run=1 Q11: 3.688s ok
+  SF=32 run=1 Q12: 5.317s ok
+  SF=32 run=1 Q13: 61.894s ok
+  SF=32 run=1 Q14: 2.245s ok
+  SF=32 run=1 Q15: 8.813s ok
+  SF=32 run=1 Q16: 8.517s ok
+  SF=32 run=1 Q17: 16.120s ok
+  SF=32 run=1 Q18: 56.925s ok
+  SF=32 run=1 Q19: 2.211s ok
+  SF=32 run=1 Q20: 75.699s ok
+  SF=32 run=1 Q21: 10.825s ok
+  SF=32 run=1 Q22: 0.718s ok
+SF=32 run=1 total 354.274s, failed/timed-out queries: 0
+  SF=32 run=2 Q1: 20.852s ok
+  SF=32 run=2 Q2: 6.981s ok
+  SF=32 run=2 Q3: 5.506s ok
+  SF=32 run=2 Q4: 2.538s ok
+  SF=32 run=2 Q5: 6.521s ok
+  SF=32 run=2 Q6: 2.904s ok
+  SF=32 run=2 Q7: 15.852s ok
+  SF=32 run=2 Q8: 2.634s ok
+  SF=32 run=2 Q9: 29.840s ok
+  SF=32 run=2 Q10: 7.276s ok
+  SF=32 run=2 Q11: 2.518s ok
+  SF=32 run=2 Q12: 5.783s ok
+  SF=32 run=2 Q13: 62.530s ok
+  SF=32 run=2 Q14: 2.243s ok
+  SF=32 run=2 Q15: 8.749s ok
+  SF=32 run=2 Q16: 8.510s ok
+  SF=32 run=2 Q17: 15.502s ok
+  SF=32 run=2 Q18: 57.209s ok
+  SF=32 run=2 Q19: 1.077s ok
+  SF=32 run=2 Q20: 41.091s ok
+  SF=32 run=2 Q21: 9.932s ok
+  SF=32 run=2 Q22: 0.723s ok
+SF=32 run=2 total 316.771s, failed/timed-out queries: 0
+  SF=32 run=3 Q1: 20.851s ok
+  SF=32 run=3 Q2: 7.055s ok
+  SF=32 run=3 Q3: 5.911s ok
+  SF=32 run=3 Q4: 2.566s ok
+  SF=32 run=3 Q5: 6.551s ok
+  SF=32 run=3 Q6: 2.897s ok
+  SF=32 run=3 Q7: 16.104s ok
+  SF=32 run=3 Q8: 2.598s ok
+  SF=32 run=3 Q9: 29.865s ok
+  SF=32 run=3 Q10: 7.251s ok
+  SF=32 run=3 Q11: 2.832s ok
+  SF=32 run=3 Q12: 5.668s ok
+  SF=32 run=3 Q13: 62.036s ok
+  SF=32 run=3 Q14: 2.240s ok
+  SF=32 run=3 Q15: 8.746s ok
+  SF=32 run=3 Q16: 8.488s ok
+  SF=32 run=3 Q17: 15.665s ok
+  SF=32 run=3 Q18: 62.189s ok
+  SF=32 run=3 Q19: 0.611s ok
+  SF=32 run=3 Q20: 42.279s ok
+  SF=32 run=3 Q21: 15.117s ok
+  SF=32 run=3 Q22: 0.713s ok
+SF=32 run=3 total 328.233s, failed/timed-out queries: 0
 Done. See results/timings.csv, results/totals.csv, results/row_counts.csv

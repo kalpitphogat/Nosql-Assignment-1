@@ -2,3 +2,5 @@
 generate_transactions text eol=lf
 *.sql text eol=lf
 *.tsv text eol=lf
+# keep supplied input files byte-identical (CRLF as supplied)
+problem2_integration/customer_*.csv -text

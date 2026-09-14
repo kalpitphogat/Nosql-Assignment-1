@@ -1,6 +1,6 @@
  l_shipmode | high_line_count | low_line_count 
 ------------+-----------------+----------------
- AIR        |           49745 |          75333
- FOB        |           50161 |          74679
+ SHIP       |           49892 |          74661
+ TRUCK      |           50037 |          74733
 (2 rows)
 

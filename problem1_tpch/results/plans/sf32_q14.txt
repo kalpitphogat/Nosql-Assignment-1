@@ -1,16 +1,16 @@
                                                                        QUERY PLAN                                                                       
 --------------------------------------------------------------------------------------------------------------------------------------------------------
- Finalize Aggregate  (cost=1990852.52..1990852.54 rows=1 width=32)
-   ->  Gather  (cost=1990852.07..1990852.48 rows=4 width=64)
+ Finalize Aggregate  (cost=2225683.97..2225683.98 rows=1 width=32)
+   ->  Gather  (cost=2225683.51..2225683.92 rows=4 width=64)
          Workers Planned: 4
-         ->  Partial Aggregate  (cost=1989852.07..1989852.08 rows=1 width=64)
-               ->  Parallel Hash Join  (cost=192420.99..1979932.90 rows=566809 width=33)
+         ->  Partial Aggregate  (cost=2224683.51..2224683.52 rows=1 width=64)
+               ->  Parallel Hash Join  (cost=197028.42..2212963.09 rows=669738 width=33)
                      Hash Cond: (lineitem.l_partkey = part.p_partkey)
-                     ->  Parallel Bitmap Heap Scan on lineitem  (cost=25351.75..1811375.79 rows=566809 width=16)
-                           Recheck Cond: ((l_shipdate >= '1993-04-01'::date) AND (l_shipdate < '1993-05-01 00:00:00'::timestamp without time zone))
-                           ->  Bitmap Index Scan on idx_lineitem_shipdate  (cost=0.00..24784.94 rows=2267237 width=0)
-                                 Index Cond: ((l_shipdate >= '1993-04-01'::date) AND (l_shipdate < '1993-05-01 00:00:00'::timestamp without time zone))
-                     ->  Parallel Hash  (cost=147070.21..147070.21 rows=1599922 width=25)
-                           ->  Parallel Seq Scan on part  (cost=0.00..147070.21 rows=1599922 width=25)
+                     ->  Parallel Bitmap Heap Scan on lineitem  (cost=29955.71..2044132.32 rows=669738 width=16)
+                           Recheck Cond: ((l_shipdate >= '1994-03-01'::date) AND (l_shipdate < '1994-04-01 00:00:00'::timestamp without time zone))
+                           ->  Bitmap Index Scan on idx_lineitem_shipdate  (cost=0.00..29285.97 rows=2678950 width=0)
+                                 Index Cond: ((l_shipdate >= '1994-03-01'::date) AND (l_shipdate < '1994-04-01 00:00:00'::timestamp without time zone))
+                     ->  Parallel Hash  (cost=147071.77..147071.77 rows=1600076 width=25)
+                           ->  Parallel Seq Scan on part  (cost=0.00..147071.77 rows=1600076 width=25)
 (12 rows)
 

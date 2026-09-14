@@ -1,0 +1,62 @@
+                                                                                              QUERY PLAN                                                                                               
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Limit  (cost=5635291.15..5635291.20 rows=20 width=202) (actual time=7705.576..7790.751 rows=20 loops=1)
+   Buffers: shared hit=30435 read=4432012, temp read=86553 written=86558
+   ->  Sort  (cost=5635291.15..5640230.50 rows=1975740 width=202) (actual time=7705.575..7790.749 rows=20 loops=1)
+         Sort Key: (sum((lineitem.l_extendedprice * ('1'::numeric - lineitem.l_discount)))) DESC
+         Sort Method: top-N heapsort  Memory: 32kB
+         Buffers: shared hit=30435 read=4432012, temp read=86553 written=86558
+         ->  GroupAggregate  (cost=5296759.40..5582717.42 rows=1975740 width=202) (actual time=6032.513..7511.607 rows=1215785 loops=1)
+               Group Key: customer.c_custkey, nation.n_name
+               Buffers: shared hit=30432 read=4432012, temp read=86553 written=86558
+               ->  Gather Merge  (cost=5296759.40..5533323.92 rows=1975740 width=182) (actual time=6032.497..6489.221 rows=3630428 loops=1)
+                     Workers Planned: 4
+                     Workers Launched: 4
+                     Buffers: shared hit=30432 read=4432012, temp read=86553 written=86558
+                     ->  Sort  (cost=5295759.35..5296994.18 rows=493935 width=182) (actual time=6017.011..6063.387 rows=726086 loops=5)
+                           Sort Key: customer.c_custkey, nation.n_name
+                           Sort Method: external merge  Disk: 138864kB
+                           Buffers: shared hit=30432 read=4432012, temp read=86553 written=86558
+                           Worker 0:  Sort Method: external merge  Disk: 138328kB
+                           Worker 1:  Sort Method: external merge  Disk: 138000kB
+                           Worker 2:  Sort Method: external merge  Disk: 138104kB
+                           Worker 3:  Sort Method: external merge  Disk: 139128kB
+                           ->  Hash Join  (cost=1013834.83..5249048.01 rows=493935 width=182) (actual time=1328.983..5668.768 rows=726086 loops=5)
+                                 Hash Cond: (customer.c_nationkey = nation.n_nationkey)
+                                 Buffers: shared hit=30376 read=4432012
+                                 ->  Parallel Hash Join  (cost=1013833.27..5247530.07 rows=493935 width=160) (actual time=1328.898..5605.516 rows=726086 loops=5)
+                                       Hash Cond: (orders.o_custkey = customer.c_custkey)
+                                       Buffers: shared hit=30185 read=4432010
+                                       ->  Parallel Hash Join  (cost=871870.88..5104271.10 rows=493935 width=16) (actual time=875.370..4924.504 rows=726086 loops=5)
+                                             Hash Cond: (lineitem.l_orderkey = orders.o_orderkey)
+                                             Buffers: shared hit=30185 read=4317056
+                                             ->  Parallel Seq Scan on lineitem  (cost=0.00..4201153.00 rows=11903702 width=16) (actual time=0.024..2985.430 rows=9475699 loops=5)
+                                                   Filter: (l_returnflag = 'R'::bpchar)
+                                                   Rows Removed by Filter: 28924411
+                                                   Buffers: shared hit=2 read=3601166
+                                             ->  Parallel Hash  (cost=865646.73..865646.73 rows=497932 width=8) (actual time=874.722..874.723 rows=363038 loops=5)
+                                                   Buckets: 2097152  Batches: 1  Memory Usage: 87456kB
+                                                   Buffers: shared hit=30183 read=715890
+                                                   ->  Parallel Bitmap Heap Scan on orders  (cost=22275.75..865646.73 rows=497932 width=8) (actual time=225.801..805.612 rows=363038 loops=5)
+                                                         Recheck Cond: ((o_orderdate >= '1993-04-01'::date) AND (o_orderdate < '1993-07-01 00:00:00'::timestamp without time zone))
+                                                         Heap Blocks: exact=149802
+                                                         Buffers: shared hit=30183 read=715890
+                                                         ->  Bitmap Index Scan on idx_orders_orderdate  (cost=0.00..21777.82 rows=1991728 width=0) (actual time=119.960..119.960 rows=1815188 loops=1)
+                                                               Index Cond: ((o_orderdate >= '1993-04-01'::date) AND (o_orderdate < '1993-07-01 00:00:00'::timestamp without time zone))
+                                                               Buffers: shared hit=1 read=1536
+                                       ->  Parallel Hash  (cost=126957.73..126957.73 rows=1200373 width=148) (actual time=450.237..450.238 rows=960000 loops=5)
+                                             Buckets: 8388608  Batches: 1  Memory Usage: 935936kB
+                                             Buffers: shared read=114954
+                                             ->  Parallel Seq Scan on customer  (cost=0.00..126957.73 rows=1200373 width=148) (actual time=0.011..123.704 rows=960000 loops=5)
+                                                   Buffers: shared read=114954
+                                 ->  Hash  (cost=1.25..1.25 rows=25 width=30) (actual time=0.012..0.013 rows=25 loops=5)
+                                       Buckets: 1024  Batches: 1  Memory Usage: 10kB
+                                       Buffers: shared hit=4 read=1
+                                       ->  Seq Scan on nation  (cost=0.00..1.25 rows=25 width=30) (actual time=0.008..0.009 rows=25 loops=5)
+                                             Buffers: shared hit=4 read=1
+ Planning:
+   Buffers: shared hit=344 read=82
+ Planning Time: 37.520 ms
+ Execution Time: 7797.071 ms
+(58 rows)
+

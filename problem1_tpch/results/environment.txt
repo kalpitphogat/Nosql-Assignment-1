@@ -1,12 +1,22 @@
-date: Mon Sep 14 09:02:38 EDT 2026
+===== invocation: run_benchmark.sh 1 2 4 8 16 =====
+date: Mon Sep 14 13:07:02 EDT 2026
 host: Linux redhatacademy7 4.18.0-553.117.1.el8_10.x86_64 #1 SMP Fri Mar 27 18:49:45 EDT 2026 x86_64 x86_64 x86_64 GNU/Linux
+PRETTY_NAME="Red Hat Enterprise Linux 8.10 (Ootpa)"
 CPU(s):              24
 Thread(s) per core:  1
+Core(s) per socket:  16
 Socket(s):           1
 Model name:          12th Gen Intel(R) Core(TM) i9-12900K
               total        used        free      shared  buff/cache   available
-Mem:             62           2          28           4          31          55
-Swap:            31           1          29
+Mem:             62           1          20           8          40          51
+Swap:            31           2          29
+NAME    ROTA   SIZE MODEL
+nvme0n1    0 931.5G CT1000P3SSD8                            
+Filesystem             Size  Used Avail Use% Mounted on
+/dev/mapper/rhel-home  829G  753G   76G  91% /home
+load average: 3.74 3.77 3.06 6/957 859383
+other logged-in users: 2
+gcc: gcc (GCC) 8.5.0 20210514 (Red Hat 8.5.0-28)
 postgres: PostgreSQL 16.15 on x86_64-pc-linux-gnu, compiled by gcc (GCC) 8.5.0 20210514 (Red Hat 8.5.0-28), 64-bit
 effective_cache_size = 1572864 8kB
 jit = off
@@ -18,5 +28,39 @@ random_page_cost = 1.1
 shared_buffers = 524288 8kB
 synchronous_commit = on
 work_mem = 131072 kB
-dbgen: TPC-H Population Generator (Version 2.14.0 build 0)
-reps: 3   timeout: 30min
+dbgen banner: TPC-H Population Generator (Version 3.0.0 build 0)
+qgen banner:  TPC-H Parameter Substitution (v. 3.0.0 build 0)
+warm-up runs: 1 (run 0, excluded)   measured runs: 3   statement_timeout: 30min
+===== invocation: run_benchmark.sh 32 =====
+date: Mon Sep 14 15:02:15 EDT 2026
+host: Linux redhatacademy7 4.18.0-553.117.1.el8_10.x86_64 #1 SMP Fri Mar 27 18:49:45 EDT 2026 x86_64 x86_64 x86_64 GNU/Linux
+PRETTY_NAME="Red Hat Enterprise Linux 8.10 (Ootpa)"
+CPU(s):              24
+Thread(s) per core:  1
+Core(s) per socket:  16
+Socket(s):           1
+Model name:          12th Gen Intel(R) Core(TM) i9-12900K
+              total        used        free      shared  buff/cache   available
+Mem:             62           1          47           8          12          51
+Swap:            31           2          28
+NAME    ROTA   SIZE MODEL
+nvme0n1    0 931.5G CT1000P3SSD8                            
+Filesystem             Size  Used Avail Use% Mounted on
+/dev/mapper/rhel-home  829G  734G   95G  89% /home
+load average: 0.08 0.22 1.40 1/953 931569
+other logged-in users: 2
+gcc: gcc (GCC) 8.5.0 20210514 (Red Hat 8.5.0-28)
+postgres: PostgreSQL 16.15 on x86_64-pc-linux-gnu, compiled by gcc (GCC) 8.5.0 20210514 (Red Hat 8.5.0-28), 64-bit
+effective_cache_size = 1572864 8kB
+jit = off
+maintenance_work_mem = 1048576 kB
+max_parallel_workers_per_gather = 4
+max_wal_size = 8192 MB
+max_worker_processes = 8
+random_page_cost = 1.1
+shared_buffers = 524288 8kB
+synchronous_commit = on
+work_mem = 131072 kB
+dbgen banner: TPC-H Population Generator (Version 3.0.0 build 0)
+qgen banner:  TPC-H Parameter Substitution (v. 3.0.0 build 0)
+warm-up runs: 1 (run 0, excluded)   measured runs: 3   statement_timeout: 30min

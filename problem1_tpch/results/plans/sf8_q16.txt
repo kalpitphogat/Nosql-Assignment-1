@@ -1,22 +1,22 @@
-                                                                                         QUERY PLAN                                                                                          
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- Sort  (cost=206527.80..206851.17 rows=129348 width=44)
+                                                                                           QUERY PLAN                                                                                           
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Sort  (cost=204619.15..204939.31 rows=128062 width=44)
    Sort Key: (count(DISTINCT partsupp.ps_suppkey)) DESC, part.p_brand, part.p_type, part.p_size
-   ->  GroupAggregate  (cost=131013.20..195545.57 rows=129348 width=44)
+   ->  GroupAggregate  (cost=130713.51..193755.34 rows=128062 width=44)
          Group Key: part.p_brand, part.p_type, part.p_size
-         ->  Gather Merge  (cost=131013.20..189377.61 rows=487448 width=40)
+         ->  Gather Merge  (cost=130713.51..187714.14 rows=476058 width=40)
                Workers Planned: 4
-               ->  Sort  (cost=130013.14..130317.80 rows=121862 width=40)
+               ->  Sort  (cost=129713.45..130010.99 rows=119014 width=40)
                      Sort Key: part.p_brand, part.p_type, part.p_size, partsupp.ps_suppkey
-                     ->  Parallel Hash Join  (cost=46307.93..119718.92 rows=121862 width=40)
+                     ->  Parallel Hash Join  (cost=46292.57..119680.11 rows=119014 width=40)
                            Hash Cond: (partsupp.ps_partkey = part.p_partkey)
-                           ->  Parallel Index Only Scan using partsupp_pkey on partsupp  (cost=2777.45..74088.33 rows=800040 width=8)
+                           ->  Parallel Index Only Scan using partsupp_pkey on partsupp  (cost=2779.45..74067.80 rows=799694 width=8)
                                  Filter: (NOT (hashed SubPlan 1))
                                  SubPlan 1
-                                   ->  Seq Scan on supplier  (cost=0.00..2777.00 rows=8 width=4)
+                                   ->  Seq Scan on supplier  (cost=0.00..2777.00 rows=808 width=4)
                                          Filter: ((s_comment)::text ~~ '%Customer%Complaints%'::text)
-                           ->  Parallel Hash  (cost=42768.89..42768.89 rows=60927 width=40)
-                                 ->  Parallel Seq Scan on part  (cost=0.00..42768.89 rows=60927 width=40)
-                                       Filter: ((p_brand <> 'Brand#43'::bpchar) AND ((p_type)::text !~~ 'ECONOMY PLATED%'::text) AND (p_size = ANY ('{28,1,19,50,39,31,45,17}'::integer[])))
+                           ->  Parallel Hash  (cost=42768.99..42768.99 rows=59530 width=40)
+                                 ->  Parallel Seq Scan on part  (cost=0.00..42768.99 rows=59530 width=40)
+                                       Filter: ((p_brand <> 'Brand#12'::bpchar) AND ((p_type)::text !~~ 'STANDARD POLISHED%'::text) AND (p_size = ANY ('{41,28,43,38,8,30,12,45}'::integer[])))
 (18 rows)
 

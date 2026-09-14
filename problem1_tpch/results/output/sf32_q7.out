@@ -1,8 +1,8 @@
         supp_nation        |        cust_nation        | l_year |     revenue     
 ---------------------------+---------------------------+--------+-----------------
- ALGERIA                   | SAUDI ARABIA              |   1995 | 1673563576.9569
- ALGERIA                   | SAUDI ARABIA              |   1996 | 1652571580.7974
- SAUDI ARABIA              | ALGERIA                   |   1995 | 1692401255.4603
- SAUDI ARABIA              | ALGERIA                   |   1996 | 1691024055.4262
+ JAPAN                     | JORDAN                    |   1995 | 1663680492.1141
+ JAPAN                     | JORDAN                    |   1996 | 1687515972.7031
+ JORDAN                    | JAPAN                     |   1995 | 1683451395.6549
+ JORDAN                    | JAPAN                     |   1996 | 1684983521.3851
 (4 rows)
 

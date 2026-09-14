@@ -7,7 +7,9 @@
 - `scalability_results.tsv`, `stage_timings.tsv`: measurements for the final pipeline
 - `*_before_date_cache.tsv`: the same measurements before the optimisation described below
 - `outputs/out_<records>.tsv`: pipeline output for each generated dataset
-- `transactions.tsv`, `transactions_malformed.tsv`, `generate_transactions`: supplied files
+- `evidence/`: saved outputs of the tests described below — sample and malformed-sample outputs, their rejected rows and stderr, the 200,000-row generated `--malformed` test (output, rejection reasons, first 20 rejected rows), and `reference_check_result.txt`
+- `reference_check.py`: independent Python implementation of the same query, used only to verify the pipeline's results (not part of the solution)
+- `transactions.tsv`, `transactions_malformed.tsv`, `generate_transactions`, `generate_transactions_README.txt`: supplied files (byte-identical)
 
 Run:
 ```bash
@@ -66,22 +68,41 @@ independent Python implementation.
 
 ## Sample input and output
 
-`transactions.tsv` (supplied sample, first rows):
+`transactions.tsv` (supplied sample, complete file, tab-separated):
 ```
 customer_id  product_id  category     quantity  price  date
 101          P01         Electronics  3         12000  2026-01-05
 102          P02         Grocery      5         800    2026-01-07
 103          P03         Electronics  2         15000  2026-01-10
 104          P04         Furniture    4         30000  2026-01-15
+105          P05         Grocery      8         1200   2026-02-01
+106          P06         Clothing     3         4500   2026-02-03
+107          P07         Electronics  6         9000   2026-02-11
+108          P08         Furniture    2         50000  2026-02-18
+109          P09         Clothing     5         7000   2026-03-02
+110          P10         Electronics  4         22000  2026-03-12
+111          P11         Grocery      10        1500   2026-03-20
+112          P12         Furniture    3         42000  2026-04-01
+113          P13         Clothing     2         12000  2026-04-07
+114          P14         Electronics  7         11000  2026-04-15
+115          P15         Grocery      4         3500   2026-05-03
+116          P16         Furniture    5         18000  2026-05-11
+117          P17         Electronics  3         27000  2026-05-19
+118          P18         Clothing     6         8000   2026-06-01
+119          P19         Grocery      2         6000   2026-06-12
+120          P20         Furniture    4         25000  2026-06-20
 ```
 
-`./pipeline.sh transactions.tsv`:
+`./pipeline.sh transactions.tsv` (stdout):
 ```
 category     transactions  revenue
 Furniture    4             436000.00
 Electronics  5             336000.00
-Malformed rows excluded: 0
 ```
+and on stderr: `Malformed rows excluded: 0 (see transactions.malformed_rows.tsv)`.
+Grocery (4 qualifying rows, revenue 42,600) and Clothing (3 rows, 96,500)
+are removed by `HAVING > 100000`. Both results were checked with an independent
+Python calculation.
 
 Output for the 1 GB generated file (`outputs/out_25000000.tsv`):
 ```
@@ -116,8 +137,15 @@ A trailing `\r` (Windows line endings) is removed first. Each distinct date
 string is validated once and the answer is cached, since the generator
 produces only about 730 distinct dates.
 
-`./pipeline.sh transactions_malformed.tsv`: 4 rows rejected, and the result is
-computed from the valid rows:
+`./pipeline.sh transactions_malformed.tsv` (the supplied file: the first 10
+sample rows plus 4 malformed rows). The pipeline does not stop, and the
+result is computed from the 10 valid rows:
+```
+category     transactions  revenue
+Electronics  3             178000.00
+Furniture    1             120000.00
+```
+The rejected rows are in `transactions_malformed.malformed_rows.tsv`:
 ```
 bad_quantity   121  P21  Electronics  bad    10000  2026-06-25
 bad_price      122  P22  Grocery      4             2026-06-26
@@ -203,6 +231,40 @@ date string. Before vs after, same machine and data
 | 1023 MB | 149.9 s | 109.4 s | 27% |
 
 Both versions produce identical output.
+
+## Assumptions (stated explicitly)
+- **Header row.** The input has a header row naming the columns (true for
+  the supplied files and for `generate_transactions` output). Columns are
+  located by name, because the supplied sample (`customer_id product_id
+  category quantity price date`) does not use the column order written in
+  the assignment (`transaction_id date category quantity price`).
+- **Output rows.** "At most 10 rows" refers to data rows. The output also
+  starts with one header line naming the required columns `category
+  transactions revenue`.
+- **Valid values.** Quantity must be a non-negative integer. Price must be a
+  non-negative decimal number without sign or exponent (e.g. `12000`,
+  `799.99`). The date must be a real calendar date in `YYYY-MM-DD`
+  format. Anything else, including negative numbers, is treated as
+  malformed.
+- **Rows with extra fields** are treated as malformed, not truncated, since
+  the schema has exactly as many fields as the header.
+- **Generator arguments.** The assignment's example is
+  `./generate_transactions 1000000`, but the supplied generator requires
+  `--records N` (and accepts `--seed`). We used the supplied generator as it
+  is: `--records N --seed 42`.
+- **Revenue** is `quantity * price` summed in floating point and printed
+  with 2 decimals.
+
+## What was attempted, achieved and not resolved
+- **Achieved:** the full query as a streaming pipeline; malformed-row
+  detection for all five malformed kinds the generator produces;
+  measurements at ~100 MB, 250 MB, 500 MB and 1 GB (3 runs each); a
+  measured per-stage breakdown; and one optimisation guided by that
+  measurement.
+- **Not attempted:** inputs larger than 1 GB (the assignment says no more
+  than 1 GB is expected), and parallel splitting of the input.
+- **Unresolved:** the 500 MB runs vary more (55–64 s) than the other sizes.
+  We did not identify the cause.
 
 ## Limitations of the Unix approach
 - **Every run is a full scan.** There are no indexes, statistics or query

@@ -1,15 +1,15 @@
                                                         QUERY PLAN                                                         
 ---------------------------------------------------------------------------------------------------------------------------
- Sort  (cost=517087.15..517087.65 rows=200 width=16)
+ Sort  (cost=516169.62..516170.12 rows=200 width=16)
    Sort Key: (count(*)) DESC, (count(orders.o_orderkey)) DESC
-   ->  HashAggregate  (cost=517077.50..517079.50 rows=200 width=16)
+   ->  HashAggregate  (cost=516159.98..516161.98 rows=200 width=16)
          Group Key: count(orders.o_orderkey)
-         ->  HashAggregate  (cost=487077.50..499077.50 rows=1200000 width=12)
+         ->  HashAggregate  (cost=486159.98..498159.98 rows=1200000 width=12)
                Group Key: customer.c_custkey
-               ->  Hash Right Join  (cost=36622.73..427088.52 rows=11997797 width=8)
+               ->  Hash Right Join  (cost=36622.73..426767.92 rows=11878412 width=8)
                      Hash Cond: (orders.o_custkey = customer.c_custkey)
-                     ->  Seq Scan on orders  (cost=0.00..358971.46 rows=11997797 width=8)
-                           Filter: ((o_comment)::text !~~ '%special%packages%'::text)
+                     ->  Seq Scan on orders  (cost=0.00..358964.25 rows=11878412 width=8)
+                           Filter: ((o_comment)::text !~~ '%pending%packages%'::text)
                      ->  Hash  (cost=21622.73..21622.73 rows=1200000 width=4)
                            ->  Index Only Scan using customer_pkey on customer  (cost=0.43..21622.73 rows=1200000 width=4)
 (12 rows)

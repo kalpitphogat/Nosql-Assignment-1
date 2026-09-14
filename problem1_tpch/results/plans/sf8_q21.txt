@@ -1,33 +1,33 @@
                                                                         QUERY PLAN                                                                         
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
- Limit  (cost=633878.62..633878.63 rows=1 width=34)
-   ->  Sort  (cost=633878.62..633878.63 rows=1 width=34)
+ Limit  (cost=616385.66..616385.66 rows=1 width=34)
+   ->  Sort  (cost=616385.66..616385.66 rows=1 width=34)
          Sort Key: (count(*)) DESC, supplier.s_name
-         ->  GroupAggregate  (cost=633878.59..633878.61 rows=1 width=34)
+         ->  GroupAggregate  (cost=616385.63..616385.65 rows=1 width=34)
                Group Key: supplier.s_name
-               ->  Sort  (cost=633878.59..633878.60 rows=1 width=26)
+               ->  Sort  (cost=616385.63..616385.63 rows=1 width=26)
                      Sort Key: supplier.s_name
-                     ->  Nested Loop  (cost=1002.20..633878.58 rows=1 width=26)
-                           ->  Nested Loop Semi Join  (cost=1001.76..633877.10 rows=1 width=34)
-                                 ->  Gather  (cost=1001.32..633872.34 rows=1 width=34)
+                     ->  Nested Loop  (cost=1002.20..616385.62 rows=1 width=26)
+                           ->  Nested Loop Semi Join  (cost=1001.76..616384.14 rows=1 width=34)
+                                 ->  Gather  (cost=1001.32..616379.32 rows=1 width=34)
                                        Workers Planned: 2
-                                       ->  Nested Loop Anti Join  (cost=1.32..632872.24 rows=1 width=34)
-                                             ->  Nested Loop  (cost=0.88..445887.54 rows=266590 width=34)
-                                                   ->  Nested Loop  (cost=0.44..3600.19 rows=1333 width=30)
-                                                         ->  Parallel Index Scan using supplier_pkey on supplier  (cost=0.29..2762.77 rows=33333 width=34)
+                                       ->  Nested Loop Anti Join  (cost=1.32..615379.22 rows=1 width=34)
+                                             ->  Nested Loop  (cost=0.88..431574.42 rows=262534 width=34)
+                                                   ->  Nested Loop  (cost=0.44..3617.62 rows=1333 width=30)
+                                                         ->  Parallel Index Scan using supplier_pkey on supplier  (cost=0.29..2780.20 rows=33333 width=34)
                                                          ->  Memoize  (cost=0.15..0.17 rows=1 width=4)
                                                                Cache Key: supplier.s_nationkey
                                                                Cache Mode: logical
                                                                ->  Index Scan using nation_pkey on nation  (cost=0.14..0.16 rows=1 width=4)
                                                                      Index Cond: (n_nationkey = supplier.s_nationkey)
-                                                                     Filter: (n_name = 'INDIA'::bpchar)
-                                                   ->  Index Scan using idx_lineitem_suppkey on lineitem l1  (cost=0.44..329.76 rows=204 width=8)
+                                                                     Filter: (n_name = 'VIETNAM'::bpchar)
+                                                   ->  Index Scan using idx_lineitem_suppkey on lineitem l1  (cost=0.44..319.08 rows=197 width=8)
                                                          Index Cond: (l_suppkey = supplier.s_suppkey)
                                                          Filter: (l_receiptdate > l_commitdate)
-                                             ->  Index Scan using idx_lineitem_orderkey on lineitem l3  (cost=0.44..5.01 rows=37 width=8)
+                                             ->  Index Scan using idx_lineitem_orderkey on lineitem l3  (cost=0.44..5.08 rows=38 width=8)
                                                    Index Cond: (l_orderkey = l1.l_orderkey)
                                                    Filter: ((l_receiptdate > l_commitdate) AND (l_suppkey <> l1.l_suppkey))
-                                 ->  Index Scan using idx_lineitem_orderkey on lineitem l2  (cost=0.44..4.74 rows=110 width=8)
+                                 ->  Index Scan using idx_lineitem_orderkey on lineitem l2  (cost=0.44..4.80 rows=113 width=8)
                                        Index Cond: (l_orderkey = l1.l_orderkey)
                                        Filter: (l_suppkey <> l1.l_suppkey)
                            ->  Index Scan using orders_pkey on orders  (cost=0.43..1.48 rows=1 width=4)

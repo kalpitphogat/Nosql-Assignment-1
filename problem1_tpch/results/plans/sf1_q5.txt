@@ -1,19 +1,19 @@
                                                                                QUERY PLAN                                                                               
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- Sort  (cost=47424.98..47425.04 rows=25 width=58)
+ Sort  (cost=46636.96..46637.02 rows=25 width=58)
    Sort Key: (sum((lineitem.l_extendedprice * ('1'::numeric - lineitem.l_discount)))) DESC
-   ->  Finalize GroupAggregate  (cost=47378.58..47424.40 rows=25 width=58)
+   ->  Finalize GroupAggregate  (cost=46592.95..46636.38 rows=25 width=58)
          Group Key: nation.n_name
-         ->  Gather Merge  (cost=47378.58..47423.71 rows=50 width=58)
+         ->  Gather Merge  (cost=46592.95..46635.69 rows=50 width=58)
                Workers Planned: 2
-               ->  Partial GroupAggregate  (cost=46378.55..46417.91 rows=25 width=58)
+               ->  Partial GroupAggregate  (cost=45592.92..45629.90 rows=25 width=58)
                      Group Key: nation.n_name
-                     ->  Sort  (cost=46378.55..46386.36 rows=3124 width=38)
+                     ->  Sort  (cost=45592.92..45600.26 rows=2933 width=38)
                            Sort Key: nation.n_name
-                           ->  Hash Join  (cost=476.37..46197.22 rows=3124 width=38)
+                           ->  Hash Join  (cost=476.37..45424.01 rows=2933 width=38)
                                  Hash Cond: ((lineitem.l_suppkey = supplier.s_suppkey) AND (customer.c_nationkey = supplier.s_nationkey))
-                                 ->  Nested Loop  (cost=3.37..45314.15 rows=78107 width=50)
-                                       ->  Nested Loop  (cost=2.94..17624.03 rows=19523 width=38)
+                                 ->  Nested Loop  (cost=3.37..44565.97 rows=73341 width=50)
+                                       ->  Nested Loop  (cost=2.94..17499.03 rows=18332 width=38)
                                              ->  Hash Join  (cost=2.51..4586.88 rows=12500 width=38)
                                                    Hash Cond: (customer.c_nationkey = nation.n_nationkey)
                                                    ->  Parallel Seq Scan on customer  (cost=0.00..4225.00 rows=62500 width=8)
@@ -23,11 +23,11 @@
                                                                ->  Seq Scan on nation  (cost=0.00..1.25 rows=25 width=34)
                                                                ->  Hash  (cost=1.06..1.06 rows=1 width=4)
                                                                      ->  Seq Scan on region  (cost=0.00..1.06 rows=1 width=4)
-                                                                           Filter: (r_name = 'AMERICA'::bpchar)
-                                             ->  Index Scan using idx_orders_custkey on orders  (cost=0.43..1.01 rows=3 width=8)
+                                                                           Filter: (r_name = 'AFRICA'::bpchar)
+                                             ->  Index Scan using idx_orders_custkey on orders  (cost=0.43..1.01 rows=2 width=8)
                                                    Index Cond: (o_custkey = customer.c_custkey)
-                                                   Filter: ((o_orderdate >= '1996-01-01'::date) AND (o_orderdate < '1997-01-01 00:00:00'::timestamp without time zone))
-                                       ->  Index Scan using idx_lineitem_orderkey on lineitem  (cost=0.43..1.27 rows=15 width=20)
+                                                   Filter: ((o_orderdate >= '1997-01-01'::date) AND (o_orderdate < '1998-01-01 00:00:00'::timestamp without time zone))
+                                       ->  Index Scan using idx_lineitem_orderkey on lineitem  (cost=0.43..1.32 rows=16 width=20)
                                              Index Cond: (l_orderkey = orders.o_orderkey)
                                  ->  Hash  (cost=323.00..323.00 rows=10000 width=8)
                                        ->  Seq Scan on supplier  (cost=0.00..323.00 rows=10000 width=8)

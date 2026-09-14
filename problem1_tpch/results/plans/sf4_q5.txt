@@ -1,19 +1,19 @@
                                                                                QUERY PLAN                                                                               
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- Sort  (cost=226002.79..226002.85 rows=25 width=58)
+ Sort  (cost=220094.24..220094.30 rows=25 width=58)
    Sort Key: (sum((lineitem.l_extendedprice * ('1'::numeric - lineitem.l_discount)))) DESC
-   ->  Finalize GroupAggregate  (cost=225873.12..226002.21 rows=25 width=58)
+   ->  Finalize GroupAggregate  (cost=219966.70..220093.66 rows=25 width=58)
          Group Key: nation.n_name
-         ->  Gather Merge  (cost=225873.12..226001.34 rows=75 width=58)
+         ->  Gather Merge  (cost=219966.70..220092.79 rows=75 width=58)
                Workers Planned: 3
-               ->  Partial GroupAggregate  (cost=224873.08..224992.48 rows=25 width=58)
+               ->  Partial GroupAggregate  (cost=218966.66..219083.93 rows=25 width=58)
                      Group Key: nation.n_name
-                     ->  Sort  (cost=224873.08..224896.90 rows=9527 width=38)
+                     ->  Sort  (cost=218966.66..218990.05 rows=9357 width=38)
                            Sort Key: nation.n_name
-                           ->  Hash Join  (cost=1892.38..224243.45 rows=9527 width=38)
+                           ->  Hash Join  (cost=1892.38..218349.48 rows=9357 width=38)
                                  Hash Cond: ((lineitem.l_suppkey = supplier.s_suppkey) AND (customer.c_nationkey = supplier.s_nationkey))
-                                 ->  Nested Loop  (cost=3.38..221103.84 rows=238212 width=50)
-                                       ->  Nested Loop  (cost=2.94..58855.68 rows=59559 width=38)
+                                 ->  Nested Loop  (cost=3.38..215219.95 rows=236292 width=50)
+                                       ->  Nested Loop  (cost=2.94..58855.68 rows=59088 width=38)
                                              ->  Hash Join  (cost=2.51..17421.90 rows=38710 width=38)
                                                    Hash Cond: (customer.c_nationkey = nation.n_nationkey)
                                                    ->  Parallel Seq Scan on customer  (cost=0.00..16306.48 rows=193548 width=8)
@@ -23,11 +23,11 @@
                                                                ->  Seq Scan on nation  (cost=0.00..1.25 rows=25 width=34)
                                                                ->  Hash  (cost=1.06..1.06 rows=1 width=4)
                                                                      ->  Seq Scan on region  (cost=0.00..1.06 rows=1 width=4)
-                                                                           Filter: (r_name = 'AMERICA'::bpchar)
+                                                                           Filter: (r_name = 'AFRICA'::bpchar)
                                              ->  Index Scan using idx_orders_custkey on orders  (cost=0.43..1.04 rows=3 width=8)
                                                    Index Cond: (o_custkey = customer.c_custkey)
-                                                   Filter: ((o_orderdate >= '1996-01-01'::date) AND (o_orderdate < '1997-01-01 00:00:00'::timestamp without time zone))
-                                       ->  Index Scan using idx_lineitem_orderkey on lineitem  (cost=0.44..2.10 rows=62 width=20)
+                                                   Filter: ((o_orderdate >= '1997-01-01'::date) AND (o_orderdate < '1998-01-01 00:00:00'::timestamp without time zone))
+                                       ->  Index Scan using idx_lineitem_orderkey on lineitem  (cost=0.44..2.06 rows=59 width=20)
                                              Index Cond: (l_orderkey = orders.o_orderkey)
                                  ->  Hash  (cost=1289.00..1289.00 rows=40000 width=8)
                                        ->  Seq Scan on supplier  (cost=0.00..1289.00 rows=40000 width=8)

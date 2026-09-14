@@ -12,5 +12,14 @@
   "missing_information": [
     "phone"
   ],
-  "match_status": "partial_match"
+  "match_status": "partial_match",
+  "irregular_information": {
+    "name": {
+      "raw_value": "  yashawini shere  ",
+      "problems": [
+        "leading/trailing whitespace",
+        "name not capitalised"
+      ]
+    }
+  }
 }

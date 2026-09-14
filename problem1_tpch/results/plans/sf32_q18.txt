@@ -1,31 +1,31 @@
                                                                         QUERY PLAN                                                                         
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
- Limit  (cost=7945966.49..7945966.74 rows=100 width=71)
-   ->  Sort  (cost=7945966.49..7947306.67 rows=536070 width=71)
+ Limit  (cost=7948651.25..7948651.50 rows=100 width=71)
+   ->  Sort  (cost=7948651.25..7949993.86 rows=537045 width=71)
          Sort Key: orders.o_totalprice DESC, orders.o_orderdate
-         ->  GroupAggregate  (cost=4839763.77..7925478.28 rows=536070 width=71)
+         ->  GroupAggregate  (cost=4840709.02..7928125.78 rows=537045 width=71)
                Group Key: customer.c_custkey, orders.o_orderkey
-               ->  Incremental Sort  (cost=4839763.77..7914756.88 rows=536070 width=44)
+               ->  Incremental Sort  (cost=4840709.02..7917384.88 rows=537045 width=44)
                      Sort Key: customer.c_custkey, orders.o_orderkey
                      Presorted Key: customer.c_custkey
-                     ->  Nested Loop  (cost=4839758.07..7890633.73 rows=536070 width=44)
-                           ->  Merge Join  (cost=4839757.50..5055342.59 rows=134007 width=43)
+                     ->  Nested Loop  (cost=4840703.33..7893217.85 rows=537045 width=44)
+                           ->  Merge Join  (cost=4840702.76..5056160.34 rows=134265 width=43)
                                  Merge Cond: (customer.c_custkey = orders.o_custkey)
-                                 ->  Index Scan using customer_pkey on customer  (cost=0.43..201574.73 rows=4800307 width=23)
-                                 ->  Sort  (cost=4839757.01..4840092.02 rows=134007 width=24)
+                                 ->  Index Scan using customer_pkey on customer  (cost=0.43..201460.50 rows=4801491 width=23)
+                                 ->  Sort  (cost=4840690.81..4841026.47 rows=134265 width=24)
                                        Sort Key: orders.o_custkey
-                                       ->  Nested Loop  (cost=4500070.48..4828345.01 rows=134007 width=24)
-                                             ->  Finalize HashAggregate  (cost=4500069.91..4506100.23 rows=134007 width=4)
+                                       ->  Nested Loop  (cost=4500387.35..4829254.98 rows=134265 width=24)
+                                             ->  Finalize HashAggregate  (cost=4500386.79..4506428.71 rows=134265 width=4)
                                                    Group Key: lineitem_1.l_orderkey
-                                                   Filter: (sum(lineitem_1.l_quantity) > '315'::numeric)
-                                                   ->  Gather  (cost=4322175.62..4488009.28 rows=1608084 width=36)
+                                                   Filter: (sum(lineitem_1.l_quantity) > '312'::numeric)
+                                                   ->  Gather  (cost=4322150.00..4488302.94 rows=1611180 width=36)
                                                          Workers Planned: 4
-                                                         ->  Partial HashAggregate  (cost=4321175.62..4326200.88 rows=402021 width=36)
+                                                         ->  Partial HashAggregate  (cost=4321150.00..4326184.94 rows=402795 width=36)
                                                                Group Key: lineitem_1.l_orderkey
-                                                               ->  Parallel Seq Scan on lineitem lineitem_1  (cost=0.00..4081173.08 rows=48000508 width=9)
+                                                               ->  Parallel Seq Scan on lineitem lineitem_1  (cost=0.00..4081156.00 rows=47998800 width=9)
                                              ->  Index Scan using orders_pkey on orders  (cost=0.56..2.40 rows=1 width=20)
                                                    Index Cond: (o_orderkey = lineitem_1.l_orderkey)
-                           ->  Index Scan using idx_lineitem_orderkey on lineitem  (cost=0.57..16.38 rows=478 width=9)
+                           ->  Index Scan using idx_lineitem_orderkey on lineitem  (cost=0.57..16.36 rows=477 width=9)
                                  Index Cond: (l_orderkey = orders.o_orderkey)
 (27 rows)
 

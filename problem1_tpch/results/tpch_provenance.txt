@@ -1,0 +1,32 @@
+TPC-H kit archive: 7C5384AF-10DA-4DCB-B83F-BA2BDE51003F-TPC-H-Tool.zip
+  source: https://www.tpc.org/tpc_documents_current_versions/current_specifications5.asp (TPC-H Tools v3.0.1)
+  sha256: 97ccb34cd122d78c2e06e2419e50957f934256868b37c02d0b88aefd9d13a84a
+build: make -f makefile.suite CC=gcc DATABASE=ORACLE MACHINE=LINUX WORKLOAD=TPCH  (gcc (GCC) 8.5.0 20210514 (Red Hat 8.5.0-28))
+dbgen banner: TPC-H Population Generator (Version 3.0.0 build 0)
+qgen banner:  TPC-H Parameter Substitution (v. 3.0.0 build 0)
+sha256 of tools and inputs:
+  9940cba782ccae5113e8d471210c39ad3363a5a013045cba19978f463a6a3184  dbgen
+  d9d222bd99f7188ab445a1e7588cfb5d85be3163287374543440bc526fc88300  qgen
+  4dc56300de1e5ac5e1900519794538e2b5d1b6caf5cd55703bf53000dd748876  dists.dss
+  a9d5eb576a6af292bbf7a953b68dd69616cf3c18290ae0c36ec80cee2e6ec2e7  queries/10.sql
+  ea8fac566948f7af7e0a45c9e5a1c1eab424533983b04e0d356d68aec3f7d5e4  queries/11.sql
+  d86fcded63680d30aed2093f9be49105ab4eaa498ea16beb05c61493a479ee7e  queries/12.sql
+  33bf54c44ca37cb848d9da905ce3d3b53b43224de49de1679248548f2e27bd83  queries/13.sql
+  41d6bfd4acccf1ae3c554e9713e96d7808a1bc336bd906354aabd404c29540e6  queries/14.sql
+  c2bca97e9051412ebd1740a0df38fba44134628ce4506d1c63a40ba1c1922f13  queries/15.sql
+  728892629645bbb63a9285279d9c84928d6d152ea8db15a6a39d60212a387b37  queries/16.sql
+  4ef17d43755b03bad1cdacfe140c6d44c8302acef766e48cad7f2cacd2de349e  queries/17.sql
+  865d7b6c52950d9f991ffb7c5af5bca98627726e8638e41a0e4d1002eb4d414c  queries/18.sql
+  aff19a2f2acd0e6e8a001e10e4c9e6adad9ca0f12515f48a2f629d0bd40bb9dd  queries/19.sql
+  2c61084f494f29387bee33b31b09232cef917c5e1b62e37d5e90d819eba51438  queries/1.sql
+  2a0c607b7621d3ee89167d95c2569e89a6eedb52ff528f7bf3574c1f83c92414  queries/20.sql
+  15623e625f35748d004ed736df399021cae3e6647613f737edcf15d9288284b9  queries/21.sql
+  baf12c8eebafcd69d588d6505316a6d12f2e4bfa38bd1bc70fb944bae60c2691  queries/22.sql
+  0137d69e5e066ab3578039d6a4132a5b959e4f69b807f7ffecf53f60cef3d2b0  queries/2.sql
+  dd4b6bc1bfa37ccf50d6ef1f555ac4c452becd30f64ce176af7ad77e1f5950e4  queries/3.sql
+  4670fe71b4a66a90fe91ef30f0f5e0f5e93c5068bf9bc38d8b6b081a44aed490  queries/4.sql
+  bfad89d1fe3ecc87e5c9fb380c25f0353c9f49a8e7a740f067e8bd3525c949b0  queries/5.sql
+  c7c2946345940ea42c5483740246da3f144b6d460edb6434fe43f2c74135f496  queries/6.sql
+  d55ea9efebde8850925af9254bf730acbca6a09fd0e9bef312e8d46a95ce1f90  queries/7.sql
+  701624e95f81a6dcc308d9dabcadf3ed8e58ddbfb9494926634d982c5a1f6a64  queries/8.sql
+  26a7dcf2fccc7e769b07ef19dd289cbd0a268abb3c4ce3309c98ba05fb0e8cde  queries/9.sql

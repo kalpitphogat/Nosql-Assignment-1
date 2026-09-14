@@ -1,0 +1,1 @@
+Malformed rows excluded: 4 (see evidence/transactions_malformed.malformed_rows.tsv)

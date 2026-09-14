@@ -1,23 +1,23 @@
                                                          QUERY PLAN                                                         
 ----------------------------------------------------------------------------------------------------------------------------
- Limit  (cost=309404.89..309404.92 rows=10 width=44)
-   ->  Sort  (cost=309404.89..310950.14 rows=618100 width=44)
+ Limit  (cost=311619.91..311619.94 rows=10 width=44)
+   ->  Sort  (cost=311619.91..313158.16 rows=615300 width=44)
          Sort Key: (sum((lineitem.l_extendedprice * ('1'::numeric - lineitem.l_discount)))) DESC, orders.o_orderdate
-         ->  Finalize HashAggregate  (cost=288321.72..296047.97 rows=618100 width=44)
+         ->  Finalize HashAggregate  (cost=290632.25..298323.50 rows=615300 width=44)
                Group Key: lineitem.l_orderkey, orders.o_orderdate, orders.o_shippriority
-               ->  Gather  (cost=227155.50..281883.17 rows=515084 width=44)
+               ->  Gather  (cost=229743.19..284222.88 rows=512750 width=44)
                      Workers Planned: 2
-                     ->  Partial HashAggregate  (cost=226155.50..229374.77 rows=257542 width=44)
+                     ->  Partial HashAggregate  (cost=228743.19..231947.88 rows=256375 width=44)
                            Group Key: lineitem.l_orderkey, orders.o_orderdate, orders.o_shippriority
-                           ->  Nested Loop  (cost=0.86..222292.37 rows=257542 width=24)
-                                 ->  Nested Loop  (cost=0.43..55115.60 rows=121444 width=12)
-                                       ->  Parallel Seq Scan on customer  (cost=0.00..8810.50 rows=24642 width=4)
-                                             Filter: (c_mktsegment = 'FURNITURE'::bpchar)
+                           ->  Nested Loop  (cost=0.86..224897.56 rows=256375 width=24)
+                                 ->  Nested Loop  (cost=0.43..55947.98 rows=119631 width=12)
+                                       ->  Parallel Seq Scan on customer  (cost=0.00..8810.50 rows=25033 width=4)
+                                             Filter: (c_mktsegment = 'BUILDING'::bpchar)
                                        ->  Index Scan using idx_orders_custkey on orders  (cost=0.43..1.80 rows=8 width=16)
                                              Index Cond: (o_custkey = customer.c_custkey)
-                                             Filter: (o_orderdate < '1995-03-29'::date)
-                                 ->  Index Scan using idx_lineitem_orderkey on lineitem  (cost=0.43..1.22 rows=16 width=16)
+                                             Filter: (o_orderdate < '1995-03-12'::date)
+                                 ->  Index Scan using idx_lineitem_orderkey on lineitem  (cost=0.43..1.24 rows=17 width=16)
                                        Index Cond: (l_orderkey = orders.o_orderkey)
-                                       Filter: (l_shipdate > '1995-03-29'::date)
+                                       Filter: (l_shipdate > '1995-03-12'::date)
 (19 rows)
 

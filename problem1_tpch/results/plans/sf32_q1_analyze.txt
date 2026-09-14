@@ -1,35 +1,35 @@
                                                                         QUERY PLAN                                                                         
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
- Finalize GroupAggregate  (cost=5863593.96..5863597.78 rows=6 width=236) (actual time=22062.260..22083.141 rows=4 loops=1)
+ Finalize GroupAggregate  (cost=5857692.68..5857696.50 rows=6 width=236) (actual time=21729.329..21755.409 rows=4 loops=1)
    Group Key: l_returnflag, l_linestatus
-   Buffers: shared hit=219926 read=3381270
-   ->  Gather Merge  (cost=5863593.96..5863596.83 rows=24 width=236) (actual time=22062.237..22083.103 rows=20 loops=1)
+   Buffers: shared hit=219731 read=3381465
+   ->  Gather Merge  (cost=5857692.68..5857695.55 rows=24 width=236) (actual time=21729.311..21755.375 rows=20 loops=1)
          Workers Planned: 4
          Workers Launched: 4
-         Buffers: shared hit=219926 read=3381270
-         ->  Sort  (cost=5862593.90..5862593.92 rows=6 width=236) (actual time=22060.803..22060.804 rows=4 loops=5)
+         Buffers: shared hit=219731 read=3381465
+         ->  Sort  (cost=5856692.62..5856692.64 rows=6 width=236) (actual time=21727.822..21727.823 rows=4 loops=5)
                Sort Key: l_returnflag, l_linestatus
                Sort Method: quicksort  Memory: 27kB
-               Buffers: shared hit=219926 read=3381270
+               Buffers: shared hit=219731 read=3381465
                Worker 0:  Sort Method: quicksort  Memory: 27kB
                Worker 1:  Sort Method: quicksort  Memory: 27kB
                Worker 2:  Sort Method: quicksort  Memory: 27kB
                Worker 3:  Sort Method: quicksort  Memory: 27kB
-               ->  Partial HashAggregate  (cost=5862593.69..5862593.82 rows=6 width=236) (actual time=22060.782..22060.785 rows=4 loops=5)
+               ->  Partial HashAggregate  (cost=5856692.41..5856692.54 rows=6 width=236) (actual time=21727.804..21727.807 rows=4 loops=5)
                      Group Key: l_returnflag, l_linestatus
                      Batches: 1  Memory Usage: 24kB
-                     Buffers: shared hit=219898 read=3381270
+                     Buffers: shared hit=219703 read=3381465
                      Worker 0:  Batches: 1  Memory Usage: 24kB
                      Worker 1:  Batches: 1  Memory Usage: 24kB
                      Worker 2:  Batches: 1  Memory Usage: 24kB
                      Worker 3:  Batches: 1  Memory Usage: 24kB
-                     ->  Parallel Seq Scan on lineitem  (cost=0.00..4201174.35 rows=47469124 width=25) (actual time=0.017..3311.399 rows=37983351 loops=5)
-                           Filter: (l_shipdate <= '1998-09-13 00:00:00'::timestamp without time zone)
-                           Rows Removed by Filter: 416760
-                           Buffers: shared hit=219898 read=3381270
+                     ->  Parallel Seq Scan on lineitem  (cost=0.00..4201153.00 rows=47301126 width=25) (actual time=0.014..3383.025 rows=37847954 loops=5)
+                           Filter: (l_shipdate <= '1998-09-01 00:00:00'::timestamp without time zone)
+                           Rows Removed by Filter: 552157
+                           Buffers: shared hit=219703 read=3381465
  Planning:
    Buffers: shared hit=209 read=15
- Planning Time: 0.460 ms
- Execution Time: 22083.198 ms
+ Planning Time: 0.635 ms
+ Execution Time: 21755.466 ms
 (31 rows)
 

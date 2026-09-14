@@ -1,0 +1,2 @@
+pipeline output == reference output for all 3 inputs
+outputs/out_2500000.tsv (102.3 MB, seed 42) == reference output

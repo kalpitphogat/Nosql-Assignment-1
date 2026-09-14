@@ -1,0 +1,23 @@
+{
+  "source_row": 628,
+  "customer_id": "N00137",
+  "matched_master_id": null,
+  "name": "Jatin Acharya",
+  "available_information": {
+    "name": "Jatin Acharya",
+    "email": "jatin.acharya3137@example.in",
+    "phone": "7831002387",
+    "address": "H.No. 833, Krishna Marg",
+    "city": "Khora"
+  },
+  "missing_information": [],
+  "match_status": "new_entity",
+  "irregular_information": {
+    "city": {
+      "raw_value": "Khora ",
+      "problems": [
+        "leading/trailing whitespace"
+      ]
+    }
+  }
+}

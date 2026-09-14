@@ -1,0 +1,5 @@
+    386 bad_date
+    382 bad_price
+    390 bad_quantity
+    357 field_count_4
+    392 field_count_6

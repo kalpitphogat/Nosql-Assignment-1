@@ -1,15 +1,15 @@
                                                       QUERY PLAN                                                      
 ----------------------------------------------------------------------------------------------------------------------
- Aggregate  (cost=388680.63..388680.64 rows=1 width=32)
-   ->  Hash Join  (cost=11768.55..388670.73 rows=3959 width=8)
+ Aggregate  (cost=388684.87..388684.88 rows=1 width=32)
+   ->  Hash Join  (cost=11773.73..388673.82 rows=4419 width=8)
          Hash Cond: (lineitem.l_partkey = part.p_partkey)
          Join Filter: (lineitem.l_quantity < (SubPlan 1))
-         ->  Seq Scan on lineitem  (cost=0.00..345032.27 rows=11998427 width=17)
-         ->  Hash  (cost=11763.60..11763.60 rows=396 width=4)
-               ->  Gather  (cost=1000.00..11763.60 rows=396 width=4)
+         ->  Seq Scan on lineitem  (cost=0.00..345030.62 rows=11998262 width=17)
+         ->  Hash  (cost=11768.20..11768.20 rows=442 width=4)
+               ->  Gather  (cost=1000.00..11768.20 rows=442 width=4)
                      Workers Planned: 2
-                     ->  Parallel Seq Scan on part  (cost=0.00..10724.00 rows=165 width=4)
-                           Filter: ((p_brand = 'Brand#34'::bpchar) AND (p_container = 'MED PKG'::bpchar))
+                     ->  Parallel Seq Scan on part  (cost=0.00..10724.00 rows=184 width=4)
+                           Filter: ((p_brand = 'Brand#21'::bpchar) AND (p_container = 'WRAP CASE'::bpchar))
          SubPlan 1
            ->  Aggregate  (cost=37.38..37.39 rows=1 width=32)
                  ->  Index Scan using idx_lineitem_partkey on lineitem lineitem_1  (cost=0.43..37.29 rows=32 width=5)

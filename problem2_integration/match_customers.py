@@ -169,6 +169,22 @@ def classify(incoming, by_id, by_email, by_phone, by_name_city):
     return "incomplete_match", None, rule, available, missing, {}
 
 
+def find_irregularities(incoming):
+    """Values that are present but not in the expected form. They are still
+    matched after normalisation (trim, case-insensitive), but are reported."""
+    issues = {}
+    for field in FIELDS:
+        raw = incoming[field] or ""
+        problems = []
+        if raw != raw.strip():
+            problems.append("leading/trailing whitespace")
+        if field == "name" and raw.strip() and raw.strip() == raw.strip().lower():
+            problems.append("name not capitalised")
+        if problems:
+            issues[field] = {"raw_value": raw, "problems": problems}
+    return issues
+
+
 def make_json_doc(row_num, incoming, matched_id, status, available, missing, conflicts):
     doc = {
         "source_row": row_num,
@@ -181,6 +197,9 @@ def make_json_doc(row_num, incoming, matched_id, status, available, missing, con
     }
     if conflicts:
         doc["conflicting_information"] = conflicts
+    irregular = find_irregularities(incoming)
+    if irregular:
+        doc["irregular_information"] = irregular
     return doc
 
 
@@ -205,10 +224,11 @@ def main():
             "match_rule": rule,
         })
 
-        if status in ("partial_match", "incomplete_match", "conflicting"):
+        # JSON for every record with missing, conflicting or irregular information
+        if status in ("partial_match", "incomplete_match", "conflicting") or find_irregularities(incoming):
             doc = make_json_doc(i, incoming, matched_id, status, available, missing, conflicts)
             out_path = JSON_DIR / f"row_{i:04d}_{status}.json"
-            with open(out_path, "w", encoding="utf-8") as jf:
+            with open(out_path, "w", encoding="utf-8", newline="\n") as jf:
                 json.dump(doc, jf, indent=2)
 
     with open(CLASSIFICATION_FILE, "w", newline="", encoding="utf-8") as f:
@@ -217,7 +237,7 @@ def main():
         writer.writerows(results)
 
     total = len(incoming_rows)
-    with open(SUMMARY_FILE, "w", encoding="utf-8") as f:
+    with open(SUMMARY_FILE, "w", encoding="utf-8", newline="\n") as f:
         f.write("Matching summary statistics\n")
         f.write("=" * 30 + "\n")
         f.write(f"Total incoming records: {total}\n\n")

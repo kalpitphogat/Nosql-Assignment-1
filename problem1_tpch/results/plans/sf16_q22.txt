@@ -1,23 +1,23 @@
                                                                QUERY PLAN                                                                
 -----------------------------------------------------------------------------------------------------------------------------------------
- GroupAggregate  (cost=152434.53..154183.06 rows=12081 width=72)
+ GroupAggregate  (cost=152429.36..154148.38 rows=11877 width=72)
    Group Key: (SUBSTRING(customer.c_phone FROM 1 FOR 2))
    InitPlan 1 (returns $1)
-     ->  Finalize Aggregate  (cost=74273.25..74273.26 rows=1 width=32)
-           ->  Gather  (cost=74272.82..74273.23 rows=4 width=32)
+     ->  Finalize Aggregate  (cost=74270.47..74270.48 rows=1 width=32)
+           ->  Gather  (cost=74270.03..74270.44 rows=4 width=32)
                  Workers Planned: 4
-                 ->  Partial Aggregate  (cost=73272.82..73272.83 rows=1 width=32)
-                       ->  Parallel Seq Scan on customer customer_1  (cost=0.00..73225.19 rows=19052 width=6)
-                             Filter: ((c_acctbal > 0.00) AND (SUBSTRING(c_phone FROM 1 FOR 2) = ANY ('{44,38,35,42,28,20,24}'::text[])))
-   ->  Gather Merge  (cost=78161.26..79607.78 rows=12081 width=38)
+                 ->  Partial Aggregate  (cost=73270.03..73270.04 rows=1 width=32)
+                       ->  Parallel Seq Scan on customer customer_1  (cost=0.00..73222.29 rows=19098 width=6)
+                             Filter: ((c_acctbal > 0.00) AND (SUBSTRING(c_phone FROM 1 FOR 2) = ANY ('{28,12,24,15,32,11,13}'::text[])))
+   ->  Gather Merge  (cost=78158.89..79580.97 rows=11877 width=38)
          Workers Planned: 4
          Params Evaluated: $1
-         ->  Sort  (cost=77161.20..77168.75 rows=3020 width=38)
+         ->  Sort  (cost=77158.83..77166.25 rows=2969 width=38)
                Sort Key: (SUBSTRING(customer.c_phone FROM 1 FOR 2))
-               ->  Nested Loop Anti Join  (cost=0.44..76986.64 rows=3020 width=38)
-                     ->  Parallel Seq Scan on customer  (cost=0.00..73225.19 rows=7000 width=26)
-                           Filter: ((c_acctbal > $1) AND (SUBSTRING(c_phone FROM 1 FOR 2) = ANY ('{44,38,35,42,28,20,24}'::text[])))
-                     ->  Index Only Scan using idx_orders_custkey on orders  (cost=0.44..1.46 rows=18 width=4)
+               ->  Nested Loop Anti Join  (cost=0.44..76987.58 rows=2969 width=38)
+                     ->  Parallel Seq Scan on customer  (cost=0.00..73222.29 rows=6999 width=26)
+                           Filter: ((c_acctbal > $1) AND (SUBSTRING(c_phone FROM 1 FOR 2) = ANY ('{28,12,24,15,32,11,13}'::text[])))
+                     ->  Index Only Scan using idx_orders_custkey on orders  (cost=0.44..1.44 rows=17 width=4)
                            Index Cond: (o_custkey = customer.c_custkey)
 (19 rows)
 

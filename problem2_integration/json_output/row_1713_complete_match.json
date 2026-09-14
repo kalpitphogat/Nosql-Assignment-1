@@ -1,0 +1,23 @@
+{
+  "source_row": 1713,
+  "customer_id": "C00297",
+  "matched_master_id": "C00297",
+  "name": "Girindra More",
+  "available_information": {
+    "name": "Girindra More",
+    "email": "girindra.more297@yahoo.com",
+    "phone": "8806873684",
+    "address": "H.No. 876 Sem Path",
+    "city": "Khora"
+  },
+  "missing_information": [],
+  "match_status": "complete_match",
+  "irregular_information": {
+    "city": {
+      "raw_value": "Khora ",
+      "problems": [
+        "leading/trailing whitespace"
+      ]
+    }
+  }
+}

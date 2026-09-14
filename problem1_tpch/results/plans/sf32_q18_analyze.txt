@@ -1,61 +1,61 @@
                                                                                                   QUERY PLAN                                                                                                   
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- Limit  (cost=7945966.49..7945966.74 rows=100 width=71) (actual time=57432.297..57432.363 rows=100 loops=1)
-   Buffers: shared hit=4253 read=3729092, temp read=2368117 written=3285288
-   ->  Sort  (cost=7945966.49..7947306.67 rows=536070 width=71) (actual time=57432.296..57432.358 rows=100 loops=1)
+ Limit  (cost=7948651.25..7948651.50 rows=100 width=71) (actual time=63190.732..63190.794 rows=100 loops=1)
+   Buffers: shared hit=320454 read=3415062, temp read=2368129 written=3289566
+   ->  Sort  (cost=7948651.25..7949993.86 rows=537045 width=71) (actual time=63190.731..63190.790 rows=100 loops=1)
          Sort Key: orders.o_totalprice DESC, orders.o_orderdate
-         Sort Method: top-N heapsort  Memory: 36kB
-         Buffers: shared hit=4253 read=3729092, temp read=2368117 written=3285288
-         ->  GroupAggregate  (cost=4839763.77..7925478.28 rows=536070 width=71) (actual time=56797.346..57432.173 rows=210 loops=1)
+         Sort Method: top-N heapsort  Memory: 37kB
+         Buffers: shared hit=320454 read=3415062, temp read=2368129 written=3289566
+         ->  GroupAggregate  (cost=4840709.02..7928125.78 rows=537045 width=71) (actual time=62498.116..63190.505 rows=333 loops=1)
                Group Key: customer.c_custkey, orders.o_orderkey
-               Buffers: shared hit=4247 read=3729092, temp read=2368117 written=3285288
-               ->  Incremental Sort  (cost=4839763.77..7914756.88 rows=536070 width=44) (actual time=56797.339..57431.990 rows=1470 loops=1)
+               Buffers: shared hit=320448 read=3415062, temp read=2368129 written=3289566
+               ->  Incremental Sort  (cost=4840709.02..7917384.88 rows=537045 width=44) (actual time=62498.109..63190.197 rows=2331 loops=1)
                      Sort Key: customer.c_custkey, orders.o_orderkey
                      Presorted Key: customer.c_custkey
-                     Full-sort Groups: 42  Sort Method: quicksort  Average Memory: 27kB  Peak Memory: 27kB
-                     Buffers: shared hit=4247 read=3729092, temp read=2368117 written=3285288
-                     ->  Nested Loop  (cost=4839758.07..7890633.73 rows=536070 width=44) (actual time=56775.860..57431.753 rows=1470 loops=1)
-                           Buffers: shared hit=4247 read=3729092, temp read=2368117 written=3285288
-                           ->  Merge Join  (cost=4839757.50..5055342.59 rows=134007 width=43) (actual time=56775.841..57420.913 rows=210 loops=1)
+                     Full-sort Groups: 67  Sort Method: quicksort  Average Memory: 27kB  Peak Memory: 27kB
+                     Buffers: shared hit=320448 read=3415062, temp read=2368129 written=3289566
+                     ->  Nested Loop  (cost=4840703.33..7893217.85 rows=537045 width=44) (actual time=62488.817..63189.830 rows=2331 loops=1)
+                           Buffers: shared hit=320448 read=3415062, temp read=2368129 written=3289566
+                           ->  Merge Join  (cost=4840702.76..5056160.34 rows=134265 width=43) (actual time=62488.794..63182.669 rows=333 loops=1)
                                  Merge Cond: (customer.c_custkey = orders.o_custkey)
-                                 Buffers: shared hit=3814 read=3728455, temp read=2368117 written=3285288
-                                 ->  Index Scan using customer_pkey on customer  (cost=0.43..201574.73 rows=4800307 width=23) (actual time=0.015..533.188 rows=4751678 loops=1)
-                                       Buffers: shared hit=3272 read=126779
-                                 ->  Sort  (cost=4839757.01..4840092.02 rows=134007 width=24) (actual time=56773.905..56773.998 rows=210 loops=1)
+                                 Buffers: shared hit=319710 read=3414098, temp read=2368129 written=3289566
+                                 ->  Index Scan using customer_pkey on customer  (cost=0.43..201460.50 rows=4801491 width=23) (actual time=0.013..579.374 rows=4785119 loops=1)
+                                       Buffers: shared hit=3303 read=127672
+                                 ->  Sort  (cost=4840690.81..4841026.47 rows=134265 width=24) (actual time=62486.725..62486.838 rows=333 loops=1)
                                        Sort Key: orders.o_custkey
-                                       Sort Method: quicksort  Memory: 36kB
-                                       Buffers: shared hit=542 read=3601676, temp read=2368117 written=3285288
-                                       ->  Nested Loop  (cost=4500070.48..4828345.01 rows=134007 width=24) (actual time=30937.309..56773.785 rows=210 loops=1)
-                                             Buffers: shared hit=542 read=3601676, temp read=2368117 written=3285288
-                                             ->  Finalize HashAggregate  (cost=4500069.91..4506100.23 rows=134007 width=4) (actual time=30937.223..56768.571 rows=210 loops=1)
+                                       Sort Method: quicksort  Memory: 43kB
+                                       Buffers: shared hit=316407 read=3286426, temp read=2368129 written=3289566
+                                       ->  Nested Loop  (cost=4500387.35..4829254.98 rows=134265 width=24) (actual time=36094.905..62486.546 rows=333 loops=1)
+                                             Buffers: shared hit=316407 read=3286426, temp read=2368129 written=3289566
+                                             ->  Finalize HashAggregate  (cost=4500386.79..4506428.71 rows=134265 width=4) (actual time=36094.859..62479.207 rows=333 loops=1)
                                                    Group Key: lineitem_1.l_orderkey
-                                                   Filter: (sum(lineitem_1.l_quantity) > '315'::numeric)
-                                                   Batches: 133  Memory Usage: 262425kB  Disk Usage: 4037720kB
-                                                   Rows Removed by Filter: 47999790
-                                                   Buffers: shared read=3601168, temp read=2368117 written=3285288
-                                                   ->  Gather  (cost=4322175.62..4488009.28 rows=1608084 width=36) (actual time=8240.783..19306.867 rows=48003215 loops=1)
+                                                   Filter: (sum(lineitem_1.l_quantity) > '312'::numeric)
+                                                   Batches: 133  Memory Usage: 262425kB  Disk Usage: 4037736kB
+                                                   Rows Removed by Filter: 47999667
+                                                   Buffers: shared hit=315647 read=3285521, temp read=2368129 written=3289566
+                                                   ->  Gather  (cost=4322150.00..4488302.94 rows=1611180 width=36) (actual time=13406.117..24443.613 rows=48003217 loops=1)
                                                          Workers Planned: 4
                                                          Workers Launched: 4
-                                                         Buffers: shared read=3601168, temp read=1383651 written=1988560
-                                                         ->  Partial HashAggregate  (cost=4321175.62..4326200.88 rows=402021 width=36) (actual time=8237.998..18128.345 rows=9600643 loops=5)
+                                                         Buffers: shared hit=315647 read=3285521, temp read=1383659 written=1988455
+                                                         ->  Partial HashAggregate  (cost=4321150.00..4326184.94 rows=402795 width=36) (actual time=13403.108..23290.616 rows=9600643 loops=5)
                                                                Group Key: lineitem_1.l_orderkey
-                                                               Batches: 37  Memory Usage: 262233kB  Disk Usage: 1301376kB
-                                                               Buffers: shared read=3601168, temp read=1383651 written=1988560
-                                                               Worker 0:  Batches: 37  Memory Usage: 262233kB  Disk Usage: 1296136kB
-                                                               Worker 1:  Batches: 33  Memory Usage: 262233kB  Disk Usage: 1293688kB
-                                                               Worker 2:  Batches: 33  Memory Usage: 262233kB  Disk Usage: 1296160kB
-                                                               Worker 3:  Batches: 37  Memory Usage: 262233kB  Disk Usage: 1297920kB
-                                                               ->  Parallel Seq Scan on lineitem lineitem_1  (cost=0.00..4081173.08 rows=48000508 width=9) (actual time=0.011..2043.280 rows=38400110 loops=5)
-                                                                     Buffers: shared read=3601168
-                                             ->  Index Scan using orders_pkey on orders  (cost=0.56..2.40 rows=1 width=20) (actual time=0.023..0.023 rows=1 loops=210)
+                                                               Batches: 33  Memory Usage: 262233kB  Disk Usage: 1292080kB
+                                                               Buffers: shared hit=315647 read=3285521, temp read=1383659 written=1988455
+                                                               Worker 0:  Batches: 37  Memory Usage: 262233kB  Disk Usage: 1301568kB
+                                                               Worker 1:  Batches: 37  Memory Usage: 262233kB  Disk Usage: 1297640kB
+                                                               Worker 2:  Batches: 37  Memory Usage: 262233kB  Disk Usage: 1299360kB
+                                                               Worker 3:  Batches: 37  Memory Usage: 262233kB  Disk Usage: 1293440kB
+                                                               ->  Parallel Seq Scan on lineitem lineitem_1  (cost=0.00..4081156.00 rows=47998800 width=9) (actual time=0.012..6990.026 rows=38400110 loops=5)
+                                                                     Buffers: shared hit=315647 read=3285521
+                                             ->  Index Scan using orders_pkey on orders  (cost=0.56..2.40 rows=1 width=20) (actual time=0.020..0.020 rows=1 loops=333)
                                                    Index Cond: (o_orderkey = lineitem_1.l_orderkey)
-                                                   Buffers: shared hit=542 read=508
-                           ->  Index Scan using idx_lineitem_orderkey on lineitem  (cost=0.57..16.38 rows=478 width=9) (actual time=0.050..0.051 rows=7 loops=210)
+                                                   Buffers: shared hit=760 read=905
+                           ->  Index Scan using idx_lineitem_orderkey on lineitem  (cost=0.57..16.36 rows=477 width=9) (actual time=0.020..0.021 rows=7 loops=333)
                                  Index Cond: (l_orderkey = orders.o_orderkey)
-                                 Buffers: shared hit=433 read=637
+                                 Buffers: shared hit=738 read=964
  Planning:
-   Buffers: shared hit=273 read=47
- Planning Time: 1.091 ms
- Execution Time: 57601.263 ms
+   Buffers: shared hit=270 read=50
+ Planning Time: 1.115 ms
+ Execution Time: 63377.724 ms
 (57 rows)
 

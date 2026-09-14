@@ -1,29 +1,29 @@
                                                                                 QUERY PLAN                                                                                 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- Sort  (cost=2871917.13..2871917.63 rows=200 width=16) (actual time=66234.527..66234.528 rows=46 loops=1)
+ Sort  (cost=2863727.85..2863728.35 rows=200 width=16) (actual time=65210.663..65210.665 rows=45 loops=1)
    Sort Key: (count(*)) DESC, (count(orders.o_orderkey)) DESC
    Sort Method: quicksort  Memory: 26kB
-   Buffers: shared hit=29473761 read=18588070
-   ->  HashAggregate  (cost=2871907.48..2871909.48 rows=200 width=16) (actual time=66234.498..66234.502 rows=46 loops=1)
+   Buffers: shared hit=29686795 read=18375036
+   ->  HashAggregate  (cost=2863718.20..2863720.20 rows=200 width=16) (actual time=65210.640..65210.644 rows=45 loops=1)
          Group Key: count(orders.o_orderkey)
          Batches: 1  Memory Usage: 40kB
-         Buffers: shared hit=29473758 read=18588070
-         ->  GroupAggregate  (cost=175.17..2799902.88 rows=4800307 width=12) (actual time=0.074..65815.561 rows=4800000 loops=1)
+         Buffers: shared hit=29686792 read=18375036
+         ->  GroupAggregate  (cost=0.87..2791695.84 rows=4801491 width=12) (actual time=0.087..64773.355 rows=4800000 loops=1)
                Group Key: customer.c_custkey
-               Buffers: shared hit=29473758 read=18588070
-               ->  Merge Left Join  (cost=175.17..2511940.11 rows=47991940 width=8) (actual time=0.022..63420.778 rows=49083045 loops=1)
+               Buffers: shared hit=29686792 read=18375036
+               ->  Merge Left Join  (cost=0.87..2506104.62 rows=47515262 width=8) (actual time=0.026..62428.613 rows=49083893 loops=1)
                      Merge Cond: (customer.c_custkey = orders.o_custkey)
-                     Buffers: shared hit=29473758 read=18588070
-                     ->  Index Only Scan using customer_pkey on customer  (cost=0.43..86485.44 rows=4800307 width=4) (actual time=0.008..265.734 rows=4800000 loops=1)
+                     Buffers: shared hit=29686792 read=18375036
+                     ->  Index Only Scan using customer_pkey on customer  (cost=0.43..86503.20 rows=4801491 width=4) (actual time=0.010..312.849 rows=4800000 loops=1)
                            Heap Fetches: 0
                            Buffers: shared hit=93 read=13122
-                     ->  Index Scan using idx_orders_custkey on orders  (cost=0.44..1813599.09 rows=47991940 width=8) (actual time=0.012..60205.456 rows=47482965 loops=1)
-                           Filter: ((o_comment)::text !~~ '%special%packages%'::text)
-                           Rows Removed by Filter: 517035
-                           Buffers: shared hit=29473665 read=18574948
+                     ->  Index Scan using idx_orders_custkey on orders  (cost=0.44..1813656.92 rows=47515262 width=8) (actual time=0.014..59174.458 rows=47483809 loops=1)
+                           Filter: ((o_comment)::text !~~ '%pending%packages%'::text)
+                           Rows Removed by Filter: 516191
+                           Buffers: shared hit=29686699 read=18361914
  Planning:
-   Buffers: shared hit=155 read=56
- Planning Time: 0.638 ms
- Execution Time: 66234.583 ms
+   Buffers: shared hit=179 read=32
+ Planning Time: 0.701 ms
+ Execution Time: 65210.720 ms
 (25 rows)
 

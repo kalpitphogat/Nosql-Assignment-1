@@ -4,13 +4,15 @@
 - `match_customers.py` — the matching/classification program (stdlib only, no dependencies)
 - `customer_master.csv`, `customer_incoming.csv` — supplied input data (3000 / 2000 records)
 - `classification_results.csv` — one row per incoming record: assigned category + which matching rule fired
-- `json_output/` — one JSON document per record classified as `partial_match`, `incomplete_match`, or `conflicting`
+- `json_output/` — one JSON document per record with missing, conflicting or irregular information (every `partial_match`, `incomplete_match` and `conflicting` record, plus any other record containing an irregular value)
 - `summary_statistics.txt` — record counts per category
 
-Run with:
+Run with (Python 3 standard library only; tested with Python 3.12.10 on Windows 11):
 ```bash
 python3 match_customers.py
 ```
+The program reads the two supplied CSV files and classifies every incoming
+record automatically. No record is classified by hand.
 
 ## Matching strategy
 
@@ -72,9 +74,39 @@ If no unique candidate is found:
 | No Match / New Entity | 400 | 20.0 | no candidate |
 | Conflicting Information | 350 | 17.5 | customer_id (350) |
 
-1200 JSON documents are written to `json_output/` (every partial,
-incomplete and conflicting record); the per-record table is
-`classification_results.csv` (row, ids, status, and which rule fired).
+1202 JSON documents are written to `json_output/`: all 1200 partial,
+incomplete and conflicting records, plus 2 records (one complete match,
+one new entity) whose only issue is an irregular value. The per-record
+table `classification_results.csv` lists all 2000 records (row, ids,
+status, and which rule fired).
+
+### Irregular values
+
+Some present values are not in the expected form. They are detected
+explicitly and reported, not silently discarded:
+
+| Irregularity | Incoming rows | Handling |
+|---|---|---|
+| name with leading/trailing spaces **and** all lower-case (e.g. `"  chaaya verma  "`) | 39 | matched after trimming and case-insensitive comparison; JSON `irregular_information` keeps the raw value |
+| city with a trailing space (e.g. `"Khora "`) | 2 | same |
+
+(The master file has 13 cities with surrounding spaces; comparison trims
+both sides.) Normalisation does not change the category, so a record whose
+only issue is an irregular value keeps its category (here one complete
+match and one new entity) and still gets a JSON document listing the
+irregularity.
+
+### Duplicate and empty incoming rows
+
+- **145 customer ids occur 2 or 3 times** in the incoming file (297 rows).
+  Each row is classified independently against the master file, so rows
+  with the same id can get different categories, e.g. `C02666` is
+  conflicting in row 27, a complete match in row 284 and a partial match in
+  row 599. We report each row as it is and do not merge incoming rows with
+  each other: the task is to classify every incoming record against the
+  master dataset.
+- **62 rows are completely empty** (all six fields blank). They are
+  Incomplete Match (see below).
 
 ### Evidence behind the rule order (measured on the master file)
 
@@ -91,7 +123,7 @@ incomplete and conflicting record); the per-record table is
   records have only a name (100 of those names happen to be unique in the
   master file, 4 are not) and 27 have only a city.
 - **62 incoming rows are completely empty**, so they are Incomplete.
-- **Incoming ids are consistent**: all 1200 `C…` ids exist in the master
+- **Incoming ids are consistent**: all 1200 incoming rows with a `C…` id refer to an id that exists in the master
   file and none of the 400 `N…` ids do, so `customer_id` is safe as the
   first rule.
 - **Conflicts are real value disagreements, not formatting noise**: for all
@@ -102,7 +134,7 @@ incomplete and conflicting record); the per-record table is
   name 108, address 104, city 101, email 96. So exact (case-insensitive)
   comparison is enough here, and no fuzzy matching was needed.
 
-## Why JSON for partial/incomplete/conflicting records
+## Why JSON for records with missing, conflicting or irregular information
 
 A flat CSV row can't represent "this field is missing" vs. "this field
 disagrees with the master record" vs. "this field simply wasn't compared"
@@ -114,12 +146,19 @@ lets each record carry:
 - `conflicting_information` — for Conflicting records, both the incoming
   and master values side by side, so a human reviewer can see exactly what
   disagreed and decide how to resolve it,
+- `irregular_information` — for values present in a non-standard form, the
+  raw value exactly as received and the problem found,
 
-as three independently-sized, self-describing pieces — instead of forcing
+as independently-sized, self-describing pieces — instead of forcing
 every record into a fixed set of CSV columns where "missing" and "not
 applicable" look identical.
 
 ## Assumptions / limitations
+- Irregularity detection covers what occurs in this data: surrounding
+  whitespace, and names written entirely in lower case. Emails, phones
+  and ids were also checked: every phone is 10 digits, every email has a
+  single `@` and a domain, and every id matches `C#####` or `N#####`. Other
+  forms of irregularity (e.g. misspellings) are not detected.
 - Matching is deterministic and rule-based, not a fuzzy/probabilistic
   matcher (no edit-distance on names, no address normalization) — a
   misspelled name that doesn't share an id/email/phone with its true

@@ -1,5 +1,5 @@
- s_suppkey |          s_name           |             s_address              |     s_phone     | total_revenue 
------------+---------------------------+------------------------------------+-----------------+---------------
-     55989 | Supplier#000055989        | VWHs6i6BsrGiToNiZJBzJJ UgqhCs,qZ9d | 13-254-238-4014 |  2334956.2819
+ s_suppkey |          s_name           |                s_address                 |     s_phone     | total_revenue 
+-----------+---------------------------+------------------------------------------+-----------------+---------------
+     16819 | Supplier#000016819        | NSJdel5UfTVYAnlAKwOBSEIrxPGaNPoaQjyJCRI5 | 32-407-349-4572 |  2286689.8689
 (1 row)
 

@@ -1,26 +1,26 @@
                                                              QUERY PLAN                                                             
 ------------------------------------------------------------------------------------------------------------------------------------
- Limit  (cost=370301.38..370301.63 rows=100 width=71)
-   ->  Sort  (cost=370301.38..371605.34 rows=521584 width=71)
+ Limit  (cost=366760.72..366760.97 rows=100 width=71)
+   ->  Sort  (cost=366760.72..368017.78 rows=502825 width=71)
          Sort Key: orders.o_totalprice DESC, orders.o_orderdate
-         ->  HashAggregate  (cost=343847.01..350366.81 rows=521584 width=71)
+         ->  HashAggregate  (cost=341257.80..347543.11 rows=502825 width=71)
                Group Key: customer.c_custkey, orders.o_orderkey
-               ->  Gather  (cost=216119.57..339935.13 rows=521584 width=44)
+               ->  Gather  (cost=215848.06..337486.61 rows=502825 width=44)
                      Workers Planned: 3
-                     ->  Nested Loop  (cost=215119.57..286776.73 rows=168253 width=44)
-                           ->  Parallel Hash Join  (cost=215119.14..247474.41 rows=42055 width=43)
+                     ->  Nested Loop  (cost=214848.06..286204.11 rows=162202 width=44)
+                           ->  Parallel Hash Join  (cost=214847.62..247198.92 rows=40544 width=43)
                                  Hash Cond: (orders.o_custkey = customer.c_custkey)
-                                 ->  Hash Join  (cost=210112.89..242357.76 rows=42055 width=24)
+                                 ->  Hash Join  (cost=209841.37..242086.25 rows=40544 width=24)
                                        Hash Cond: (orders.o_orderkey = lineitem_1.l_orderkey)
                                        ->  Parallel Seq Scan on orders  (cost=0.00..30974.71 rows=483871 width=20)
-                                       ->  Hash  (cost=208483.24..208483.24 rows=130372 width=4)
-                                             ->  HashAggregate  (cost=202616.50..208483.24 rows=130372 width=4)
+                                       ->  Hash  (cost=208270.30..208270.30 rows=125686 width=4)
+                                             ->  HashAggregate  (cost=202614.41..208270.30 rows=125686 width=4)
                                                    Group Key: lineitem_1.l_orderkey
-                                                   Filter: (sum(lineitem_1.l_quantity) > '315'::numeric)
-                                                   ->  Seq Scan on lineitem lineitem_1  (cost=0.00..172611.00 rows=6001100 width=9)
+                                                   Filter: (sum(lineitem_1.l_quantity) > '312'::numeric)
+                                                   ->  Seq Scan on lineitem lineitem_1  (cost=0.00..172609.61 rows=6000961 width=9)
                                  ->  Parallel Hash  (cost=4225.00..4225.00 rows=62500 width=23)
                                        ->  Parallel Seq Scan on customer  (cost=0.00..4225.00 rows=62500 width=23)
-                           ->  Index Scan using idx_lineitem_orderkey on lineitem  (cost=0.43..0.78 rows=15 width=9)
+                           ->  Index Scan using idx_lineitem_orderkey on lineitem  (cost=0.43..0.80 rows=16 width=9)
                                  Index Cond: (l_orderkey = orders.o_orderkey)
 (22 rows)
 

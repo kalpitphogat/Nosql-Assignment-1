@@ -1,27 +1,27 @@
-                                                                                            QUERY PLAN                                                                                             
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
- Finalize GroupAggregate  (cost=4799050.68..4804376.16 rows=10032 width=116)
+                                                                                    QUERY PLAN                                                                                     
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Finalize GroupAggregate  (cost=4768372.67..4773683.29 rows=10040 width=116)
    Group Key: n1.n_name, n2.n_name, (EXTRACT(year FROM lineitem.l_shipdate))
-   ->  Gather Merge  (cost=4799050.68..4803849.48 rows=30096 width=116)
+   ->  Gather Merge  (cost=4768372.67..4773156.19 rows=30120 width=116)
          Workers Planned: 3
-         ->  Partial GroupAggregate  (cost=4798050.64..4799313.16 rows=10032 width=116)
+         ->  Partial GroupAggregate  (cost=4767372.63..4768617.05 rows=10040 width=116)
                Group Key: n1.n_name, n2.n_name, (EXTRACT(year FROM lineitem.l_shipdate))
-               ->  Sort  (cost=4798050.64..4798209.51 rows=63545 width=96)
+               ->  Sort  (cost=4767372.63..4767528.89 rows=62504 width=96)
                      Sort Key: n1.n_name, n2.n_name, (EXTRACT(year FROM lineitem.l_shipdate))
-                     ->  Parallel Hash Join  (cost=131842.19..4792981.19 rows=63545 width=96)
+                     ->  Parallel Hash Join  (cost=131846.36..4762393.67 rows=62504 width=96)
                            Hash Cond: (orders.o_custkey = customer.c_custkey)
-                           Join Filter: (((n1.n_name = 'SAUDI ARABIA'::bpchar) AND (n2.n_name = 'ALGERIA'::bpchar)) OR ((n1.n_name = 'ALGERIA'::bpchar) AND (n2.n_name = 'SAUDI ARABIA'::bpchar)))
-                           ->  Nested Loop  (cost=1.72..4654645.02 rows=1526946 width=46)
-                                 ->  Nested Loop  (cost=1.14..3793924.87 rows=1526946 width=46)
-                                       ->  Nested Loop  (cost=0.57..13367.77 rows=8258 width=30)
-                                             ->  Parallel Index Scan using supplier_pkey on supplier  (cost=0.42..10789.50 rows=103226 width=8)
+                           Join Filter: (((n1.n_name = 'JAPAN'::bpchar) AND (n2.n_name = 'JORDAN'::bpchar)) OR ((n1.n_name = 'JORDAN'::bpchar) AND (n2.n_name = 'JAPAN'::bpchar)))
+                           ->  Nested Loop  (cost=1.72..4624159.83 rows=1501914 width=46)
+                                 ->  Nested Loop  (cost=1.14..3762478.13 rows=1501914 width=46)
+                                       ->  Nested Loop  (cost=0.57..13304.62 rows=8258 width=30)
+                                             ->  Parallel Index Scan using supplier_pkey on supplier  (cost=0.42..10726.35 rows=103226 width=8)
                                              ->  Memoize  (cost=0.15..0.72 rows=1 width=30)
                                                    Cache Key: supplier.s_nationkey
                                                    Cache Mode: logical
                                                    ->  Index Scan using nation_pkey on nation n1  (cost=0.14..0.71 rows=1 width=30)
                                                          Index Cond: (n_nationkey = supplier.s_nationkey)
-                                                         Filter: ((n_name = 'SAUDI ARABIA'::bpchar) OR (n_name = 'ALGERIA'::bpchar))
-                                       ->  Index Scan using idx_lineitem_suppkey on lineitem  (cost=0.57..455.96 rows=185 width=24)
+                                                         Filter: ((n_name = 'JAPAN'::bpchar) OR (n_name = 'JORDAN'::bpchar))
+                                       ->  Index Scan using idx_lineitem_suppkey on lineitem  (cost=0.57..452.19 rows=182 width=24)
                                              Index Cond: (l_suppkey = supplier.s_suppkey)
                                              Filter: ((l_shipdate >= '1995-01-01'::date) AND (l_shipdate <= '1996-12-31'::date))
                                  ->  Memoize  (cost=0.57..2.06 rows=1 width=8)
@@ -29,12 +29,12 @@
                                        Cache Mode: logical
                                        ->  Index Scan using orders_pkey on orders  (cost=0.56..2.05 rows=1 width=8)
                                              Index Cond: (o_orderkey = lineitem.l_orderkey)
-                           ->  Parallel Hash  (cost=130640.40..130640.40 rows=96006 width=30)
-                                 ->  Hash Join  (cost=1.40..130640.40 rows=96006 width=30)
+                           ->  Parallel Hash  (cost=130644.27..130644.27 rows=96030 width=30)
+                                 ->  Hash Join  (cost=1.40..130644.27 rows=96030 width=30)
                                        Hash Cond: (customer.c_nationkey = n2.n_nationkey)
-                                       ->  Parallel Seq Scan on customer  (cost=0.00..126954.77 rows=1200077 width=8)
+                                       ->  Parallel Seq Scan on customer  (cost=0.00..126957.73 rows=1200373 width=8)
                                        ->  Hash  (cost=1.38..1.38 rows=2 width=30)
                                              ->  Seq Scan on nation n2  (cost=0.00..1.38 rows=2 width=30)
-                                                   Filter: ((n_name = 'ALGERIA'::bpchar) OR (n_name = 'SAUDI ARABIA'::bpchar))
+                                                   Filter: ((n_name = 'JORDAN'::bpchar) OR (n_name = 'JAPAN'::bpchar))
 (36 rows)
 

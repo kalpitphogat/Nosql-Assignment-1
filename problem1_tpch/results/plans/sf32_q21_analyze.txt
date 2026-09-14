@@ -1,0 +1,70 @@
+                                                                                                 QUERY PLAN                                                                                                 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Limit  (cost=3111424.16..3111424.17 rows=1 width=34) (actual time=10204.930..10204.996 rows=100 loops=1)
+   Buffers: shared hit=25790344 read=10086661
+   ->  Sort  (cost=3111424.16..3111424.17 rows=1 width=34) (actual time=10204.929..10204.992 rows=100 loops=1)
+         Sort Key: (count(*)) DESC, supplier.s_name
+         Sort Method: top-N heapsort  Memory: 36kB
+         Buffers: shared hit=25790344 read=10086661
+         ->  GroupAggregate  (cost=3111424.13..3111424.15 rows=1 width=34) (actual time=10195.308..10204.210 rows=12915 loops=1)
+               Group Key: supplier.s_name
+               Buffers: shared hit=25790338 read=10086661
+               ->  Sort  (cost=3111424.13..3111424.14 rows=1 width=26) (actual time=10195.300..10197.759 rows=127985 loops=1)
+                     Sort Key: supplier.s_name
+                     Sort Method: quicksort  Memory: 8072kB
+                     Buffers: shared hit=25790338 read=10086661
+                     ->  Nested Loop  (cost=1002.85..3111424.12 rows=1 width=26) (actual time=0.655..10154.052 rows=127985 loops=1)
+                           Buffers: shared hit=25790338 read=10086661
+                           ->  Nested Loop Semi Join  (cost=1002.28..3111421.63 rows=1 width=34) (actual time=0.637..8363.091 rows=260630 loops=1)
+                                 Buffers: shared hit=24984633 read=9589216
+                                 ->  Gather  (cost=1001.71..3111401.95 rows=1 width=34) (actual time=0.381..7165.422 rows=435906 loops=1)
+                                       Workers Planned: 3
+                                       Workers Launched: 3
+                                       Buffers: shared hit=22803193 read=9589216
+                                       ->  Nested Loop Anti Join  (cost=1.71..3110401.85 rows=1 width=34) (actual time=0.486..9374.763 rows=108976 loops=4)
+                                             Buffers: shared hit=22803193 read=9589216
+                                             ->  Nested Loop  (cost=1.14..2419969.31 rows=818375 width=34) (actual time=0.192..5260.967 rows=1225071 loops=4)
+                                                   Buffers: shared hit=749803 read=7067112
+                                                   ->  Nested Loop  (cost=0.57..13331.77 rows=4129 width=30) (actual time=0.152..25.668 rows=3229 loops=4)
+                                                         Buffers: shared hit=1220 read=8061
+                                                         ->  Parallel Index Scan using supplier_pkey on supplier  (cost=0.42..10732.73 rows=103226 width=34) (actual time=0.112..12.600 rows=80000 loops=4)
+                                                               Buffers: shared hit=1018 read=8060
+                                                         ->  Memoize  (cost=0.15..0.72 rows=1 width=4) (actual time=0.000..0.000 rows=0 loops=320000)
+                                                               Cache Key: supplier.s_nationkey
+                                                               Cache Mode: logical
+                                                               Hits: 59267  Misses: 25  Evictions: 0  Overflows: 0  Memory Usage: 2kB
+                                                               Buffers: shared hit=202 read=1
+                                                               Worker 0:  Hits: 87083  Misses: 25  Evictions: 0  Overflows: 0  Memory Usage: 2kB
+                                                               Worker 1:  Hits: 87083  Misses: 25  Evictions: 0  Overflows: 0  Memory Usage: 2kB
+                                                               Worker 2:  Hits: 86467  Misses: 25  Evictions: 0  Overflows: 0  Memory Usage: 2kB
+                                                               ->  Index Scan using nation_pkey on nation  (cost=0.14..0.71 rows=1 width=4) (actual time=0.001..0.001 rows=0 loops=100)
+                                                                     Index Cond: (n_nationkey = supplier.s_nationkey)
+                                                                     Filter: (n_name = 'VIETNAM'::bpchar)
+                                                                     Rows Removed by Filter: 1
+                                                                     Buffers: shared hit=202 read=1
+                                                   ->  Index Scan using idx_lineitem_suppkey on lineitem l1  (cost=0.57..580.88 rows=198 width=8) (actual time=0.058..1.594 rows=379 loops=12916)
+                                                         Index Cond: (l_suppkey = supplier.s_suppkey)
+                                                         Filter: (l_receiptdate > l_commitdate)
+                                                         Rows Removed by Filter: 221
+                                                         Buffers: shared hit=748583 read=7059051
+                                             ->  Index Scan using idx_lineitem_orderkey on lineitem l3  (cost=0.57..20.86 rows=159 width=8) (actual time=0.003..0.003 rows=1 loops=4900285)
+                                                   Index Cond: (l_orderkey = l1.l_orderkey)
+                                                   Filter: ((l_receiptdate > l_commitdate) AND (l_suppkey <> l1.l_suppkey))
+                                                   Rows Removed by Filter: 1
+                                                   Buffers: shared hit=22053390 read=2522104
+                                 ->  Index Scan using idx_lineitem_orderkey on lineitem l2  (cost=0.57..19.66 rows=477 width=8) (actual time=0.003..0.003 rows=1 loops=435906)
+                                       Index Cond: (l_orderkey = l1.l_orderkey)
+                                       Filter: (l_suppkey <> l1.l_suppkey)
+                                       Rows Removed by Filter: 1
+                                       Buffers: shared hit=2181440
+                           ->  Index Scan using orders_pkey on orders  (cost=0.56..2.49 rows=1 width=4) (actual time=0.007..0.007 rows=0 loops=260630)
+                                 Index Cond: (o_orderkey = l1.l_orderkey)
+                                 Filter: (o_orderstatus = 'F'::bpchar)
+                                 Rows Removed by Filter: 1
+                                 Buffers: shared hit=805705 read=497445
+ Planning:
+   Buffers: shared hit=388 read=76
+ Planning Time: 2.209 ms
+ Execution Time: 10205.338 ms
+(66 rows)
+
