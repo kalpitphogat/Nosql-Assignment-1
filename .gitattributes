@@ -4,3 +4,6 @@ generate_transactions text eol=lf
 *.tsv text eol=lf
 # keep supplied input files byte-identical (CRLF as supplied)
 problem2_integration/customer_*.csv -text
+# qgen raw output and checksum lists must stay byte-exact (the official templates use CRLF)
+problem1_tpch/queries/*/raw/*.sql -text
+problem1_tpch/queries/*/SHA256SUMS -text
