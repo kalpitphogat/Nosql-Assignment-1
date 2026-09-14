@@ -3,3 +3,8 @@ data/
 *.tbl
 *.malformed_rows.tsv
 __pycache__/
+*.aux
+*.toc
+report/report.log
+report/report.out
+report/report.pdf

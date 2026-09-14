@@ -33,14 +33,22 @@ for required in ["problem1_tpch/queries/sf1/SHA256SUMS", "problem1_tpch/queries/
 if "PENDING" in (ROOT / "COMPLIANCE.md").read_text(encoding="utf-8"):
     sys.exit("COMPLIANCE.md still has PENDING rows -- finish Problem 1 first")
 
-subprocess.run([sys.executable, str(ROOT / "build_report.py")], check=True)
+# Compile the LaTeX report (twice, for the table of contents) and use it as REPORT.pdf.
+PDFLATEX = shutil.which("pdflatex") or str(Path.home() / "AppData/Local/Programs/MiKTeX/miktex/bin/x64/pdflatex.exe")
+report_dir = ROOT / "report"
+shutil.copy2(ROOT / "problem1_tpch/results/scaling_plot.png", report_dir / "figures/scaling_plot.png")
+shutil.copy2(ROOT / "problem1_tpch/results/per_query_plot.png", report_dir / "figures/per_query_plot.png")
+for _ in range(2):
+    subprocess.run([PDFLATEX, "-interaction=nonstopmode", "-halt-on-error", "report.tex"],
+                   cwd=report_dir, check=True, stdout=subprocess.DEVNULL)
+shutil.copy2(report_dir / "report.pdf", ROOT / "REPORT.pdf")
 
-IGNORE = shutil.ignore_patterns(".git", "__pycache__", "*.pyc", "data", "*.tbl",
+IGNORE = shutil.ignore_patterns(".git", "__pycache__", "*.pyc", "data", "*.tbl", "report.aux", "report.log", "report.out", "report.toc", "report.pdf",
                                 "*.malformed_rows.tsv", "make_package.py")
 if PKG.exists():
     shutil.rmtree(PKG)
 PKG.mkdir(parents=True)
-for item in ["README.md", "REPORT.pdf", "REPORT.html", "COMPLIANCE.md", "TEAM.md", "build_report.py",
+for item in ["README.md", "REPORT.pdf", "COMPLIANCE.md", "TEAM.md", "report",
              "problem1_tpch", "problem2_integration", "problem3_unix_pipeline"]:
     src = ROOT / item
     if not src.exists():
