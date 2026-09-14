@@ -1,0 +1,24 @@
+ c_custkey |       c_name       |   revenue   | c_acctbal |          n_name           |                c_address                 |     c_phone     |                                                   c_comment                                                    
+-----------+--------------------+-------------+-----------+---------------------------+------------------------------------------+-----------------+----------------------------------------------------------------------------------------------------------------
+   2288464 | Customer#002288464 | 951644.6360 |   4782.55 | ARGENTINA                 | NmvsGkVmJ6oxC2TjlIoS                     | 11-874-246-1609 | t the enticingly ironic dolphin
+   4476844 | Customer#004476844 | 880365.3110 |   -403.91 | ROMANIA                   | qfd5GD66o IUPFO8,sFOAP4yhWY7wbYxicxGnfm  | 29-592-748-6797 | fully express, final theodolites. bold, special accounts detect carefully regular accounts. reg
+   1193107 | Customer#001193107 | 857512.8493 |   2795.14 | JORDAN                    | lqTJ1318wZMSapB2ISQrKqfSvJFPMzQoWYL      | 23-711-474-2514 |  the accounts sleep slyly within the quiet deposits. even, pending requests haggle ab
+   3111139 | Customer#003111139 | 852950.6973 |   9321.27 | CHINA                     | 69pW114v7ki5kJUOEPrMVJ9w1QYT             | 28-350-202-6504 | ole furiously slyly regular deposits. spe
+   4106062 | Customer#004106062 | 850116.8012 |    968.99 | GERMANY                   | NYgFwThddW0Xeq9ILF88P6qlsxTMVUElL        | 17-313-101-5031 | sits. furiously unusual deposits snooze slyly about the regular, regular deposits. final reques
+   1608730 | Customer#001608730 | 850020.1032 |   9086.62 | KENYA                     | xy7fsLZS467QW8FrkSng                     | 24-205-105-8113 | oxes wake carefully even foxes. f
+   2318971 | Customer#002318971 | 840457.5751 |   3550.81 | UNITED KINGDOM            | 34Iv9100O wb15d2oMTwpQsJsTK7mFqGFcnQ     | 33-607-416-1937 | kly against the asymptotes. slyly furious deposits detect. furiously ruthless deposits hag
+   3509068 | Customer#003509068 | 830830.3116 |   8883.05 | VIETNAM                   | nC1Pzcf6kOjZYMylLK9LjVWrfEH6             | 31-181-528-1667 | telets. pending deposits sleep. depos
+   4209172 | Customer#004209172 | 815830.7847 |   3788.73 | VIETNAM                   | aF pkmbSE7Pa2p2jvz8XmGIvFjNgkJ0P54bq,oiv | 31-889-876-2896 | s according to the carefully regular requests in
+   2224492 | Customer#002224492 | 795108.3998 |   3127.83 | ARGENTINA                 | YzDILx5SRvSn6X                           | 11-608-310-6997 | en ideas sleep sometimes across the blithely special platelets! ironic packages are carefully. requests cajole
+   4689469 | Customer#004689469 | 794375.6624 |   4650.32 | RUSSIA                    | ,4MvOLyjhrBs7ztvT TLANFtpv37gZkZzHTVzZq  | 32-682-179-8782 | accounts. ironic, ironic deposits na
+   3088570 | Customer#003088570 | 793651.5374 |   1377.95 | UNITED KINGDOM            | e96oHZfsQGrU dvUqwkBLRNdjor6B            | 33-443-572-4019 | sits run according to the regular
+   4602016 | Customer#004602016 | 790452.1401 |    157.21 | PERU                      | emkHsOFjjV6D9i w3YtqdTucLdVR0uUyGjOIc    | 27-383-845-3768 | lar packages. quickly regular asymptotes affix quickly quickly express instructions. blithely 
+   4355305 | Customer#004355305 | 789550.8439 |   7895.11 | UNITED KINGDOM            | ZOQf86EuXS                               | 33-305-915-2144 | eposits are carefully. carefully even deposits are among 
+    245338 | Customer#000245338 | 782163.8867 |   3944.85 | UNITED KINGDOM            | ALphqaSy3gsYZSic PRGHu8B9d5MX            | 33-308-511-5852 |  even pinto beans are slyly reg
+   3774754 | Customer#003774754 | 780564.1825 |   7456.92 | JAPAN                     | iztH9 sq4Wy 0Y3fuQwa74jVPeLp U3s3C6NuRS  | 22-996-627-5580 | the theodolites. ironic requests haggle across t
+   3917155 | Customer#003917155 | 779230.5965 |   -948.67 | GERMANY                   | MyPbSvsjj1YcpnPkfo                       | 17-421-173-4828 | ding packages sleep above the final, even requests.
+    516904 | Customer#000516904 | 767930.6394 |   8887.14 | PERU                      | cbVR l1dCfy                              | 27-253-939-6600 |  packages. regular dependencies alongside of the regular, regu
+   3269638 | Customer#003269638 | 765076.0539 |   6202.63 | INDIA                     | 5qJe1ZiZX1voAbOBq                        | 18-846-678-3048 | cial ideas. bold, final packages wake along t
+   4188439 | Customer#004188439 | 765025.2398 |   6827.58 | FRANCE                    | mdpaeSyWxbTIYrWu0oHHorwkUDFNfTbrl2Weog   | 16-717-760-6826 | iously regular packages. slyly 
+(20 rows)
+

@@ -1,0 +1,25 @@
+                                                           QUERY PLAN                                                            
+---------------------------------------------------------------------------------------------------------------------------------
+ Limit  (cost=7430430.79..7430430.81 rows=10 width=44)
+   ->  Sort  (cost=7430430.79..7455710.59 rows=10111919 width=44)
+         Sort Key: (sum((lineitem.l_extendedprice * ('1'::numeric - lineitem.l_discount)))) DESC, orders.o_orderdate
+         ->  GroupAggregate  (cost=5723091.09..7211915.85 rows=10111919 width=44)
+               Group Key: lineitem.l_orderkey, orders.o_orderdate, orders.o_shippriority
+               ->  Gather Merge  (cost=5723091.09..6933838.08 rows=10111919 width=24)
+                     Workers Planned: 4
+                     ->  Sort  (cost=5722091.04..5728410.99 rows=2527980 width=24)
+                           Sort Key: lineitem.l_orderkey, orders.o_orderdate, orders.o_shippriority
+                           ->  Parallel Hash Join  (cost=1149112.00..5453246.01 rows=2527980 width=24)
+                                 Hash Cond: (lineitem.l_orderkey = orders.o_orderkey)
+                                 ->  Parallel Seq Scan on lineitem  (cost=0.00..4201174.35 rows=25770589 width=16)
+                                       Filter: (l_shipdate > '1995-03-29'::date)
+                                 ->  Parallel Hash  (cost=1134398.67..1134398.67 rows=1177066 width=12)
+                                       ->  Parallel Hash Join  (cost=132930.65..1134398.67 rows=1177066 width=12)
+                                             Hash Cond: (orders.o_custkey = customer.c_custkey)
+                                             ->  Parallel Seq Scan on orders  (cost=0.00..985891.81 rows=5933791 width=16)
+                                                   Filter: (o_orderdate < '1995-03-29'::date)
+                                             ->  Parallel Hash  (cost=129954.96..129954.96 rows=238055 width=4)
+                                                   ->  Parallel Seq Scan on customer  (cost=0.00..129954.96 rows=238055 width=4)
+                                                         Filter: (c_mktsegment = 'FURNITURE'::bpchar)
+(21 rows)
+

@@ -1,170 +1,253 @@
 # Problem 1 — Scaling Study Using the TPC-H Benchmark
 
-## Environment
-- Database: PostgreSQL 16.15 (Homebrew), default configuration
-  (`shared_buffers=128MB`, no custom tuning) — chosen because the
-  assignment states PostgreSQL is preferred.
-- Hardware/OS: macOS (Darwin, arm64), Apple Silicon.
-- Benchmark tooling: official TPC-H reference `dbgen`/`qgen` C source
-  (`electrum/tpch-dbgen` on GitHub — a mirror of the TPC's own
-  distribution, since the TPC site gates the source behind a license
-  click-through) built locally at revision 2.14.0/2.9.0. Two small,
-  standard portability additions were made to the vendor source, both
-  additive (no existing behavior changed):
-  - `dbgen/config.h`: `MACHINE=MAC` already existed upstream for this
-    purpose and was used as-is.
-  - `dbgen/tpcd.h`: a `POSTGRESQL` block was added, mirroring the
-    existing `ORACLE` block (ANSI-standard `LIMIT` clause, no
-    proprietary transaction/connect syntax), since the shipped source
-    only had blocks for DB2/Informix/Oracle/SQL Server/Sybase/Teradata.
-- All 22 standard TPC-H queries are used verbatim from `qgen -s 1`
-  (fixed RNG seed 1, so query substitution parameters are the official
-  qualification-run defaults and identical across every scale factor).
+## Experimental setup
 
-## Procedure
-1. `dbgen -s <SF>` generates `region/nation/part/supplier/partsupp/`
-   `customer/orders/lineitem.tbl` (pipe-delimited, one row per line,
-   trailing pipe) for the given scale factor.
-2. `schema.sql` creates the 8 TPC-H tables (from the official `dss.ddl`).
-3. Each `.tbl` file is loaded via `\copy ... WITH (FORMAT csv, DELIMITER '|')`
-   (the trailing pipe is stripped first, since CSV mode otherwise reads it
-   as an extra empty trailing column).
-4. `ANALYZE` is run so the planner has up-to-date statistics before timing.
-5. Each of the 22 queries is run once via `psql -f`, wall-clock timed with
-   shell `date +%s.%N` around the `psql` call (so it includes result
-   fetch/print time, matching what an application would actually
-   experience — not just planner+executor time).
-6. `run_benchmark.sh <sf1> <sf2> ...` repeats 1–5 for each requested scale
-   factor, appending to `results/timings.csv` (per-query) and
-   `results/totals.csv` (per-SF total).
+| Item | Value |
+|---|---|
+| Machine | Intel Core i9-12900K (16 cores / 24 threads), 62 GB RAM, 931 GB NVMe SSD |
+| OS | Red Hat Enterprise Linux 8.10 (kernel 4.18) |
+| Database | PostgreSQL 16.15, built from source (`setup_postgres_and_dbgen.sh`) |
+| Benchmark tools | TPC-H `dbgen`/`qgen` 2.14.0 from `github.com/electrum/tpch-dbgen` (commit `32f1c1b`) |
+| Scale factors | 1, 2, 4, 8, 16, 32 (doubling) |
+| Repetitions | 3 runs of all 22 queries per SF; the **median** is reported |
+| Per-query timeout | 30 min (never reached) |
 
-Run with:
-```bash
-./run_benchmark.sh 1 2 4 8
+PostgreSQL configuration (identical for every SF; the full list is in
+`results/environment.txt`):
+
 ```
-(Higher scale factors are far larger — SF=1 is already ~1.1 GB raw data
-and generates a lineitem table of ~6M rows; SF=32 would be roughly 32×
-that, i.e. tens of GB. Scale factors actually used are recorded in
-`results/totals.csv` — this was capped based on available disk/time.)
+shared_buffers = 4GB            effective_cache_size = 12GB
+work_mem = 128MB                maintenance_work_mem = 1GB
+max_parallel_workers_per_gather = 4
+random_page_cost = 1.1 (SSD)    max_wal_size = 8GB      jit = off
+```
 
-## Results
+Indexes (`indexes.sql`): primary keys on all 8 tables, plus indexes on the
+foreign-key columns and on `l_shipdate` / `o_orderdate`. They are built after
+the bulk load and are the same at every SF.
 
-Ran at SF=1 (1049.7 MB) and SF=2 (2114.5 MB, ~2.01x the SF=1 dataset).
-SF=4 (3667.9 MB) was attempted but the load ran out of local disk
-partway through (`No space left on device`, ~4GB free on this machine
-after the SF=1/SF=2 raw data + PostgreSQL storage), corrupting that run's
-tables — its (meaningless, near-zero) numbers were discarded rather than
-reported. This is a disk-capacity limitation of the machine used, not a
-property of the database or queries; see Limitations below.
+**Note on the TPC-H version.** The assignment names TPC-H Revision 3.0.1. The
+TPC website only provides the tools after a registration form, so we used the
+widely used `electrum/tpch-dbgen` copy of the reference tools (version 2.14.0).
+Its data generator and 22 query templates follow the same schema and
+queries. Row counts match the spec exactly, e.g. `lineitem` = 6,001,215 rows at
+SF1 (`results/row_counts.csv`).
 
-See `results/timings.csv` (22 rows per scale factor) and
-`results/totals.csv` (one row per scale factor) for raw measurements, and
-`results/scaling_plot.png` for the dataset-size-vs-time plot.
+## Procedure (all automated, `run_benchmark.sh`)
 
-| SF | Dataset (MB) | Load+index (s) | Total query time (s) |
-|---|---|---|---|
-| 1 | 1049.7 | 155.2 | 303.5 |
-| 2 | 2114.5 | 281.6 | 404.1 |
+For each scale factor:
+1. `dbgen -s SF` generates the 8 `.tbl` files.
+2. `schema.sql` recreates the tables. Each file is streamed through
+   `sed 's/|$//'` into `\copy ... FROM STDIN`, so no temporary copies are made.
+   The script aborts if any load fails. After each load the `.tbl` file is
+   deleted to keep disk use down.
+3. `indexes.sql`, then `VACUUM ANALYZE`. The load time, database size and row
+   count of every table are recorded.
+4. The `EXPLAIN` plan of every query is saved to `results/plans/`.
+5. All 22 queries (`queries_final/`) run 3 times. For each run we record the
+   wall-clock time (including `psql` start-up and result transfer) and a
+   status of `ok`, `error` or `timeout`.
 
-Per-query time and SF2/SF1 ratio (a ratio of 1 = perfectly flat, 2 =
-linear with dataset size, >2 = super-linear):
+Reproduce:
+```bash
+ROOT=$HOME/nosql_a1 ./setup_postgres_and_dbgen.sh   # one-time, no root needed
+source $HOME/nosql_a1/env.sh
+./run_benchmark.sh 1 2 4 8 16 32
+python3 plot_results.py
+```
 
-| Query | SF1 (s) | SF2 (s) | ratio |
-|---|---|---|---|
-| Q1  | 0.08  | 0.05  | 0.60 |
-| Q2  | 4.03  | 20.89 | 5.19 |
-| Q3  | 7.81  | 12.54 | 1.61 |
-| Q4  | 8.11  | 11.93 | 1.47 |
-| Q5  | 6.70  | 18.00 | 2.68 |
-| Q6  | 11.74 | 6.77  | 0.58 |
-| Q7  | 96.91 | 135.14| 1.39 |
-| Q8  | 3.37  | 9.19  | 2.73 |
-| Q9  | 41.71 | 56.93 | 1.37 |
-| Q10 | 8.39  | 13.12 | 1.56 |
-| Q11 | 2.75  | 9.11  | 3.31 |
-| Q12 | 3.99  | 7.67  | 1.92 |
-| Q13 | 1.98  | 2.74  | 1.39 |
-| Q14 | 5.88  | 10.61 | 1.81 |
-| Q15 | 17.94 | 28.48 | 1.59 |
-| Q16 | 0.78  | 0.94  | 1.20 |
-| Q17 | 8.36  | 10.44 | 1.25 |
-| Q18 | 4.90  | 8.81  | 1.80 |
-| Q19 | 1.26  | 1.22  | 0.97 |
-| Q20 | 15.82 | 29.40 | 1.86 |
-| Q21 | 50.70 | 9.51  | 0.19 |
-| Q22 | 0.31  | 0.62  | 2.00 |
-| **Total** | **303.5** | **404.1** | **1.33** |
+## Raw measurements
+
+- `results/benchmark.log` (SF 1–8), `benchmark_16.log`, `benchmark_32.log`:
+  the console logs of the three benchmark invocations
+- `results/timings.csv`: 396 rows (6 SFs × 22 queries × 3 runs), **all `ok`**
+- `results/totals.csv`: per SF and run: dataset size, DB size, load time, total query time
+- `results/row_counts.csv`: rows per table per SF
+- `results/scaling_summary.csv`: median per query per SF, the ratio between
+  successive SFs, and the log-log slope
+- `results/output/`: query results; `results/plans/`: `EXPLAIN` for every
+  query and SF, plus `EXPLAIN (ANALYZE, BUFFERS)` for Q1, Q9, Q13, Q16, Q18
+  and Q20 at SF32
+- `results/scaling_plot.png`, `results/per_query_plot.png`: plots
+
+| SF | Raw data (MB) | DB size (MB) | Load + index (s) | Total, 22 queries (s, median) | × previous SF |
+|---|---|---|---|---|---|
+| 1 | 1,050 | 1,704 | 18.5 | 5.97 | — |
+| 2 | 2,115 | 3,398 | 36.9 | 13.15 | 2.20 |
+| 4 | 4,255 | 6,784 | 73.2 | 33.25 | 2.53 |
+| 8 | 8,556 | 13,556 | 143.5 | 57.14 | 1.72 |
+| 16 | 17,221 | 27,103 | 287.4 | 125.20 | 2.19 |
+| 32 | 34,688 | 54,197 | 633.4 | 310.09 | 2.48 |
+
+Per-query medians (seconds) and the ratio for each doubling:
+
+| Query | SF1 | SF2 | SF4 | SF8 | SF16 | SF32 | ratios (2/1, 4/2, 8/4, 16/8, 32/16) | slope |
+|---|---|---|---|---|---|---|---|---|
+| Q1 | 0.66 | 1.34 | 2.70 | 5.35 | 10.64 | 21.21 | 2.03 2.02 1.98 1.99 1.99 | 0.99 |
+| Q2 | 0.11 | 0.21 | 0.71 | 1.58 | 3.10 | 6.88 | 2.03 3.31 2.23 1.97 2.22 | 1.22 |
+| Q3 | 0.20 | 0.41 | 1.04 | 1.94 | 2.56 | 5.46 | 2.04 2.57 1.86 **1.32** 2.13 | 0.93 |
+| Q4 | 0.05 | 0.10 | 0.25 | 0.54 | 1.28 | 2.49 | 1.87 2.50 2.11 2.40 1.94 | 1.12 |
+| Q5 | 0.12 | 0.25 | 0.56 | 0.94 | 1.69 | 6.46 | 2.15 2.23 1.69 1.80 **3.83** | 1.08 |
+| Q6 | 0.11 | 0.23 | 0.58 | 1.30 | 2.80 | 2.85 | 2.08 2.48 2.25 2.16 **1.02** | 1.00 |
+| Q7 | 0.34 | 0.78 | 2.79 | 3.81 | 6.33 | 15.76 | 2.30 3.60 **1.37** 1.66 2.49 | 1.05 |
+| Q8 | 0.07 | 0.15 | 0.31 | 0.63 | 1.90 | 3.74 | 2.10 2.05 2.02 3.04 1.97 | 1.15 |
+| Q9 | 0.48 | 1.05 | 2.35 | 5.02 | 10.94 | 22.18 | 2.17 2.24 2.14 2.18 2.03 | 1.10 |
+| Q10 | 0.11 | 0.26 | 0.60 | 1.05 | 2.33 | 6.64 | 2.41 2.27 1.77 2.21 2.85 | 1.13 |
+| Q11 | 0.04 | 0.10 | 0.35 | 0.62 | 1.22 | 2.43 | 2.16 3.66 1.79 1.95 2.00 | 1.16 |
+| Q12 | 0.15 | 0.31 | 0.65 | 1.28 | 2.56 | 5.13 | 2.12 2.10 1.97 2.00 2.00 | 1.01 |
+| Q13 | 0.44 | 1.14 | 2.99 | 6.60 | 14.08 | 62.88 | 2.60 2.62 2.21 2.13 **4.47** | 1.35 |
+| Q14 | 0.05 | 0.09 | 0.24 | 0.51 | 1.07 | 2.18 | 1.96 2.50 2.17 2.09 2.04 | 1.11 |
+| Q15 | 0.23 | 0.52 | 1.42 | 4.04 | 8.18 | 8.60 | 2.26 2.74 2.83 2.03 **1.05** | 1.12 |
+| Q16 | 0.12 | 0.21 | 0.39 | 0.75 | 1.42 | 10.01 | 1.76 1.84 1.91 1.90 **7.06** | 1.16 |
+| Q17 | 0.31 | 0.75 | 1.78 | 3.64 | 7.41 | 15.07 | 2.39 2.37 2.04 2.04 2.03 | 1.10 |
+| Q18 | 1.73 | 3.96 | 10.14 | 11.89 | 26.09 | 56.54 | 2.29 2.56 **1.17** 2.19 2.17 | 0.95 |
+| Q19 | 0.02 | 0.04 | 0.08 | 0.13 | 0.26 | 0.91 | 1.83 1.80 1.61 2.08 **3.45** | 0.98 |
+| Q20 | 0.30 | 0.61 | 1.43 | 3.00 | 13.51 | 34.86 | 2.04 2.33 2.10 **4.51** 2.58 | 1.38 |
+| Q21 | 0.28 | 0.58 | 1.94 | 2.36 | 5.31 | 10.26 | 2.06 3.34 **1.21** 2.26 1.93 | 1.01 |
+| Q22 | 0.03 | 0.06 | 0.11 | 0.17 | 0.34 | 0.66 | 1.87 1.81 1.64 1.95 1.97 | 0.86 |
+
+A ratio of 2 means time doubles when data doubles (linear). The slope is fitted
+on log(time) vs log(size) over all six SFs: 1 = linear, above 1 = super-linear.
 
 ## Analysis
 
-**Overall, total query time did not double when the dataset doubled** —
-it grew only 1.33x for a ~2.01x increase in data. That's slower-than-linear
-in aggregate, but the aggregate hides very different behavior per query:
+### Does query time double when the data doubles?
 
-- **Roughly linear (ratio ≈ 1.3–2.0), the majority of queries**: Q3, Q4,
-  Q9, Q10, Q12, Q13, Q14, Q15, Q17, Q18, Q20, Q22. These are dominated by
-  a scan (often index-assisted, after `indexes.sql`) over `lineitem` or
-  `orders` with a filter and an aggregate/join — cost tracks table size
-  because the number of rows touched tracks table size directly.
+**Mostly yes.** Over the whole range, data grew 33× (1.05 GB → 34.7 GB) and
+total query time grew 52× (5.97 s → 310 s), slightly faster than linear. The
+per-step ratios stay between 1.7 and 2.5, and loading scales almost exactly
+linearly (ratios 1.96–2.00, then 2.20 at SF32). But the total hides three
+different behaviours. We checked the saved plans to explain them instead of
+guessing.
 
-- **Super-linear (ratio > 2)**: Q2 (5.19x), Q11 (3.31x), Q8 (2.73x), Q5
-  (2.68x). These share a correlated-subquery or multi-way-join shape
-  (Q2's `min()` per part-supplier pair, Q11's partsupp aggregate compared
-  against a computed threshold, Q5/Q8's 5–6-table joins across
-  `nation`/`region`/`customer`/`orders`/`lineitem`/`supplier`). Join cost
-  in these can grow faster than the base tables because the number of
-  *matching combinations* being joined/re-evaluated per outer row grows
-  with the inner table size too — doubling one table can more than double
-  the total comparisons when both sides of a join scale together.
+### 1. Linear queries: scans, filters and aggregation
 
-- **Roughly flat or shrinking (ratio ≤ 1)**: Q1 (0.60), Q6 (0.58), Q19
-  (0.97), and strikingly Q21 (0.19 — nearly 5x *faster* at SF2 despite 2x
-  the data). Q1 and Q6 are single-pass aggregates over `lineitem` filtered
-  by `l_shipdate`, cheap regardless of table size once an index exists.
-  Q21's drop is a planner effect, not a data-size effect: at SF2 the
-  planner's row-count estimates cross a threshold that flips it from one
-  join strategy (e.g. nested-loop-heavy) to a cheaper one (e.g. hash
-  join), which can make a *larger* input run *faster* — a reminder that
-  "more data" doesn't map onto "more time" in a query planner-driven
-  system the way it would in the from-scratch Unix pipeline of Problem 3.
+**Q1, Q12, Q9, Q17, Q14, Q4** have every ratio close to 2 (slope 0.99–1.12).
+Q1 is the cleanest case (ratios 1.98–2.03). Its plan at every SF is a
+parallel sequential scan of `lineitem` feeding a hash aggregate with only 4
+groups. The work is proportional to the number of rows scanned, and the tiny
+result makes the final sort free. At SF32, 5 processes scan all 192 M `lineitem` rows, and about 190 M pass the
+date filter
+(`sf32_q1_analyze.txt`). Q12 (filter + join + group by ship mode) behaves the
+same way. Q9 and Q17 are also linear even though they are multi-table joins
+and a correlated subquery. Their plans do not change across SFs, so their
+cost tracks table size.
 
-**Where performance starts to degrade**: Q7 (96.9s → 135.1s) and Q9
-(41.7s → 56.9s) are already the two slowest queries at SF=1, and stay the
-two slowest at SF=2 — both are wide multi-way joins (Q7: 6 tables
-including a self-join-like nation pairing; Q9: `part`/`supplier`/
-`lineitem`/`partsupp`/`orders`/`nation`, filtered by a `LIKE` predicate
-on `part.name` that can't use a simple index). These are the queries most
-likely to become the bottleneck at larger scale factors, since join cost
-compounds with table size while single-table filter/aggregate queries
-(Q1/Q6/Q16/Q19) stay cheap.
+Q22 grows slightly slower than linear (slope 0.86). It is the fastest query
+(0.03 s at SF1). For such short queries, a fixed cost (starting `psql`,
+connecting, planning) is probably a noticeable part of the measured time, and
+that part does not grow with the data.
 
-**Relating to database operations**: filtering and simple aggregation
-(Q1, Q6) are I/O/scan-bound and scale gently; sorting doesn't show up as
-a separate bottleneck here since result sets are small (`ORDER BY`
-mostly runs on already-small post-aggregation row sets); joins are
-where scaling risk concentrates, especially when the query has a
-correlated subquery (Q2, Q11) or a filter that can't be pushed down
-through an index (Q9's `LIKE`), since those force the planner toward
-nested-loop or repeated-scan strategies whose cost is sensitive to more
-than just the row count of a single table.
+### 2. Steps caused by the planner changing strategy
 
-## Limitations
-- Capped at SF=1/SF=2 due to local disk capacity (~4GB free on this
-  machine after loading SF=1/SF=2 data + indexes) rather than a query- or
-  database-imposed limit; SF=4 (~3.7GB raw, plus a similar footprint again
-  once indexed in PostgreSQL) did not fit. A machine with more free disk
-  could extend this study to SF=4/8/16/32 using the same
-  `run_benchmark.sh` unchanged.
-- Each query ran once per scale factor (not repeated/averaged), so
-  measurements include normal OS/filesystem-cache noise — e.g. Q21's
-  ratio inversion is consistent with a planner/cache effect rather than
-  a repeatable trend, and would benefit from repeated runs to confirm.
-- Standard primary/foreign-key indexes were built (see `indexes.sql`)
-  before timing, so these numbers reflect a normally-administered
-  database, not a raw unindexed table scan on every query — an
-  unindexed run was also attempted (see `results/timings_sf1_noindex_baseline.csv`)
-  and showed just how severe the difference is: Q17 alone (a correlated
-  subquery over the 6M-row `lineitem` table) took ~3230s unindexed at
-  SF=1 vs. ~8.4s indexed — a >380x difference from adding a single index
-  on `lineitem.l_partkey`, which is itself a useful data point about how
-  much indexing (not just data volume) drives TPC-H query cost.
+Several "odd" ratios happen exactly where PostgreSQL chose a different plan.
+Comparing `results/plans/sfN_qM.txt` between SFs:
+
+| Query, step | Ratio | Plan at the smaller SF → plan at the larger SF |
+|---|---|---|
+| Q6, SF16→32 | 1.02 | bitmap scan through the `l_shipdate` index → **parallel sequential scan** of `lineitem` |
+| Q15, SF16→32 | 1.05 | serial aggregation of `lineitem` → **parallel** (Gather + partial HashAggregate) |
+| Q3, SF8→16 | 1.32 | nested-loop joins with index lookups → **parallel hash joins** over seq scans |
+| Q18, SF4→8 | 1.17 | serial HashAggregate over `lineitem` → **parallel partial HashAggregate** |
+| Q21, SF4→8 | 1.21 | different join order and access paths |
+| Q7, SF4→8 | 1.37 | ordinary hash joins → a **Parallel Hash Join** with partial (per-worker) aggregation |
+| Q5, SF16→32 | 3.83 | index nested loop into `lineitem` → parallel seq scan of `lineitem` + hash joins |
+| Q20, SF8→16 | 4.51 | hash semi-join → **nested-loop semi-join running a correlated subquery per row** |
+
+With more data, the cost-based optimiser moves from index lookups (cheap
+when few rows qualify) to scans, hash joins and parallelism (cheap when many
+rows qualify). When it switches at the right moment, the next step looks
+almost flat (Q6, Q15, Q3, Q18). When the new plan scales badly, the step is
+super-linear (Q5, Q20). **No query is insensitive to dataset size overall.**
+These flat steps are one-off plan switches, and the time grows again at the
+next SF.
+
+### 3. Super-linear queries and where performance degrades
+
+SF32 is where performance clearly degrades. The total ratio rises to 2.48,
+and Q16 (7.1×), Q13 (4.5×), Q5 (3.8×) and Q19 (3.5×) jump. At SF32 the
+database (54 GB) approaches the machine's RAM (62 GB), and PostgreSQL's own
+buffer cache is 4 GB. `EXPLAIN (ANALYZE, BUFFERS)` at SF32 shows why:
+
+- **Q13 (customer LEFT JOIN orders, group by customer): join strategy and
+  random I/O.** At SF16 the plan is a hash join over a sequential scan of
+  `orders`. At SF32 it becomes a merge join that reads `orders` through
+  `idx_orders_custkey`, i.e. in customer order rather than disk order. The
+  index scan alone takes 60.2 s of the 66.2 s and makes 18.6 M page reads
+  from outside PostgreSQL's buffer cache (`sf32_q13_analyze.txt`).
+- **Q16 (join part/partsupp, `count(DISTINCT)`, sort): lost parallelism and a
+  sort spilling to disk.** At SF16 it uses a parallel hash join with sorts in
+  the worker processes. At SF32 the plan is serial, and the 3.8 M-row sort
+  exceeds `work_mem` (128 MB). It becomes an **external merge sort using
+  193 MB of temporary disk**, and the sort alone takes about 6.5 s of 10.7 s
+  (`sf32_q16_analyze.txt`).
+- **Q18 (group `lineitem` by order, `HAVING sum > 300`): hash aggregation
+  spilling to disk.** Grouping 192 M `lineitem` rows by `l_orderkey` creates
+  about 48 M groups, which cannot fit in `work_mem`. The final HashAggregate
+  splits into **133 batches using about 3.9 GB of temporary disk**, and each
+  parallel worker spills a further ~1.3 GB (`sf32_q18_analyze.txt`). Q18 is
+  the slowest query from SF1 to SF16 and the second slowest at SF32 (56.5 s).
+- **Q20 (nested `IN` + correlated subquery): per-row subquery execution.**
+  After the plan switch at SF16, the correlated subquery (sum of `l_quantity`
+  for each part/supplier pair) runs once per candidate `partsupp` row:
+  **784,829 times** at SF32, each a bitmap index lookup into `lineitem`
+  (`sf32_q20_analyze.txt`). It is also the noisiest query at SF32 (28.5 s,
+  54.6 s and 34.9 s across the 3 runs), which is consistent with cache-heavy
+  random I/O.
+- **Q9 shows that spilling alone need not break linearity.** At SF32 each of
+  its 5 parallel sorts spills about 135 MB to disk, yet its ratio is still
+  2.03. The sort is a small part of a query dominated by joins over
+  `lineitem`, `partsupp` and `orders`.
+- **Q19** keeps the same plan at SF16 and SF32 but grows 3.45×. Its absolute
+  time is small (0.26 s → 0.91 s) and varied between runs (0.65–1.51 s). We
+  did not determine the cause.
+
+### Relating the results to database operations
+
+| Operation | Effect on scaling | Evidence |
+|---|---|---|
+| Filtering + scanning | linear; parallel seq scans spread it over cores | Q1, Q6, Q12, Q14 |
+| Aggregation | linear while the hash table fits in `work_mem`; spills to disk in batches when it does not | Q1 (4 groups) vs Q18 (48 M groups, 133 batches) |
+| Sorting | cheap for small final results; external merge once the input exceeds `work_mem` | Q16 at SF32 (193 MB on disk) |
+| Joins | the planner switches between index nested loops, hash joins and merge joins. The switch points create flat steps or sudden jumps | Q3, Q7, Q13, Q20, Q21 |
+| Correlated subqueries | cost = outer rows × inner lookup; super-linear when both grow | Q20 (784,829 executions); Q17 stays linear because its plan is stable |
+
+## Limitations and honest notes
+
+- **Q11 uses the SF1 parameter at every scale factor.** `qgen` was run once
+  and the same query text was used for all SFs. Q11's threshold should be
+  `0.0001 / SF`, but it stays `0.0001`. So Q11 returns 1,469 rows at SF1,
+  4 at SF2 and **0 rows at SF4 and above**. It still performs the same joins
+  and both aggregations, so its timing reflects the work done, but its result
+  is not spec-conformant above SF1. The other 21 queries have no SF-dependent
+  parameters.
+- **This is not an official (audited) TPC-H run.** There are no refresh
+  functions and no throughput test, and indexes were added. We measure
+  single-stream query time only, as the assignment asks.
+- **First-run warm-up.** The first run at an SF is sometimes slower (SF4:
+  37.5 s vs 33.2 s; SF16: 135.7 s vs 125.2 s), so we report medians over 3
+  runs.
+- **Some jumps are not fully explained.** At SF2→SF4, Q2 (3.3×) and Q11
+  (3.7×) jump even though their plan shape does not change. We report this
+  without a verified cause.
+- **SF32 was the largest we could run.** The disk (shared with other users)
+  had about 100 GB free. SF32 already needed about 54 GB of database plus up
+  to 34 GB of raw files during loading. SF64 would need more than 100 GB
+  plus 70 GB of raw data, which did not fit.
+
+## What changed from the team's earlier attempt
+
+An earlier run (SF1 and SF2 on a MacBook) was **discarded**, because its
+results were invalid:
+- Q1 never ran (a PostgreSQL syntax error on `interval '79' day (3)`), so it
+  reported 0.08 s.
+- Q2, Q3, Q10, Q18 and Q21 had a `;` before `LIMIT`, so they ran without
+  their limit and then failed.
+- The script did not check query errors or failed loads, and ran each query
+  only once. Its SF4 load ran out of disk, and queries were then timed on the
+  broken tables (reported as about 0.03 s each).
+
+The six query files were fixed. `run_benchmark.sh` now aborts on load errors,
+records a status for each query, repeats every query 3 times and saves query
+plans. All numbers above come from the new run on one machine with an
+unchanged configuration.

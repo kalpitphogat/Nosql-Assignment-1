@@ -1,0 +1,5 @@
+# regenerable benchmark data
+data/
+*.tbl
+*.malformed_rows.tsv
+__pycache__/

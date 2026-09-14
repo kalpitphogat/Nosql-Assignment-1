@@ -1,0 +1,26 @@
+                                                               QUERY PLAN                                                                
+-----------------------------------------------------------------------------------------------------------------------------------------
+ Limit  (cost=1168810.17..1168810.42 rows=100 width=71)
+   ->  Sort  (cost=1168810.17..1170104.64 rows=517786 width=71)
+         Sort Key: orders.o_totalprice DESC, orders.o_orderdate
+         ->  HashAggregate  (cost=1142548.44..1149020.76 rows=517786 width=71)
+               Group Key: customer.c_custkey, orders.o_orderkey
+               ->  Gather  (cost=827918.13..1138665.04 rows=517786 width=44)
+                     Workers Planned: 4
+                     ->  Nested Loop  (cost=826918.13..1085886.44 rows=129446 width=44)
+                           ->  Nested Loop  (cost=826917.69..1013647.94 rows=32365 width=43)
+                                 ->  Merge Join  (cost=826917.26..999231.37 rows=32365 width=24)
+                                       Merge Cond: (orders.o_orderkey = lineitem_1.l_orderkey)
+                                       ->  Parallel Index Scan using orders_pkey on orders  (cost=0.43..167593.62 rows=1499990 width=20)
+                                       ->  Sort  (cost=826916.83..827240.48 rows=129459 width=4)
+                                             Sort Key: lineitem_1.l_orderkey
+                                             ->  HashAggregate  (cost=810098.74..815924.38 rows=129459 width=4)
+                                                   Group Key: lineitem_1.l_orderkey
+                                                   Filter: (sum(lineitem_1.l_quantity) > '315'::numeric)
+                                                   ->  Seq Scan on lineitem lineitem_1  (cost=0.00..690111.16 rows=23997516 width=9)
+                                 ->  Index Scan using customer_pkey on customer  (cost=0.42..0.45 rows=1 width=23)
+                                       Index Cond: (c_custkey = orders.o_custkey)
+                           ->  Index Scan using idx_lineitem_orderkey on lineitem  (cost=0.44..1.61 rows=62 width=9)
+                                 Index Cond: (l_orderkey = orders.o_orderkey)
+(22 rows)
+

@@ -1,0 +1,23 @@
+                                                         QUERY PLAN                                                         
+----------------------------------------------------------------------------------------------------------------------------
+ Limit  (cost=753219.03..753219.05 rows=10 width=44)
+   ->  Sort  (cost=753219.03..756345.12 rows=1250438 width=44)
+         Sort Key: (sum((lineitem.l_extendedprice * ('1'::numeric - lineitem.l_discount)))) DESC, orders.o_orderdate
+         ->  GroupAggregate  (cost=543875.59..726197.51 rows=1250438 width=44)
+               Group Key: lineitem.l_orderkey, orders.o_orderdate, orders.o_shippriority
+               ->  Gather Merge  (cost=543875.59..691810.47 rows=1250438 width=24)
+                     Workers Planned: 3
+                     ->  Sort  (cost=542875.55..543883.96 rows=403367 width=24)
+                           Sort Key: lineitem.l_orderkey, orders.o_orderdate, orders.o_shippriority
+                           ->  Nested Loop  (cost=0.87..505318.58 rows=403367 width=24)
+                                 ->  Nested Loop  (cost=0.43..90329.84 rows=189405 width=12)
+                                       ->  Parallel Seq Scan on customer  (cost=0.00..16790.35 rows=38839 width=4)
+                                             Filter: (c_mktsegment = 'FURNITURE'::bpchar)
+                                       ->  Index Scan using idx_orders_custkey on orders  (cost=0.43..1.80 rows=9 width=16)
+                                             Index Cond: (o_custkey = customer.c_custkey)
+                                             Filter: (o_orderdate < '1995-03-29'::date)
+                                 ->  Index Scan using idx_lineitem_orderkey on lineitem  (cost=0.44..1.86 rows=33 width=16)
+                                       Index Cond: (l_orderkey = orders.o_orderkey)
+                                       Filter: (l_shipdate > '1995-03-29'::date)
+(19 rows)
+

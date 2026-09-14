@@ -36,11 +36,12 @@ import re
 from collections import defaultdict
 from pathlib import Path
 
-MASTER_FILE = "customer_master.csv"
-INCOMING_FILE = "customer_incoming.csv"
-JSON_DIR = Path("json_output")
-CLASSIFICATION_FILE = "classification_results.csv"
-SUMMARY_FILE = "summary_statistics.txt"
+HERE = Path(__file__).resolve().parent
+MASTER_FILE = HERE / "customer_master.csv"
+INCOMING_FILE = HERE / "customer_incoming.csv"
+JSON_DIR = HERE / "json_output"
+CLASSIFICATION_FILE = HERE / "classification_results.csv"
+SUMMARY_FILE = HERE / "summary_statistics.txt"
 
 FIELDS = ["customer_id", "name", "email", "phone", "address", "city"]
 COMPARE_FIELDS = ["name", "email", "phone", "address", "city"]

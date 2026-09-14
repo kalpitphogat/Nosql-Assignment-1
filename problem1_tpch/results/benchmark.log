@@ -1,0 +1,310 @@
+nohup: ignoring input
+=== Scale factor 1 ===
+Generating data at SF=1 ...
+TPC-H Population Generator (Version 2.14.0)
+Copyright Transaction Processing Performance Council 1994 - 2010
+Loading SF=1 (1049.7 MB) ...
+psql:schema.sql:4: NOTICE:  table "lineitem" does not exist, skipping
+psql:schema.sql:4: NOTICE:  table "orders" does not exist, skipping
+psql:schema.sql:4: NOTICE:  table "partsupp" does not exist, skipping
+psql:schema.sql:4: NOTICE:  table "part" does not exist, skipping
+psql:schema.sql:4: NOTICE:  table "customer" does not exist, skipping
+psql:schema.sql:4: NOTICE:  table "supplier" does not exist, skipping
+psql:schema.sql:4: NOTICE:  table "nation" does not exist, skipping
+psql:schema.sql:4: NOTICE:  table "region" does not exist, skipping
+Load + index + analyze: 18.494s, database size 1704.4 MB
+  SF=1 run=1 Q1: 0.658s ok
+  SF=1 run=1 Q2: 0.105s ok
+  SF=1 run=1 Q3: 0.218s ok
+  SF=1 run=1 Q4: 0.054s ok
+  SF=1 run=1 Q5: 0.116s ok
+  SF=1 run=1 Q6: 0.114s ok
+  SF=1 run=1 Q7: 0.333s ok
+  SF=1 run=1 Q8: 0.080s ok
+  SF=1 run=1 Q9: 0.489s ok
+  SF=1 run=1 Q10: 0.109s ok
+  SF=1 run=1 Q11: 0.044s ok
+  SF=1 run=1 Q12: 0.146s ok
+  SF=1 run=1 Q13: 0.426s ok
+  SF=1 run=1 Q14: 0.048s ok
+  SF=1 run=1 Q15: 0.253s ok
+  SF=1 run=1 Q16: 0.121s ok
+  SF=1 run=1 Q17: 0.314s ok
+  SF=1 run=1 Q18: 1.730s ok
+  SF=1 run=1 Q19: 0.024s ok
+  SF=1 run=1 Q20: 0.301s ok
+  SF=1 run=1 Q21: 0.283s ok
+  SF=1 run=1 Q22: 0.031s ok
+SF=1 run=1 total 5.997s, failed/timed-out queries: 0
+  SF=1 run=2 Q1: 0.679s ok
+  SF=1 run=2 Q2: 0.105s ok
+  SF=1 run=2 Q3: 0.198s ok
+  SF=1 run=2 Q4: 0.054s ok
+  SF=1 run=2 Q5: 0.116s ok
+  SF=1 run=2 Q6: 0.111s ok
+  SF=1 run=2 Q7: 0.338s ok
+  SF=1 run=2 Q8: 0.072s ok
+  SF=1 run=2 Q9: 0.483s ok
+  SF=1 run=2 Q10: 0.108s ok
+  SF=1 run=2 Q11: 0.046s ok
+  SF=1 run=2 Q12: 0.146s ok
+  SF=1 run=2 Q13: 0.438s ok
+  SF=1 run=2 Q14: 0.048s ok
+  SF=1 run=2 Q15: 0.230s ok
+  SF=1 run=2 Q16: 0.121s ok
+  SF=1 run=2 Q17: 0.315s ok
+  SF=1 run=2 Q18: 1.728s ok
+  SF=1 run=2 Q19: 0.025s ok
+  SF=1 run=2 Q20: 0.301s ok
+  SF=1 run=2 Q21: 0.281s ok
+  SF=1 run=2 Q22: 0.031s ok
+SF=1 run=2 total 5.974s, failed/timed-out queries: 0
+  SF=1 run=3 Q1: 0.658s ok
+  SF=1 run=3 Q2: 0.104s ok
+  SF=1 run=3 Q3: 0.199s ok
+  SF=1 run=3 Q4: 0.055s ok
+  SF=1 run=3 Q5: 0.117s ok
+  SF=1 run=3 Q6: 0.112s ok
+  SF=1 run=3 Q7: 0.339s ok
+  SF=1 run=3 Q8: 0.072s ok
+  SF=1 run=3 Q9: 0.480s ok
+  SF=1 run=3 Q10: 0.109s ok
+  SF=1 run=3 Q11: 0.044s ok
+  SF=1 run=3 Q12: 0.146s ok
+  SF=1 run=3 Q13: 0.459s ok
+  SF=1 run=3 Q14: 0.048s ok
+  SF=1 run=3 Q15: 0.228s ok
+  SF=1 run=3 Q16: 0.122s ok
+  SF=1 run=3 Q17: 0.313s ok
+  SF=1 run=3 Q18: 1.730s ok
+  SF=1 run=3 Q19: 0.024s ok
+  SF=1 run=3 Q20: 0.298s ok
+  SF=1 run=3 Q21: 0.276s ok
+  SF=1 run=3 Q22: 0.031s ok
+SF=1 run=3 total 5.964s, failed/timed-out queries: 0
+=== Scale factor 2 ===
+Generating data at SF=2 ...
+TPC-H Population Generator (Version 2.14.0)
+Copyright Transaction Processing Performance Council 1994 - 2010
+Loading SF=2 (2114.6 MB) ...
+Load + index + analyze: 36.867s, database size 3397.7 MB
+  SF=2 run=1 Q1: 1.337s ok
+  SF=2 run=1 Q2: 0.225s ok
+  SF=2 run=1 Q3: 0.638s ok
+  SF=2 run=1 Q4: 0.117s ok
+  SF=2 run=1 Q5: 0.268s ok
+  SF=2 run=1 Q6: 0.244s ok
+  SF=2 run=1 Q7: 0.780s ok
+  SF=2 run=1 Q8: 0.165s ok
+  SF=2 run=1 Q9: 1.059s ok
+  SF=2 run=1 Q10: 0.265s ok
+  SF=2 run=1 Q11: 0.094s ok
+  SF=2 run=1 Q12: 0.311s ok
+  SF=2 run=1 Q13: 1.155s ok
+  SF=2 run=1 Q14: 0.094s ok
+  SF=2 run=1 Q15: 0.520s ok
+  SF=2 run=1 Q16: 0.212s ok
+  SF=2 run=1 Q17: 0.757s ok
+  SF=2 run=1 Q18: 3.953s ok
+  SF=2 run=1 Q19: 0.044s ok
+  SF=2 run=1 Q20: 0.632s ok
+  SF=2 run=1 Q21: 0.578s ok
+  SF=2 run=1 Q22: 0.058s ok
+SF=2 run=1 total 13.506s, failed/timed-out queries: 0
+  SF=2 run=2 Q1: 1.337s ok
+  SF=2 run=2 Q2: 0.213s ok
+  SF=2 run=2 Q3: 0.402s ok
+  SF=2 run=2 Q4: 0.099s ok
+  SF=2 run=2 Q5: 0.249s ok
+  SF=2 run=2 Q6: 0.231s ok
+  SF=2 run=2 Q7: 0.776s ok
+  SF=2 run=2 Q8: 0.150s ok
+  SF=2 run=2 Q9: 1.035s ok
+  SF=2 run=2 Q10: 0.262s ok
+  SF=2 run=2 Q11: 0.096s ok
+  SF=2 run=2 Q12: 0.310s ok
+  SF=2 run=2 Q13: 1.139s ok
+  SF=2 run=2 Q14: 0.094s ok
+  SF=2 run=2 Q15: 0.524s ok
+  SF=2 run=2 Q16: 0.213s ok
+  SF=2 run=2 Q17: 0.749s ok
+  SF=2 run=2 Q18: 3.961s ok
+  SF=2 run=2 Q19: 0.044s ok
+  SF=2 run=2 Q20: 0.613s ok
+  SF=2 run=2 Q21: 0.586s ok
+  SF=2 run=2 Q22: 0.058s ok
+SF=2 run=2 total 13.141s, failed/timed-out queries: 0
+  SF=2 run=3 Q1: 1.338s ok
+  SF=2 run=3 Q2: 0.212s ok
+  SF=2 run=3 Q3: 0.406s ok
+  SF=2 run=3 Q4: 0.101s ok
+  SF=2 run=3 Q5: 0.248s ok
+  SF=2 run=3 Q6: 0.233s ok
+  SF=2 run=3 Q7: 0.775s ok
+  SF=2 run=3 Q8: 0.151s ok
+  SF=2 run=3 Q9: 1.047s ok
+  SF=2 run=3 Q10: 0.263s ok
+  SF=2 run=3 Q11: 0.095s ok
+  SF=2 run=3 Q12: 0.310s ok
+  SF=2 run=3 Q13: 1.138s ok
+  SF=2 run=3 Q14: 0.096s ok
+  SF=2 run=3 Q15: 0.517s ok
+  SF=2 run=3 Q16: 0.213s ok
+  SF=2 run=3 Q17: 0.750s ok
+  SF=2 run=3 Q18: 3.962s ok
+  SF=2 run=3 Q19: 0.044s ok
+  SF=2 run=3 Q20: 0.610s ok
+  SF=2 run=3 Q21: 0.580s ok
+  SF=2 run=3 Q22: 0.058s ok
+SF=2 run=3 total 13.147s, failed/timed-out queries: 0
+=== Scale factor 4 ===
+Generating data at SF=4 ...
+TPC-H Population Generator (Version 2.14.0)
+Copyright Transaction Processing Performance Council 1994 - 2010
+Loading SF=4 (4254.5 MB) ...
+Load + index + analyze: 73.200s, database size 6783.8 MB
+  SF=4 run=1 Q1: 2.702s ok
+  SF=4 run=1 Q2: 0.514s ok
+  SF=4 run=1 Q3: 1.082s ok
+  SF=4 run=1 Q4: 0.258s ok
+  SF=4 run=1 Q5: 0.500s ok
+  SF=4 run=1 Q6: 0.630s ok
+  SF=4 run=1 Q7: 3.749s ok
+  SF=4 run=1 Q8: 0.402s ok
+  SF=4 run=1 Q9: 2.871s ok
+  SF=4 run=1 Q10: 0.618s ok
+  SF=4 run=1 Q11: 0.392s ok
+  SF=4 run=1 Q12: 0.803s ok
+  SF=4 run=1 Q13: 3.793s ok
+  SF=4 run=1 Q14: 0.250s ok
+  SF=4 run=1 Q15: 1.639s ok
+  SF=4 run=1 Q16: 0.424s ok
+  SF=4 run=1 Q17: 2.070s ok
+  SF=4 run=1 Q18: 11.182s ok
+  SF=4 run=1 Q19: 0.080s ok
+  SF=4 run=1 Q20: 1.454s ok
+  SF=4 run=1 Q21: 1.941s ok
+  SF=4 run=1 Q22: 0.104s ok
+SF=4 run=1 total 37.458s, failed/timed-out queries: 0
+  SF=4 run=2 Q1: 2.723s ok
+  SF=4 run=2 Q2: 0.765s ok
+  SF=4 run=2 Q3: 1.044s ok
+  SF=4 run=2 Q4: 0.251s ok
+  SF=4 run=2 Q5: 0.556s ok
+  SF=4 run=2 Q6: 0.578s ok
+  SF=4 run=2 Q7: 2.791s ok
+  SF=4 run=2 Q8: 0.308s ok
+  SF=4 run=2 Q9: 2.332s ok
+  SF=4 run=2 Q10: 0.575s ok
+  SF=4 run=2 Q11: 0.346s ok
+  SF=4 run=2 Q12: 0.651s ok
+  SF=4 run=2 Q13: 2.967s ok
+  SF=4 run=2 Q14: 0.232s ok
+  SF=4 run=2 Q15: 1.417s ok
+  SF=4 run=2 Q16: 0.391s ok
+  SF=4 run=2 Q17: 1.779s ok
+  SF=4 run=2 Q18: 10.001s ok
+  SF=4 run=2 Q19: 0.079s ok
+  SF=4 run=2 Q20: 1.428s ok
+  SF=4 run=2 Q21: 1.929s ok
+  SF=4 run=2 Q22: 0.105s ok
+SF=4 run=2 total 33.248s, failed/timed-out queries: 0
+  SF=4 run=3 Q1: 2.686s ok
+  SF=4 run=3 Q2: 0.706s ok
+  SF=4 run=3 Q3: 1.014s ok
+  SF=4 run=3 Q4: 0.253s ok
+  SF=4 run=3 Q5: 0.563s ok
+  SF=4 run=3 Q6: 0.577s ok
+  SF=4 run=3 Q7: 2.666s ok
+  SF=4 run=3 Q8: 0.310s ok
+  SF=4 run=3 Q9: 2.349s ok
+  SF=4 run=3 Q10: 0.596s ok
+  SF=4 run=3 Q11: 0.348s ok
+  SF=4 run=3 Q12: 0.651s ok
+  SF=4 run=3 Q13: 2.989s ok
+  SF=4 run=3 Q14: 0.235s ok
+  SF=4 run=3 Q15: 1.424s ok
+  SF=4 run=3 Q16: 0.390s ok
+  SF=4 run=3 Q17: 1.781s ok
+  SF=4 run=3 Q18: 10.142s ok
+  SF=4 run=3 Q19: 0.079s ok
+  SF=4 run=3 Q20: 1.421s ok
+  SF=4 run=3 Q21: 1.940s ok
+  SF=4 run=3 Q22: 0.105s ok
+SF=4 run=3 total 33.225s, failed/timed-out queries: 0
+=== Scale factor 8 ===
+Generating data at SF=8 ...
+TPC-H Population Generator (Version 2.14.0)
+Copyright Transaction Processing Performance Council 1994 - 2010
+Loading SF=8 (8555.8 MB) ...
+Load + index + analyze: 143.476s, database size 13555.7 MB
+  SF=8 run=1 Q1: 5.294s ok
+  SF=8 run=1 Q2: 1.478s ok
+  SF=8 run=1 Q3: 2.103s ok
+  SF=8 run=1 Q4: 0.554s ok
+  SF=8 run=1 Q5: 0.990s ok
+  SF=8 run=1 Q6: 1.418s ok
+  SF=8 run=1 Q7: 4.316s ok
+  SF=8 run=1 Q8: 0.668s ok
+  SF=8 run=1 Q9: 5.267s ok
+  SF=8 run=1 Q10: 1.085s ok
+  SF=8 run=1 Q11: 0.623s ok
+  SF=8 run=1 Q12: 1.281s ok
+  SF=8 run=1 Q13: 6.606s ok
+  SF=8 run=1 Q14: 0.511s ok
+  SF=8 run=1 Q15: 4.026s ok
+  SF=8 run=1 Q16: 0.746s ok
+  SF=8 run=1 Q17: 3.624s ok
+  SF=8 run=1 Q18: 11.887s ok
+  SF=8 run=1 Q19: 0.125s ok
+  SF=8 run=1 Q20: 2.996s ok
+  SF=8 run=1 Q21: 2.350s ok
+  SF=8 run=1 Q22: 0.175s ok
+SF=8 run=1 total 58.123s, failed/timed-out queries: 0
+  SF=8 run=2 Q1: 5.349s ok
+  SF=8 run=2 Q2: 1.589s ok
+  SF=8 run=2 Q3: 1.925s ok
+  SF=8 run=2 Q4: 0.535s ok
+  SF=8 run=2 Q5: 0.935s ok
+  SF=8 run=2 Q6: 1.300s ok
+  SF=8 run=2 Q7: 3.813s ok
+  SF=8 run=2 Q8: 0.626s ok
+  SF=8 run=2 Q9: 5.023s ok
+  SF=8 run=2 Q10: 1.052s ok
+  SF=8 run=2 Q11: 0.630s ok
+  SF=8 run=2 Q12: 1.283s ok
+  SF=8 run=2 Q13: 6.600s ok
+  SF=8 run=2 Q14: 0.514s ok
+  SF=8 run=2 Q15: 4.036s ok
+  SF=8 run=2 Q16: 0.746s ok
+  SF=8 run=2 Q17: 3.636s ok
+  SF=8 run=2 Q18: 11.897s ok
+  SF=8 run=2 Q19: 0.127s ok
+  SF=8 run=2 Q20: 2.999s ok
+  SF=8 run=2 Q21: 2.357s ok
+  SF=8 run=2 Q22: 0.171s ok
+SF=8 run=2 total 57.143s, failed/timed-out queries: 0
+  SF=8 run=3 Q1: 5.349s ok
+  SF=8 run=3 Q2: 1.576s ok
+  SF=8 run=3 Q3: 1.938s ok
+  SF=8 run=3 Q4: 0.535s ok
+  SF=8 run=3 Q5: 0.938s ok
+  SF=8 run=3 Q6: 1.300s ok
+  SF=8 run=3 Q7: 3.812s ok
+  SF=8 run=3 Q8: 0.625s ok
+  SF=8 run=3 Q9: 5.010s ok
+  SF=8 run=3 Q10: 1.049s ok
+  SF=8 run=3 Q11: 0.620s ok
+  SF=8 run=3 Q12: 1.282s ok
+  SF=8 run=3 Q13: 6.590s ok
+  SF=8 run=3 Q14: 0.509s ok
+  SF=8 run=3 Q15: 4.062s ok
+  SF=8 run=3 Q16: 0.743s ok
+  SF=8 run=3 Q17: 3.637s ok
+  SF=8 run=3 Q18: 11.870s ok
+  SF=8 run=3 Q19: 0.128s ok
+  SF=8 run=3 Q20: 2.994s ok
+  SF=8 run=3 Q21: 2.356s ok
+  SF=8 run=3 Q22: 0.172s ok
+SF=8 run=3 total 57.095s, failed/timed-out queries: 0
+Done. See results/timings.csv, results/totals.csv, results/row_counts.csv

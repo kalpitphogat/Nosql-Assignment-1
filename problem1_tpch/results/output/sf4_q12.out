@@ -1,0 +1,6 @@
+ l_shipmode | high_line_count | low_line_count 
+------------+-----------------+----------------
+ AIR        |           24896 |          37985
+ FOB        |           25296 |          37342
+(2 rows)
+

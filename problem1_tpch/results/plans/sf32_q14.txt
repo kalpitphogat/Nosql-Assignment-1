@@ -1,0 +1,16 @@
+                                                                       QUERY PLAN                                                                       
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+ Finalize Aggregate  (cost=1990852.52..1990852.54 rows=1 width=32)
+   ->  Gather  (cost=1990852.07..1990852.48 rows=4 width=64)
+         Workers Planned: 4
+         ->  Partial Aggregate  (cost=1989852.07..1989852.08 rows=1 width=64)
+               ->  Parallel Hash Join  (cost=192420.99..1979932.90 rows=566809 width=33)
+                     Hash Cond: (lineitem.l_partkey = part.p_partkey)
+                     ->  Parallel Bitmap Heap Scan on lineitem  (cost=25351.75..1811375.79 rows=566809 width=16)
+                           Recheck Cond: ((l_shipdate >= '1993-04-01'::date) AND (l_shipdate < '1993-05-01 00:00:00'::timestamp without time zone))
+                           ->  Bitmap Index Scan on idx_lineitem_shipdate  (cost=0.00..24784.94 rows=2267237 width=0)
+                                 Index Cond: ((l_shipdate >= '1993-04-01'::date) AND (l_shipdate < '1993-05-01 00:00:00'::timestamp without time zone))
+                     ->  Parallel Hash  (cost=147070.21..147070.21 rows=1599922 width=25)
+                           ->  Parallel Seq Scan on part  (cost=0.00..147070.21 rows=1599922 width=25)
+(12 rows)
+

@@ -1,0 +1,8 @@
+        supp_nation        |        cust_nation        | l_year |    revenue     
+---------------------------+---------------------------+--------+----------------
+ ALGERIA                   | SAUDI ARABIA              |   1995 | 203840985.3095
+ ALGERIA                   | SAUDI ARABIA              |   1996 | 205789645.7875
+ SAUDI ARABIA              | ALGERIA                   |   1995 | 215102103.2908
+ SAUDI ARABIA              | ALGERIA                   |   1996 | 215066731.5300
+(4 rows)
+

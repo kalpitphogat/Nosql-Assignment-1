@@ -1,0 +1,13 @@
+                                                                    QUERY PLAN                                                                    
+--------------------------------------------------------------------------------------------------------------------------------------------------
+ Finalize Aggregate  (cost=1024519.48..1024519.49 rows=1 width=32)
+   ->  Gather  (cost=1024519.04..1024519.45 rows=4 width=32)
+         Workers Planned: 4
+         ->  Partial Aggregate  (cost=1023519.04..1023519.05 rows=1 width=32)
+               ->  Parallel Bitmap Heap Scan on lineitem  (cost=80802.29..1022373.57 rows=229094 width=12)
+                     Recheck Cond: ((l_shipdate >= '1996-01-01'::date) AND (l_shipdate < '1997-01-01 00:00:00'::timestamp without time zone))
+                     Filter: ((l_discount >= 0.07) AND (l_discount <= 0.09) AND (l_quantity < '24'::numeric))
+                     ->  Bitmap Index Scan on idx_lineitem_shipdate  (cost=0.00..80573.20 rows=7369116 width=0)
+                           Index Cond: ((l_shipdate >= '1996-01-01'::date) AND (l_shipdate < '1997-01-01 00:00:00'::timestamp without time zone))
+(9 rows)
+

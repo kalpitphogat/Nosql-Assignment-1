@@ -1,3 +1,0 @@
-psql:queries_final/3.sql:26: ERROR:  syntax error at or near "limit"
-LINE 1: limit 10;
-        ^

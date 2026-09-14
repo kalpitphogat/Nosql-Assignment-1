@@ -1,0 +1,22 @@
+date: Mon Sep 14 09:02:38 EDT 2026
+host: Linux redhatacademy7 4.18.0-553.117.1.el8_10.x86_64 #1 SMP Fri Mar 27 18:49:45 EDT 2026 x86_64 x86_64 x86_64 GNU/Linux
+CPU(s):              24
+Thread(s) per core:  1
+Socket(s):           1
+Model name:          12th Gen Intel(R) Core(TM) i9-12900K
+              total        used        free      shared  buff/cache   available
+Mem:             62           2          28           4          31          55
+Swap:            31           1          29
+postgres: PostgreSQL 16.15 on x86_64-pc-linux-gnu, compiled by gcc (GCC) 8.5.0 20210514 (Red Hat 8.5.0-28), 64-bit
+effective_cache_size = 1572864 8kB
+jit = off
+maintenance_work_mem = 1048576 kB
+max_parallel_workers_per_gather = 4
+max_wal_size = 8192 MB
+max_worker_processes = 8
+random_page_cost = 1.1
+shared_buffers = 524288 8kB
+synchronous_commit = on
+work_mem = 131072 kB
+dbgen: TPC-H Population Generator (Version 2.14.0 build 0)
+reps: 3   timeout: 30min

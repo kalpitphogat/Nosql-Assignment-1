@@ -1,0 +1,24 @@
+                                                                                         QUERY PLAN                                                                                          
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Sort  (cost=1087478.18..1087944.96 rows=186715 width=44)
+   Sort Key: (count(DISTINCT partsupp.ps_suppkey)) DESC, part.p_brand, part.p_type, part.p_size
+   ->  GroupAggregate  (cost=1045536.67..1071130.83 rows=186715 width=44)
+         Group Key: part.p_brand, part.p_type, part.p_size
+         ->  Sort  (cost=1045536.67..1050282.07 rows=1898161 width=40)
+               Sort Key: part.p_brand, part.p_type, part.p_size, partsupp.ps_suppkey
+               ->  Hash Join  (cost=288562.48..847594.82 rows=1898161 width=40)
+                     Hash Cond: (partsupp.ps_partkey = part.p_partkey)
+                     ->  Index Only Scan using partsupp_pkey on partsupp  (cost=9775.38..535192.50 rows=12805789 width=8)
+                           Filter: (NOT (hashed SubPlan 1))
+                           SubPlan 1
+                             ->  Gather  (cost=1000.00..9774.87 rows=32 width=4)
+                                   Workers Planned: 2
+                                   ->  Parallel Seq Scan on supplier  (cost=0.00..8771.67 rows=13 width=4)
+                                         Filter: ((s_comment)::text ~~ '%Customer%Complaints%'::text)
+                     ->  Hash  (cost=266929.54..266929.54 rows=948605 width=40)
+                           ->  Gather  (cost=1000.00..266929.54 rows=948605 width=40)
+                                 Workers Planned: 4
+                                 ->  Parallel Seq Scan on part  (cost=0.00..171069.04 rows=237151 width=40)
+                                       Filter: ((p_brand <> 'Brand#43'::bpchar) AND ((p_type)::text !~~ 'ECONOMY PLATED%'::text) AND (p_size = ANY ('{28,1,19,50,39,31,45,17}'::integer[])))
+(20 rows)
+

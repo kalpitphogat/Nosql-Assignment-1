@@ -1,0 +1,31 @@
+                                                              QUERY PLAN                                                              
+--------------------------------------------------------------------------------------------------------------------------------------
+ Finalize GroupAggregate  (cost=81138.62..81158.91 rows=152 width=90)
+   Group Key: nation.n_name, (EXTRACT(year FROM orders.o_orderdate))
+   ->  Gather Merge  (cost=81138.62..81155.37 rows=126 width=90)
+         Workers Planned: 2
+         ->  Partial GroupAggregate  (cost=80138.60..80140.80 rows=63 width=90)
+               Group Key: nation.n_name, (EXTRACT(year FROM orders.o_orderdate))
+               ->  Sort  (cost=80138.60..80138.76 rows=63 width=81)
+                     Sort Key: nation.n_name, (EXTRACT(year FROM orders.o_orderdate)) DESC
+                     ->  Hash Join  (cost=3.14..80136.72 rows=63 width=81)
+                           Hash Cond: (supplier.s_nationkey = nation.n_nationkey)
+                           ->  Nested Loop  (cost=1.58..80134.80 rows=63 width=31)
+                                 ->  Nested Loop  (cost=1.15..80106.26 rows=63 width=31)
+                                       ->  Nested Loop  (cost=0.86..80087.04 rows=63 width=35)
+                                             ->  Nested Loop  (cost=0.43..29693.03 rows=40403 width=18)
+                                                   ->  Parallel Seq Scan on part  (cost=0.00..10307.33 rows=10101 width=4)
+                                                         Filter: ((p_name)::text ~~ '%chocolate%'::text)
+                                                   ->  Index Scan using partsupp_pkey on partsupp  (cost=0.43..1.87 rows=5 width=14)
+                                                         Index Cond: (ps_partkey = part.p_partkey)
+                                             ->  Index Scan using idx_lineitem_partkey on lineitem  (cost=0.43..1.24 rows=1 width=29)
+                                                   Index Cond: (l_partkey = partsupp.ps_partkey)
+                                                   Filter: (l_suppkey = partsupp.ps_suppkey)
+                                       ->  Index Scan using supplier_pkey on supplier  (cost=0.29..0.31 rows=1 width=8)
+                                             Index Cond: (s_suppkey = lineitem.l_suppkey)
+                                 ->  Index Scan using orders_pkey on orders  (cost=0.43..0.45 rows=1 width=8)
+                                       Index Cond: (o_orderkey = lineitem.l_orderkey)
+                           ->  Hash  (cost=1.25..1.25 rows=25 width=30)
+                                 ->  Seq Scan on nation  (cost=0.00..1.25 rows=25 width=30)
+(27 rows)
+

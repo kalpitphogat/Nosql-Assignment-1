@@ -1,0 +1,26 @@
+                                                             QUERY PLAN                                                              
+-------------------------------------------------------------------------------------------------------------------------------------
+ Limit  (cost=616599.21..616599.46 rows=100 width=71)
+   ->  Sort  (cost=616599.21..617946.12 rows=538765 width=71)
+         Sort Key: orders.o_totalprice DESC, orders.o_orderdate
+         ->  HashAggregate  (cost=589273.44..596008.00 rows=538765 width=71)
+               Group Key: customer.c_custkey, orders.o_orderkey
+               ->  Gather  (cost=423832.07..585232.70 rows=538765 width=44)
+                     Workers Planned: 4
+                     ->  Parallel Hash Join  (cost=422832.07..530356.20 rows=134691 width=44)
+                           Hash Cond: (orders.o_custkey = customer.c_custkey)
+                           ->  Nested Loop  (cost=412771.57..519942.14 rows=134691 width=25)
+                                 ->  Hash Join  (cost=412771.14..474489.09 rows=33682 width=24)
+                                       Hash Cond: (orders.o_orderkey = lineitem_1.l_orderkey)
+                                       ->  Parallel Seq Scan on orders  (cost=0.00..59748.96 rows=750096 width=20)
+                                       ->  Hash  (cost=411087.06..411087.06 rows=134726 width=4)
+                                             ->  HashAggregate  (cost=405024.41..411087.06 rows=134726 width=4)
+                                                   Group Key: lineitem_1.l_orderkey
+                                                   Filter: (sum(lineitem_1.l_quantity) > '315'::numeric)
+                                                   ->  Seq Scan on lineitem lineitem_1  (cost=0.00..345032.27 rows=11998427 width=9)
+                                 ->  Index Scan using idx_lineitem_orderkey on lineitem  (cost=0.43..1.05 rows=30 width=9)
+                                       Index Cond: (l_orderkey = orders.o_orderkey)
+                           ->  Parallel Hash  (cost=8498.00..8498.00 rows=125000 width=23)
+                                 ->  Parallel Seq Scan on customer  (cost=0.00..8498.00 rows=125000 width=23)
+(22 rows)
+

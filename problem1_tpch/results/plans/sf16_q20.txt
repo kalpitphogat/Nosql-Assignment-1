@@ -1,0 +1,32 @@
+                                                                   QUERY PLAN                                                                   
+------------------------------------------------------------------------------------------------------------------------------------------------
+ Nested Loop Semi Join  (cost=5576.32..5065277.80 rows=1725 width=51)
+   ->  Gather Merge  (cost=5575.45..6320.84 rows=6400 width=55)
+         Workers Planned: 2
+         ->  Sort  (cost=4575.43..4582.10 rows=2667 width=55)
+               Sort Key: supplier.s_name
+               ->  Hash Join  (cost=1.32..4423.66 rows=2667 width=55)
+                     Hash Cond: (supplier.s_nationkey = nation.n_nationkey)
+                     ->  Parallel Seq Scan on supplier  (cost=0.00..4217.67 rows=66667 width=59)
+                     ->  Hash  (cost=1.31..1.31 rows=1 width=4)
+                           ->  Seq Scan on nation  (cost=0.00..1.31 rows=1 width=4)
+                                 Filter: (n_name = 'UNITED STATES'::bpchar)
+   ->  Nested Loop  (cost=0.86..790.45 rows=1 width=4)
+         ->  Index Scan using idx_partsupp_suppkey on partsupp  (cost=0.43..777.78 rows=27 width=8)
+               Index Cond: (ps_suppkey = supplier.s_suppkey)
+               Filter: ((ps_availqty)::numeric > (SubPlan 1))
+               SubPlan 1
+                 ->  Aggregate  (cost=9.42..9.43 rows=1 width=32)
+                       ->  Bitmap Heap Scan on lineitem  (cost=8.30..9.42 rows=1 width=5)
+                             Recheck Cond: ((l_partkey = partsupp.ps_partkey) AND (l_suppkey = partsupp.ps_suppkey))
+                             Filter: ((l_shipdate >= '1994-01-01'::date) AND (l_shipdate < '1995-01-01 00:00:00'::timestamp without time zone))
+                             ->  BitmapAnd  (cost=8.30..8.30 rows=1 width=0)
+                                   ->  Bitmap Index Scan on idx_lineitem_partkey  (cost=0.00..1.89 rows=29 width=0)
+                                         Index Cond: (l_partkey = partsupp.ps_partkey)
+                                   ->  Bitmap Index Scan on idx_lineitem_suppkey  (cost=0.00..6.16 rows=599 width=0)
+                                         Index Cond: (l_suppkey = partsupp.ps_suppkey)
+         ->  Index Scan using part_pkey on part  (cost=0.43..0.47 rows=1 width=4)
+               Index Cond: (p_partkey = partsupp.ps_partkey)
+               Filter: ((p_name)::text ~~ 'medium%'::text)
+(28 rows)
+

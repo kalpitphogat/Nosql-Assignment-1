@@ -1,0 +1,23 @@
+                                                               QUERY PLAN                                                                
+-----------------------------------------------------------------------------------------------------------------------------------------
+ GroupAggregate  (cost=42169.98..42600.19 rows=3002 width=72)
+   Group Key: (SUBSTRING(customer.c_phone FROM 1 FOR 2))
+   InitPlan 1 (returns $1)
+     ->  Finalize Aggregate  (cost=20467.40..20467.41 rows=1 width=32)
+           ->  Gather  (cost=20467.07..20467.38 rows=3 width=32)
+                 Workers Planned: 3
+                 ->  Partial Aggregate  (cost=19467.07..19467.08 rows=1 width=32)
+                       ->  Parallel Seq Scan on customer customer_1  (cost=0.00..19451.65 rows=6170 width=6)
+                             Filter: ((c_acctbal > 0.00) AND (SUBSTRING(c_phone FROM 1 FOR 2) = ANY ('{44,38,35,42,28,20,24}'::text[])))
+   ->  Gather Merge  (cost=21702.57..22057.73 rows=3002 width=38)
+         Workers Planned: 3
+         Params Evaluated: $1
+         ->  Sort  (cost=20702.53..20704.95 rows=968 width=38)
+               Sort Key: (SUBSTRING(customer.c_phone FROM 1 FOR 2))
+               ->  Nested Loop Anti Join  (cost=0.43..20654.53 rows=968 width=38)
+                     ->  Parallel Seq Scan on customer  (cost=0.00..19451.65 rows=2258 width=26)
+                           Filter: ((c_acctbal > $1) AND (SUBSTRING(c_phone FROM 1 FOR 2) = ANY ('{44,38,35,42,28,20,24}'::text[])))
+                     ->  Index Only Scan using idx_orders_custkey on orders  (cost=0.43..1.45 rows=18 width=4)
+                           Index Cond: (o_custkey = customer.c_custkey)
+(19 rows)
+

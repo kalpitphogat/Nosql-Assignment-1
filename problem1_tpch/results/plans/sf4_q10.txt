@@ -1,0 +1,27 @@
+                                                                                    QUERY PLAN                                                                                    
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Limit  (cost=370073.40..370073.45 rows=20 width=201)
+   ->  Sort  (cost=370073.40..370667.02 rows=237446 width=201)
+         Sort Key: (sum((lineitem.l_extendedprice * ('1'::numeric - lineitem.l_discount)))) DESC
+         ->  HashAggregate  (cost=360786.97..363755.05 rows=237446 width=201)
+               Group Key: customer.c_custkey, nation.n_name
+               ->  Gather  (cost=315889.57..357818.90 rows=237446 width=181)
+                     Workers Planned: 3
+                     ->  Hash Join  (cost=314889.57..333074.30 rows=76595 width=181)
+                           Hash Cond: (customer.c_nationkey = nation.n_nationkey)
+                           ->  Parallel Hash Join  (cost=314888.00..332837.59 rows=76595 width=159)
+                                 Hash Cond: (customer.c_custkey = orders.o_custkey)
+                                 ->  Parallel Seq Scan on customer  (cost=0.00..16306.48 rows=193548 width=147)
+                                 ->  Parallel Hash  (cost=314145.98..314145.98 rows=59362 width=16)
+                                       ->  Nested Loop  (cost=2688.75..314145.98 rows=59362 width=16)
+                                             ->  Parallel Bitmap Heap Scan on orders  (cost=2688.31..108081.57 rows=59951 width=8)
+                                                   Recheck Cond: ((o_orderdate >= '1993-05-01'::date) AND (o_orderdate < '1993-08-01 00:00:00'::timestamp without time zone))
+                                                   ->  Bitmap Index Scan on idx_orders_orderdate  (cost=0.00..2628.36 rows=239803 width=0)
+                                                         Index Cond: ((o_orderdate >= '1993-05-01'::date) AND (o_orderdate < '1993-08-01 00:00:00'::timestamp without time zone))
+                                             ->  Index Scan using idx_lineitem_orderkey on lineitem  (cost=0.44..3.29 rows=15 width=16)
+                                                   Index Cond: (l_orderkey = orders.o_orderkey)
+                                                   Filter: (l_returnflag = 'R'::bpchar)
+                           ->  Hash  (cost=1.25..1.25 rows=25 width=30)
+                                 ->  Seq Scan on nation  (cost=0.00..1.25 rows=25 width=30)
+(23 rows)
+

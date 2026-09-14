@@ -1,0 +1,33 @@
+                                                            QUERY PLAN                                                            
+----------------------------------------------------------------------------------------------------------------------------------
+ Sort  (cost=77613.01..77983.08 rows=148029 width=36)
+   Sort Key: (sum((partsupp.ps_supplycost * (partsupp.ps_availqty)::numeric))) DESC
+   InitPlan 1 (returns $2)
+     ->  Finalize Aggregate  (cost=19530.05..19530.07 rows=1 width=32)
+           ->  Gather  (cost=19529.83..19530.04 rows=2 width=32)
+                 Workers Planned: 2
+                 ->  Partial Aggregate  (cost=18529.83..18529.84 rows=1 width=32)
+                       ->  Nested Loop  (cost=1.76..16929.13 rows=213426 width=10)
+                             ->  Hash Join  (cost=1.32..4423.66 rows=2667 width=4)
+                                   Hash Cond: (supplier_1.s_nationkey = nation_1.n_nationkey)
+                                   ->  Parallel Seq Scan on supplier supplier_1  (cost=0.00..4217.67 rows=66667 width=8)
+                                   ->  Hash  (cost=1.31..1.31 rows=1 width=4)
+                                         ->  Seq Scan on nation nation_1  (cost=0.00..1.31 rows=1 width=4)
+                                               Filter: (n_name = 'JORDAN'::bpchar)
+                             ->  Index Scan using idx_partsupp_suppkey on partsupp partsupp_1  (cost=0.43..3.87 rows=82 width=14)
+                                   Index Cond: (ps_suppkey = supplier_1.s_suppkey)
+   ->  HashAggregate  (cost=38709.25..45370.57 rows=148029 width=36)
+         Group Key: partsupp.ps_partkey
+         Filter: (sum((partsupp.ps_supplycost * (partsupp.ps_availqty)::numeric)) > $2)
+         ->  Nested Loop  (cost=56.93..33587.03 rows=512222 width=14)
+               ->  Nested Loop  (cost=56.50..3577.65 rows=6400 width=4)
+                     ->  Seq Scan on nation  (cost=0.00..1.31 rows=1 width=4)
+                           Filter: (n_name = 'JORDAN'::bpchar)
+                     ->  Bitmap Heap Scan on supplier  (cost=56.50..3512.33 rows=6400 width=8)
+                           Recheck Cond: (s_nationkey = nation.n_nationkey)
+                           ->  Bitmap Index Scan on idx_supplier_nationkey  (cost=0.00..54.90 rows=6400 width=0)
+                                 Index Cond: (s_nationkey = nation.n_nationkey)
+               ->  Index Scan using idx_partsupp_suppkey on partsupp  (cost=0.43..3.87 rows=82 width=18)
+                     Index Cond: (ps_suppkey = supplier.s_suppkey)
+(29 rows)
+

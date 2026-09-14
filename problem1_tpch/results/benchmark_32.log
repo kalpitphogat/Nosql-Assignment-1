@@ -1,0 +1,77 @@
+nohup: ignoring input
+=== Scale factor 32 ===
+Generating data at SF=32 ...
+TPC-H Population Generator (Version 2.14.0)
+Copyright Transaction Processing Performance Council 1994 - 2010
+Loading SF=32 (34688.3 MB) ...
+Load + index + analyze: 633.444s, database size 54197.3 MB
+  SF=32 run=1 Q1: 21.100s ok
+  SF=32 run=1 Q2: 12.339s ok
+  SF=32 run=1 Q3: 5.571s ok
+  SF=32 run=1 Q4: 2.611s ok
+  SF=32 run=1 Q5: 6.449s ok
+  SF=32 run=1 Q6: 2.839s ok
+  SF=32 run=1 Q7: 17.067s ok
+  SF=32 run=1 Q8: 3.748s ok
+  SF=32 run=1 Q9: 22.141s ok
+  SF=32 run=1 Q10: 6.641s ok
+  SF=32 run=1 Q11: 2.424s ok
+  SF=32 run=1 Q12: 5.129s ok
+  SF=32 run=1 Q13: 62.880s ok
+  SF=32 run=1 Q14: 2.184s ok
+  SF=32 run=1 Q15: 8.603s ok
+  SF=32 run=1 Q16: 10.055s ok
+  SF=32 run=1 Q17: 14.992s ok
+  SF=32 run=1 Q18: 56.969s ok
+  SF=32 run=1 Q19: 0.912s ok
+  SF=32 run=1 Q20: 34.856s ok
+  SF=32 run=1 Q21: 9.911s ok
+  SF=32 run=1 Q22: 0.671s ok
+SF=32 run=1 total 310.092s, failed/timed-out queries: 0
+  SF=32 run=2 Q1: 21.205s ok
+  SF=32 run=2 Q2: 6.880s ok
+  SF=32 run=2 Q3: 5.414s ok
+  SF=32 run=2 Q4: 2.482s ok
+  SF=32 run=2 Q5: 6.464s ok
+  SF=32 run=2 Q6: 2.848s ok
+  SF=32 run=2 Q7: 15.762s ok
+  SF=32 run=2 Q8: 3.710s ok
+  SF=32 run=2 Q9: 22.233s ok
+  SF=32 run=2 Q10: 6.630s ok
+  SF=32 run=2 Q11: 2.428s ok
+  SF=32 run=2 Q12: 5.125s ok
+  SF=32 run=2 Q13: 62.829s ok
+  SF=32 run=2 Q14: 2.189s ok
+  SF=32 run=2 Q15: 8.628s ok
+  SF=32 run=2 Q16: 9.999s ok
+  SF=32 run=2 Q17: 15.237s ok
+  SF=32 run=2 Q18: 56.538s ok
+  SF=32 run=2 Q19: 1.513s ok
+  SF=32 run=2 Q20: 54.627s ok
+  SF=32 run=2 Q21: 10.264s ok
+  SF=32 run=2 Q22: 0.655s ok
+SF=32 run=2 total 323.660s, failed/timed-out queries: 0
+  SF=32 run=3 Q1: 21.206s ok
+  SF=32 run=3 Q2: 6.863s ok
+  SF=32 run=3 Q3: 5.459s ok
+  SF=32 run=3 Q4: 2.491s ok
+  SF=32 run=3 Q5: 6.475s ok
+  SF=32 run=3 Q6: 2.855s ok
+  SF=32 run=3 Q7: 15.759s ok
+  SF=32 run=3 Q8: 3.736s ok
+  SF=32 run=3 Q9: 22.182s ok
+  SF=32 run=3 Q10: 6.651s ok
+  SF=32 run=3 Q11: 2.434s ok
+  SF=32 run=3 Q12: 5.150s ok
+  SF=32 run=3 Q13: 62.926s ok
+  SF=32 run=3 Q14: 2.166s ok
+  SF=32 run=3 Q15: 8.593s ok
+  SF=32 run=3 Q16: 10.006s ok
+  SF=32 run=3 Q17: 15.071s ok
+  SF=32 run=3 Q18: 56.139s ok
+  SF=32 run=3 Q19: 0.649s ok
+  SF=32 run=3 Q20: 28.505s ok
+  SF=32 run=3 Q21: 11.049s ok
+  SF=32 run=3 Q22: 0.661s ok
+SF=32 run=3 total 297.026s, failed/timed-out queries: 0
+Done. See results/timings.csv, results/totals.csv, results/row_counts.csv

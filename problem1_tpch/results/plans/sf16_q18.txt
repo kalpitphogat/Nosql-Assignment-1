@@ -1,0 +1,31 @@
+                                                                        QUERY PLAN                                                                         
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+ Limit  (cost=4104572.24..4104572.49 rows=100 width=71)
+   ->  Sort  (cost=4104572.24..4105989.95 rows=567086 width=71)
+         Sort Key: orders.o_totalprice DESC, orders.o_orderdate
+         ->  GroupAggregate  (cost=2641813.89..4082898.62 rows=567086 width=71)
+               Group Key: customer.c_custkey, orders.o_orderkey
+               ->  Incremental Sort  (cost=2641813.89..4071556.90 rows=567086 width=44)
+                     Sort Key: customer.c_custkey, orders.o_orderkey
+                     Presorted Key: customer.c_custkey
+                     ->  Nested Loop  (cost=2641811.40..4046038.03 rows=567086 width=44)
+                           ->  Merge Join  (cost=2641810.84..2750664.16 rows=141809 width=43)
+                                 Merge Cond: (customer.c_custkey = orders.o_custkey)
+                                 ->  Index Scan using customer_pkey on customer  (cost=0.43..100726.30 rows=2400181 width=23)
+                                 ->  Sort  (cost=2641810.29..2642164.81 rows=141809 width=24)
+                                       Sort Key: orders.o_custkey
+                                       ->  Nested Loop  (cost=2349603.61..2629675.99 rows=141809 width=24)
+                                             ->  Finalize HashAggregate  (cost=2349603.17..2355984.59 rows=141809 width=4)
+                                                   Group Key: lineitem_1.l_orderkey
+                                                   Filter: (sum(lineitem_1.l_quantity) > '315'::numeric)
+                                                   ->  Gather  (cost=2161351.28..2336840.33 rows=1701712 width=36)
+                                                         Workers Planned: 4
+                                                         ->  Partial HashAggregate  (cost=2160351.28..2165669.13 rows=425428 width=36)
+                                                               Group Key: lineitem_1.l_orderkey
+                                                               ->  Parallel Seq Scan on lineitem lineitem_1  (cost=0.00..2040367.52 rows=23996752 width=9)
+                                             ->  Index Scan using orders_pkey on orders  (cost=0.44..1.93 rows=1 width=20)
+                                                   Index Cond: (o_orderkey = lineitem_1.l_orderkey)
+                           ->  Index Scan using idx_lineitem_orderkey on lineitem  (cost=0.57..6.87 rows=226 width=9)
+                                 Index Cond: (l_orderkey = orders.o_orderkey)
+(27 rows)
+

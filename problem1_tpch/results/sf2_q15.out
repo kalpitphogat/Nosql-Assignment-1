@@ -1,7 +1,0 @@
-CREATE VIEW
- s_suppkey |          s_name           |        s_address         |     s_phone     | total_revenue 
------------+---------------------------+--------------------------+-----------------+---------------
-     17956 | Supplier#000017956        | nsm43IrIxGrs5yxYSE3ZUHyE | 20-438-386-2400 |  1992018.6694
-(1 row)
-
-DROP VIEW

@@ -1,0 +1,25 @@
+                                                                       QUERY PLAN                                                                       
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+ Merge Join  (cost=948751.91..950467.22 rows=200 width=104)
+   Merge Cond: (supplier.s_suppkey = revenue0.supplier_no)
+   InitPlan 1 (returns $0)
+     ->  Aggregate  (cost=474570.93..474570.94 rows=1 width=32)
+           ->  HashAggregate  (cost=473571.18..474071.06 rows=39990 width=36)
+                 Group Key: lineitem_1.l_suppkey
+                 ->  Bitmap Heap Scan on lineitem lineitem_1  (cost=9704.33..464897.04 rows=867414 width=16)
+                       Recheck Cond: ((l_shipdate >= '1995-12-01'::date) AND (l_shipdate < '1996-03-01 00:00:00'::timestamp without time zone))
+                       ->  Bitmap Index Scan on idx_lineitem_shipdate  (cost=0.00..9487.48 rows=867414 width=0)
+                             Index Cond: ((l_shipdate >= '1995-12-01'::date) AND (l_shipdate < '1996-03-01 00:00:00'::timestamp without time zone))
+   ->  Index Scan using supplier_pkey on supplier  (cost=0.29..1612.60 rows=40000 width=72)
+   ->  Sort  (cost=474180.67..474181.17 rows=200 width=36)
+         Sort Key: revenue0.supplier_no
+         ->  Subquery Scan on revenue0  (cost=473571.18..474173.03 rows=200 width=36)
+               ->  HashAggregate  (cost=473571.18..474171.03 rows=200 width=36)
+                     Group Key: lineitem.l_suppkey
+                     Filter: (sum((lineitem.l_extendedprice * ('1'::numeric - lineitem.l_discount))) = $0)
+                     ->  Bitmap Heap Scan on lineitem  (cost=9704.33..464897.04 rows=867414 width=16)
+                           Recheck Cond: ((l_shipdate >= '1995-12-01'::date) AND (l_shipdate < '1996-03-01 00:00:00'::timestamp without time zone))
+                           ->  Bitmap Index Scan on idx_lineitem_shipdate  (cost=0.00..9487.48 rows=867414 width=0)
+                                 Index Cond: ((l_shipdate >= '1995-12-01'::date) AND (l_shipdate < '1996-03-01 00:00:00'::timestamp without time zone))
+(21 rows)
+

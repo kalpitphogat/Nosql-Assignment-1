@@ -1,0 +1,14 @@
+                                              QUERY PLAN                                              
+------------------------------------------------------------------------------------------------------
+ Finalize GroupAggregate  (cost=733975.66..733979.48 rows=6 width=236)
+   Group Key: l_returnflag, l_linestatus
+   ->  Gather Merge  (cost=733975.66..733978.53 rows=24 width=236)
+         Workers Planned: 4
+         ->  Sort  (cost=732975.60..732975.62 rows=6 width=236)
+               Sort Key: l_returnflag, l_linestatus
+               ->  Partial HashAggregate  (cost=732975.39..732975.52 rows=6 width=236)
+                     Group Key: l_returnflag, l_linestatus
+                     ->  Parallel Seq Scan on lineitem  (cost=0.00..525128.24 rows=5938490 width=25)
+                           Filter: (l_shipdate <= '1998-09-13 00:00:00'::timestamp without time zone)
+(10 rows)
+

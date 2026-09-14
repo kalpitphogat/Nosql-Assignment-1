@@ -1,0 +1,35 @@
+                                                                    QUERY PLAN                                                                    
+--------------------------------------------------------------------------------------------------------------------------------------------------
+ Limit  (cost=1788416.46..1788416.47 rows=1 width=34)
+   ->  Sort  (cost=1788416.46..1788416.47 rows=1 width=34)
+         Sort Key: (count(*)) DESC, supplier.s_name
+         ->  GroupAggregate  (cost=1788416.43..1788416.45 rows=1 width=34)
+               Group Key: supplier.s_name
+               ->  Sort  (cost=1788416.43..1788416.44 rows=1 width=26)
+                     Sort Key: supplier.s_name
+                     ->  Nested Loop  (cost=1003.47..1788416.42 rows=1 width=26)
+                           ->  Nested Loop Semi Join  (cost=1003.03..1788414.35 rows=1 width=34)
+                                 ->  Gather  (cost=1002.46..1788404.38 rows=1 width=34)
+                                       Workers Planned: 2
+                                       ->  Nested Loop Anti Join  (cost=2.46..1787404.28 rows=1 width=34)
+                                             ->  Nested Loop  (cost=1.89..1336074.44 rows=532018 width=34)
+                                                   ->  Hash Join  (cost=1.32..4423.66 rows=2667 width=30)
+                                                         Hash Cond: (supplier.s_nationkey = nation.n_nationkey)
+                                                         ->  Parallel Seq Scan on supplier  (cost=0.00..4217.67 rows=66667 width=34)
+                                                         ->  Hash  (cost=1.31..1.31 rows=1 width=4)
+                                                               ->  Seq Scan on nation  (cost=0.00..1.31 rows=1 width=4)
+                                                                     Filter: (n_name = 'INDIA'::bpchar)
+                                                   ->  Index Scan using idx_lineitem_suppkey on lineitem l1  (cost=0.57..497.31 rows=200 width=8)
+                                                         Index Cond: (l_suppkey = supplier.s_suppkey)
+                                                         Filter: (l_receiptdate > l_commitdate)
+                                             ->  Index Scan using idx_lineitem_orderkey on lineitem l3  (cost=0.57..10.52 rows=75 width=8)
+                                                   Index Cond: (l_orderkey = l1.l_orderkey)
+                                                   Filter: ((l_receiptdate > l_commitdate) AND (l_suppkey <> l1.l_suppkey))
+                                 ->  Index Scan using idx_lineitem_orderkey on lineitem l2  (cost=0.57..9.95 rows=226 width=8)
+                                       Index Cond: (l_orderkey = l1.l_orderkey)
+                                       Filter: (l_suppkey <> l1.l_suppkey)
+                           ->  Index Scan using orders_pkey on orders  (cost=0.44..2.07 rows=1 width=4)
+                                 Index Cond: (o_orderkey = l1.l_orderkey)
+                                 Filter: (o_orderstatus = 'F'::bpchar)
+(31 rows)
+

@@ -1,0 +1,31 @@
+                                                      QUERY PLAN                                                      
+----------------------------------------------------------------------------------------------------------------------
+ Sort  (cost=11925.55..11978.63 rows=21232 width=36)
+   Sort Key: (sum((partsupp.ps_supplycost * (partsupp.ps_availqty)::numeric))) DESC
+   InitPlan 1 (returns $2)
+     ->  Aggregate  (cost=4642.45..4642.46 rows=1 width=32)
+           ->  Nested Loop  (cost=8.01..4164.72 rows=63697 width=10)
+                 ->  Nested Loop  (cost=7.59..462.68 rows=800 width=4)
+                       ->  Seq Scan on nation nation_1  (cost=0.00..1.31 rows=1 width=4)
+                             Filter: (n_name = 'JORDAN'::bpchar)
+                       ->  Bitmap Heap Scan on supplier supplier_1  (cost=7.59..453.37 rows=800 width=8)
+                             Recheck Cond: (s_nationkey = nation_1.n_nationkey)
+                             ->  Bitmap Index Scan on idx_supplier_nationkey  (cost=0.00..7.39 rows=800 width=0)
+                                   Index Cond: (s_nationkey = nation_1.n_nationkey)
+                 ->  Index Scan using idx_partsupp_suppkey on partsupp partsupp_1  (cost=0.43..3.83 rows=80 width=14)
+                       Index Cond: (ps_suppkey = supplier_1.s_suppkey)
+   ->  HashAggregate  (cost=4801.69..5757.15 rows=21232 width=36)
+         Group Key: partsupp.ps_partkey
+         Filter: (sum((partsupp.ps_supplycost * (partsupp.ps_availqty)::numeric)) > $2)
+         ->  Nested Loop  (cost=8.01..4164.72 rows=63697 width=14)
+               ->  Nested Loop  (cost=7.59..462.68 rows=800 width=4)
+                     ->  Seq Scan on nation  (cost=0.00..1.31 rows=1 width=4)
+                           Filter: (n_name = 'JORDAN'::bpchar)
+                     ->  Bitmap Heap Scan on supplier  (cost=7.59..453.37 rows=800 width=8)
+                           Recheck Cond: (s_nationkey = nation.n_nationkey)
+                           ->  Bitmap Index Scan on idx_supplier_nationkey  (cost=0.00..7.39 rows=800 width=0)
+                                 Index Cond: (s_nationkey = nation.n_nationkey)
+               ->  Index Scan using idx_partsupp_suppkey on partsupp  (cost=0.43..3.83 rows=80 width=18)
+                     Index Cond: (ps_suppkey = supplier.s_suppkey)
+(27 rows)
+

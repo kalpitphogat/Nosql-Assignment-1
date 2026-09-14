@@ -1,0 +1,32 @@
+                                                                         QUERY PLAN                                                                         
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Sort  (cost=2251649.58..2251651.74 rows=862 width=51)
+   Sort Key: supplier.s_name
+   ->  Hash Semi Join  (cost=2249827.79..2251607.55 rows=862 width=51)
+         Hash Cond: (supplier.s_suppkey = partsupp.ps_suppkey)
+         ->  Nested Loop  (cost=28.39..1790.17 rows=3200 width=55)
+               ->  Seq Scan on nation  (cost=0.00..1.31 rows=1 width=4)
+                     Filter: (n_name = 'UNITED STATES'::bpchar)
+               ->  Bitmap Heap Scan on supplier  (cost=28.39..1756.86 rows=3200 width=59)
+                     Recheck Cond: (s_nationkey = nation.n_nationkey)
+                     ->  Bitmap Index Scan on idx_supplier_nationkey  (cost=0.00..27.59 rows=3200 width=0)
+                           Index Cond: (s_nationkey = nation.n_nationkey)
+         ->  Hash  (cost=2249530.03..2249530.03 rows=21549 width=4)
+               ->  Nested Loop  (cost=0.43..2249530.03 rows=21549 width=4)
+                     ->  Seq Scan on part  (cost=0.00..52768.78 rows=16161 width=4)
+                           Filter: ((p_name)::text ~~ 'medium%'::text)
+                     ->  Index Scan using partsupp_pkey on partsupp  (cost=0.43..135.88 rows=5 width=8)
+                           Index Cond: (ps_partkey = part.p_partkey)
+                           Filter: ((ps_availqty)::numeric > (SubPlan 1))
+                           SubPlan 1
+                             ->  Aggregate  (cost=9.28..9.29 rows=1 width=32)
+                                   ->  Bitmap Heap Scan on lineitem  (cost=8.15..9.27 rows=1 width=5)
+                                         Recheck Cond: ((l_partkey = partsupp.ps_partkey) AND (l_suppkey = partsupp.ps_suppkey))
+                                         Filter: ((l_shipdate >= '1994-01-01'::date) AND (l_shipdate < '1995-01-01 00:00:00'::timestamp without time zone))
+                                         ->  BitmapAnd  (cost=8.15..8.15 rows=1 width=0)
+                                               ->  Bitmap Index Scan on idx_lineitem_partkey  (cost=0.00..1.78 rows=32 width=0)
+                                                     Index Cond: (l_partkey = partsupp.ps_partkey)
+                                               ->  Bitmap Index Scan on idx_lineitem_suppkey  (cost=0.00..6.12 rows=611 width=0)
+                                                     Index Cond: (l_suppkey = partsupp.ps_suppkey)
+(28 rows)
+

@@ -1,0 +1,17 @@
+                                                                                                                                 QUERY PLAN                                                                                                                                 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ Finalize GroupAggregate  (cost=2529408.95..2531699.62 rows=7 width=27)
+   Group Key: lineitem.l_shipmode
+   ->  Gather Merge  (cost=2529408.95..2531699.34 rows=28 width=27)
+         Workers Planned: 4
+         ->  Partial GroupAggregate  (cost=2528408.89..2530695.94 rows=7 width=27)
+               Group Key: lineitem.l_shipmode
+               ->  Sort  (cost=2528408.89..2528694.77 rows=114349 width=27)
+                     Sort Key: lineitem.l_shipmode
+                     ->  Nested Loop  (cost=0.44..2518801.81 rows=114349 width=27)
+                           ->  Parallel Seq Scan on lineitem  (cost=0.00..2340326.92 rows=114349 width=15)
+                                 Filter: ((l_shipmode = ANY ('{FOB,AIR}'::bpchar[])) AND (l_commitdate < l_receiptdate) AND (l_shipdate < l_commitdate) AND (l_receiptdate >= '1993-01-01'::date) AND (l_receiptdate < '1994-01-01 00:00:00'::timestamp without time zone))
+                           ->  Index Scan using orders_pkey on orders  (cost=0.44..1.56 rows=1 width=20)
+                                 Index Cond: (o_orderkey = lineitem.l_orderkey)
+(13 rows)
+
