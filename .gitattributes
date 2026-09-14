@@ -7,3 +7,4 @@ problem2_integration/customer_*.csv -text
 # qgen raw output and checksum lists must stay byte-exact (the official templates use CRLF)
 problem1_tpch/queries/*/raw/*.sql -text
 problem1_tpch/queries/*/SHA256SUMS -text
+*.zip binary
