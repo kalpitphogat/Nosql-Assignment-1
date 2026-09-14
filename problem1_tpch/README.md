@@ -275,6 +275,28 @@ time on:
 | **Joins** | the planner switches between index nested loops, hash joins and merge joins as tables grow. The switch points cause flat steps or sudden jumps | Q3, Q5, Q7, Q10, Q13, Q20, Q21 |
 | **Correlated subqueries** | cost = outer rows × inner lookup; super-linear when the plan runs the subquery per row | Q20 (786,335 executions); Q17 stays linear with a stable plan |
 
+## How reliable are the measurements?
+
+The server is shared, so we compared the three measured runs of each query.
+For queries taking at least 0.5 s, the spread is (slowest - fastest) / median:
+
+| SF | Queries ≥ 0.5 s | Median spread | Largest spread | Spread of the total |
+|---|---|---|---|---|
+| 1 | 2 | 1.3 % | 1 % (Q1) | 2.4 % |
+| 2 | 9 | 23.0 % | 49 % (Q13) | 17.1 % |
+| 4 | 15 | 12.7 % | 25 % (Q6) | 4.5 % |
+| 8 | 20 | 18.2 % | 32 % (Q10) | 14.1 % |
+| 16 | 20 | 0.5 % | 5 % (Q18) | 1.1 % |
+| 32 | 22 | 1.5 % | 149 % (Q19) | 11.4 % |
+
+SF1, SF16 and most of SF32 are very consistent. SF2, SF4 and SF8 are noisier
+(typical spread 13–23 %; the load average was 3.74 when that session
+started), so ratios involving those scale factors are only accurate to about
+±20 %. The main conclusions do not depend on them. The unexplained SF2→SF4
+jumps of Q2, Q11 and Q21 are well above this noise: every run is slower at
+SF4 (Q11: 0.10–0.13 s in all four runs at SF2, 0.42–0.44 s in all four at
+SF4).
+
 ## Limitations and notes
 
 - **Not an audited TPC-H result.** We run single-stream query timings only:
@@ -288,8 +310,11 @@ time on:
   and we cannot rule out activity by other users during the runs. The spread
   between runs is shown in the totals table and as bars in the plots.
 - **Some jumps are not explained by plan changes.** At SF2→SF4, Q2 (3.12×),
-  Q11 (3.28×) and Q21 (3.18×) grew fast with an unchanged plan shape, and
-  Q19 at SF32 (above). We report these without a verified cause.
+  Q11 (3.28×) and Q21 (3.18×) grew fast and consistently with an unchanged
+  plan shape. Explaining them would need `EXPLAIN ANALYZE` at SF2 and SF4,
+  which we did not capture before those databases were removed. Q19 at SF32
+  varies too much between runs to attribute. We report these without a cause.
+- **SF2–SF8 are noisier** than the other scale factors (see the table above).
 - **`EXPLAIN ANALYZE` was captured only at SF32** (after the timed runs), for
   the queries discussed. Plan *shapes* at smaller SFs come from the saved
   `EXPLAIN` output, which shows the chosen operators but not their actual

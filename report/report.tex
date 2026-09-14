@@ -83,6 +83,13 @@ more detail. \file{COMPLIANCE.md} lists every requirement from the assignment
 PDF next to the file that addresses it; Section~\ref{sec:compliance} gives a
 short version of it.
 
+\paragraph{Use of AI tools.} As the assignment allows, we used an AI coding
+assistant (Claude Code) for help with writing and debugging scripts, reviewing
+our results against the assignment and drafting documentation. The experiments
+were run by us on the machines described below, and every number in this
+report comes from the output files included in the submission, so it can be
+checked and reproduced.
+
 \paragraph{Machines.} Problem~1 ran on a lab server with an Intel Core
 i9-12900K (16 cores, 24 threads), 62\,GB of RAM and an NVMe SSD, under Red Hat
 Enterprise Linux 8.10. Problems~2 and~3 ran on a laptop with an AMD Ryzen~7
@@ -197,6 +204,26 @@ three more times. We record the wall-clock time around \file{psql}
 
 All 528 query executions (6 scale factors $\times$ 22 queries $\times$ 4 runs)
 completed successfully. We use the median of the three measured runs.
+
+\subsection{Reproducing the study}
+
+These are the exact commands we used. The first one builds PostgreSQL and the
+TPC-H tools in the user's home directory and needs no administrator rights.
+Generating the data is part of \file{run\_benchmark.sh} (it calls
+\file{dbgen -s <SF>} for each scale factor, see step~2 above).
+
+\begin{lstlisting}
+cd problem1_tpch
+TPCH_KIT=/path/to/7C5384AF-10DA-4DCB-B83F-BA2BDE51003F-TPC-H-Tool.zip \
+  ROOT=$HOME/nosql_a1 bash setup_postgres_and_dbgen.sh
+source $HOME/nosql_a1/env.sh
+bash run_benchmark.sh 1 2 4 8 16      # first session
+bash run_benchmark.sh 32              # second session
+python3 plot_results.py               # tables and plots
+\end{lstlisting}
+
+To check a single query set against its recorded checksums:
+\file{cd queries/sf32 \&\& sha256sum -c SHA256SUMS}.
 
 \subsection{Results}
 
@@ -418,6 +445,47 @@ Correlated subqueries & Cost is roughly outer rows times inner lookup; super-lin
 \caption{The observations grouped by database operation.}
 \end{table}
 
+\subsection{How reliable are the measurements?}
+
+Because the server is shared, we looked at how much the three measured runs
+of the same query differ. For every query that takes at least half a second,
+we computed the spread as (slowest $-$ fastest) / median.
+
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{@{}rrrrr@{}}
+\toprule
+SF & Queries $\geq$ 0.5\,s & Median spread & Largest spread & Spread of the total \\
+\midrule
+1  & 2  & 1.3\,\%  & 1\,\% (Q1)    & 2.4\,\% \\
+2  & 9  & 23.0\,\% & 49\,\% (Q13)  & 17.1\,\% \\
+4  & 15 & 12.7\,\% & 25\,\% (Q6)   & 4.5\,\% \\
+8  & 20 & 18.2\,\% & 32\,\% (Q10)  & 14.1\,\% \\
+16 & 20 & 0.5\,\%  & 5\,\% (Q18)   & 1.1\,\% \\
+32 & 22 & 1.5\,\%  & 149\,\% (Q19) & 11.4\,\% \\
+\bottomrule
+\end{tabular}
+\caption{Run-to-run spread of the three measured runs.}
+\label{tab:spread}
+\end{table}
+
+The runs at SF1, SF16 and most of SF32 are very consistent. At SF2, SF4 and
+SF8 the three runs of the same query differ by 13--23\,\% on a typical query,
+so these scale factors were measured while the machine was busier (the load
+average was 3.74 when that session started). This means that ratios involving
+SF2, SF4 or SF8 are only accurate to roughly $\pm$20\,\%, and we do not read
+anything into differences smaller than that. The main conclusions do not
+depend on these steps: the linear queries are linear at every step, and the
+degradation we describe happens at SF32, where the runs are consistent (apart
+from Q19 and Q20, discussed above).
+
+The three sharp increases from SF2 to SF4 that we could not explain from the
+plans (Q2 3.12$\times$, Q11 3.28$\times$, Q21 3.18$\times$) are well above
+this noise. Every single run is slower at SF4: Q11, for example, took
+0.10--0.13\,s in all four runs at SF2 and 0.42--0.44\,s in all four runs at
+SF4. So they are real effects, not measurement noise.
+
 \subsection{Limitations}
 
 \begin{itemize}
@@ -425,13 +493,14 @@ Correlated subqueries & Cost is roughly outer rows times inner lookup; super-lin
 query times, we do not run the refresh functions or the throughput test, and
 we added indexes. That is what the assignment asks for, but the numbers should
 not be compared with published TPC-H results.
-\item The server is shared with other users. It was fairly quiet when both
-sessions started, but we cannot rule out that someone else used it during our
-runs. The spread between runs is visible in Table~\ref{tab:totals} and in
-Figure~\ref{fig:perquery}.
+\item The server is shared with other users, and the SF2--SF8 measurements are
+noticeably noisier than the others (Table~\ref{tab:spread}). We used the same
+machine and configuration throughout, but we could not control what other
+users were running.
 \item Some jumps have no explanation in the plans. Q2 (3.12), Q11 (3.28) and
-Q21 (3.18) grew quickly from SF2 to SF4 with the same plan shape, and so did
-Q19 at SF32. We report them without a cause.
+Q21 (3.18) grew quickly and consistently from SF2 to SF4 with the same plan
+shape. Q19 grew by 3.92 at SF32, but its runs vary too much to be sure. We
+report these without a cause.
 \item We captured \file{EXPLAIN ANALYZE} only at SF32. For the smaller scales
 we have the plain \file{EXPLAIN} plans, which show the chosen operators but
 not the actual row counts or memory use.
@@ -441,6 +510,24 @@ shared disk had around 95\,GB free, so SF64 would not have fit.
 \item Even with a warm-up run, the first measured run is sometimes slower
 (16.41\,s against 13.84\,s at SF2). That is why we report the median.
 \end{itemize}
+
+\subsection{What we attempted, achieved and left open}
+
+\begin{description}[style=nextline]
+\item[Attempted] A doubling scaling study with the official TPC-H 3.0.1 tools
+on PostgreSQL, from SF1 to SF32, with correctness checks and an explanation
+of the results based on query plans.
+\item[Achieved] Six scale factors, all 22 queries with three measured runs
+each and no failures; generated and loaded row counts verified at every scale;
+SF1 results checked against the official answers (22/22); timing tables,
+plots and an analysis linked to scans, joins, aggregation and sorting, backed
+by \file{EXPLAIN} plans at every scale and \file{EXPLAIN ANALYZE} at SF32.
+\item[Left open] Why Q2, Q11 and Q21 jumped from SF2 to SF4 with unchanged
+plans. Finding out would need \file{EXPLAIN ANALYZE} at SF2 and SF4, which we
+did not capture before the databases were removed to free the shared disk.
+Scale factors beyond 32 were not attempted because they would not fit on the
+disk.
+\end{description}
 
 % ================================================================== P2
 \section{Incomplete data integration and JSON generation}
@@ -612,6 +699,21 @@ data, mainly how unique each attribute is.
 like a new entity. We classify it as incomplete instead, because creating a
 customer with no information at all makes little sense.
 \end{itemize}
+
+\subsection{What we attempted, achieved and left open}
+
+\begin{description}[style=nextline]
+\item[Attempted] An automatic, rule-based classification of every incoming
+record into the five categories, with JSON output for records whose
+information is missing, irregular or conflicting.
+\item[Achieved] All 2{,}000 records classified by one code path; 1{,}202 JSON
+documents; every rule justified with counts measured on the supplied files;
+the program reproduces identical output when run again from the submission
+folder.
+\item[Left open] Fuzzy matching (misspelled names or addresses) and merging of
+repeated incoming records with each other. Both would need decisions about
+acceptable error rates that the data gives us no way to verify.
+\end{description}
 
 % ================================================================== P3
 \section{Unix data-processing pipeline}
@@ -823,6 +925,22 @@ be off by a few cents.
 require.
 \end{itemize}
 
+\subsection{What we attempted, achieved and left open}
+
+\begin{description}[style=nextline]
+\item[Attempted] The full SQL query as a streaming Unix pipeline, with
+handling of malformed records, a scalability experiment and an explanation of
+where the time goes.
+\item[Achieved] Correct results on every input we tried (checked against an
+independent implementation); all five kinds of malformed records produced by
+the generator detected and excluded without stopping the pipeline;
+measurements at four sizes from 100\,MB to 1\,GB with three runs each; a
+measured per-stage breakdown and one optimisation that the breakdown pointed
+us to.
+\item[Left open] Why the 500\,MB runs varied more than the other sizes, and
+parallel processing of the input, which we did not attempt.
+\end{description}
+
 % ================================================================== compliance
 \section{Checklist against the assignment}
 \label{sec:compliance}
@@ -845,7 +963,7 @@ Supplied files used unchanged & met (byte-identical) \\
 \multicolumn{2}{@{}l}{\textit{Problem 1}} \\
 Official TPC-H 3.0.1 tools & met (SHA-256 recorded) \\
 Scale factor doubled each step; each query and the total timed; repeated runs & met (SF1--SF32, 528/528 runs) \\
-Environment unchanged across scale factors & met (shared server noted) \\
+Environment unchanged across scale factors & met; SF2--SF8 noisier (quantified) \\
 Plot of dataset size against query time, with an explanation & met \\
 Linear, super-linear and insensitive queries; point of degradation; link to operations & met \\
 \midrule
