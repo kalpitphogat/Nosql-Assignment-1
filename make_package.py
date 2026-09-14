@@ -60,17 +60,12 @@ for item in ["README.md", "REPORT.pdf", "COMPLIANCE.md", "TEAM.md", "report",
 
 kit_dir = PKG / "problem1_tpch" / "official_tpch_materials"
 kit_dir.mkdir(parents=True, exist_ok=True)
-shutil.copy2(KIT, kit_dir / KIT.name)
+# The kit archive (~25 MB) is left out: the LMS caps uploads at 20 MB. The EULA,
+# the TPC legend and the SHA-256 are included so a fresh download can be verified.
 with zipfile.ZipFile(KIT) as z:
     eula = next(n for n in z.namelist() if n.endswith("EULA.txt"))
     (kit_dir / "EULA.txt").write_bytes(z.read(eula))
-(kit_dir / "README.txt").write_text(
-    "THE TPC SOFTWARE IS AVAILABLE WITHOUT CHARGE FROM TPC.\n\n"
-    "This folder contains the official TPC-H Tools v3.0.1 archive, unmodified, exactly as\n"
-    "downloaded from https://www.tpc.org/tpc_documents_current_versions/current_specifications5.asp\n"
-    f"SHA-256: {sha}\n\n"
-    "It is distributed under the TPC End User License Agreement (EULA.txt, clause 9).\n"
-    "setup_postgres_and_dbgen.sh builds dbgen/qgen from this archive.\n", encoding="utf-8")
+shutil.copy2(ROOT / "problem1_tpch/official_tpch_materials/README.txt", kit_dir / "README.txt")
 
 zip_path = OUT_DIR / f"{NAME}.zip"
 if zip_path.exists():
@@ -79,4 +74,7 @@ with zipfile.ZipFile(zip_path, "w", zipfile.ZIP_DEFLATED) as z:
     for f in sorted(PKG.rglob("*")):
         if f.is_file():
             z.write(f, f.relative_to(OUT_DIR))
-print(f"wrote {PKG}\nwrote {zip_path} ({zip_path.stat().st_size / 1048576:.1f} MB)")
+size_mb = zip_path.stat().st_size / 1048576
+print(f"wrote {PKG}\nwrote {zip_path} ({size_mb:.1f} MB)")
+if size_mb >= 20:
+    sys.exit("ZIP is 20 MB or larger -- too big for the LMS upload limit")

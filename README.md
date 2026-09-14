@@ -27,7 +27,9 @@ problem1_tpch/                 TPC-H scaling study on PostgreSQL
   validate_answers.sh          checks SF1 results against the official answers
   queries/                     the exact qgen output and the queries we ran, per scale factor
   results/                     timings, totals, row counts, plans, plots, logs, environment
-  official_tpch_materials/     the official TPC-H kit, unmodified, with its licence
+  official_tpch_materials/     README + EULA + SHA-256 for the official TPC-H kit
+                               (the ~25 MB archive itself is left out: LMS caps
+                               uploads at 20 MB; the hash lets it be verified)
 
 problem2_integration/          matching incoming customers against the master file
   match_customers.py           the program

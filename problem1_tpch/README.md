@@ -4,7 +4,7 @@
 
 | Item | Value |
 |---|---|
-| Benchmark | **Official TPC-H Tools v3.0.1** from tpc.org, archive `7C5384AF-10DA-4DCB-B83F-BA2BDE51003F-TPC-H-Tool.zip`, SHA-256 `97ccb34cd122d78c2e06e2419e50957f934256868b37c02d0b88aefd9d13a84a` (included in `official_tpch_materials/`) |
+| Benchmark | **Official TPC-H Tools v3.0.1** from tpc.org, archive `7C5384AF-10DA-4DCB-B83F-BA2BDE51003F-TPC-H-Tool.zip`, SHA-256 `97ccb34cd122d78c2e06e2419e50957f934256868b37c02d0b88aefd9d13a84a` (download from tpc.org and check the SHA-256; the archive is not in the submission ZIP because of the 20 MB upload limit, but its EULA and provenance are in `official_tpch_materials/`) |
 | Tool banners (as printed) | `TPC-H Population Generator (Version 3.0.0 build 0)`, `TPC-H Parameter Substitution (v. 3.0.0 build 0)`: these are the banners of the programs inside the 3.0.1 kit |
 | Database | PostgreSQL 16.15, built from source by `setup_postgres_and_dbgen.sh` |
 | Machine | Intel Core i9-12900K (16 cores / 24 threads), 62 GB RAM, 931.5 GB NVMe SSD (Crucial CT1000P3SSD8) |
