@@ -162,23 +162,25 @@ were running on the laptop at the same time.
 difference between successive rows is the time that stage adds. Medians of
 3 runs:
 
-| Pipeline up to… | 100 MB | 250 MB | 500 MB |
-|---|---|---|---|
-| read (`tail`) | 0.7 s | 1.0 s | 1.5 s |
-| + validate / filter / project (`awk`) | 10.4 s | 25.7 s | 49.9 s |
-| + sort by category | 10.6 s | 26.6 s | 50.5 s |
-| + aggregate / HAVING (`awk`) | 11.1 s | 27.7 s | 53.4 s |
-| full pipeline (+ order + limit) | 10.9 s | 27.5 s | 55.9 s |
+| Pipeline up to… | 100 MB | 250 MB | 500 MB | 1 GB |
+|---|---|---|---|---|
+| read (`tail`) | 0.7 s | 1.0 s | 1.5 s | 2.5 s |
+| + validate / filter / project (`awk`) | 10.4 s | 25.7 s | 49.9 s | 97.8 s |
+| + sort by category | 10.6 s | 26.6 s | 50.5 s | 108.5 s |
+| + aggregate / HAVING (`awk`) | 11.1 s | 27.7 s | 53.4 s | 105.3 s |
+| full pipeline (+ order + limit) | 10.9 s | 27.5 s | 55.9 s | 110.4 s |
 
-(At 1 GB the same pattern holds: read 2.5 s, full pipeline about 105–111 s.
-See `stage_timings.tsv`.)
+At 1 GB, individual runs of the later prefixes vary by about ±5 s (e.g.
+"+ sort": 111.4 / 101.4 / 108.5 s). So small differences between adjacent
+rows, including "+ sort" coming out above "+ aggregate", are measurement
+noise and not the cost of a stage.
 
 - **The validation/filter `awk` takes about 90% of the time.** It is the only
   stage that processes every one of the millions of input rows with several
   checks (field count, two regular expressions, date check).
 - **Reading the file is cheap** (0.7 s per 100 MB), so disk I/O is not the
   bottleneck.
-- **`sort` adds under a second at 100–500 MB.** It only receives rows that
+- **`sort` adds under a second at 100–500 MB** (and at 1 GB less than the run-to-run noise). It only receives rows that
   passed the `WHERE` filter (about 45%: the generator's dates are spread
   evenly over 2025–2026, and 90% of quantities are above 2), each row is short, byte-wise
   comparison with `LC_ALL=C` is fast, and GNU sort uses several threads.
