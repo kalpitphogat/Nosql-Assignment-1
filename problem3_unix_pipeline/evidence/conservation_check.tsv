@@ -1,0 +1,5 @@
+file	input_lines	header	malformed	removed_by_where	kept	pipeline_malformed	pipeline_kept	result
+transactions.tsv	21	1	0	4	16	0	16	PASS
+transactions_malformed.tsv	15	1	4	2	8	4	8	PASS
+generated_malformed_200k.tsv	200001	1	1907	108647	89446	1907	89446	PASS
+transactions_2500000.tsv	2500001	1	0	1376158	1123842	0	1123842	PASS

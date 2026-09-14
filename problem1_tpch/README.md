@@ -153,6 +153,38 @@ The dashed line is linear scaling from SF1; the bars show the min–max of the
 
 <img src="results/per_query_plot.png" alt="Per-query time vs dataset size, one panel per query">
 
+## Answers to the assignment's questions
+
+1. **Does query time approximately double when the dataset doubles?** Up to
+   SF16 roughly yes: the total grows 2.42, 2.46, 1.72 and 1.93 at the first
+   four doublings (noisy at SF2–SF8, see *How reliable are the measurements?*).
+   At the last doubling it grows 2.67. Overall, 33.0× more data takes 52.7×
+   longer, i.e. time ∝ size^1.13. Loading and indexing double almost exactly
+   (1.87–2.19 per step).
+2. **Which queries scale linearly or super-linearly?** *Linear:* Q1, Q4, Q12,
+   Q14, Q17 (all ratios 1.70–2.63, slopes 0.99–1.08, unchanged plans; Q1 is
+   32.1× slower for 33.0× data). *Super-linear over the whole range:* Q20
+   (slope 1.42), Q13 (1.31), Q16 (1.18), Q2 (1.16). *Super-linear at one
+   step:* more than 3× from SF16 to SF32 for Q16, Q13, Q19, Q5, Q9, Q20 and
+   Q10; Q20 also from SF4 to SF8; Q2, Q7, Q11 and Q21 from SF2 to SF4.
+3. **Which queries are relatively insensitive to dataset size?** None over
+   the whole range: every query is at least 21× slower at SF32 than at SF1.
+   The least sensitive is Q22 (21.1×, slope 0.86), partly because of the fixed
+   `psql` start-up cost in its very short runtime. Single flat steps (Q6 and
+   Q15 at SF16→32, Q18 at SF4→8, all 1.05) coincide with plan changes and are
+   followed by normal growth.
+4. **At what scale factor does performance begin to degrade significantly?**
+   SF32: the total grows 2.67 (the largest step) and seven queries become more
+   than 3× slower, as the 54.2 GB database approaches the 62 GB of RAM and the
+   plans show random index access and sorts/aggregations spilling to disk. Q20
+   alone already degrades at SF8 (plan switch to a per-row subquery).
+5. **How does this relate to joins, aggregation, sorting and filtering?**
+   Filtering and scans are linear; aggregation is linear until its hash table
+   spills to disk (Q1 vs Q18 at SF32); sorting only matters once it becomes an
+   external merge sort (Q16, Q9, Q10 at SF32); joins cause most irregular steps
+   because the planner switches join methods as tables grow (Q3, Q5, Q10, Q13,
+   Q20). See the table in *Relating the observations to database operations*.
+
 ## Analysis
 
 ### Does query time double when the dataset doubles?

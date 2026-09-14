@@ -31,11 +31,11 @@ order it appears, with the file(s) that satisfy it. ✔ = met,
 | 1.7 | Keep the experimental environment unchanged across scale factors | ◐ | same machine, PostgreSQL 16.15 build, configuration and 30 min timeout at every SF; both invocations recorded in `results/environment.txt` and identical except date/load/free space. The server is shared: SF2–SF8 runs are noisier (typical spread 13–23 % vs ≤ 1.5 % at SF1/16/32), quantified in the README and report |
 | 1.8 | State the database system (PostgreSQL preferred), its configuration, hardware and software environment | ✔ | README *Experimental setup*; `results/environment.txt` |
 | 1.9 | Plot dataset size against query execution time | ✔ | `results/scaling_plot.png` (total and per query vs dataset size), `results/per_query_plot.png` (22 panels) |
-| 1.10 | Analyse whether time approximately doubles when the data doubles | ✔ | README *Does query time double…*: 33.0× data → 52.7× time; per-step ratios 1.72–2.67 |
-| 1.11 | Which queries scale linearly or super-linearly | ✔ | README sections 1 and 3, `results/scaling_summary.csv` |
-| 1.12 | Which queries are relatively insensitive to dataset size | ✔ | README section 2: no query is insensitive overall; flat single steps (Q6, Q15, Q18) coincide with plan changes |
-| 1.13 | At what SF performance begins to degrade significantly | ✔ | README section 3: SF32 (total ratio 2.67; seven queries > 3×), with plan evidence |
-| 1.14 | Relate observations to joins, aggregation, sorting and filtering | ✔ | README *Relating the observations to database operations*, based on `results/plans/` (EXPLAIN at every SF, EXPLAIN ANALYZE at SF32) |
+| 1.10 | Analyse whether time approximately doubles when the data doubles | ✔ | README and report *Answers to the assignment's questions* (1): ratios 2.42/2.46/1.72/1.93 to SF16, 2.67 at SF32; 33.0× data → 52.7× time (size^1.13) |
+| 1.11 | Which queries scale linearly or super-linearly | ✔ | *Answers* (2): linear Q1, Q4, Q12, Q14, Q17; super-linear Q20, Q13, Q16, Q2 overall, plus per-step cases; backed by `results/scaling_summary.csv` |
+| 1.12 | Which queries are relatively insensitive to dataset size | ✔ | *Answers* (3): none over the whole range (least sensitive Q22, 21.1×); single flat steps Q6, Q15, Q18 coincide with plan changes |
+| 1.13 | At what SF performance begins to degrade significantly | ✔ | *Answers* (4): SF32 (total 2.67×, seven queries > 3×), with plan evidence; Q20 alone at SF8 |
+| 1.14 | Relate observations to joins, aggregation, sorting and filtering | ✔ | *Answers* (5) and the operations table, based on `results/plans/` (EXPLAIN at every SF, EXPLAIN ANALYZE at SF32) |
 | 1.15 | Submit setup, dataset-generation procedure, execution scripts, raw measurements, plots, explanation | ✔ | `problem1_tpch/` (scripts, queries, `results/`, README) |
 
 ## Problem 2 — Incomplete data integration and JSON
@@ -71,7 +71,7 @@ order it appears, with the file(s) that satisfy it. ✔ = met,
 | 3.5 | Do not import into a database or run the SQL directly | ✔ | no database or SQL engine is used |
 | 3.6 | Multiple stages connected by pipes, reading the input progressively | ✔ | `tail \| awk \| sort \| awk \| sort \| head` |
 | 3.7 | Selection, projection, filtering, grouping, aggregation, sorting and Top-K | ✔ | mapping table in the README |
-| 3.8 | Demonstrate malformed-record handling (missing field, invalid date, non-numeric quantity or price); exclude them without terminating | ✔ | README *Malformed-record handling*: supplied malformed file (4 rows rejected with reasons) and a generated `--malformed` file (1,907 rows, all 5 kinds) |
+| 3.8 | Demonstrate malformed-record handling (missing field, invalid date, non-numeric quantity or price); exclude them without terminating | ✔ | README *Malformed-record handling*: supplied malformed file (4 rows rejected with reasons) and a generated `--malformed` file (1,907 rows, all 5 kinds); *Row conservation*: header + malformed + removed + kept = input lines on 4 files, pipeline counts equal independent counts (`evidence/conservation_check.tsv`) |
 | 3.9 | Use the supplied generator; it takes the number of records | ◐ | used unchanged as `generate_transactions --records N --seed 42`. The supplied generator requires `--records`, unlike the PDF's positional example (README *Assumptions*) |
 | 3.10 | Develop and test on the supplied sample first | ✔ | README *Sample input and output* |
 | 3.11 | At least four sizes ≈ 100 MB, 250 MB, 500 MB, 1 GB | ✔ | 102.3 / 255.8 / 511.6 / 1023.2 MB (`scalability_results.tsv`) |

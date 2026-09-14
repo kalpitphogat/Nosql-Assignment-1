@@ -306,6 +306,57 @@ bars show the minimum and maximum of the three measured runs.}
 \label{fig:perquery}
 \end{figure}
 
+\subsection{Answers to the assignment's questions}
+
+The assignment asks five questions about the scaling behaviour. Here are our
+short answers; the following subsections give the evidence.
+
+\begin{enumerate}[label=\textbf{(\arabic*)}, leftmargin=2.2em]
+\item \textbf{Does query time approximately double when the dataset doubles?}
+Up to SF16, roughly yes: the total time grows by 2.42, 2.46, 1.72 and 1.93 at
+the first four doublings (with some noise at SF2--SF8, see
+Section~\ref{sec:p1reliability}). At the last doubling it grows by 2.67. Over
+the whole range the data grows 33.0 times and the total time 52.7 times, which
+corresponds to time $\propto$ size$^{1.13}$, slightly worse than linear.
+Loading and indexing, in contrast, double almost exactly (1.87--2.19 per step).
+
+\item \textbf{Which queries show linear and which super-linear scaling?}
+\emph{Linear:} Q1, Q4, Q12, Q14 and Q17. Every ratio lies between 1.70 and
+2.63, the fitted slopes are 0.99--1.08, and their plans never change. Q1 is
+the clearest case: 32.1 times slower for 33.0 times more data.
+\emph{Super-linear over the whole range:} Q20 (slope 1.42), Q13 (1.31), Q16
+(1.18) and Q2 (1.16). \emph{Super-linear at a single step:} seven queries
+become more than three times slower from SF16 to SF32 (Q16, Q13, Q19, Q5, Q9,
+Q20, Q10), Q20 also from SF4 to SF8, and Q2, Q7, Q11 and Q21 from SF2 to SF4.
+
+\item \textbf{Which queries are relatively insensitive to dataset size?}
+None over the whole range; every query is at least 21 times slower at SF32
+than at SF1. The least sensitive is Q22 (21.1 times for 33.0 times the data,
+slope 0.86), because it takes only a few hundredths of a second and part of
+that is the fixed cost of starting \file{psql}. Some queries look insensitive
+for a single step: Q6 and Q15 from SF16 to SF32 (1.05) and Q18 from SF4 to SF8
+(1.05). Each of these coincides with a plan change, and they grow again at the
+next doubling.
+
+\item \textbf{At what scale factor does performance begin to degrade
+significantly?} At SF32. The total grows by 2.67 there, the most of any step,
+and seven queries become more than three times slower in that one doubling.
+At that scale the database (54.2\,GB) approaches the machine's 62\,GB of RAM,
+and the \file{EXPLAIN ANALYZE} plans show random index access and sorts and
+aggregations spilling to disk. A single query, Q20, already degrades at SF8,
+when its plan switches to running a subquery per row.
+
+\item \textbf{How do the observations relate to joins, aggregation, sorting
+and filtering?} Filtering and scanning scale linearly. Aggregation stays
+linear while its hash table fits in memory (Q1) and becomes much slower once
+it spills to disk (Q18 at SF32). Sorting is negligible for small results but
+turns into external merge sorts on disk when the input exceeds
+\file{work\_mem} (Q16, Q9, Q10 at SF32). Joins cause most of the irregular
+behaviour, because the planner switches between index nested loops, hash
+joins and merge joins as the tables grow (Q3, Q5, Q10, Q13, Q20). Details are
+in Table~\ref{tab:operations}.
+\end{enumerate}
+
 \subsection{What the numbers tell us}
 
 \subsubsection*{Does the time double when the data doubles?}
@@ -443,9 +494,11 @@ Correlated subqueries & Cost is roughly outer rows times inner lookup; super-lin
 \bottomrule
 \end{tabularx}
 \caption{The observations grouped by database operation.}
+\label{tab:operations}
 \end{table}
 
 \subsection{How reliable are the measurements?}
+\label{sec:p1reliability}
 
 Because the server is shared, we looked at how much the three measured runs
 of the same query differ. For every query that takes at least half a second,
@@ -836,6 +889,33 @@ implementation in Python (\file{reference\_check.py}, used only for testing).
 Its output matched the pipeline exactly on the sample file, the malformed
 sample, the 200{,}000-row malformed file and the 100\,MB generated file.
 
+We also checked that no row is lost or counted twice
+(\file{conservation\_check.sh}). Every input line must be exactly one of:
+the header, a malformed row, a row removed by \texttt{WHERE}, or a row kept for
+grouping. The malformed and kept counts come from the pipeline itself (its
+rejected-rows file, and the rows its validation and filter stage passes on);
+the reference implementation counts all four categories independently. The
+two agree on every file, and the four counts add up to the number of input
+lines.
+
+\begin{table}[H]
+\centering
+\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}lrrrrr@{}}
+\toprule
+Input & Lines & Header & Malformed & Removed by \texttt{WHERE} & Kept \\
+\midrule
+\file{transactions.tsv} & 21 & 1 & 0 & 4 & 16 \\
+\file{transactions\_malformed.tsv} & 15 & 1 & 4 & 2 & 8 \\
+generated \file{-{}-malformed}, 200{,}000 rows & 200{,}001 & 1 & 1{,}907 & 108{,}647 & 89{,}446 \\
+generated, 2{,}500{,}000 rows (102\,MB) & 2{,}500{,}001 & 1 & 0 & 1{,}376{,}158 & 1{,}123{,}842 \\
+\bottomrule
+\end{tabular}
+\caption{Row conservation: header + malformed + removed + kept = input lines.}
+\label{tab:conservation}
+\end{table}
+
 \subsection{Scalability}
 
 We generated four datasets with \file{generate\_transactions -{}-records N
@@ -864,7 +944,7 @@ time, and the cost stays at about 0.11 seconds per MB from 100\,MB up to 1\,GB.
 The 500\,MB runs varied the most (55 to 64 seconds); we suspect other programs
 on the laptop, but we did not verify this.
 
-\subsubsection*{Which stage takes the time}
+\subsubsection*{Which stages dominate the execution time}
 
 Instead of guessing, we measured it. \file{pipeline.sh} can stop after a given
 stage (\file{STOP\_AFTER}), so we timed the pipeline up to each stage in turn.
@@ -890,8 +970,8 @@ full pipeline & 10.9 & 27.5 & 55.9 & 110.4 \\
 The validation and filtering step takes about 90\,\% of the total. It is the
 only stage that handles every single row with several checks. Reading the file
 costs very little, so the disk is not the bottleneck. \file{sort} adds less
-than a second up to 500\,MB, because it only receives the roughly 45\,\% of
-rows that pass the filter, the lines are short, and byte-wise comparison with
+than a second up to 500\,MB, because it only receives the 44.95\,\% of rows
+that pass the filter (Table~\ref{tab:conservation}), the lines are short, and byte-wise comparison with
 \file{LC\_ALL=C} is fast. Aggregation, the final sort and \file{head} add
 almost nothing, since at most 20 category rows reach them. At 1\,GB the
 individual runs of the later stages vary by about $\pm$5 seconds, so small
@@ -940,6 +1020,57 @@ us to.
 \item[Left open] Why the 500\,MB runs varied more than the other sizes, and
 parallel processing of the input, which we did not attempt.
 \end{description}
+
+% ================================================================== conclusions
+\section{Conclusions}
+\label{sec:conclusions}
+
+\paragraph{Problem 1.} On PostgreSQL, TPC-H query time roughly doubles with
+the data up to SF16 and then grows faster: at SF32 the total is 2.67 times
+the SF16 time and seven queries become between 3.1 and 6.6 times slower. Queries
+that scan, filter and aggregate into a few groups stay linear throughout. The
+irregular ones are explained by the planner switching join and scan
+strategies as tables grow, and at SF32 by sorts, aggregations and random index
+access that no longer fit in memory.
+
+\paragraph{Problem 2.} All 2{,}000 incoming customer records are classified
+automatically by one set of rules, and 1{,}202 JSON documents keep the
+information for records that are missing, irregular or conflicting. The rule
+order follows from what we measured in the data, mainly which attributes are
+unique in the master file.
+
+\paragraph{Problem 3.} Plain Unix tools can compute the full
+\texttt{GROUP BY}/\texttt{HAVING}/\texttt{ORDER BY}/\texttt{LIMIT} query on a
+stream, handle malformed input without stopping, and scale linearly from
+100\,MB to 1\,GB. Measuring each stage showed that validating every row, not
+sorting, is where the time goes, which also pointed to the one optimisation
+that made a real difference.
+
+Across the three problems, the same lesson came up more than once: measuring
+(query plans, per-stage timings, profiles of the data) told us more than our
+expectations did. The clearest example is Problem~3, where we first assumed
+that sorting would dominate, and the stage timings showed that it adds less
+than a second up to 500\,MB.
+
+% ================================================================== references
+\section*{References}
+\addcontentsline{toc}{section}{References}
+
+\begin{enumerate}[label={[\arabic*]}, leftmargin=2.2em]
+\item Transaction Processing Performance Council. \emph{TPC Benchmark H
+(Decision Support) Standard Specification}, Revision 3.0.1, and TPC-H Tools
+v3.0.1. \url{https://www.tpc.org/tpch/}
+\item The PostgreSQL Global Development Group. \emph{PostgreSQL 16
+Documentation}: chapters ``Using EXPLAIN'', ``Parallel Query'' and
+``Resource Consumption'' (\texttt{work\_mem}, \texttt{shared\_buffers}).
+\url{https://www.postgresql.org/docs/16/}
+\item A.~D. Robbins. \emph{GAWK: Effective AWK Programming}. Free Software
+Foundation. \url{https://www.gnu.org/software/gawk/manual/}
+\item Free Software Foundation. \emph{GNU Coreutils manual}: \texttt{sort},
+\texttt{head}, \texttt{tail}. \url{https://www.gnu.org/software/coreutils/manual/}
+\item V.~E.~Venugopal. \emph{NoSQL Systems (DAS 838), Assignment 1: Data
+Scaling, Data Integration and Unix Data Processing}, 30 August 2026.
+\end{enumerate}
 
 % ================================================================== compliance
 \section{Checklist against the assignment}

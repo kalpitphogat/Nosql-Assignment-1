@@ -9,6 +9,7 @@
 - `outputs/out_<records>.tsv`: pipeline output for each generated dataset
 - `evidence/`: saved outputs of the tests described below — sample and malformed-sample outputs, their rejected rows and stderr, the 200,000-row generated `--malformed` test (output, rejection reasons, first 20 rejected rows), and `reference_check_result.txt`
 - `reference_check.py`: independent Python implementation of the same query, used only to verify the pipeline's results (not part of the solution)
+- `conservation_check.sh`: checks that no row is lost or double-counted (see *Row conservation*); result in `evidence/conservation_check.tsv`
 - `transactions.tsv`, `transactions_malformed.tsv`, `generate_transactions`, `generate_transactions_README.txt`: supplied files (byte-identical)
 
 Run:
@@ -165,6 +166,26 @@ It accepted `2026-99-99` (format-only regex) and rows with an extra field
 (it checked only for *fewer* fields). Those rows were counted in the result
 and changed every category's count and revenue.
 
+## Row conservation
+
+`conservation_check.sh` checks that every input line is accounted for exactly
+once: **input lines = 1 header + malformed rows + rows removed by `WHERE` +
+rows kept**. The malformed and kept counts come from the pipeline itself (its
+rejected-rows file, and the number of rows its validate/filter stage passes
+on, using the unchanged `pipeline.sh` code). The same four counts are also
+computed independently by `reference_check.py --counts`, and both sets must
+agree (`evidence/conservation_check.tsv`):
+
+| Input | Input lines | Header | Malformed | Removed by `WHERE` | Kept | Pipeline agrees |
+|---|---|---|---|---|---|---|
+| `transactions.tsv` | 21 | 1 | 0 | 4 | 16 | yes |
+| `transactions_malformed.tsv` | 15 | 1 | 4 | 2 | 8 | yes |
+| generated `--malformed`, 200,000 records, seed 7 | 200,001 | 1 | 1,907 | 108,647 | 89,446 | yes |
+| generated, 2,500,000 records, seed 42 (102 MB) | 2,500,001 | 1 | 0 | 1,376,158 | 1,123,842 | yes |
+
+For the 102 MB file, 1,123,842 of 2,500,000 rows (44.95 %) pass the `WHERE`
+filter, which is the share that reaches `sort`.
+
 ## Scalability measurements
 
 Same machine and configuration for every size: AMD Ryzen 7 5800H, 16 GB RAM,
@@ -209,8 +230,7 @@ noise and not the cost of a stage.
 - **Reading the file is cheap** (0.7 s per 100 MB), so disk I/O is not the
   bottleneck.
 - **`sort` adds under a second at 100–500 MB** (and at 1 GB less than the run-to-run noise). It only receives rows that
-  passed the `WHERE` filter (about 45%: the generator's dates are spread
-  evenly over 2025–2026, and 90% of quantities are above 2), each row is short, byte-wise
+  passed the `WHERE` filter (44.95 % at 102 MB, measured in the conservation check), each row is short, byte-wise
   comparison with `LC_ALL=C` is fast, and GNU sort uses several threads.
 - **The aggregation, final sort and `head` add almost nothing.** Aggregation
   is a single cheap pass, and at most 20 category rows reach the final sort.
